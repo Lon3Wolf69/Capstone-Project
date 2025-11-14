@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+//This is default that came with react and vite implementation
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -32,7 +34,26 @@ function App() {
   )
 }
 
+// This is example of disaster pulling from database
+
 export default App */
+
+  {/* {} <h1 className="text-2xl font-bold mb-4">🌍 Recent Disasters</h1>*/}
+      {/*{disasters.length === 0 ? (
+        <p>No disasters found.</p>
+      ) : (
+        <ul className="space-y-4">
+          {disasters.map((d) => (
+            <li key={d._id} className="p-4 bg-gray-100 rounded-lg shadow">
+              <p><strong>Type:</strong> {d.type}</p>
+              <p><strong>Location:</strong> {d.location}</p>
+              <p><strong>Severity:</strong> {d.severity}</p>
+              <p><strong>Magnitude:</strong> {d.magnitude}</p>
+              <p><strong>Date:</strong> {new Date(d.date).toLocaleString()}</p>
+            </li>
+          ))}
+        </ul>
+      */}
 
 
 
@@ -55,22 +76,6 @@ function App() {
     <div className="p-6">
       {/* Includes the Navbar */}
       <Navbar />
-    {/* {} <h1 className="text-2xl font-bold mb-4">🌍 Recent Disasters</h1>*/}
-      {/*{disasters.length === 0 ? (
-        <p>No disasters found.</p>
-      ) : (
-        <ul className="space-y-4">
-          {disasters.map((d) => (
-            <li key={d._id} className="p-4 bg-gray-100 rounded-lg shadow">
-              <p><strong>Type:</strong> {d.type}</p>
-              <p><strong>Location:</strong> {d.location}</p>
-              <p><strong>Severity:</strong> {d.severity}</p>
-              <p><strong>Magnitude:</strong> {d.magnitude}</p>
-              <p><strong>Date:</strong> {new Date(d.date).toLocaleString()}</p>
-            </li>
-          ))}
-        </ul>
-      */}
     </div>
   );
 } 
