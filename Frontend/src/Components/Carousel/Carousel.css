@@ -1,0 +1,147 @@
+.carousel {
+position: relative;
+width: 100%;
+margin: auto;
+overflow: hidden;
+height: 480px;
+}
+
+/* Two column layout New*/
+.carousel-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;   /* Left = carousel, Right = text */
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15); /* Shadow */
+}
+
+/* New */
+.carousel_slides img {
+    width: 100%;
+    height:450px;
+    object-fit: cover;
+}
+
+/* Right Panel  New*/
+.carousel-text-panel {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    overflow-wrap: break-word; /* FIXES text breaking out */
+    word-break: break-word; /*additional saftey */
+    max-width: 100%;    /* prevents overflow */
+}
+
+/* New */
+.carousel-text-panel h2 {
+  font-size: 2rem;
+  color: #172554;
+  margin: 0;
+}
+
+/* New */
+.carousel-text-panel p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* New */
+.carousel-cta-btn {
+  text-decoration: none;    /* removes underline */
+  padding: 10px 20px;
+  background: #1096b7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: fit-content;
+  font-size: 1rem;
+}
+/* New */
+.carousel-cta-btn:hover {
+  background: #0284c7;
+}
+
+/* New */
+.carousel__slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel__slides {
+display: flex;
+transition: transform 0.5s ease-in-out;
+/* move slides based on active index */
+}
+
+.carousel__slide {
+min-width: 100%;
+opacity: 0;
+transition: opacity 0.5s ease-in-out;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.carousel__slide.active {
+opacity: 1;
+position: relative;
+}
+
+.carousel__slide img {
+width: 100%;
+display: block;
+}
+
+/* Arrows */
+.carousel__arrow {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: rgba(255,255,255,0.7);
+border: none;
+padding: 0.5rem 1rem;
+cursor: pointer;
+font-size: 2rem;
+z-index: 1;
+}
+
+.carousel__arrow--left {
+left: 10px;
+}
+
+.carousel__arrow--right {
+right: 10px;
+}
+
+/* Indicators */
+.carousel__indicators {
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+gap: 8px;
+}
+
+.indicator {
+width: 12px;
+height: 12px;
+border-radius: 50%;
+border: none;
+background: rgba(255,255,255,0.7);
+cursor: pointer;
+padding: 0;
+}
+
+.indicator.active {
+background: rgba(255,255,255, 1);
+}
+

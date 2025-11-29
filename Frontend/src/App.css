@@ -1,0 +1,40 @@
+.App {
+    background-color: #fefefe;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Side-by-side layout */
+.content-layout {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  align-items: flex-start;
+}
+
+/* Vertical Nav = 50% */
+.content-layout .vertical-nav-container {
+  width: 25%;
+}
+
+/* News Section = 50% */
+.content-layout .news-container {
+  width: 75%;
+}
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+}
+
+.app-container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+

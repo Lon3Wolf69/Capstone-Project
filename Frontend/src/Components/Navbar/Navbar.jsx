@@ -1,27 +1,96 @@
-import React from 'react'
-import './Navbar.css'
-import myGif from '../../assets/Logo.gif';
+import React, { useState } from "react";
+import {Link, NavLink} from "react-router-dom";
+import "./Navbar.css";
+import Logo from "../../assets/Logo.png";
+import { navRoutes } from "./navRoutes"; //chat imports the path from navRoutes which is just all the labels and pathing for the navigation
 
-const Navbar = () => {
-    return (
-        <header className="header">
-            <a href="/" className="logo"><img src={myGif} alt ="Animated hurricane" className ="logo-gif" /></a>
-            {/*Navbar links (they are displayed below changing the text between the a tags modifies the text for them on website directly)*/}
-            <nav className="navbar">
-                <a href="/">Home</a>
-                <a href="/">About</a>
-                <a href="/">Portfolio</a>
-                <a href="/">Services</a>   
-                <a href="/">Contact</a>
+function Navbar(){
 
-                {/*<HoverDropdown title="Services">
-                    <a href="/service-a" className="menu-item">Service A</a>
-                    <a href="/service-b" className="menu-item">Service B</a>
-                    <a href="/service-c" className="menu-item">Service C</a>
-                </HoverDropdown>*/}
-            </nav>
-        </header>
-    )
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [openDropdown, setOpenDropdown] = useState(null); //chat
+
+    const toggleDropdown = (label) => { //chat
+        setOpenDropdown(openDropdown === label ? null : label); //chat
+    };
+
+    const handleLinkClick = () => { //chat
+        setMenuOpen(false); //closes the mobile menu
+        setOpenDropdown(null);  //closes any open dropdown
+    }
+
+    return( 
+        <>
+      {/* HEADER SECTION */}
+      <header className="top-header">
+        <Link to="/" className="title"><img src={Logo} alt="Logo" className="header-logo" /></Link>
+      
+
+      <div className="header-search">
+        <input type="text" placeholder="Search..." onChange={(e) => console.log(e.target.value)} />
+        <button onClick={() => console.log("Search clicked")}>Go</button>
+      </div>
+      </header>
+      {/* NAVBAR */}
+        
+        <nav className="navbar">
+        {/* text above the navigation bar */}
+        <p className ="nav-subtitle" style={{ fontWeight: "bold", margin: "0", paddingBottom: "4px", fontSize: "0.80rem"}}>The Trusted Source for Curated, Comprehensive Disaster Readiness Intelligence. </p>
+        
+        {/* Horizontal Line */}
+        <hr className="nav-separator" />
+        
+        <div className="nav-menu-login">
+            {/* Mobile Hamburger */}
+            <div className="menu" onClick={() => {
+                setMenuOpen(!menuOpen);
+            }}
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            {/* Main Menu */}
+            <ul className={menuOpen ? "open" : ""}>
+                {/*chat*/}
+                {navRoutes.map((route) => (
+                    <li key={route.label} className="dropdown">
+                        {/* Parent button */}
+                        <button 
+                            className="dropdown-btn"
+                            onClick={() => toggleDropdown(route.label)}
+                    >
+                        {route.label} ▼
+                    </button>
+                    </li>
+                ))}
+                </ul>
+
+                {/* Login button */}
+                    <NavLink to="/login" className="nav-login-btn">Login</NavLink>
+                </div>
+                
+                {/* Shared dropdown area */}
+                {openDropdown && (
+          <div className="dropdown-shared">
+            {navRoutes
+              .find((r) => r.label === openDropdown)
+              ?.children?.map((child) => (
+                <NavLink
+                  key={child.path}
+                  to={child.path}
+                  className={({isActive}) => "dropdown-link" + (isActive ? " active": "")}
+                  onClick={handleLinkClick}
+                >
+                  {child.label}
+                </NavLink>
+              ))}
+          </div>
+        )}
+                </nav>
+            </>
+    );
 }
+                {/*end of chat*/}
 
-export default Navbar
+export default Navbar;
