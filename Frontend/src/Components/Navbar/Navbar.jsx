@@ -1,7 +1,7 @@
 import React, { useState } from "react";                              // Imports React library and useState library also from react library 
 import {Link, NavLink} from "react-router-dom";                       // Imports link and Navlink from the react-router-dom library
 import "./Navbar.css";                                                // Imports the Navbar.css file (style sheet used for the navbar)
-import Logo from "../../assets/Logo.png";                             // Imports logo from respective location in files and attaches it to variable called Logo
+import Logo from "../../assets/disasterReadylogo.png";                             // Imports logo from respective location in files and attaches it to variable called Logo
 import { navRoutes } from "./navRoutes";                              // Imports navRoutes from the navRoutes.jsx file (need the curly braces since it is not a default export and don't need the .jsx at the end of the navRoutes since it is able to autodect the file since it is uniquely named within the folder.)
 
 function Navbar(){
@@ -28,8 +28,12 @@ function Navbar(){
         <header className="top-header">
           <Link to="/" onClick={handleLinkClick}><img src={Logo} alt="Logo" className="header-logo" /></Link>   {/* This is similar to the a tag for linking to other pages. It is a part of the React Router library allowing us to take advantage of quickly changing the information on a page without needing to refresh the page when a link is accessed (link tags do this seemlessly without needing to refresh the entire page) */}
       
+        
         {/* Wrapper for the search bar on the header section of website (Everything here is styled by the header-search class defined within the Navbar.css file) */}
           <div className="header-search">
+            {/* Defines the login button NavLink behaves pretty much exactly like Link only difference is that Navlink allows for styling to be added when mathcing the current url */}
+            <NavLink to="/login" onClick={handleLinkClick} className="nav-login-btn" style={{margin: "0 6px 0 0",}}>Login</NavLink>                  {/* to sets the path that appears in the url when clicked. Then there is a onClick handler that calls the handleLinkClick function and the it also applies the styling provided by the nav-login-btn class defined in the Navbar.css menu */}
+            <NavLink to="/signUp" onClick={handleLinkClick} className="nav-login-btn" style={{margin: "0 6px 0 0",}}>Sign Up</NavLink>                  {/* to sets the path that appears in the url when clicked. Then there is a onClick handler that calls the handleLinkClick function and the it also applies the styling provided by the nav-login-btn class defined in the Navbar.css menu */}
             <input type="text" placeholder="Search..." onChange={(e) => console.log(e.target.value)} />           {/* Input tag defines a standard html input text box placeholder sets the default text within the textbox. The next section is an event handler that fires every time the value of the input changes. An arrow function is then used with the passed in variable e. Which then accesses the current value within the input search bar with the following line console.log(e.target.value). e.target refers to the specific react DOM event that triggered the event and the .value takes the current string entered by the user and then logs it to the browser console */}
             <button onClick={() => console.log("Search clicked")}>Go</button>                                     {/* This is the go button next to the search bar.  There is an onClick event handler that runs the arrow function which prints Search clicked to the browsers developer console the text that is between the opening and closing tags for the button is the text that gets displayed for the button */}
           </div>
@@ -73,8 +77,7 @@ function Navbar(){
                 ))}
             </ul>
 
-            {/* Defines the login button NavLink behaves pretty much exactly like Link only difference is that Navlink allows for styling to be added when mathcing the current url */}
-            <NavLink to="/login" onClick={handleLinkClick} className="nav-login-btn">Login</NavLink>                  {/* to sets the path that appears in the url when clicked. Then there is a onClick handler that calls the handleLinkClick function and the it also applies the styling provided by the nav-login-btn class defined in the Navbar.css menu */}
+            
           </div>
 
 {/*-------------------------------------------------------------- Logic for dropdown menu --------------------------------------------------------*/}           

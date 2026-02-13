@@ -31,7 +31,7 @@ nav ul {
 /* Styling for the header (Section right above the navbar) */
 .top-header {
   width: 100vw;                                      /* Sets the width of said header section to take up 100% of device view width  */
-  background: #e2e2e1;                             /* Sets the background color for the header */
+  background: #ffffff;                             /* Sets the background color for the header */
   padding: 4px 0;                                    /* Spacing between the content and the borders of the element. Left=top and bottom, Right=left and right */
   display: flex;                                     /* Gives the element the flex-box display allowing for the element to essentially be displaying its content in a grid layout */
   flex-direction: row;                               /* Ensures that the content is displayed in a row (this is default when not defining it) */
