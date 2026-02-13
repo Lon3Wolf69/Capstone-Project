@@ -1,7 +1,7 @@
 import React, { useState } from "react";                              // Imports React library and useState library also from react library 
 import {Link, NavLink} from "react-router-dom";                       // Imports link and Navlink from the react-router-dom library
 import "./Navbar.css";                                                // Imports the Navbar.css file (style sheet used for the navbar)
-import Logo from "../../assets/disasterReadylogo.png";                             // Imports logo from respective location in files and attaches it to variable called Logo
+import Logo from "../../assets/disasterReadyLogo.png";                             // Imports logo from respective location in files and attaches it to variable called Logo
 import { navRoutes } from "./navRoutes";                              // Imports navRoutes from the navRoutes.jsx file (need the curly braces since it is not a default export and don't need the .jsx at the end of the navRoutes since it is able to autodect the file since it is uniquely named within the folder.)
 
 function Navbar(){
