@@ -2,11 +2,11 @@
 /* div container that wraps the entire vertical nav container */
 .quick-links-container {
   max-width: 250px;                               /* Sets a max width for the quick-links-container so it doesn't get to big */
-  background-color: #1096b7;                    /* Sets the background color of the section */
+  background-color: #0B2E4F;                    /* Sets the background color of the section */
   padding: 20px;                                  /* Applies spacing between the content and its border */
   border-radius: 8px;                             /* Applies border radius for rounded corners */
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);        /* Applies a box-shadow (horizontal offset, vertical offset, blur) */
-  font-family: Arial, sans-serif;                 /* font-family provides a list of fonts that the browser will use based off whether or not the user has it on their device */                                                             
+  font-family: Helvetica, Arial, sans-serif;                 /* font-family provides a list of fonts that the browser will use based off whether or not the user has it on their device */                                                             
   margin-inline-end: 50px;                        /* Adds 30px of space to the end of an elements content flow */
   margin-top: 100px;                              /* Adds 100px of space between the container and other elements above it (used for pushing the quick links down to align with news cards) */
   align-self: flex-start;                         /* Ensures that it starts at the edge of the axis of its container */

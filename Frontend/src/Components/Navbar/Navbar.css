@@ -100,7 +100,7 @@ nav ul {
 
 /* Styling the login button */
 .nav-login-btn {
-  background-color: #ed1c24;                       /* Changes the login button background color (Color of the red portion of the logo) */
+  background-color: #F47A20;                       /* Changes the login button background color (Color of the red portion of the logo) */
   color: white;                                    /* Changes the text color to white */
   font-weight: bold;                                 /* Changes the font to bold */
   border-radius: 5px;                                /* Gives the rounded corners to the edges of the border of the login button */
@@ -111,7 +111,7 @@ nav ul {
 /* Styling for the login button when it is hovered over */
 .nav-login-btn:hover{
   cursor: pointer;                                   /* Changes the pointer to a cursor when hovering over the login button */
-  background-color: #ac1015;                       /* Modifies the background color of the login button when it is hovered over */
+  background-color: #bc5c17;                       /* Modifies the background color of the login button when it is hovered over */
 }
 
 /* --------------------------------------------------------------- Dropdown menu ---------------------------------------------------------------- */
