@@ -14,7 +14,7 @@
 .news-card {
   width: 100%;                                                   /* Sets the width of the news card to take up 100% of its container */
   height: 100%;                                                  /* Sets the height of the news card to take up 100% of its container */
-  background-color: #1096b7;                                   /* Sets the background color of the news card */
+  background-color: #0B2E4F;                                   /* Sets the background color of the news card */
   text-decoration: none;                                         /* Removes any text decoration from the content on the news card (important to remove the automatic underlines that comes with the a tag usage) */
   border-radius: 10px;                                           /* Modifies the border radius of the news card giving the rounded corners look that the news card has */
   overflow: hidden;                                              /* Hides the overflow of the content that goes outside of the border of news card. (This prevents the images from leaving the area specified by the defined borders. (without this the images will not have a rounded corner to match the rest of the news card) */

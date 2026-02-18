@@ -1,6 +1,7 @@
 // This is an array set to the variable newsRoutes. It holds the routing information for all the information for each news card
 export const newsRoutes = [
     // Index 0
+
     {
     title: "Texas Flash Flood",                                    // Title for the news card
                                                                    // Text for the news card                   
@@ -30,6 +31,11 @@ export const newsRoutes = [
                                                                    // Link to the website
     link: "https://www.usnews.com/news/us/articles/2025-11-22/alaska-native-villages-have-few-options-and-little-us-help-as-climate-change-devours-their-land"
   },
+
+
+  {/*
+
+
   // Index 3
   {
     title: "Indonesian Landslides",                               // Title for the news card
@@ -60,4 +66,6 @@ export const newsRoutes = [
                                                                   // Link to the website
     link: "https://www.bbc.com/future/article/20251028-the-bamboo-buildings-that-sway-in-earthquakes",
   }
+
+  */}
 ];

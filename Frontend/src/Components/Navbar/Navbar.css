@@ -68,13 +68,13 @@ nav ul {
   border: 1px solid #ccc;                          /* Adds a border around the go button */
   border-left: none;                                 /* Removes the border on the left side since we have the seacrh input here so we don't need it */
   border-radius: 0 4px 4px 0;                        /* Modifies the border edges (here it makes the rounded edges that we have on the go button (Order of values: Top-left, Top-right, Bottom-right, Bottom-left */
-  background-color: #1096b7;                       /* Changes the background color of the search bar go button */
+  background-color: #F47A20;                       /* Changes the background color of the search bar go button */
   color: white;                                    /* Modifies the color of the text to be white */
 }
 
 /* Styling for the go button when it is hovered over */
 .header-search button:hover {
-  background-color: #0284c7;                       /* Changes the background color of the button when hovered over */
+  background-color: #bc5c17;                       /* Changes the background color of the button when hovered over */
   cursor: pointer;                                   /* Changes the cursor to be a pointer */
 }
 

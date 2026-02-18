@@ -15,7 +15,9 @@
 
 /* This is styling for the wrapper that goes around the section title dynamically declared within the VerticalNav.jsx file (This is all the styling for the header above all the quick links) */
 .section-title {
-  padding: 8px 0;                                  /* Applies spacing between the header and its border (top&bottom, left&right) */
+  padding-top: 15px;                               /*Applies spacing between the header and it's border */
+  padding-left: 8px;                               /*Applies spacing to left of container */
+  padding-bottom: 5px;                             /*Applies spacing between header and links */
   font-size: 14px;                                 /* Changes the font-size to 14px */
   font-weight: bold;                               /* Applies bold to the text */                      
   color: #ffffff;                                /* Applies white color to the text */
