@@ -1,8 +1,8 @@
 /* Helpful tip you can use ctrl-f to find specific words located in a document (Useful for finding classes) */
 /* Main wrapper of the navbar encompassing all the other elements */
 .navbar {
-  background-color: #001b3d;                       /* Modifies the background color of the navbar */
-  padding: 10px 40px;                                /* Modifies the space between the content and the borders */
+  background-color: #0B2E4F;                       /* Modifies the background color of the navbar */
+  padding: 10px 0px;                                /* Modifies the space between the content and the borders */
   position: relative;                                /* IMPORTANT so dropdown anchors to the navbar (positions the dropdown relative to the */
 }
 
@@ -10,7 +10,7 @@
 .nav-separator {
   border: 0;                                         /* Removes the border for the element we do this so we can make a thin line with only one border later */                                
   border-top: 1px solid white;                     /* Adds the top border back to the element making it a thin white line now */
-  width: 100vw;                                      /* This makes the white line take up the whole width of the screen */
+  width: 100%;                                       /* This makes the white line take up the whole width of the screen */
   margin: 4px 0;                                     /* Spacing between the text and the other elements around it first value handles the top and bottom while second value handles left and right */
 }
 
@@ -30,7 +30,7 @@ nav ul {
 /*------------------------------------------------------- Header section -------------------------------------------------------------------------*/
 /* Styling for the header (Section right above the navbar) */
 .top-header {
-  width: 100vw;                                      /* Sets the width of said header section to take up 100% of device view width  */
+  width: 100%;                                      /* Sets the width of said header section to take up 100% of device view width  */
   background: #ffffff;                             /* Sets the background color for the header */
   padding: 4px 0;                                    /* Spacing between the content and the borders of the element. Left=top and bottom, Right=left and right */
   display: flex;                                     /* Gives the element the flex-box display allowing for the element to essentially be displaying its content in a grid layout */
@@ -82,7 +82,7 @@ nav ul {
 /* Styling for the navbar title right above the main navbar options */
 .nav-title {
   text-align: center;                                /* Align the title to be centered */
-  width: 100vw;                                      /* Ensures that the title uses the whole viewport width container of the screen when aligning the text */
+  width: 100%;                                      /* Ensures that the title uses the whole viewport width container of the screen when aligning the text */
   color: white;                                    /* Changes the color of the text to white */
   font-size: 0.80rem;                                /* Changes the font-size of the text (most browsers have default of 1rem= 16px so we would 0.8rem would be about 13px for the size font */
   opacity: 0.90;                                     /* Modifies the opacity of the text (I have this since I believe it makes it more viusally appealing since it is easier on the eyes to look at) */

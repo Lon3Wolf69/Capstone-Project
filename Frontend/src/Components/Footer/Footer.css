@@ -2,7 +2,7 @@
 /* Footer container handling the styling for everything within the footer container */
 .footer {
   width: 100%;                                 /* Sets the width of the footer to be 100% ensuring it takes up 100% of the screen */
-  background-color: #172554;                 /* Sets the background color of the footer container */
+  background-color: #0B2E4F;                 /* Sets the background color of the footer container */
   color: white;                              /* Sets the text color to be white */
   padding: 20px 0;                             /* Adds padding between the content of the footer and the border. Left value it top and bottom while the right value is the left and right */
 }

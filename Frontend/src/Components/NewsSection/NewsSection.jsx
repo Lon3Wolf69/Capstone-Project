@@ -6,7 +6,7 @@ import { newsRoutes } from "./newsRoutes";       // Imports the routes as newsRo
 function NewsSection() {
   return (
     <section className="news-section">           {/* Wrapper for the ebtire section styles everything within the section tags with the style defined by the class news-section located within the NewsSection.css file */}
-        <h2>Featured News</h2>                   {/* H2 tag that houses the section title */}
+        <h2>Case Studies</h2>                   {/* H2 tag that houses the section title */}
     
       <div className="news-container">           {/* A wrapper container for all the news cards themselves styling them with the news-container class written in NewsSection.css file */}
         {/* Map function that creates another array that renders the data within the array */}

@@ -33,7 +33,7 @@ export const newsRoutes = [
   },
 
 
-  {/*
+  /*
 
 
   // Index 3
@@ -67,5 +67,5 @@ export const newsRoutes = [
     link: "https://www.bbc.com/future/article/20251028-the-bamboo-buildings-that-sway-in-earthquakes",
   }
 
-  */}
+  */
 ];

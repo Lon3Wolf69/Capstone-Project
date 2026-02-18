@@ -29,7 +29,7 @@ function App() {
       <div>
       {/* This is another wrapper container for all defined Routes (Put all the Route tags here. Your telling the program what to display when the url equals the path) */}
       <Routes>
-        <Route path="/" element = {<><Carousel /><div className="position-NextTo"><News /><QuickLinks /></div><ExternalResources /><Footer /></>} />   {/* This is a route that displays information on the home page only */}
+        <Route path="/" element = {<><Carousel /><div className="position-NextTo"><News /><QuickLinks /></div>{/*<ExternalResources /> Remove this comment to remove the external resources section*/}<Footer /></>} />   {/* This is a route that displays information on the home page only */}
         {/* Sets up route for the login button */}
         <Route path="/login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />            {/* If the URL shows /login display the login page if /signup display sign up page */}

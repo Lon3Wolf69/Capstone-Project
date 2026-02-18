@@ -50,7 +50,7 @@ max-height: 500px;                          /* Sets a max height for bigger scre
 .carousel-cta-btn {
   text-decoration: none;                      /* Removes underline given to the link by default */
   padding: 10px 20px;                         /* Padding for the button. Space between the content and its border */
-  background: #1096b7;                      /* Background color of the button */
+  background: #F47A20;                      /* Background color of the button */
   color: white;                             /* Color of the text of the button */
   border: none;                               /* Removes the border of the button element */
   border-radius: 6px;                         /* Changes the shape of the button the surrounding border */              
@@ -60,7 +60,7 @@ max-height: 500px;                          /* Sets a max height for bigger scre
 
 /* Modfies the styling of the button when hovered over */
 .carousel-cta-btn:hover {
-  background: #0284c7;                      /* Changes the background color of the button when it is hovered over */
+  background: #bc5c17;                      /* Changes the background color of the button when it is hovered over */
   cursor: pointer;                            /* Changes the cursor when hovering over the button to a pointer */
 }
 
