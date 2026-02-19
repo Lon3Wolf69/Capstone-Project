@@ -36,7 +36,7 @@ max-height: 500px;                          /* Sets a max height for bigger scre
 /* Modifies the styling of the h2 elements within the carousel-text-panel container */
 .carousel-text-panel h2 {
   font-size: 2rem;                           /* Root em (rem) specifies a size relative to the font-size of the root element which is the html tag. By default the root size for most browsers is typically 16px so rem basically will multiply the set default value by the rem value */
-  color: #172554;                          /* Changes the color of the h2 elements within the container */
+  color: #0B2E4F;                          /* Changes the color of the h2 elements within the container */
   margin: 0;
 }
 

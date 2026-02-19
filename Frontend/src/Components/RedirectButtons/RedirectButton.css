@@ -8,7 +8,7 @@
 /* Styling for the section header h2 element within Home.jsx */
 .redirect-Wrapper h2 {
   font-size: 30px;                                  /* Applies a font size of 30 px to the h2 tag text */
-  color: #172554;                                 /* Modifies the color of the text */
+  color: #0B2E4F;                                 /* Modifies the color of the text */
   margin: 0 0 auto 50px;                            /* Modifies the spacing of the border and elements around it (top, right, bottom, left) */
   text-align: left;                                 /* Modifies the placement of the text to be aligned to the left side of its container */                            
 }
@@ -17,7 +17,7 @@
 .resources-grid {
   width: 90%;                                        /* Makes the container only take up 90% of the devices width */  
   margin: 20px auto 0 auto;                          /* Applies spacing between the elements border and the other elements around it (top, right, bottom, left) */
-  background-color: #1096b7;                       /* Changes the background color of the container */
+  background-color: #0B2E4F;                       /* Changes the background color of the container */
   padding: 20px 30px;                                /* Spacing between the buttons and the container (top&bottom, right&left) */
   border-radius: 8px;                                /* Applies a border radius to the container giving it a rounded look */
   display: grid;                                     /* Displays the elements in a grid layout */

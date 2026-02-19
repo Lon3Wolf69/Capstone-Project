@@ -5,7 +5,7 @@
 .news-container {
   display: grid;                                                 /* Displays the content in a grid layout */
   grid-template-columns: repeat(3, minmax(250px, 1fr));          /* This defines the content to be seperated out into three columns. grid-template-columns: sets the styling for the columns of the grid. repeat(3) will set the column sizing within the function to repeat 3 times creating 3 columns. minmax(250px, 1fr) sets the min and maximum that each news card can take up. first value being the being the minimum of 250px and the second value being a fractional unit which allows the cards to spread and divide the space evenly that is left to take */
-  grid-template-rows: repeat(auto-fill, minmax(708px, auto));
+  grid-template-rows: repeat(auto-fill, minmax(708px, auto));    /* This defines the content to be seperated out into rows. grid-template-rows: sets the styling for the rows of the grid. repeat(auto-fill) will automatically create as many rows as needed to fit all the news cards. minmax(708px, auto) sets the minimum and maximum height that each news card can take up. first value being the minimum of 708px and the second value being auto which allows the height to adapt dynamically to its content */
   gap: 30px;                                                     /* Puts a gap of 30px between each news card */
   padding: 0 10px;                                               /* Adds 10px of padding between the left and right sides of each news card */
   margin-left: 20px;                                             /* Adds 20px of margin padding essentially just making sure that there is 20 px of space between the news cards overall container and the other elements on the page */ 
@@ -58,7 +58,7 @@
 .news-section h2 {
   font-size: 2rem;                                               /* Changes the font-size to be about 32 px (1rem is about 16px on most browsers) */
   font-weight: bold;                                             /* Makes the font bold for the text for the section header */      
-  color: #001b3d;                                              /* Makes the color of the font same color as the navbar background */
+  color: #0B2E4F;                                              /* Makes the color of the font same color as the navbar background */
   margin-bottom: 24px;                                           /* Sets the spacing between the container of the h2 element and the other elements around it on the bottom side of the container */
   padding-left: 10px;                                            /* Applies spacing between the container and the h2 text of 30 px on the left side */
 }
