@@ -17,7 +17,7 @@ export const navRoutes = [
         path: "/focusAreas",                                               // This is the path that shows up in the url when the dropdown is clicked
         children: [
             { label: "Interagency Recovery", path: "/focusAreas/interagencyRecovery" },             // label: text that shows up as the clickable link path: What shows up in the url
-            { label: "Debris Managment", path: "/focusAreas/debrisManagment"},                      // label: text that shows up as the clickable link path: What shows up in the url
+            { label: "Debris Management", path: "/focusAreas/debrisManagment"},                      // label: text that shows up as the clickable link path: What shows up in the url
             { label: "Crisis Communications", path: "/focusAreas/crisisCommunications"},                 // label: text that shows up as the clickable link path: What shows up in the url
         ]
     },
