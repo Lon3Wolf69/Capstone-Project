@@ -55,9 +55,10 @@
 /* Grid Layout */
 .card-grid {
   display: grid;               /* shows grid layout */
+  padding: 40px;               /* spacing between container and edge of all four sides */
   grid-template-columns: repeat(4, 1fr);    /* 4 equal columss */
   gap: 20px;                  /* space between cards */
-  max-width: 1200px;          /* limits car width */
+  /* max-width: 1200px;           limits car width */
   margin: 0 auto;             /* centers grid horizontally */
 }
 
