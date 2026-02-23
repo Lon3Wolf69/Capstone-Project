@@ -1,12 +1,14 @@
 // data array used for the creation of the Redirect buttons through a mapping function 
 export const RedirectRoutes = [
+
+    
     // Index 0
     {
         label: "Column1",
         children: [
-            {label: "FEMA", to: "https://www.fema.gov/"},
+            {label: "FEMA", to: "https://www.fema.gov/", logo: "/logos/fema_logo.png" },
             {label: "Fire Adapted", to: "https://fireadapted.org/"},
-            {label: "Fire Wise USA", to: "https://www.nfpa.org/Education-and-Research/Wildfire/Firewise-USA"},
+            {label: "Fire Wise USA", to: "https://www.nfpa.org/Education-and-Research/Wildfire/Firewise-USA", logo: "/logos/nfpa-logo.png"},
             {label: "National Interagency Fire Center", to: "https://www.nifc.gov/"},
             {label: "Forest Service", to: "https://www.fs.usda.gov/" },
             {label: "Wild Fire Today", to: "https://wildfiretoday.com/"},
