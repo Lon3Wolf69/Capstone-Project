@@ -17,7 +17,7 @@
     height: 100%;                           /* Sets the height to 100% of the container */
     z-index: 2;                             /* Sets the z-index for the element */
     background-color: #0B2E4F;            /* Background color for the overlay */
-    opacity: 0.95;                           /* Changes the opacity of the overlay */
+    opacity: 0.90;                           /* Changes the opacity of the overlay */
 }
 
 /* Overlay text Styling */
