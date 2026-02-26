@@ -59,6 +59,6 @@
   font-size: 2rem;                                               /* Changes the font-size to be about 32 px (1rem is about 16px on most browsers) */
   font-weight: bold;                                             /* Makes the font bold for the text for the section header */      
   color: #0B2E4F;                                              /* Makes the color of the font same color as the navbar background */
-  margin-bottom: 24px;                                           /* Sets the spacing between the container of the h2 element and the other elements around it on the bottom side of the container */
-  padding-left: 10px;                                            /* Applies spacing between the container and the h2 text of 30 px on the left side */
+  padding-bottom: 30px;                                           /* Sets the spacing between the container of the h2 element and the other elements around it on the bottom side of the container */
+  margin: 0 0 auto 30px;                                            /* Applies spacing between the container and the h2 text of 30 px on the left side */
 }

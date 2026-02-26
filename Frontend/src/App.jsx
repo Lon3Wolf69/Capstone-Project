@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";                               
 import "./App.css";                                                                           // Imports the App.css file 
 import Navbar from  "./Components/Navbar/Navbar";                                             // Imports the Navbar component as variable Navbar
 import ExternalResources from "./Components/Home/RedirectButtons/RedirectButtons.jsx";             // Imports the RedirectButtons componenent as variable ExternalResources
-//import Carousel from "./Components/Carousel/Carousel.jsx";                                        // Imports the Carousel component as variable Carousel
+import Carousel from "./Components/Home/Carousel/Carousel.jsx";                                        // Imports the Carousel component as variable Carousel
 import Login from "./Components/Pages/Login"  
 import Signup from "./Components/Pages/Signup"                                                 // Imports the Login component as variable Login
 import News from "./Components/Home/NewsSection/NewsSection.jsx"                                   // Imports the News component as varaible News
