@@ -1,0 +1,32 @@
+
+.section {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #fafafa;
+    min-height: 100vh;
+    padding: 60px 80px;
+    border: 1.5px solid #222;
+    box-sizing: border-box;
+  }
+  
+  .headline {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.4;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  
+  .line {
+    margin-bottom: 10px;
+  }
+  
+  .accent {
+    color: #F47A20;
+    font-style: italic;
+  }
+  
+  .body-text {
+    max-width: 900px;
+    font-size: 18px;
+    line-height: 1.7;
+  }
