@@ -1,0 +1,63 @@
+/* This is the css styling for the Why section */
+/* Container for the whole overlay container */
+.overlay-container {
+    position: relative;                     /* Position it relative to its parent container */
+    display: inline-block;                  /* Ensures that it sits on the same line as other elements  */
+    width: 100%;                            /* Adjusts the width to fit the whole site */     
+}
+
+
+
+/* Overlay styling */
+.overlay {
+    position: absolute;                     /* Sit on top of the page content */
+    top: 0;                                 /* Positioning of the overlay */
+    left: 0;                                /* Positioning of the actual overlay */
+    width: 100%;                            /* Fit the whole width of the container */
+    height: 100%;                           /* Sets the height to 100% of the container */
+    z-index: 2;                             /* Sets the z-index for the element */
+    background-color: #0B2E4F;            /* Background color for the overlay */
+    opacity: 0.95;                           /* Changes the opacity of the overlay */
+}
+
+/* Overlay text Styling */
+.overlay-text {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 4px 4px 4px #181a1c;
+}
+
+/* Begin cards section styling */
+.cards-section{
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+    background: linear-gradient(to bottom, #0B2E4F 0%, #ffffff 85%)
+}
+
+/* Subcards styling */
+.card {
+    border-radius: 12px;                                /* Handles the styling for the border of the card */
+    background: #f5f5f5;                              /* Changes the background color of the whole card */                               
+    padding: 20px;                                      /* Spacing between the cards edge and its content (all sides) */
+    flex: 1;                                            
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);         /* Adds a shadow to the card */
+}
+
+/* Styling for the header text */
+.card-header {
+    color: #0B2E4F;
+    margin-bottom: 10px;
+}
+
+/* styling for any p tags within the card */
+.card p{
+    line-height: 1.8;
+}

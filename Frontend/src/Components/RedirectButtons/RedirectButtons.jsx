@@ -1,6 +1,6 @@
 import { RedirectRoutes } from "./RedirectRoutes.jsx";                // Importing the Redirect buttton generating code as variable external resources
 import "./RedirectButton.css";                                       // Importing the Redirect button css styling sheet
-import Button from "./Button.jsx";
+
 
 function ExternalResources() {
 

@@ -1,18 +1,19 @@
 import { Route, Routes } from "react-router-dom";                                             // Imports the Route and Routes from the react-router-dom library
 import "./App.css";                                                                           // Imports the App.css file 
 import Navbar from  "./Components/Navbar/Navbar";                                             // Imports the Navbar component as variable Navbar
-import ExternalResources from "./Components/RedirectButtons/RedirectButtons.jsx";             // Imports the RedirectButtons componenent as variable ExternalResources
-import Carousel from "./Components/Carousel/Carousel";                                        // Imports the Carousel component as variable Carousel
+import ExternalResources from "./Components/Home/RedirectButtons/RedirectButtons.jsx";             // Imports the RedirectButtons componenent as variable ExternalResources
+//import Carousel from "./Components/Carousel/Carousel.jsx";                                        // Imports the Carousel component as variable Carousel
 import Login from "./Components/Pages/Login"  
 import Signup from "./Components/Pages/Signup"                                                 // Imports the Login component as variable Login
-import News from "./Components/NewsSection/NewsSection.jsx"                                   // Imports the News component as varaible News
-import QuickLinks from "./Components/quickLinks/QuickLinks.jsx";                              // Imports the Quicklinks componet as variable QuickLinks
+import News from "./Components/Home/NewsSection/NewsSection.jsx"                                   // Imports the News component as varaible News
+import QuickLinks from "./Components/Home/quickLinks/QuickLinks.jsx";                              // Imports the Quicklinks componet as variable QuickLinks
 import Footer from "./Components/Footer/Footer.jsx";                                          // Imports footer component as variable Footer
 import BackgroundLayout from "./Components/UnderConstruction/BackgroundLayout";               // Imports background layout component as variable BackgroundLayout
 import { navRoutes } from "./Components/Navbar/navRoutes.jsx";                                // Imports navRoutes as variable navRoutes
-import Video from "./Components/Video/Video.jsx";                                             // Imports the video component as variable Video       
-import Intro from "./Components/Pages/Intro.jsx";
-import Team from "./Components/Pages/team.jsx";
+import Video from "./Components/Home/Video/Video.jsx";                                             // Imports the video component as variable Video       
+import Intro from "./Components/About/Intro/Intro.jsx";
+import Team from "./Components/About/Team/team.jsx";
+import Why from "./Components/About/Why/Why.jsx";
 
 function App() {
   return (
@@ -35,9 +36,9 @@ function App() {
         <Route path="/" element = {<><Video /><div className="position-NextTo"><News /><QuickLinks /></div><ExternalResources /><Footer /></>} />   {/* This is a route that displays information on the home page only */}
         {/* Sets up route for the login button */}
         <Route path="/login" element={<Login />} />
-        <Route path="/Signup" element={<Signup />} />            {/* If the URL shows /login display the login page if /signup display sign up page */}
-        <Route path="/about/coordinationModel" element={<><Intro/> <Team /> </>} /> 
-        <Route element={<BackgroundLayout />}>                             {/* Displays everything within this route group with the backgroundLayout element which just essentially puts the underconstruction page for all of these links */}
+        <Route path="/Signup" element={<Signup />} />                       {/* If the URL shows /login display the login page if /signup display sign up page */}
+        <Route path="/about" element={<><Intro/><Why /><Team /></>} /> 
+        <Route element={<BackgroundLayout />}>                              {/* Displays everything within this route group with the backgroundLayout element which just essentially puts the underconstruction page for all of these links */}
           {/* flatMap function that handles all the routing to all the different pages. Similar to the map function but it returns a 1d array good for denesting arrays within arrays (Applies the route tag to everything within the route tag) */}
           {navRoutes.flatMap(route =>
           // Map function called here if there are children (nested elements) to convert those elements into route elements

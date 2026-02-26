@@ -66,13 +66,25 @@ function Navbar(){
                 {/* This is using the navRoutes that we imported earlier and calling the map function to create another array for the function. */}
                 {navRoutes.map((route) => (
                     <li key={route.label} className="dropdown">           {/* This sets the key needed for the map element to work the key being the route variable defined that we are passing into the map function calling the label within the navRoutes.jsx file. (Also applies the className dropdown which is a styling within the Navbar.css file to each listed item)*/}
-                        {/* This is the button that we will be listing within the li tags (the main dropdown buttons that open the dropdown menu) */}
+                      {/* This is a check to see if there are children within the navroutes file if not it will just generate a normal navlink without the dropdown */}
+                      {route.children ? (
+                        
                         <button 
                             className="dropdown-btn"                      // Applies the dropdown-btn styling class that is defined in the Navbar.css file to said button
                             onClick={() => toggleDropdown(route.label)}   // On click event handler which will toggle the dropdown menu to open of when the specific label (dropdown button) is clicked
                         >
-                          {route.label} ▼                                 {/* The arrow that appears right next to the dropdown buttons the route.label grabs the text (label) at the current position that the .map function is at in its array */}
+                          {route.label} <span className={`dropdown-arrow ${openDropdown === route.label ? "open" : ""}`}>▼</span>                                 {/* The arrow that appears right next to the dropdown buttons the route.label grabs the text (label) at the current position that the .map function is at in its array */}
                         </button>
+                    ) : (
+                        <NavLink
+                            to={route.path}                             // This is the path that is set to the url when the link is clicked on grabbed from the navRoutes.jsx file
+                            className="dropdown-btn"
+                            onClick={handleLinkClick}                   // This is an onClick handler that will call the handleLinkClick function to when a link is clicked closing the dropdown menu when a link is clicked on
+                            style={({ isActive }) => ({ textDecoration: "none", display: "flex", alignItems: "center" })}    //Styling for the NavLink button
+                        >
+                          {route.label}                             {/* This is the text that is dynamically created for each link grabbed from the label of the route variable defined for the mapping calling the label variable defined within the navRoutes.jsx file */}
+                        </NavLink>
+                    )}
                     </li>
                 ))}
             </ul>

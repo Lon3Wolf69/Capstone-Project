@@ -4,12 +4,6 @@ export const navRoutes = [
     {
         label: "About",                                               // Label for the specific index of the array used as a unique key to identify for mapping function later as well as the dropdown button text
         path: "/about",                                               // This is the path that shows up in the url when the dropdown is clicked
-        children: [                                                       // All the children defined for the Disasters dropdown button (the links item within the dropdown menu of the dropdown button when clicked)
-            {label: "Coordination Model", path: "/about/coordinationModel"},         // label: text that shows up as the clickable link path: What shows up in the url
-            {label: "Where we Operate", path: "/about/whereWeOperate"},           // label: text that shows up as the clickable link path: What shows up in the url
-            {label: "Our Approach", path: "/about/ourApproach"},             // label: text that shows up as the clickable link path: What shows up in the url
-            {label: "Our Team", path: "/about/ourTeam"},           // label: text that shows up as the clickable link path: What shows up in the url
-        ]
     },
     // Index 1
     {

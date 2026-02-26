@@ -1,9 +1,9 @@
 import React, { useState } from 'react';                 // Imports useStates from react library and react library itself. useState is a library allowing you to use hooks that will allow you to do re render elements. (This is how the slides work without this we wouldn't be able to change the slides)
 import './Carousel.css';                                 // Imported Carousel.css
-import hurricaneVideo from "../../assets/Hurricane.mp4"; // Imported hurricane video
-import tornadoVideo from "../../assets/Tornado.mp4";     // Imported tornado video
-import wildFireVideo from "../../assets/WildFire.mp4";   // Imported wildfire video
-import floodingVideo from "../../assets/Flooding.mp4";   // Imported flooding video
+import hurricaneVideo from "../../../assets/Hurricane.mp4"; // Imported hurricane video
+import tornadoVideo from "../../../assets/Tornado.mp4";     // Imported tornado video
+import wildFireVideo from "../../../assets/WildFire.mp4";   // Imported wildfire video
+import floodingVideo from "../../../assets/Flooding.mp4";   // Imported flooding video
 
 /* This is a array of objects which stores all the information needed for the slideshow */
 const slides = [

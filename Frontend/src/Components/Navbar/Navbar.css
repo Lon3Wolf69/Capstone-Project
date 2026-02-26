@@ -143,7 +143,7 @@ nav ul {
   flex-wrap: wrap;                                   /* In case of text being to big to fit within the container wrap the text onto the next line */
   gap: 15px 0px;                                     /* Modifies the gaps between rows and columns. (row gap, column gap) */
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);          /* Adds a shadow to the menu when it is opened. (Y offset, X offset, blur) */ 
-  z-index: 1;                                        /* Anything with a lower z-index then this is below the menu. (default without defining is 0) */
+  z-index: 99;                                        /* Anything with a lower z-index then this is below the menu. (default without defining is 0) */
 }
 
 /* Styling for the individual menu links */
@@ -197,4 +197,19 @@ nav ul {
   nav ul li a {
     margin: 0.2rem 0.5rem;                            /* Spacing between the border and the elements surrounding the border. Left value = top and bottom, Right value = left and right */
   }
+}
+
+/* New 2/24/2026: Dropdown menu arrow dynamic styling */
+
+/* Dropdown arrow positioning */
+.dropdown-arrow {
+  display: inline-block;
+  margin-left: 6px;
+  transition: transform 0.25s ease;
+  transform: rotate(-90deg);            /* pointing right */
+}
+
+/* Rotate arrow to point down when dropdown is open */
+.dropdown-arrow.open {
+  transform: rotate(0deg);             /* pointing down */
 }
