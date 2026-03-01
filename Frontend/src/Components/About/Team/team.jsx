@@ -3,8 +3,6 @@ import "./team.css";
 const teamMembers = [
   { name: "First Name Last Name", position: "Position", blurb: "Blurb goes over here that introduces team members", id: 1 },
   { name: "First Name Last Name", position: "Position", blurb: "Blurb goes over here that introduces team members", id: 2 },
-  { name: "First Name Last Name", position: "Position", blurb: "Blurb goes over here that introduces team members", id: 3 },
-  { name: "First Name Last Name", position: "Position", blurb: "Blurb goes over here that introduces team members", id: 4 },
 ];
 
 export default function TeamSection() {
