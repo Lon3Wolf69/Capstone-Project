@@ -1,0 +1,36 @@
+/* Make sure the page allows full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.about-section {
+  min-height: 50vh;        /* Full screen */
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  padding: 0 5vw;           /* Margin on left & right (responsive) */
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 900px;         /* Prevents stretching too wide */
+  background: #0B2E4F;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+  color: white;
+}
+
+.about-container h2 {
+  margin-top: 0;
+}
+
+.about-container p {
+  line-height: 1.7;
+  font-size: 18px;
+}

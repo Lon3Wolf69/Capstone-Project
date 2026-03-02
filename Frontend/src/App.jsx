@@ -11,6 +11,8 @@ import Footer from "./Components/Footer/Footer.jsx";                            
 import BackgroundLayout from "./Components/UnderConstruction/BackgroundLayout";               // Imports background layout component as variable BackgroundLayout
 import { navRoutes } from "./Components/Navbar/navRoutes.jsx";                                // Imports navRoutes as variable navRoutes
 import Video from "./Components/Video/Video.jsx";                                             // Imports the video component as variable Video       
+import AboutSection from "./Components/AboutSection/AboutSection.jsx";
+import Contact from "./Components/Pages/Contact.jsx";
 
 function App() {
   return (
@@ -30,10 +32,11 @@ function App() {
       <div>
       {/* This is another wrapper container for all defined Routes (Put all the Route tags here. Your telling the program what to display when the url equals the path) */}
       <Routes>
-        <Route path="/" element = {<><Video /><div className="position-NextTo"><News /><QuickLinks /></div><ExternalResources /><Footer /></>} />   {/* This is a route that displays information on the home page only */}
+        <Route path="/" element = {<><Video /><AboutSection /><div className="position-NextTo"><News /><QuickLinks /></div><ExternalResources /><Footer /></>} />   {/* This is a route that displays information on the home page only */}
         {/* Sets up route for the login button */}
         <Route path="/login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />            {/* If the URL shows /login display the login page if /signup display sign up page */}
+        <Route path="/contact" element={<Contact />} />
         <Route element={<BackgroundLayout />}>                             {/* Displays everything within this route group with the backgroundLayout element which just essentially puts the underconstruction page for all of these links */}
           {/* flatMap function that handles all the routing to all the different pages. Similar to the map function but it returns a 1d array good for denesting arrays within arrays (Applies the route tag to everything within the route tag) */}
           {navRoutes.flatMap(route =>
