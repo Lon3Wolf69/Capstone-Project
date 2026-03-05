@@ -1,8 +1,3 @@
-/* Make sure the page allows full height */
-html, body, #root {
-  height: 100%;
-  margin: 0;
-}
 
 .about-section {
   min-height: 50vh;        /* Full screen */
@@ -11,7 +6,7 @@ html, body, #root {
   align-items: center;      /* Center vertically */
   padding: 0 5vw;           /* Margin on left & right (responsive) */
   box-sizing: border-box;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
 }
 
 .about-container {
@@ -21,7 +16,6 @@ html, body, #root {
   padding: 50px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-
   text-align: center;
   color: white;
 }

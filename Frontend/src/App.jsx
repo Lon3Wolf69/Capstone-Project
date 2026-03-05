@@ -36,31 +36,13 @@ function App() {
       <div>
       {/* This is another wrapper container for all defined Routes (Put all the Route tags here. Your telling the program what to display when the url equals the path) */}
       <Routes>
-        <Route path="/" element = {<><Video /><AboutSection /><div className="position-NextTo"><News /><QuickLinks /></div><ExternalResources /><Footer /></>} />   {/* This is a route that displays information on the home page only */}
+        <Route path="/" element = {<><Video /><AboutSection /><div className="position-NextTo"><News /><QuickLinks /></div><Footer /></>} />   {/* This is a route that displays information on the home page only */}
         {/* Sets up route for the login button */}
-        <Route path="/login" element={<Login />} />
-        <Route path="/Signup" element={<Signup />} />            {/* If the URL shows /login display the login page if /signup display sign up page */}
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<><Intro/><Why /><Team /></>} /> 
-        <Route path="/caseStudies" element={<CaseStudies />} />
-        <Route element={<BackgroundLayout />}>                              {/* Displays everything within this route group with the backgroundLayout element which just essentially puts the underconstruction page for all of these links */}
-          {/* flatMap function that handles all the routing to all the different pages. Similar to the map function but it returns a 1d array good for denesting arrays within arrays (Applies the route tag to everything within the route tag) */}
-          {navRoutes.flatMap(route =>
-          // Map function called here if there are children (nested elements) to convert those elements into route elements
-            route.children?.map(child => (
-        // Essentially tells the browser if the url equals this, display what I have within the element tag
-        <Route
-            key={child.path}                  // Key element that is needed for the map function to work properly
-            path={child.path}                 // Path that the element goes to 
-            element={child.element}           // Links back to the array displaying the information within element
-        />
-        ))
-        
-        
-      )}
-          
-       
-        </Route> 
+        <Route path="/login" element={<><Login /></>} />
+        <Route path="/Signup" element={<><Signup /></>} />            {/* If the URL shows /login display the login page if /signup display sign up page */}
+        <Route path="/contact" element={<><Contact /></>} />
+        <Route path="/about" element={<><Intro/><Why /><Team /><Footer /></>} /> 
+        <Route path="/caseStudies" element={<><CaseStudies /><Footer /></>} />
       </Routes>
       </div>
     </div>

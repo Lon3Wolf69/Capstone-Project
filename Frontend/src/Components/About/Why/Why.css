@@ -6,6 +6,11 @@
     width: 100%;                            /* Adjusts the width to fit the whole site */     
 }
 
+/* Styling for the icons in the cards */
+.card-icon {
+  font-size: 2rem;      /* Controls the size of the emoji icon */
+  margin-bottom: 12px;  /* Adds space between the icon and the h4 title below it */
+}
 
 
 /* Overlay styling */
@@ -39,7 +44,7 @@
     gap: 20px;
     padding: 40px;
     justify-content: center;
-    background: linear-gradient(to bottom, #0B2E4F 0%, #ffffff 85%)
+    background: linear-gradient(to bottom, #0B2E4F 0%, #f9f9f9 85%)
 }
 
 /* Subcards styling */
