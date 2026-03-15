@@ -4,15 +4,21 @@ export const navRoutes = [
     {
         label: "About",                                               // Label for the specific index of the array used as a unique key to identify for mapping function later as well as the dropdown button text
         path: "/about",                                               // This is the path that shows up in the url when the dropdown is clicked
+        children: [
+            { label: "Intro", path: "/About/Intro"},                   // Replace the "Intro" name
+            { label: "Meet the Team", path: "/About/Team"},
+            { label: "Why", path: "/About/Why"},
+            
+        ]
     },
     // Index 1
     {
-        label: "Focus Areas",                                               // Label for the specific index of the array used as a unique key to identify for mapping function later as well as the dropdown button text
-        path: "/focusAreas",                                               // This is the path that shows up in the url when the dropdown is clicked
+        label: "About",
+        path: "/about",
         children: [
-            { label: "Interagency Recovery", path: "/focusAreas/interagencyRecovery" },             // label: text that shows up as the clickable link path: What shows up in the url
-            { label: "Debris Management", path: "/focusAreas/debrisManagment"},                      // label: text that shows up as the clickable link path: What shows up in the url
-            { label: "Crisis Communications", path: "/focusAreas/crisisCommunications"},                 // label: text that shows up as the clickable link path: What shows up in the url
+          { label: "Intro", path: "/about/intro" },
+          { label: "Meet the Team", path: "/about/team" },
+          { label: "Why", path: "/about/why" },
         ]
     },
     // Index 2

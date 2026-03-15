@@ -41,7 +41,9 @@ function App() {
         <Route path="/login" element={<><Login /></>} />
         <Route path="/Signup" element={<><Signup /></>} />            {/* If the URL shows /login display the login page if /signup display sign up page */}
         <Route path="/contact" element={<><Contact /></>} />
-        <Route path="/about" element={<><Why /><Intro/><Footer /></>} /> 
+        <Route path="/about/why" element={<><Why /></>} />
+        <Route path="/about/intro" element={<><Intro /></>} />
+        <Route path="/about/team" element={<><Team /></>} />
         <Route path="/caseStudies" element={<><CaseStudies /><Footer /></>} />
       </Routes>
       </div>
