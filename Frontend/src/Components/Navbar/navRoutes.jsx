@@ -13,14 +13,14 @@ export const navRoutes = [
     },
     // Index 1
     {
-        label: "About",
-        path: "/about",
+        label: "Focus Area",
+        path: "/focusarea",
+
         children: [
-          { label: "Intro", path: "/about/intro" },
-          { label: "Meet the Team", path: "/about/team" },
-          { label: "Why", path: "/about/why" },
+            { label: "North Carolina", path: "/casestudies/northcarolina"},
         ]
     },
+
     // Index 2
     {
         label: "Case Studies",                                                 // Label for the specific index of the array used as a unique key to identify for mapping function later as well as the dropdown button text

@@ -44,7 +44,7 @@ function App() {
         <Route path="/about/why" element={<><Why /></>} />
         <Route path="/about/intro" element={<><Intro /></>} />
         <Route path="/about/team" element={<><Team /></>} />
-        <Route path="/caseStudies" element={<><CaseStudies /><Footer /></>} />
+        <Route path="/caseStudies" element={<><CaseStudies /><Footer /></>} /> {/* Maybe add northcarolina page */}
       </Routes>
       </div>
     </div>
