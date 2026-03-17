@@ -1,5 +1,9 @@
 /* Helpful tip you can use ctrl-f to find specific words located in a document (Useful for finding classes) */
 /* Footer container handling the styling for everything within the footer container */
+hr {                              /* Removes the default border of the horizontal line */
+  width: 100vw;                   /* Adds a top border to create the horizontal line with a color of white */                                 /* Adds margin between the horizontal line and the elements above and below it. First value is for top and bottom while second value is for left and right */
+}
+
 .footer {
   width: 100%;                                 /* Sets the width of the footer to be 100% ensuring it takes up 100% of the screen */
   background-color: #18558f;                 /* Sets the background color of the footer container */
@@ -41,4 +45,52 @@
 .footer-links a:hover {
   opacity: 1;                                    /* Sets the opacity to 1 for the links allowing you to see them completely. This gives the effect hover effect transition */
   transition: opacity 0.2s ease;                 /* Applies a transition whenever the opacity is modified. It takes 0.2s and uses the ease function */
+}
+
+.footer-logo {
+  width: 300px;                                  /* Sets the width of the logo to be 150px */
+  height: auto;                                  /* Sets the height to auto so it scales with the width and doesn't distort the image */
+}
+
+.footer-middle {
+  display: flex;
+  flex-direction: row;                          /* Stacks the elements within this container horizontally */
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer-quick-links {
+  display: flex;
+  flex-direction: column;                       /* Stacks the elements within this container vertically */
+  align-items: flex-start;
+}
+
+.footer-quick-links h4 {
+  margin-bottom: 20px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-direction: row;                          /* Stacks the elements within this container horizontally */
+  gap: 80px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-column a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.footer-column a:hover {
+  opacity: 1;
+  transition: opacity 0.2s ease;
 }

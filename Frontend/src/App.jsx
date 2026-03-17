@@ -1,5 +1,7 @@
 import { Route, Routes } from "react-router-dom";                                             // Imports the Route and Routes from the react-router-dom library
 import "./App.css";                                                                           // Imports the App.css file 
+
+/* All the different components imported from their respective directories */
 import Navbar from  "./Components/RepeatedComponents/Navbar/Navbar.jsx";                                             // Imports the Navbar component as variable Navbar
 import ExternalResources from "./Components/Pages/HomePage/ExternalResources/ExternalResources.jsx";             // Imports the RedirectButtons componenent as variable ExternalResources
 import Carousel from "./Components/Pages/HomePage/Carousel/Carousel.jsx";                                        // Imports the Carousel component as variable Carousel
@@ -32,14 +34,15 @@ function App() {
       <div>
       {/* This is another wrapper container for all defined Routes (Put all the Route tags here. Your telling the program what to display when the url equals the path) */}
       <Routes>
-        <Route path="/" element = {<><AboutSection /><div className="position-NextTo"><News /><QuickLinks /></div><Footer /></>} />   {/* This is a route that displays information on the home page only */}
+        <Route path="/" element = {<><AboutSection /><News /></>} />   {/* This is a route that displays information on the home page only */}
         {/* Sets up route for the login button */}
         <Route path="/contact" element={<><Contact /></>} />
-        <Route path="/about/AboutUs" element={<><Why /><Intro /><Footer /></>} />
-        <Route path="/about/Team" element={<><Team /><Footer /></>} />
-        <Route path="/caseStudies" element={<><CaseStudies /><Footer /></>} /> {/* Maybe add northcarolina page */}
+        <Route path="/about/AboutUs" element={<><Why /><Intro /></>} />
+        <Route path="/about/Team" element={<><Team /></>} />
+        <Route path="/caseStudies" element={<><CaseStudies /></>} /> {/* Maybe add northcarolina page */}
       </Routes>
       </div>
+      <Footer />
     </div>
     
   );
