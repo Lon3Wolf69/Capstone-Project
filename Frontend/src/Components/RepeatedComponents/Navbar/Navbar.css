@@ -127,6 +127,17 @@ nav ul {
   font-weight: bold;                                /* Sets the font-weight to bold for the dropdown-btn text */
 }
 
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
 /* Positioning for the dropdown menu when you click on the main dropdown menu button */
 .menu-shared {
   position: absolute;                                /* Takes the dropdown menu out of the normal flow of elements on the website and makes allowing you to position it where you want relative to its parent element */
@@ -144,6 +155,7 @@ nav ul {
   gap: 15px 0px;                                     /* Modifies the gaps between rows and columns. (row gap, column gap) */
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);          /* Adds a shadow to the menu when it is opened. (Y offset, X offset, blur) */ 
   z-index: 99;                                        /* Anything with a lower z-index then this is below the menu. (default without defining is 0) */
+  animation: fadeInDown 0.4s ease forwards;
 }
 
 /* Styling for the individual menu links */

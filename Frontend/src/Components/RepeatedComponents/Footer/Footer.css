@@ -7,7 +7,7 @@ hr {                              /* Removes the default border of the horizonta
 .footer {
   width: 100%;                                 /* Sets the width of the footer to be 100% ensuring it takes up 100% of the screen */
   background-color: #18558f;                 /* Sets the background color of the footer container */
-  color: white;                              /* Sets the text color to be white */
+  color: #f9f9f9;                              /* Sets the text color to be white */
   padding: 20px 0;                             /* Adds padding between the content of the footer and the border. Left value it top and bottom while the right value is the left and right */
 }
 
@@ -35,16 +35,15 @@ hr {                              /* Removes the default border of the horizonta
 
 /* Styling for the footer links */
 .footer-links a {
-  color: #ffffff;                              /* Color of the links set to white */
+  color: #f9f9f9;                              /* Color of the links set to white */
   text-decoration: none;                         /* Removes the text decoration */
   font-size: 14px;                               /* Makes the font-size to 14px */
-  opacity: 0.8;                                  /* Modifies the opacity of the links in the footer allowing for hover effect to be created */
+  transition: color 0.3s ease-in-out;                                  /* Modifies the opacity of the links in the footer allowing for hover effect to be created */
 }
 
 /* Styling for when the links are hovered in the footer */
 .footer-links a:hover {
-  opacity: 1;                                    /* Sets the opacity to 1 for the links allowing you to see them completely. This gives the effect hover effect transition */
-  transition: opacity 0.2s ease;                 /* Applies a transition whenever the opacity is modified. It takes 0.2s and uses the ease function */
+  color: #c1baba;                                               
 }
 
 .footer-logo {
@@ -84,13 +83,12 @@ hr {                              /* Removes the default border of the horizonta
 }
 
 .footer-column a {
-  color: #ffffff;
+  color: #f9f9f9;
   text-decoration: none;
   font-size: 14px;
-  opacity: 0.8;
+  transition: color 0.3s ease-in-out;
 }
 
 .footer-column a:hover {
-  opacity: 1;
-  transition: opacity 0.2s ease;
+  color: #c1baba;
 }

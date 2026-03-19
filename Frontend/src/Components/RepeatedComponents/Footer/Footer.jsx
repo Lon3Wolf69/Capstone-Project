@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
           <hr /> {/* Adds a horizontal line to separate the text above from the links below */}
           <div className="footer-links">
-            <Link to="/contact">Contact</Link>                          {/* Goes to the Contact page */}
+            <Link to="/contact">Contact Us</Link>                          {/* Goes to the Contact page */}
           </div>
           <p className="footer-text">                                          {/* text above the links to the other pages down below styled by the footer-text class defined in Footer.css file */}
           © {new Date().getFullYear()} DisasterReady — All Rights Reserved   {/* new Date().getFullYear() returns the full year from the users device and displays that  */}

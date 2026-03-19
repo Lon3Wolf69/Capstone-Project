@@ -1,4 +1,3 @@
-                      // Imports the react library
 import "./Featured.css";                      // Imports the NewsSection.css style sheet
 import { newsRoutes } from "./FeaturedRoutes.jsx";       // Imports the routes as newsRoutes from the newsRoutes.jsx file (arrary of information we map through later)
 
@@ -6,7 +5,7 @@ import { newsRoutes } from "./FeaturedRoutes.jsx";       // Imports the routes a
 function NewsSection() {
   return (
     <section className="news-section">           {/* Wrapper for the ebtire section styles everything within the section tags with the style defined by the class news-section located within the NewsSection.css file */}
-        <h2 style={{ fontStyle: "Italic"}}>Explore Our Work</h2>                   {/* H2 tag that houses the section title */}
+        <h2>Explore Our Work</h2>                   {/* H2 tag that houses the section title */}
     
       <div className="news-container">           {/* A wrapper container for all the news cards themselves styling them with the news-container class written in NewsSection.css file */}
         {/* Map function that creates another array that renders the data within the array */}
