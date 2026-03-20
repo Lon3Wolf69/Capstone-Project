@@ -15,15 +15,15 @@ const AboutSection = () => {
         </p>
         <p style={{ marginTop: "20px", fontStyle: "italic"}}>See Recovery In Action: <Link to="/caseStudies" className="case-studies-link">North Carolina Studies</Link></p>
         
-        <div className="about-container">
+        
           
         
-          <Link to="/about/AboutUs" style={{ textDecoration: "none" }}><button className="CTA">
+          <Link to="/about/AboutUs" style={{ textDecoration: "none", display: "inline-block", alignSelf: "flex-end", marginTop: "40px" }}><button className="CTA">
             Explore How it Works
           <span className="CTA-btn-arrow">→</span>
         </button></Link>
-      </div>
     </div>
+
         
       
     </section>

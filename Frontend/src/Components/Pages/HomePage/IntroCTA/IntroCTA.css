@@ -16,6 +16,7 @@
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 
 /* All text sits above image + overlay */
@@ -40,16 +41,6 @@
   object-fit: cover;
   z-index: 0;
 }
-
-.about-container {
-  width: 100%;
-  padding: 50px;
-  display: flex;
-  justify-content: end;
-  margin: auto;
-  gap: 20px;
-}
-
 /*----------------------------------------- Call to Action Button ----------------------------------*/
 .CTA {
   display: flex;
@@ -67,7 +58,6 @@
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.2s ease;
   letter-spacing: 0.02em; 
-  margin-top: 40px;
   align-self: flex-end;
 }
 

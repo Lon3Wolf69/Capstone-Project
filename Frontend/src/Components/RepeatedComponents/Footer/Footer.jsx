@@ -10,7 +10,6 @@ const Footer = () => {
   return (
     <footer className="footer">                                  {/* Acts pretty much the same as a div doesn't have its own functionality added to it. Styles the footer with said className defined in the Footer.css file */}
       <div className="footer-content">                           {/* div container styled by the said className defined in the footer.css file */}
-        <p>Coordinating Recovery Delivering Results!</p>
         
         {/* Image + Three columns for the quick links*/}
         <div className="footer-middle">

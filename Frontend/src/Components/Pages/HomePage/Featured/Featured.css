@@ -23,6 +23,13 @@
   display: flex;                                                 /* Enables flexbox layout for the news card */
   flex-direction: column;                                        /* Sets flexbox layout direction to be column meaning that it will stack the content on top of each other (just like columns). */
   box-shadow: 0 6px 14px rgba(0,0,0,0.15);                     /* Adds the shadow to the news card. (horizontal offset, vertical offset, blur, rgba (color of the shadow) */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* animation for hovering featured news cards */
+.news-card:hover {
+  transform: translate(-6px, -6px);
+  box-shadow: 6px 12px 20px rgba(0,0,0,0,0.25);
 }
 
 /* Positioning of the images within the news card (Anything using the img tag) */
