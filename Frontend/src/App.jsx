@@ -15,7 +15,7 @@ import Intro from "./Components/Pages/AboutPage/Intro/Intro.jsx";
 import Team from "./Components/Pages/AboutPage/MeetTeam/MeetTeam.jsx";
 import Why from "./Components/Pages/AboutPage/OurMission/OurMission.jsx";
 import CaseStudies from "./Components/Pages/CaseStudiesPage/caseStudies.jsx";
-
+import RSFexample from "./Components/RSF/RSFexample.jsx";
 function App() {
   return (
      
@@ -40,6 +40,7 @@ function App() {
         <Route path="/about/AboutUs" element={<><Why /><Intro /></>} />
         <Route path="/about/Team" element={<><Team /></>} />
         <Route path="/caseStudies" element={<><CaseStudies /></>} />
+        <Route path="/focusArea/interagencyRecovery" element={<><RSFexample/> </>}/>
       </Routes>
       </div>
       <Footer />
