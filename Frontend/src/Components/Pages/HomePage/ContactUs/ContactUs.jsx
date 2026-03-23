@@ -74,12 +74,12 @@ export default function Contact() {
         padding: "40px 20px",
       }}
     >
-      <div style={{ maxWidth: "400px", width: "100%" }}>
+      <div style={{ /*maxWidth: "400px", */ width: "100%" }}>
         {/* Intro */}
         <p
           style={{
             marginBottom: "20px",
-            fontSize: "16px",
+            fontSize: "24px",
             lineHeight: "1.5",
             color: "#333",
           }}
