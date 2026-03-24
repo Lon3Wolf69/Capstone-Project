@@ -15,7 +15,7 @@
   overflow: hidden;
   border-radius: 14px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-  background: white;
+  background: #fdfdfd;
   height: 420px;
   width: 100%;
 }
@@ -37,6 +37,8 @@
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  
 }
 
 
@@ -54,7 +56,7 @@
 
 
 .info-panel .rsf-bottom {
-  height: 67%;
+  flex: 1;
   background: #0B2E4F;
   color: white;
   flex-shrink: 0;
