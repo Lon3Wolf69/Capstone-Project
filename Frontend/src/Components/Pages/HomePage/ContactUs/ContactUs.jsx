@@ -70,7 +70,7 @@ export default function Contact() {
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",
-        background: "#fafafa",
+        background: "#fff",
         padding: "40px 20px",
       }}
     >
