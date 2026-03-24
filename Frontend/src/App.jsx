@@ -16,6 +16,7 @@ import Team from "./Components/Pages/AboutPage/MeetTeam/MeetTeam.jsx";
 import Why from "./Components/Pages/AboutPage/OurMission/OurMission.jsx";
 import CaseStudies from "./Components/Pages/CaseStudiesPage/caseStudies.jsx";
 import RSFexample from "./Components/RSF/RSFexample.jsx";
+import ContactCTA from "./Components/Pages/HomePage/ContactCTA/ContactCTA.jsx";
 function App() {
   return (
      
@@ -34,7 +35,7 @@ function App() {
       <div>
       {/* This is another wrapper container for all defined Routes (Put all the Route tags here. Your telling the program what to display when the url equals the path) */}
       <Routes>
-        <Route path="/" element = {<><AboutSection /><News /></>} />   {/* This is a route that displays information on the home page only */}
+        <Route path="/" element = {<><AboutSection /><News /><ContactCTA /></>} />   {/* This is a route that displays information on the home page only */}
         {/* Sets up route for the login button */}
         <Route path="/contact" element={<><Contact /></>} />
         <Route path="/about/AboutUs" element={<><Why /><Intro /></>} />

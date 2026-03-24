@@ -70,24 +70,13 @@ export default function Contact() {
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",
-        background: "#f3f3f3",
+        background: "#fafafa",
         padding: "40px 20px",
       }}
     >
       <div style={{ /*maxWidth: "400px", */ width: "100%" }}>
         {/* Intro */}
-        <p
-          style={{
-            marginBottom: "20px",
-            fontSize: "24px",
-            lineHeight: "1.5",
-            color: "#333",
-          }}
-        >
-          DisasterReady works with leaders responsible for disaster recovery coordination.
-          If you’re navigating recovery across agencies, funding programs, or partners,
-          we welcome the conversation.
-        </p>
+        
 
         <form
           onSubmit={handleSubmit}
@@ -101,6 +90,18 @@ export default function Contact() {
           }}
         >
           <h2 style={{ textAlign: "center" }}>Contact Us</h2>
+
+          <p
+          style={{
+            marginBottom: "20px",
+            fontSize: "20px",
+            lineHeight: "1.5",
+            color: "#333",
+            textAlign: "center",
+          }}
+        >
+          If you are navigating recovery and need to align complex systems, we welcome the conversation.
+        </p>
 
           {/* Topic Dropdown */}
           <select
