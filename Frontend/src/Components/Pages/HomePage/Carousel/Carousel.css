@@ -1,13 +1,14 @@
 /* Helpful tip you can use ctrl-f to find specific words located in a document (Useful for finding classes) */
 /* Style for carousel element */
 .carousel {
-position: relative;                         /* Allows the carousel element to preserve its space. Ex: If you use top bottom left or right to move the element it will move the carousel element but preserve its original space so no other element attempts to take its space */ 
-width: 100%;                                /* Decides how much of the width it takes up of the parent container. Ex: if the width is less than 100% it will therefore have the element take up whatever designated space that is listed.*/
-margin: 0 auto;                             /* Controls spacing between the element and its neighboring elements. Ex: using margin-top: should provide more space between any elements above this current element. Same would happen for every other side of the element that you declare */
-overflow: hidden;                           /* Clips content that leaves the designated height and width of the element. For instance here we use it to clip any parts of the image that may go beyond the actual container of the website. */
-height: 75vh;                               /* Viewport-height (vh) this sizes the element based on direct percentage of the screen size. vh 100 being equivalent to setting the element to take up 100% of the screen size */
-height: 75dvh;                              /* Defines the height of the element (dvh: Dynamic-viewport-height) sizes element in same way as vh but accounts for UI changes resizing or moving such as in mobile devices.  */
-max-height: 500px;                          /* Sets a max height for bigger screen so the element doesn't end up taking up to much space */
+  position: relative;                         /* Allows the carousel element to preserve its space. Ex: If you use top bottom left or right to move the element it will move the carousel element but preserve its original space so no other element attempts to take its space */ 
+  width: 100%;                                /* Decides how much of the width it takes up of the parent container. Ex: if the width is less than 100% it will therefore have the element take up whatever designated space that is listed.*/
+  margin: 0 auto;                             /* Controls spacing between the element and its neighboring elements. Ex: using margin-top: should provide more space between any elements above this current element. Same would happen for every other side of the element that you declare */
+  overflow: hidden;                           /* Clips content that leaves the designated height and width of the element. For instance here we use it to clip any parts of the image that may go beyond the actual container of the website. */
+  height: 75vh;                               /* Viewport-height (vh) this sizes the element based on direct percentage of the screen size. vh 100 being equivalent to setting the element to take up 100% of the screen size */
+  height: 75dvh;                              /* Defines the height of the element (dvh: Dynamic-viewport-height) sizes element in same way as vh but accounts for UI changes resizing or moving such as in mobile devices.  */
+  max-height: 500px;                          /* Sets a max height for bigger screen so the element doesn't end up taking up to much space */
+  margin-bottom: 20px;
 }
 
 /* Two column layout for carousel*/
