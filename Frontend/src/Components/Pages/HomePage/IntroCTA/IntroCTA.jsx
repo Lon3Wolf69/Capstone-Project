@@ -6,26 +6,55 @@ const AboutSection = () => {
  
   return (
     <section className="about-section">
-      <img src={img} width="100%" alt="Typing image" className="about-image" />
       <div className="about-overlay-content">
-        <p>
-          DisasterReady Helps States And Local Governments 
-          Turn Recovery Funding And Plans Into Coordinated Execution Across 
-          Agencies, Programs And Partners
-        </p>
-        <p style={{ marginTop: "20px", fontStyle: "italic"}}>See Recovery In Action: <Link to="/caseStudies" className="case-studies-link">North Carolina Studies</Link></p>
+ 
+        <div className="about-eyebrow">
+          <div className="about-eyebrow-line" />
+          <span className="about-eyebrow-text">
+            Coordinating Recovery & Delivering Results
+          </span>
+        </div>
+ 
+        <h1 className="about-headline">
+          Coordinating Disaster Recovery
+          <br />
+          Across{" "}
+          <span className="about-headline-accent">Agencies, Funding</span>
+          <br />
+          and <span className="about-headline-accent"> Partners.</span>
+        </h1>
+        <div className="about-blurb-row">
+          <p className="about-subhead">
+            Disaster recovery doesn't fail because of planning. It fails when
+            execution across agencies, funding, and partners is not coordinated.
+          </p>
         
-        
-          
-        
-          <Link to="/about/AboutUs" style={{ textDecoration: "none", display: "inline-block", alignSelf: "flex-end", marginTop: "40px" }}><button className="CTA">
-            Explore How it Works
-          <span className="CTA-btn-arrow">→</span>
-        </button></Link>
-    </div>
 
-        
-      
+        <p className="about-body">
+          DisasterReady helps states and communities turn recovery priorities
+          into coordinated action — ensuring the right resources reach the
+          right programs at the right time.
+        </p>
+      </div>
+
+      {/* CTA */}
+        <div className="about-cta-row">
+          <Link to="/about/AboutUs" style={{ textDecoration: "none" }}>
+            <button className="CTA">
+              How It Works
+              <span className="CTA-btn-arrow">
+                →
+              </span>
+            </button>
+          </Link>
+          <div className="about-divider" />
+          <span className="about-trust-note">
+            Coordingating Recovery & Delivering Results
+          </span>
+        </div>
+ 
+      </div>
+      <div className="about-bottom-rule" />
     </section>
   );
 };

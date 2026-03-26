@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="footer-middle">
           <div style={{ alignSelf: "flex-start", flexDirection: "row"}}>
             <img src={Logo} alt="DisasterReady Logo" className="footer-logo" /> {/* Displays the logo in the footer with the source of the image being the assets folder and the logo.png file. Styled by the footer-logo class defined in Footer.css file */}
-          <div style={{ marginTop: '10px', fontSize: '14px', lineHeight: '1.5', color: '#f9f9f9' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginTop: '10px', fontSize: '14px', lineHeight: '1.5', color: '#f9f9f9' }}>
             <div className="footer-links">
             <Link to="/contact">Contact Us</Link>                          {/* Goes to the Contact page */}
           </div>
@@ -23,6 +23,10 @@ const Footer = () => {
           <p>Phone: (xxx) xxx-xxxx </p>
           </div>
           </div>
+            
+          
+            
+          
           <div className="footer-quick-links">
             <h4>Helpful Resources</h4>                                      {/* Heading for the quick links section */}
             <div className="footer-columns">

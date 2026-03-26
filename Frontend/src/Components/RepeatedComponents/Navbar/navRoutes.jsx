@@ -6,9 +6,8 @@ export const navRoutes = [
         path: "/about",                                               // This is the path that shows up in the url when the dropdown is clicked
         children: [
             { label: "About Us", path: "/about/aboutUs"},                   // Replace the "Intro" name
+            { label: "Our Approach", path:"/about/ourApproach"},
             { label: "Meet the Team", path: "/about/team"},
-            
-            
         ]
     },
     // Index 1
