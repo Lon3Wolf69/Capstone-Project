@@ -2,8 +2,9 @@
 /* Container for the whole overlay container */
 .overlay-container {
     position: relative;                     /* Position it relative to its parent container */
-    display: inline-block;                  /* Ensures that it sits on the same line as other elements  */
+    /* display: inline-block;                   Ensures that it sits on the same line as other elements  */
     width: 100%;                            /* Adjusts the width to fit the whole site */     
+    overflow: hidden;
 }
 
 /* Styling for the icons in the cards */
@@ -66,3 +67,10 @@
 .card p{
     line-height: 1.8;
 }
+
+.card-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
