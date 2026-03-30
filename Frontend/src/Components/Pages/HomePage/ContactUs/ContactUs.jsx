@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import "./Contact.css";
 
 export default function Contact() {
   const [topic, setTopic] = useState("");
@@ -21,7 +22,6 @@ export default function Contact() {
     e.preventDefault();
 
     const formId = generateFormId();
-
     const finalAgency = agency === "Other" ? other : agency;
 
     const templateParams = {
@@ -48,121 +48,83 @@ export default function Contact() {
         "template_8b4d38r",
         templateParams,
         "gkEWER_vivZ00B7yY"
-      )
+      ),
     ])
-    .then(() => {
-    setSubmitted(true);
+      .then(() => {
+        setSubmitted(true);
 
-      // Clear form
-      setTopic("");
-      setFirstName("");
-      setLastName("");
-      setAgency("");
-      setOther("");
-      setRole("");
-      setEmail("");
-      setMessage("");
-      setHelp("");
-    })
-    .catch((error) => {
-      console.error("FAILED...", error);
-      alert("Something went wrong. Please try again.");
-    });
+        setTopic("");
+        setFirstName("");
+        setLastName("");
+        setAgency("");
+        setOther("");
+        setRole("");
+        setEmail("");
+        setMessage("");
+        setHelp("");
+      })
+      .catch((error) => {
+        console.error("FAILED...", error);
+        alert("Something went wrong. Please try again.");
+      });
   };
 
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "flex-start",
-        background: "#fff",
-        padding: "40px 20px",
-      }}
-    >
-      <div style={{ /*maxWidth: "400px", */ width: "100%" }}>
-        {/* Intro */}
-        
+    <div className="contact-container">
+      <div className="contact-wrapper">
+        <form onSubmit={handleSubmit} className="contact-form">
+          <h2>Contact Us</h2>
 
-        <form
-          onSubmit={handleSubmit}
-          style={{
-            background: "white",
-            padding: "30px",
-            borderRadius: "10px",
-            display: "flex",
-            flexDirection: "column",
-            gap: "15px",
-          }}
-        >
-          <h2 style={{ textAlign: "center" }}>Contact Us</h2>
+          <p className="contact-intro">
+            If you are navigating recovery and need to align complex systems, we welcome the conversation.
+          </p>
 
-          <p
-          style={{
-            marginBottom: "20px",
-            fontSize: "20px",
-            lineHeight: "1.5",
-            color: "#333",
-            textAlign: "center",
-          }}
-        >
-          If you are navigating recovery and need to align complex systems, we welcome the conversation.
-        </p>
-
-          {/* Topic Dropdown */}
+          <p>Topic*</p>
           <select
             value={topic}
             onChange={(e) => setTopic(e.target.value)}
             required
-            style={{ padding: "10px", fontSize: "16px" }}
+            className="contact-select"
           >
-            <option value="" disabled>
-              Select a topic
-            </option>
-            <option value="Interagency Recovery Coordination">
-              Interagency Recovery Coordination
-            </option>
+            <option value="" disabled>Select a topic</option>
+            <option value="Interagency Recovery Coordination">Interagency Recovery Coordination</option>
             <option value="Debris Management">Debris Management</option>
             <option value="Crisis Communications">Crisis Communications</option>
             <option value="Partnership Opportunities">Partnership Opportunities</option>
             <option value="General Inquiry">General Inquiry</option>
           </select>
 
-          {/* Name Fields */}
-          {/* First Name */}
+          <p>First Name*</p>
           <input
             type="text"
-            placeholder="First Name"
+            /*placeholder="First Name"*/
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
             required
-            style={{ padding: "10px", fontSize: "16px" }}
+            className="contact-input"
           />
 
-          {/* Last Name */}
+          <p>Last Name*</p>
           <input
             type="text"
-            placeholder="Last Name"
+            /*placeholder="Last Name"*/
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
             required
-            style={{ padding: "10px", fontSize: "16px" }}
+            className="contact-input"
           />
 
-          {/* Agency Dropdown */}
+          <p>Agency*</p>
           <select
             value={agency}
             onChange={(e) => {
               setAgency(e.target.value);
-              setOther(""); // Reset "Other" field when agency changes
+              setOther("");
             }}
             required
-            style={{ padding: "10px", fontSize: "16px" }}
+            className="contact-select"
           >
-            <option value="" disabled>
-              Select an organization or agency
-            </option>
+            <option value="" disabled>Select an organization or agency</option>
             <option value="State Agency">State Agency</option>
             <option value="Local Government">Local Government</option>
             <option value="Non-profit">Non-profit</option>
@@ -170,7 +132,7 @@ export default function Contact() {
             <option value="Other">Other</option>
           </select>
 
-          {/* If Other, specify */}
+          
           {agency === "Other" && (
             <input
               type="text"
@@ -178,63 +140,53 @@ export default function Contact() {
               value={other}
               onChange={(e) => setOther(e.target.value)}
               required
-              style={{ padding: "10px", fontSize: "16px" }}
+              className="contact-input"
             />
           )}
 
-          {/* Role / Title (Optional) */}
+          <p>Role/Title</p>
           <input
             type="text"
-            placeholder="Role or Title (Optional)"
+            /*placeholder="Role or Title (Optional)"*/
             value={role}
             onChange={(e) => setRole(e.target.value)}
-            style={{ padding: "10px", fontSize: "16px" }}
+            className="contact-input"
           />
 
-          {/* Email */}
+          <p>Email*</p>
           <input
             type="email"
-            placeholder="Your Email"
+            /*placeholder="Your Email"*/
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            style={{ padding: "10px", fontSize: "16px" }}
+            className="contact-input"
           />
 
-          {/* Message */}
+          <p>Message*</p>
           <textarea
-            placeholder="Your Message"
+            /*placeholder="Your Message"*/
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
-            style={{ padding: "10px", fontSize: "16px", minHeight: "100px" }}
+            className="contact-textarea"
           />
 
-          {/* Addeditional Help Request (Optional) */}
+          <p>Additional</p>
           <textarea
             placeholder="How can we help? (Optional)"
             value={help}
             onChange={(e) => setHelp(e.target.value)}
-            style={{ padding: "10px", fontSize: "16px", minHeight: "100px" }}
+            className="contact-textarea"
           />
 
-          {/* Submit Button */}
-          <button
-            type="submit"
-            style={{
-              padding: "10px",
-              fontSize: "16px",
-              cursor: "pointer",
-              borderRadius: "6px",
-            }}
-          >
+          <button type="submit" className="contact-button">
             Submit
           </button>
 
-          {/* Confirmation */}
           {submitted && (
-            <p style={{ color: "#0B2E4F", textAlign: "center" }}>
-              Thank you! We have received your contact form. 
+            <p className="contact-confirmation">
+              Thank you! We have received your contact form.
               You should receive a confirmation email shortly.
             </p>
           )}
