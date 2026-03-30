@@ -36,31 +36,38 @@ export default function Contact() {
       help: help || "N/A",
     };
 
-    emailjs
-      .send(
+    Promise.all([
+      emailjs.send(
         "service_8pgzeml",
         "template_f4von4i",
         templateParams,
         "gkEWER_vivZ00B7yY"
+      ),
+      emailjs.send(
+        "service_8pgzeml",
+        "template_8b4d38r",
+        templateParams,
+        "gkEWER_vivZ00B7yY"
       )
-      .then(() => {
-        setSubmitted(true);
+    ])
+    .then(() => {
+    setSubmitted(true);
 
-        // Clear form
-        setTopic("");
-        setFirstName("");
-        setLastName("");
-        setAgency("");
-        setOther("");
-        setRole("");
-        setEmail("");
-        setMessage("");
-        setHelp("");
-      })
-      .catch((error) => {
-        console.error("FAILED...", error);
-        alert("Something went wrong. Please try again.");
-      });
+      // Clear form
+      setTopic("");
+      setFirstName("");
+      setLastName("");
+      setAgency("");
+      setOther("");
+      setRole("");
+      setEmail("");
+      setMessage("");
+      setHelp("");
+    })
+    .catch((error) => {
+      console.error("FAILED...", error);
+      alert("Something went wrong. Please try again.");
+    });
   };
 
   return (
@@ -227,7 +234,8 @@ export default function Contact() {
           {/* Confirmation */}
           {submitted && (
             <p style={{ color: "#0B2E4F", textAlign: "center" }}>
-              Thank you! Your message has been sent.
+              Thank you! We have received your contact form. 
+              You should receive a confirmation email shortly.
             </p>
           )}
         </form>
