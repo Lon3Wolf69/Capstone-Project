@@ -13,6 +13,7 @@ export default function Contact() {
   const [message, setMessage] = useState("");
   const [help, setHelp] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
   const generateFormId = () => {
     return Math.random().toString(36).substring(2, 10).toUpperCase();
@@ -52,6 +53,7 @@ export default function Contact() {
     ])
       .then(() => {
         setSubmitted(true);
+        setShowPopup(true);
 
         setTopic("");
         setFirstName("");
@@ -184,11 +186,14 @@ export default function Contact() {
             Submit
           </button>
 
-          {submitted && (
-            <p className="contact-confirmation">
-              Thank you! We have received your contact form.
-              You should receive a confirmation email shortly.
-            </p>
+          {showPopup && (
+            <div className="popup-overlay">
+              <div className="popup">
+                <h3>Thank you!</h3>
+                <p>You will receive a confirmation email soon.</p>
+                <button onClick={() => setShowPopup(false)}>Close</button>
+              </div>
+            </div>
           )}
         </form>
       </div>
