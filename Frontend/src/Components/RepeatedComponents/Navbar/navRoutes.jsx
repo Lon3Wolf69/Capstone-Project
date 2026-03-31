@@ -8,6 +8,7 @@ export const navRoutes = [
             { label: "About Us", path: "/about/aboutUs"},                   // Replace the "Intro" name
             { label: "Our Approach", path:"/about/ourApproach"},
             { label: "Meet the Team", path: "/about/team"},
+            { label: "Contact Us", path: "/contact"},
         ]
     },
     // Index 1

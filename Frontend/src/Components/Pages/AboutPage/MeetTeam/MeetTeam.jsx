@@ -50,7 +50,7 @@ export default function TeamSection() {
   };
   
   return (
-    <section className="section">
+    <section className="mtt-section">
       <h2>
         Meet The Team
       </h2>

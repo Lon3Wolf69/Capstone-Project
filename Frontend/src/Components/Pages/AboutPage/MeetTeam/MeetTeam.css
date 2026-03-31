@@ -1,10 +1,10 @@
-.section {
+.mtt-section {
     border: none;
     padding: 60px 100px;
     background-color: #f9f9f9;
 }
   
-.section h2 {
+.mtt-section h2 {
     font-size: 2rem;
     font-weight: bold;
     color: #e9553b;

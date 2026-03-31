@@ -22,6 +22,7 @@ import ContactCTA from "./Components/Pages/HomePage/CTAs/ContactCTA.jsx";
 import CordHubCTA from "./Components/Pages/HomePage/CTAs/CordHubCTA.jsx";
 import FocusAreaCTA from "./Components/Pages/HomePage/CTAs/FocusAreaCTA.jsx";
 import NavPanels from "./Components/Pages/HomePage/NavPanels/NavPanels.jsx";
+import HRW from "./Components/Pages/HomePage/HowRecovery/HRW.jsx";
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
       <div>
       {/* This is another wrapper container for all defined Routes (Put all the Route tags here. Your telling the program what to display when the url equals the path) */}
       <Routes>
-        <Route path="/" element = {<><AboutSection /><News /><NavPanels /></>} />   {/* This is a route that displays information on the home page only */}
+        <Route path="/" element = {<><AboutSection /><News /><NavPanels /> <HRW /> </>} />   {/* This is a route that displays information on the home page only */}
         {/* Sets up route for the login button */}
         <Route path="/contact" element={<><Contact /></>} />
         <Route path="/about/AboutUs" element={<><Why /><Intro /></>} />
