@@ -74,12 +74,25 @@ export default function Contact() {
   return (
     <div className="contact-container">
       <div className="contact-wrapper">
-        <form onSubmit={handleSubmit} className="contact-form">
-          <h2>Contact Us</h2>
 
-          <p className="contact-intro">
-            If you are navigating recovery and need to align complex systems, we welcome the conversation.
-          </p>
+        {/* left column */}
+        <div className="contact-left">
+
+          <div className="contact-title">
+            <h2>Contact Us</h2>
+          </div>
+
+          <div className="contact-subheader">
+          <p>If you are navigating recovery and need to align complex systems, we welcome the conversation.</p>
+          <br></br>
+          <p> Email: disasterready.contact@gmail.com </p>
+          </div>
+
+        </div>
+
+
+        {/* Right side with form */}
+        <form onSubmit={handleSubmit} className="contact-form">
 
           <p>Topic*</p>
           <select
@@ -96,26 +109,32 @@ export default function Contact() {
             <option value="General Inquiry">General Inquiry</option>
           </select>
 
-          <p>First Name*</p>
-          <input
-            type="text"
-            /*placeholder="First Name"*/
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-            required
-            className="contact-input"
-          />
+          <div className="contact-name-row">
+            <div className="contact-name-field">
+              <p>First Name*</p>
+              <input
+                type="text"
+                /*placeholder="First Name"*/
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+                required
+                className="contact-input"
+              />
+            </div>
 
-          <p>Last Name*</p>
-          <input
-            type="text"
-            /*placeholder="Last Name"*/
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-            required
-            className="contact-input"
-          />
-
+            <div className="contact-name-field">
+              <p>Last Name*</p>
+              <input
+                type="text"
+                /*placeholder="Last Name"*/
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+                required
+                className="contact-input"
+              />
+            </div>
+          </div>
+          
           <p>Agency*</p>
           <select
             value={agency}

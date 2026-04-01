@@ -16,7 +16,6 @@ const blurbs = {
   "Focus Area":   "Explore the core disciplines we specialize in — from interagency coordination to crisis communication.",
   "Case Studies": "See how real communities have used DisasterReady to navigate recovery and rebuild stronger.",
   "Platform":     "Discover the tools and systems that power coordinated disaster recovery at every level.",
-  "Contact Us": "We would love to have a conversation with you, get in touch.",
 };
  
 // Swap these out for your imported image variables once you have them
@@ -25,7 +24,6 @@ const images = {
   "Focus Area":   null,
   "Case Studies": null,
   "Platform":     null,
-  "Contact Us":   null,
 };
  
 // Accent colors for each panel's collapsed background
@@ -34,7 +32,6 @@ const colors = {
   "Focus Area":   "#18558f",
   "Case Studies": "#1D6A8A",
   "Platform":     "#F47A20",
-  "Contact Us":   "#18558f",
 };
  
 function NavPanels() {

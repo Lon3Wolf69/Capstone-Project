@@ -8,7 +8,7 @@ hr {                              /* Removes the default border of the horizonta
   width: 100%;                                 /* Sets the width of the footer to be 100% ensuring it takes up 100% of the screen */
   background-color: #18558f;                 /* Sets the background color of the footer container */
   color: #f9f9f9;                              /* Sets the text color to be white */
-  padding: 20px 0;                             /* Adds padding between the content of the footer and the border. Left value it top and bottom while the right value is the left and right */
+  padding: 20px 100px;                             /* Adds padding between the content of the footer and the border. Left value it top and bottom while the right value is the left and right */
 }
 
 /* Positioning of the content within the footer */
@@ -24,7 +24,8 @@ hr {                              /* Removes the default border of the horizonta
 
 /* Sizing of the heading text above the links */
 .footer-text {
-  font-size: 14px;                               /* Gives the same font-size to the header as the rest of the links have */                            
+  font-size: 14px;                               /* Gives the same font-size to the header as the rest of the links have */        
+  padding: 20px;                    
 }
 
 /* Positioning for the links of the footer */
@@ -64,6 +65,7 @@ hr {                              /* Removes the default border of the horizonta
   display: flex;
   flex-direction: column;                       /* Stacks the elements within this container vertically */
   align-items: flex-start;
+  padding: 20px;
 }
 
 .footer-quick-links h4 {

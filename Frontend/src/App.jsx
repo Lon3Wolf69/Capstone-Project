@@ -42,7 +42,7 @@ function App() {
       <div>
       {/* This is another wrapper container for all defined Routes (Put all the Route tags here. Your telling the program what to display when the url equals the path) */}
       <Routes>
-        <Route path="/" element = {<><AboutSection /><News /><NavPanels /> <HRW /> </>} />   {/* This is a route that displays information on the home page only */}
+      <Route path="/" element={<><AboutSection /><News /><NavPanels /><HRW /></>} />  {/* This is a route that displays information on the home page only */}
         {/* Sets up route for the login button */}
         <Route path="/contact" element={<><Contact /></>} />
         <Route path="/about/AboutUs" element={<><Why /><Intro /></>} />
@@ -50,6 +50,7 @@ function App() {
         <Route path="/caseStudies" element={<><CaseStudies /></>} />
         <Route path="/focusArea/interagencyRecovery" element={<><RSFexample/> </>}/>
         <Route path="/caseStudies/northCarolina" element={<><CaseStudies /></>} />
+        
       </Routes>
       </div>
       <Footer />

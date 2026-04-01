@@ -71,17 +71,6 @@ function WhatWeDo() {
 
 // ─── Section: Federal Recovery System ────────────────────────────────────────
 function FederalRecoverySystem() {
-  const agencies = [
-    // { name: "HUD",            role: "Housing recovery",         theme: "teal"   },
-    // { name: "FEMA",           role: "Emergency management",     theme: "navy"   },
-    // { name: "SBA",            role: "Economic recovery",        theme: "orange" },
-    // { name: "EPA",            role: "Environmental recovery",   theme: "navy"   },
-    // { name: "HHS",            role: "Health & social services", theme: "teal"   },
-   // { name: "USACE",          role: "Infrastructure",           theme: "orange" },
-    // { name: "EDA / Commerce", role: "Economic development",     theme: "navy"   },
-    // { name: "CDBG-DR",        role: "Community development",    theme: "teal"   },
-  ];
-
   return (
     <section className="kys-section kys-section--gray federal">
       <p className="eyebrow">The federal recovery system</p>
@@ -107,20 +96,11 @@ function FederalRecoverySystem() {
   );
 }
 
-//  <div className="federal__grid">
-// {agencies.map((a) => (
-  <div key={a.name} className={`agency-card agency-card--${a.theme}`}>
-    <span className="agency-card__name">{a.name}</span>
-    <span className="agency-card__role">{a.role}</span>
-  </div>
-// ))}
-// </div>
-
 // ─── Composed export ─────────────────────────────────────────
 export default function RecoverySections() {
   return (
     <>
-      <HowRecoveryWorks />
+      <HowRecoveryWorks/>
       <WhatWeDo />
       <FederalRecoverySystem />
     </>

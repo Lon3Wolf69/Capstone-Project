@@ -139,7 +139,7 @@
     margin-top: 1rem;
   }
   
-  .what-we-do__accent {
+  .what-we-do_accent {
     display: block;
     border-left: 3px solid var(--teal);
     padding-left: 1rem;
@@ -153,7 +153,7 @@
   
   /* ─── Federal Recovery System ──────────────── */
 
-  .federal__accent {
+  .federal_accent {
     display: block;
     border-left: 3px solid var(--teal);
     padding-left: 1rem;
@@ -161,90 +161,6 @@
     font-size: 15px;
     font-weight: 500;
     font-style: normal;
-    color: var(--orange-light);
+    color: var(--charcoal);
     line-height: 1.6;
   }
-/* SHUT UP MOM. SCILENCE FROM YOU. YOU"RE CUT OFF FROM TALKING
-  /*
-  .federal__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .agency-card {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    padding: 1.25rem 1.5rem;
-    border-radius: var(--radius-sm);
-    border: 0.5px solid transparent;
-  }
-  
-  Theme variants 
-  .agency-card--teal {
-    background: var(--teal-light);
-    border-color: var(--teal);
-  }
-  .agency-card--teal .agency-card__name { color: var(--teal-text); }
-  .agency-card--teal .agency-card__role { color: var(--teal-text); }
-  
-  .agency-card--navy {
-    background: var(--navy-light);
-    border-color: var(--navy);
-  }
-  .agency-card--navy .agency-card__name { color: var(--navy); }
-  .agency-card--navy .agency-card__role { color: var(--navy); }
-  
-  .agency-card--orange {
-    background: var(--orange-light);
-    border-color: var(--orange);
-  }
-  .agency-card--orange .agency-card__name { color: var(--orange-text); }
-  .agency-card--orange .agency-card__role { color: var(--orange-text); }
-  
-  .agency-card__name {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-  }
-  
-  .agency-card__role {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    opacity: 0.8;
-  }
- 
-  
-  /* ─── Responsive ────────────────────────── 
-  @media (max-width: 900px) {
-    .recovery__intro,
-    .what-we-do__grid {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-  
-    .federal__grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .section-title {
-      font-size: 28px;
-    }
-  
-    .recovery__pull {
-      font-size: 20px;
-    }
-  }
-  
-  @media (max-width: 540px) {
-    .section {
-      padding: 3rem 1.25rem;
-    }
-  
-    .federal__grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  */
