@@ -70,6 +70,7 @@ hr {                              /* Removes the default border of the horizonta
 
 .footer-quick-links h4 {
   margin-bottom: 20px;
+  text-decoration: underline;
 }
 
 .footer-columns {
