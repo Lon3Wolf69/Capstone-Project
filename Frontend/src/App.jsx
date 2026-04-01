@@ -16,6 +16,7 @@ import Team from "./Components/Pages/AboutPage/MeetTeam/MeetTeam.jsx";
 import Why from "./Components/Pages/AboutPage/OurMission/OurMission.jsx";
 import CaseStudies from "./Components/Pages/CaseStudiesPage/caseStudies.jsx";
 import RSFexample from "./Components/Pages/FocusAreasPage/RSF/RSFexample.jsx";
+import RSFHeader from "./Components/Pages/FocusAreasPage/RSF/RSFHeader.jsx"
 import AboutCTA from "./Components/Pages/HomePage/CTAs/AboutCTA.jsx";
 import CaseStudyCTA from "./Components/Pages/HomePage/CTAs/CaseStudyCTA.jsx";
 import ContactCTA from "./Components/Pages/HomePage/CTAs/ContactCTA.jsx";
@@ -48,7 +49,7 @@ function App() {
         <Route path="/about/AboutUs" element={<><Why /><Intro /></>} />
         <Route path="/about/Team" element={<><Team /></>} />
         <Route path="/caseStudies" element={<><CaseStudies /></>} />
-        <Route path="/focusArea/interagencyRecovery" element={<><RSFexample/> </>}/>
+        <Route path="/focusArea/interagencyRecovery" element={<><RSFHeader/><RSFexample/> </>}/>
         <Route path="/caseStudies/northCarolina" element={<><CaseStudies /></>} />
         
       </Routes>
