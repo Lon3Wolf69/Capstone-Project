@@ -14,15 +14,12 @@ function HowRecoveryWorks() {
 
       <div className="recovery__intro">
         <p className="recovery__pull">
-          Recovery systems are complex by design. Multiple agencies, funding
-          streams, and partners must work together.
+          Without coordination, efforts fragment. Timelines extend. Funding goes underutilized.
         </p>
         <div className="recovery__body">
           <p>
-            Housing, infrastructure, economic recovery, and health each require
-            different agencies, timelines, and expertise. When these systems
-            operate in isolation, the results are predictable: fragmented
-            efforts, extended timelines, and funding that goes underutilized.
+          Recovery systems are complex by design. Multiple agencies, funding streams, and 
+          partners must work together across housing, infrastructure, economic recovery, and health.
           </p>
           <p>
             Without coordination, even well-funded recovery efforts stall.
@@ -52,7 +49,7 @@ function WhatWeDo() {
             priorities with the agencies, funding programs, and partners
             required to deliver outcomes.
           </p>
-          <blockquote className="what-we-do__accent">
+          <blockquote className="what-we-do_accent">
             We do not replace existing systems.
             <br />
             We help them work together.
@@ -79,18 +76,17 @@ function FederalRecoverySystem() {
         <br />
         across multiple agencies
       </h2>
-      <p className="federal-sub">
-        Recovery spans multiple federal systems, each with its own programs,
-        requirements, and timelines. DisasterReady helps states navigate and
-        coordinate across this system — so recovery moves as a whole, not in
-        silos.
-      </p>
 
       <blockquote className="federal_accent">
-        Each agency operates its own programs and requirements. Without a
-        coordinating function, states must navigate this system agency by
-        agency — losing time and resources at every handoff.
+      DisasterReady helps states navigate and coordinate across this system—so recovery moves as a whole, not in silos.
       </blockquote>
+
+      <p className="federal-sub">
+        Recovery spans multiple federal systems, each with its own programs,
+        requirements, and timelines. Housing, infrastructure, economic development, 
+        health, and environmental recovery are led by different agencies and must be 
+        aligned to achieve real outcomes.
+      </p>
 
     </section>
   );

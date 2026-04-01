@@ -157,7 +157,7 @@
 }
 
 .popup {
-  background: #18558f;
+  background: #0B2E4F;
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
@@ -171,6 +171,12 @@
   font-size: 1.6rem;
   font-weight: 400;
   margin: 0 0 0.5rem;
+
+}
+
+.popup p {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fff;
 }
 
 .popup button {
@@ -178,7 +184,7 @@
   padding: 0.5rem 1rem;
   cursor: pointer;
   border-radius: 5px;
-  border: 1.5px solid rgba(31, 138, 142, 0.5);
+  border: 1.5px solid rgba(225, 225, 225, 0.5);
   background: transparent;
   color: white;
   font-family: Helvetica, Arial, sans-serif;
