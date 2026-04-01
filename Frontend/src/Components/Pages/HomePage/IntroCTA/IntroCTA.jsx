@@ -49,7 +49,7 @@ const AboutSection = () => {
           </Link>
           <div className="about-divider" />
           <span className="about-trust-note">
-          Coordinating Recovery & Delivering Results
+            Coordinating Recovery & Delivering Results
           </span>
         </div>
  

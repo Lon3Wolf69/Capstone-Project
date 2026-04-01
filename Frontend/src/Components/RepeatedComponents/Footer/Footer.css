@@ -24,7 +24,7 @@ hr {                              /* Removes the default border of the horizonta
 
 /* Sizing of the heading text above the links */
 .footer-text {
-  font-size: 14px;                               /* Gives the same font-size to the header as the rest of the links have */        
+  font-size: 18px;                               /* Gives the same font-size to the header as the rest of the links have */        
   padding: 20px;                    
 }
 
@@ -38,7 +38,7 @@ hr {                              /* Removes the default border of the horizonta
 .footer-links a {
   color: #f9f9f9;                              /* Color of the links set to white */
   text-decoration: none;                         /* Removes the text decoration */
-  font-size: 14px;                               /* Makes the font-size to 14px */
+  font-size: 18px;                               /* Makes the font-size to 14px */
   transition: color 0.3s ease-in-out;                                  /* Modifies the opacity of the links in the footer allowing for hover effect to be created */
 }
 
@@ -66,11 +66,13 @@ hr {                              /* Removes the default border of the horizonta
   flex-direction: column;                       /* Stacks the elements within this container vertically */
   align-items: flex-start;
   padding: 20px;
+
 }
 
 .footer-quick-links h4 {
   margin-bottom: 20px;
   text-decoration: underline;
+  font-size: 20px;
 }
 
 .footer-columns {
@@ -88,7 +90,7 @@ hr {                              /* Removes the default border of the horizonta
 .footer-column a {
   color: #f9f9f9;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   transition: color 0.3s ease-in-out;
 }
 

@@ -24,6 +24,7 @@ import CordHubCTA from "./Components/Pages/HomePage/CTAs/CordHubCTA.jsx";
 import FocusAreaCTA from "./Components/Pages/HomePage/CTAs/FocusAreaCTA.jsx";
 import NavPanels from "./Components/Pages/HomePage/NavPanels/NavPanels.jsx";
 import HRW from "./Components/Pages/HomePage/HowRecovery/HRW.jsx";
+import UnderConstruction from "./Components/RepeatedComponents/UnderConstruction/UnderConstruction.jsx";
 
 function App() {
   return (
@@ -47,10 +48,15 @@ function App() {
         {/* Sets up route for the login button */}
         <Route path="/contact" element={<><Contact /></>} />
         <Route path="/about/AboutUs" element={<><Why /><Intro /></>} />
+        <Route path="/about/ourApproach" element={<><UnderConstruction /></>} />
         <Route path="/about/Team" element={<><Team /></>} />
         <Route path="/caseStudies" element={<><CaseStudies /></>} />
         <Route path="/focusArea/interagencyRecovery" element={<><RSFHeader/><RSFexample/> </>}/>
         <Route path="/caseStudies/northCarolina" element={<><CaseStudies /></>} />
+        <Route path="/focusArea/debrisManagement" element={<><UnderConstruction /></>} />
+        <Route path="/focusArea/mitigation" element={<><UnderConstruction /></>} />
+        <Route path="/focusArea/crisisCommunication" element={<><UnderConstruction /></>} />
+        <Route path="/platform/coordinationHubOverview" element={<><UnderConstruction /></>} />
         
       </Routes>
       </div>
