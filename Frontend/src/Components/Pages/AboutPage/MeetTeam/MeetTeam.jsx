@@ -1,5 +1,5 @@
 import "./MeetTeam.css";
-import { useState, useRef, useLayoutEffect } from "react";
+import { useState, useRef } from "react";
 import Dawn from"../../../../assets/Dawn.jpg";
 import Jim from "../../../../assets/Jim.jpeg";
 
