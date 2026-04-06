@@ -1,0 +1,46 @@
+.rsf-header-section {
+  padding: 100px 20px 40px;
+  background-color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.rsf-header-container {
+  max-width: 850px;
+}
+
+
+.rsf-header-title {
+  color: #0B2E4F;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+
+.rsf-header-accent {
+  width: 60px;
+  height: 5px;
+  background-color: #F47A20;
+  margin: 0 auto 35px;
+  border-radius: 50px;
+  /* Ensure transform-origin is center so scaleX looks like it grows from the middle */
+  transform-origin: center;
+}
+
+
+.rsf-header-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  font-weight: 400;
+}
+
+
+@media (max-width: 768px) {
+  .rsf-header-title { font-size: 2.2rem; }
+  .rsf-header-description { font-size: 1.1rem; }
+}

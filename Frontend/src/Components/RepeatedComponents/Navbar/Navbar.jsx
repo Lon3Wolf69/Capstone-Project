@@ -42,12 +42,6 @@ function Navbar(){
 {/*----------------------------------------------- Title Section above the Dropdown button -------------------------------------------------------*/}     
         {/* navbar wrapper for the whole navbar section (Everything here will be styles by the navbar class defined in Navbar.jsx) */}
         <nav className="navbar">
-          {/* text above the navigation bar */}
-          <p className ="nav-title">Coordinating Recovery Delivering Results!</p> {/* Paragraph tag that displays the text located between the open and closing tags (styled by the nav-title class located within the Navbar.css file) */}
-        
-          
-          <hr className="nav-separator" />                               {/* This is a horizontal rule element which essentially just makes a horizontal line (Styled by the nav-seperator class that is defined in the Navbar.css) */}
-
 {/*--------------------------------------------------------- Navigation buttons ------------------------------------------------------------------------*/}          
           {/* This is a wrapper for the positioning of the  styled by the nav-btn-positioning class that is defined within the Navbar.css file */}
           <div className="nav-btn-positioning">

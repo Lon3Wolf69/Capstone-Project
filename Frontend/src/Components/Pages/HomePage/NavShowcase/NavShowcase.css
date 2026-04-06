@@ -1,0 +1,244 @@
+.ns-wrap {
+  width: 100%;
+}
+ 
+.ns-panel {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  max-height: 400px;
+  min-height: 220px;
+  cursor: default;
+}
+ 
+.ns-panel:first-child { 
+    border-radius: 0; 
+}
+.ns-panel:last-child { 
+    border-radius: 0; 
+    border-bottom: none; 
+}
+ 
+.ns-panel.dark { 
+    background-color: #0B1F3A; 
+}
+.ns-panel.light { 
+    background-color: #ffffff; 
+    border-bottom: 1px solid rgba(11, 31, 58, 0.08); 
+}
+ 
+.ns-panel.dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -45deg, transparent, transparent 18px,
+    rgba(255, 255, 255, 0.05) 18px, rgba(255, 255, 255, 0.05) 20px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+ 
+/*----------------------------------------- Image Column ----------------------------------*/
+.ns-img-col {
+  flex: 0 0 50%;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  z-index: 1;
+}
+
+.ns-panel.visible .ns-img-col,
+.ns-panel.visible .ns-label,
+.ns-panel.visible .ns-title,
+.ns-panel.visible .ns-desc,
+.ns-panel.visible .ns-cta,
+.ns-panel.visible .ns-accent {
+  opacity: 1;
+}
+ 
+.ns-img-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.78);
+}
+ 
+.ns-img-overlay {
+  display: none;
+}
+ 
+.dark .ns-img-col-left .ns-img-overlay { 
+    background: linear-gradient(to right, transparent 55%, #0B1F3A 100%); 
+}
+
+.dark .ns-img-col-right .ns-img-overlay { 
+    background: linear-gradient(to left, transparent 55%, #0B1F3A 100%); 
+}
+
+.light .ns-img-col-left .ns-img-overlay { 
+    background: linear-gradient(to right, transparent 55%, #ffffff 100%); 
+}
+
+.light .ns-img-col-right .ns-img-overlay { 
+    background: linear-gradient(to left, transparent 55%, #ffffff 100%); 
+}
+ 
+/*----------------------------------------- Orange Accent Bar ----------------------------------*/
+.ns-accent {
+  width: 4px;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #e55c1b 0%, #f07a40 100%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 2px);
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+ 
+/*----------------------------------------- Content ----------------------------------*/
+.ns-content {
+  flex: 0 0 50%;
+  min-width: 0;
+  padding: 25px 28px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  
+}
+ 
+.ns-content-right {
+  text-align: right;
+  align-items: flex-end;
+}
+ 
+.ns-label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #e55c1b;
+  margin-bottom: 8px;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+ 
+.ns-title {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 0 12px;
+  line-height: 1.1;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+ 
+.dark .ns-title { 
+    color: #ffffff; 
+}
+
+.light .ns-title { 
+    color: #0B1F3A; 
+}
+ 
+.ns-desc {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.75;
+  margin: 0 0 20px;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  white-space: pre-line;
+}
+ 
+.dark .ns-desc { 
+    color: rgba(255, 255, 255, 0.55); 
+}
+
+.light .ns-desc { 
+    color: #0B1F3A; 
+}
+ 
+/*----------------------------------------- CTA ----------------------------------*/
+.ns-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #e55c1b;
+  text-decoration: none;
+  width: fit-content;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+ 
+.ns-cta:hover { 
+    color: #f07a40; 
+}
+ 
+.ns-cta-icon {
+  width: 14px;
+  height: 14px;
+  stroke: #e55c1b;
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.2s ease;
+}
+ 
+.ns-cta:hover .ns-cta-icon {
+  transform: translateX(5px);
+  stroke: #f07a40;
+}
+ 
+/*----------------------------------------- Responsive: Tablet ----------------------------------*/
+@media (max-width: 768px) {
+  .ns-panel {
+    flex-direction: column;
+    min-height: unset;
+  }
+ 
+  .ns-img-col {
+    width: 100%;
+    height: 200px;
+  }
+ 
+  .ns-content {
+    width: 100%;
+    padding: 28px 24px;
+  }
+ 
+  .ns-content-right {
+    text-align: left;
+    align-items: flex-start;
+  }
+ 
+  .dark .ns-img-col-left .ns-img-overlay { 
+    background: linear-gradient(to top, #0B1F3A 10%, transparent 60%); 
+}
+
+  .dark .ns-img-col-right .ns-img-overlay { 
+    background: linear-gradient(to top, #0B1F3A 10%, transparent 60%); 
+}
+
+  .light .ns-img-col-left .ns-img-overlay { 
+    background: linear-gradient(to top, #ffffff 10%, transparent 60%); 
+}
+
+  .light .ns-img-col-right .ns-img-overlay { 
+    background: linear-gradient(to top, #ffffff 10%, transparent 60%); 
+}
+
+}

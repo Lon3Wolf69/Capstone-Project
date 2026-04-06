@@ -16,6 +16,7 @@ import Team from "./Components/Pages/AboutPage/MeetTeam/MeetTeam.jsx";
 import Why from "./Components/Pages/AboutPage/OurMission/OurMission.jsx";
 import CaseStudies from "./Components/Pages/CaseStudiesPage/caseStudies.jsx";
 import RSFexample from "./Components/Pages/FocusAreasPage/RSF/RSFexample.jsx";
+import RSFHeader from "./Components/Pages/FocusAreasPage/RSF/RSFHeader.jsx"
 import AboutCTA from "./Components/Pages/HomePage/CTAs/AboutCTA.jsx";
 import CaseStudyCTA from "./Components/Pages/HomePage/CTAs/CaseStudyCTA.jsx";
 import ContactCTA from "./Components/Pages/HomePage/CTAs/ContactCTA.jsx";
@@ -24,6 +25,9 @@ import FocusAreaCTA from "./Components/Pages/HomePage/CTAs/FocusAreaCTA.jsx";
 import NavPanels from "./Components/Pages/HomePage/NavPanels/NavPanels.jsx";
 import AboutContent from "./Components/Pages/AboutPage/Content/AboutContent.jsx";
 import TeamIntro from "./Components/Pages/AboutPage/MeetTeam/TeamIntro.jsx";
+import HRW from "./Components/Pages/HomePage/HowRecovery/HRW.jsx";
+import UnderConstruction from "./Components/RepeatedComponents/UnderConstruction/UnderConstruction.jsx";
+import NavShowcase from "./Components/Pages/HomePage/NavShowcase/NavShowcase.jsx";
 
 function App() {
   return (
@@ -37,20 +41,24 @@ function App() {
   }, []); */
     // Wrapper for all the information on the App.jsx file styled by the app-container class located in the App.css file (Everything within here is displayed on the main page through the main.jsx file)
     <div>
-      <Navbar />                                                           {/* Displays the navbar component */}
-      
+      <Navbar />                                                           {/* Displays the navbar component */} 
       {/* Wrapper container for everything else on the page styled by the main-content class */}
       <div>
       {/* This is another wrapper container for all defined Routes (Put all the Route tags here. Your telling the program what to display when the url equals the path) */}
       <Routes>
-        <Route path="/" element = {<><AboutSection /><News /><NavPanels /></>} />   {/* This is a route that displays information on the home page only */}
+      <Route path="/" element={<><AboutSection /><HRW /><News /><NavShowcase /></>} />  {/* This is a route that displays information on the home page only */}
         {/* Sets up route for the login button */}
         <Route path="/contact" element={<><Contact /></>} />
-        <Route path="/about/AboutUs" element={<><Why /><Intro /><AboutContent/></>} />
+        <Route path="/about/AboutUs" element={<><Why /><Intro /></>} />
+        <Route path="/about/ourApproach" element={<><UnderConstruction /></>} />
         <Route path="/about/Team" element={<><TeamIntro/><Team /></>} />
         <Route path="/caseStudies" element={<><CaseStudies /></>} />
-        <Route path="/focusArea/interagencyRecovery" element={<><RSFexample/> </>}/>
+        <Route path="/focusArea/interagencyRecovery" element={<><RSFHeader/><RSFexample/> </>}/>
         <Route path="/caseStudies/northCarolina" element={<><CaseStudies /></>} />
+        <Route path="/focusArea/debrisManagement" element={<><UnderConstruction /></>} />
+        <Route path="/focusArea/mitigation" element={<><UnderConstruction /></>} />
+        <Route path="/focusArea/crisisCommunication" element={<><UnderConstruction /></>} />
+        <Route path="/platform/coordinationHubOverview" element={<><UnderConstruction /></>} />
       </Routes>
       </div>
       <Footer />

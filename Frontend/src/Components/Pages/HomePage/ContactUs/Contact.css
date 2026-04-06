@@ -3,14 +3,47 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background: #0B1F3A;
+  background-color: #D6DEE5;
   padding: clamp(40px, 8vw, 100px) 20px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .contact-wrapper {
   width: 100%;
   max-width: 90%;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Left column */
+.contact-title {
+  text-align: left;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.contact-title h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #0B2E4F;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.contact-subheader {
+  margin-bottom: 40px;
+}
+
+.contact-subheader p {
+  color: #4a6070;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .contact-form {
@@ -22,6 +55,28 @@
   gap: 15px;
 }
 
+.contact-form p {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0B2E4F;
+  margin: 0 0 2px 0;
+}
+
+/* for first and last name */
+.contact-name-row {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-name-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/*
 .contact-form h2 {
   text-align: center;
   background: #fff;
@@ -34,6 +89,7 @@
   color: #000000;
   text-align: center;
 }
+*/
 
 .contact-input,
 .contact-select,
@@ -41,20 +97,45 @@
   padding: 10px;
   font-size: 16px;
   background: #f1f1f1;
-  border: none;
+  border: 1.5px solid transparent;
   outline: none;
+  color: #0B2E4F;
+}
+
+.contact-input:focus,
+.contact-select:focus,
+.contact-textarea:focus {
+  border-color: #2B2E34;
+  background: #fff;
+}
+
+.contact-select {
+  appearance: none;
+  cursor: pointer;
 }
 
 .contact-textarea {
   min-height: 100px;
+  resize: vertical;
+  line-height: 1.5;
   color: #333;
 }
 
 .contact-button {
+  margin-top: 8px;
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 6px;
+  background-color: #6b7f8e;
+  color: white;
+  border: none;
+  letter-spacing: 0.02em;
+}
+
+.contact-button:hover {
+  background-color: #155d9e;
+  transform: translateY(-1px);
 }
 
 .contact-confirmation {
@@ -76,7 +157,7 @@
 }
 
 .popup {
-  background: #18558f;
+  background: #0B2E4F;
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
@@ -85,8 +166,27 @@
   width: 90%;
 }
 
+.popup h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem;
+
+}
+
+.popup p {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
 .popup button {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  border-radius: 5px;
+  border: 1.5px solid rgba(225, 225, 225, 0.5);
+  background: transparent;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
 }

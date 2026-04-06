@@ -3,7 +3,7 @@ import "./TeamIntro.css";
 
 export default function TeamIntro() {
   return (
-    <div>
+    <div class="container">
         <h2 className="title">
           Introduction
         </h2>
@@ -17,7 +17,7 @@ export default function TeamIntro() {
           where recovery succeeds and where it breaks down.
         </p>
 
-        <p>
+        <p className="para">
           This experience informs how we approach 
           coordination, ensuring recovery systems 
           work together to deliver real outcomes.
