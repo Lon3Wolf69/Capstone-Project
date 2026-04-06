@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.title {
+  margin-top: 20px;
+}
+
+.subtitle {
+  margin-top: 20px;
+}
+
+.para {
+  margin: 10px 0;
+}

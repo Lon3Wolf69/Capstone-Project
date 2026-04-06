@@ -22,6 +22,8 @@ import ContactCTA from "./Components/Pages/HomePage/CTAs/ContactCTA.jsx";
 import CordHubCTA from "./Components/Pages/HomePage/CTAs/CordHubCTA.jsx";
 import FocusAreaCTA from "./Components/Pages/HomePage/CTAs/FocusAreaCTA.jsx";
 import NavPanels from "./Components/Pages/HomePage/NavPanels/NavPanels.jsx";
+import AboutContent from "./Components/Pages/AboutPage/Content/AboutContent.jsx";
+import TeamIntro from "./Components/Pages/AboutPage/MeetTeam/TeamIntro.jsx";
 
 function App() {
   return (
@@ -44,8 +46,8 @@ function App() {
         <Route path="/" element = {<><AboutSection /><News /><NavPanels /></>} />   {/* This is a route that displays information on the home page only */}
         {/* Sets up route for the login button */}
         <Route path="/contact" element={<><Contact /></>} />
-        <Route path="/about/AboutUs" element={<><Why /><Intro /></>} />
-        <Route path="/about/Team" element={<><Team /></>} />
+        <Route path="/about/AboutUs" element={<><Why /><Intro /><AboutContent/></>} />
+        <Route path="/about/Team" element={<><TeamIntro/><Team /></>} />
         <Route path="/caseStudies" element={<><CaseStudies /></>} />
         <Route path="/focusArea/interagencyRecovery" element={<><RSFexample/> </>}/>
         <Route path="/caseStudies/northCarolina" element={<><CaseStudies /></>} />
