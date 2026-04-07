@@ -1,9 +1,8 @@
-import React from "react";
 import "./TeamIntro.css";
 
 export default function TeamIntro() {
   return (
-    <div class="container">
+    <div className="container">
         <h2 className="title">
           Introduction
         </h2>

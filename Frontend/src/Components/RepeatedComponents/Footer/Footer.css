@@ -1,14 +1,14 @@
 /* Helpful tip you can use ctrl-f to find specific words located in a document (Useful for finding classes) */
 /* Footer container handling the styling for everything within the footer container */
 hr {                              /* Removes the default border of the horizontal line */
-  width: 100vw;                   /* Adds a top border to create the horizontal line with a color of white */                                 /* Adds margin between the horizontal line and the elements above and below it. First value is for top and bottom while second value is for left and right */
+  width: 100%;                   /* Adds a top border to create the horizontal line with a color of white */                                 /* Adds margin between the horizontal line and the elements above and below it. First value is for top and bottom while second value is for left and right */
 }
 
 .footer {
   width: 100%;                                 /* Sets the width of the footer to be 100% ensuring it takes up 100% of the screen */
   background-color: #18558f;                 /* Sets the background color of the footer container */
   color: #f9f9f9;                              /* Sets the text color to be white */
-  padding: 20px 100px;                             /* Adds padding between the content of the footer and the border. Left value it top and bottom while the right value is the left and right */
+  padding: 20px 60px;                             /* Adds padding between the content of the footer and the border. Left value it top and bottom while the right value is the left and right */
 }
 
 /* Positioning of the content within the footer */

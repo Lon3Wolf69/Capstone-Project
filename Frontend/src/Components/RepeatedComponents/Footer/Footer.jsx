@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
           {/* All the different footer links styled by the footer-links class defined in Footer.css */}
         </div>
-          <hr /> {/* Adds a horizontal line to separate the text above from the links below */}
+          
           <p className="footer-text">                                          {/* text above the links to the other pages down below styled by the footer-text class defined in Footer.css file */}
           © {new Date().getFullYear()} DisasterReady — All Rights Reserved   {/* new Date().getFullYear() returns the full year from the users device and displays that  */}
         </p>

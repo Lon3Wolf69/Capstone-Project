@@ -62,7 +62,7 @@
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .about-headline {
@@ -82,8 +82,7 @@
 
 /*----------------------------------------- Two-column blurb row ----------------------------------*/
 .about-blurb-row {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  display: flex;
   gap: 48px;
   align-items: start;
   margin-bottom: 48px;
@@ -98,17 +97,6 @@
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.6;
   margin: 0 0 14px 0;
-  max-width: 680px;
-  padding: 0;
-}
-
-.about-body {
-  font-size: 16px;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.75);
-  line-height: 1.8;
-  margin: 0 0 48px 0;
-  max-width: 620px;
   padding: 0;
 }
 
@@ -129,7 +117,6 @@
   justify-content: flex-end;
   color: #ffffff;
   background-color: #F47A20;
-  border: none;
   padding: 14px 28px;
   font-size: 20px;
   font-weight: 600;
@@ -138,6 +125,7 @@
   transition: background-color 0.2s ease, transform 0.2s ease;
   letter-spacing: 0.02em; 
   align-self: flex-end;
+  border-radius: 8px;
 }
 
 .CTA:hover {
@@ -190,12 +178,12 @@
 .about-divider {
   width: 1px;
   height: 36px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.4);
 }
  
 .about-trust-note {
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.05em;
 }
  

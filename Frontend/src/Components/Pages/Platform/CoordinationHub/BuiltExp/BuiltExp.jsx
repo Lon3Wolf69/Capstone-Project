@@ -1,4 +1,3 @@
-import React from "react";
 import "./BuiltExp.css";
 
 export default function BuiltExp() {
