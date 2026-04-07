@@ -28,6 +28,9 @@ import TeamIntro from "./Components/Pages/AboutPage/MeetTeam/TeamIntro.jsx";
 import HRW from "./Components/Pages/HomePage/HowRecovery/HRW.jsx";
 import UnderConstruction from "./Components/RepeatedComponents/UnderConstruction/UnderConstruction.jsx";
 import NavShowcase from "./Components/Pages/HomePage/NavShowcase/NavShowcase.jsx";
+import Approach from "./Components/Pages/AboutPage/OurApproach/Approach.jsx";
+import TechSupport from "./Components/Pages/Platform/CoordinationHub/TechSupport/TechSupport.jsx";
+import BuiltExp from "./Components/Pages/Platform/CoordinationHub/BuiltExp/BuiltExp.jsx";
 
 function App() {
   return (
@@ -50,7 +53,7 @@ function App() {
         {/* Sets up route for the login button */}
         <Route path="/contact" element={<><Contact /></>} />
         <Route path="/about/AboutUs" element={<><Why /><Intro /></>} />
-        <Route path="/about/ourApproach" element={<><UnderConstruction /></>} />
+        <Route path="/about/ourApproach" element={<><Approach /></>} />
         <Route path="/about/Team" element={<><TeamIntro/><Team /></>} />
         <Route path="/caseStudies" element={<><CaseStudies /></>} />
         <Route path="/focusArea/interagencyRecovery" element={<><RSFHeader/><RSFexample/> </>}/>
@@ -58,7 +61,7 @@ function App() {
         <Route path="/focusArea/debrisManagement" element={<><UnderConstruction /></>} />
         <Route path="/focusArea/mitigation" element={<><UnderConstruction /></>} />
         <Route path="/focusArea/crisisCommunication" element={<><UnderConstruction /></>} />
-        <Route path="/platform/coordinationHubOverview" element={<><UnderConstruction /></>} />
+        <Route path="/platform/coordinationHubOverview" element={<><TechSupport/><BuiltExp/></>} />
       </Routes>
       </div>
       <Footer />

@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;   /* horizontal centering */
+}
+
+.container {
+  width: 100%;
+  padding: 20px 20px;
+  background-color: #f9f9f9;
+}
+
+.title {
+  margin-top: 24px;
+  color: #e9553b;
+  font-size: clamp(1.8rem, 4vw, 2.5rem); /* responsive text */
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  padding: 15px;
+}
+
+.para1 {
+  margin: 10px 0;
+  margin-right: 25%;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  padding: 5px;
+  text-align: left;
+}
+
+.para2 {
+  margin: 10px 0;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  padding: 5px;
+  text-align: center;
+}
+
+.para-list {
+  max-width: 600px;
+  margin: 20px 0;
+  padding-left: 10%; /* important for bullets */
+  text-align: left;
+}
+
+.para-list li {
+  text-align: left;
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(40px);
+  animation: slideLeft 0.8s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.5s;
+}
+
+.delay-3 {
+  animation-delay: 0.8s;
+}
+
+.delay-4 {
+  animation-delay: 1s;
+}
+
+@keyframes slideLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
