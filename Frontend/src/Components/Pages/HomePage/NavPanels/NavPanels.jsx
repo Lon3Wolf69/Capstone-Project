@@ -1,37 +1,34 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavPanels.css";
-import { navRoutes } from "../../../RepeatedComponents/Navbar/navRoutes.jsx";
- 
+import { panelRoutes } from "./panelRoutes.jsx";
+
 // Add your imported images here and map them by route label
 // Example:
-// import aboutImg from "../../../../assets/About.jpg";
-// import focusImg from "../../../../assets/FocusArea.jpg";
-// import caseImg  from "../../../../assets/CaseStudies.jpg";
+import Thailand from "./thailand.jpg";
+import Alaska from "./alaska.jpg";
+import Texas from "./texas.jpg";
 // import platformImg from "../../../../assets/Platform.jpg";
  
 // Short blurb for each nav section — keyed by route label
 const blurbs = {
-  "About":        "Learn who we are, what drives our mission, and the team behind DisasterReady.",
-  "Focus Area":   "Explore the core disciplines we specialize in — from interagency coordination to crisis communication.",
-  "Case Studies": "See how real communities have used DisasterReady to navigate recovery and rebuild stronger.",
-  "Platform":     "Discover the tools and systems that power coordinated disaster recovery at every level.",
+  "Texas":        "Storm conditions are expected to continue in Texas, which has already had impressive rainfall this week...",
+  "Thailand":   "Thailand’s navy will deploy an aircraft carrier to the flood-stricken south, as public outcry mounts over the government’s response to a crisis that has hit about 2 million people and left an entire southern city under water...",
+  "Alaska": "See how real communities have used DisasterReady to navigate recovery and rebuild stronger.",
 };
  
 // Swap these out for your imported image variables once you have them
 const images = {
-  "About":        null,
-  "Focus Area":   null,
-  "Case Studies": null,
-  "Platform":     null,
+  "Texas":   Texas,
+  "Thailand": Thailand,
+  "Alaska": Alaska,
 };
  
 // Accent colors for each panel's collapsed background
 const colors = {
-  "About":        "#0B2E4F",
-  "Focus Area":   "#18558f",
-  "Case Studies": "#1D6A8A",
-  "Platform":     "#F47A20",
+  "Texas":        "#0B2E4F",
+  "Thailand":   "#18558f",
+  "Alaska": "#1D6A8A",
 };
  
 function NavPanels() {
@@ -44,9 +41,16 @@ function NavPanels() {
   return (
     <section className="navpanels-section">
  
+      <h2 style={{paddingBottom:"10px"}}>Explore Our Work</h2>
+
+      <h4 style={{paddingLeft: "50px", paddingBottom:"20px", color:"#0B2E4F"}}> Explore case studies to gain insight into real-world natural disasters and 
+        their impacts. Each case highlights key events and responses 
+        with links to in-depth articles and external resources for further reading.</h4>
+
+
       {/* ── Desktop: horizontal strip ── */}
       <div className="navpanels-strip">
-        {navRoutes.map((route, i) => {
+        {panelRoutes.map((route, i) => {
           const isOpen = activeIndex === i;
           return (
             <div
@@ -55,6 +59,19 @@ function NavPanels() {
               style={{ backgroundColor: colors[route.label] }}
               onClick={() => handleToggle(i)}
             >
+
+              {/*Image and overlay */}
+              {images[route.label] && (
+                <div className="navpanel-img-wrapper">
+                   <img
+                    src={images[route.label]}
+                    alt={route.label}
+                    className="navpanel-img"
+                  />
+                  <div className="navpanel-overlay" />
+                </div>
+              )}
+
               {/* Collapsed state — vertical title */}
               <div className="navpanel-collapsed">
                 <span className="navpanel-vtitle">{route.label}</span>
@@ -62,31 +79,36 @@ function NavPanels() {
  
               {/* Expanded state — image + content */}
               <div className="navpanel-expanded">
-                {images[route.label] ? (
+                <div className="navpanel-body">
+                    <h3>{route.label}</h3>
+                    <p>{blurbs[route.label]}</p>
+                    <Link
+                      to={route.path}
+                      className="navpanel-btn"
+                      onClick={(e) => e.stopPropagation()} /* prevents panel toggle when clicking link */
+                    >
+                      Explore {route.label}
+                      <span className="navpanel-btn-arrow">→</span>
+                    </Link>
+                  </div>
+                
+                {/*
+                  {images[route.label] ? (
                   <img
                     src={images[route.label]}
                     alt={route.label}
                     className="navpanel-img"
                   />
-                ) : (
-                  /* Placeholder until real images are added */
+                ) : null
+                  /* Placeholder until real images are added 
                   <div
                     className="navpanel-img-placeholder"
                     style={{ backgroundColor: colors[route.label] }}
                   />
-                )}
-                <div className="navpanel-body">
-                  <h3>{route.label}</h3>
-                  <p>{blurbs[route.label]}</p>
-                  <Link
-                    to={route.path}
-                    className="navpanel-btn"
-                    onClick={(e) => e.stopPropagation()} /* prevents panel toggle when clicking link */
-                  >
-                    Explore {route.label}
-                    <span className="navpanel-btn-arrow">→</span>
-                  </Link>
-                </div>
+                  */
+                }
+                
+                
               </div>
             </div>
           );
@@ -95,7 +117,7 @@ function NavPanels() {
  
       {/* ── Mobile: vertical accordion ── */}
       <div className="navpanels-accordion">
-        {navRoutes.map((route, i) => {
+        {panelRoutes.map((route, i) => {
           const isOpen = activeIndex === i;
           return (
             <div
