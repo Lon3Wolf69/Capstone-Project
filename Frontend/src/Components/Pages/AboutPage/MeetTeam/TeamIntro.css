@@ -1,12 +1,12 @@
-body {
+/* body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   padding: 20px;
 
   display: flex;
-  justify-content: center;   /* horizontal centering */
+  justify-content: center; 
 }
-
+*/
 .container {
   width: 100%;
   text-align: center;        /* centers text */
