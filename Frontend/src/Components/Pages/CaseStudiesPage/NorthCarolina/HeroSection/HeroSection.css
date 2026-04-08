@@ -1,0 +1,139 @@
+/* general container styling for the whole section */
+.hero {
+  background-color: #0B1F3A;
+  /* Background lines */
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.09) 0px,
+    rgba(255, 255, 255, 0.09) 1px,
+    transparent 1px,
+    transparent 12px
+  );
+  background-attachment: fixed;
+  padding: 5rem 4rem 4rem;
+  width : 100%;
+}
+
+/* Div container at the top left */
+.hero__tag {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 4px;
+  background: rgba(240, 120, 30, 0.18);
+  color: #f0781e;
+  margin-bottom: 1rem;
+  letter-spacing: 0.06em;
+}
+ 
+.hero__title {
+  font-size: 52px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.2;
+  max-width: 80%;
+  margin-bottom: 1.5rem;
+}
+ 
+.hero__title span {
+  color: #f0781e;
+}
+ 
+.hero__description {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+.hero__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1.75rem;
+  padding: 12px 22px;
+  background: #F47A20;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.hero__cta:hover {
+  background: #c45e10;
+  
+}
+ 
+.hero__cta:active {
+  transform: translateY(0);
+}
+ 
+.hero__outcomes {
+  margin-top: 2.5rem;
+}
+ 
+.hero__outcomes-label {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #f0781e;
+  margin-bottom: 1.25rem;
+}
+ 
+.hero__stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+ 
+.hero__stat-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+ 
+.hero__stat-num {
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.1;
+}
+ 
+.hero__stat-num span {
+  font-size: 30px;
+  color: #f0781e;
+}
+ 
+.hero__stat-label {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+ 
+@media (max-width: 900px) {
+  .hero {
+    padding: 4rem 2.5rem 3rem;
+  }
+  .hero__title {
+    font-size: 38px;
+  }
+}
+ 
+@media (max-width: 560px) {
+  .hero {
+    padding: 3rem 1.5rem 2.5rem;
+  }
+  .hero__title {
+    font-size: 28px;
+  }
+  .hero__stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

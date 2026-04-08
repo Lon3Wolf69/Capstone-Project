@@ -8,7 +8,7 @@
 
 /* This is styling for the html, body, and #root elements of the website */
 html, body, #root {
-    height: 100%;                                    /* Sets the height of the element to be 100% */                               
+    min-height: 100%;                                    /* Sets the height of the element to be 100% */                               
     width: 100%;                                     /* Sets the width of the element to take up 100 percent of the width of the device */
     margin: 0;                                       /* Resests the margin to 0 in case if a browser applies margin styling automatically */
     overflow-x: hidden;                             /* Adds a vertical scrollbar to the page to allow for scrolling when the content exceeds the viewport height */

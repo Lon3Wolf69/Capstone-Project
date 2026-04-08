@@ -1,7 +1,7 @@
 export const panelRoutes = [
     {
-      label: "Texas",
-      path: "https://www.nbcnews.com/weather/storms/texas-braces-heavy-rain-flash-flooding-storm-continues-rcna244950",
+      label: "Hurricane Helene",
+      path: "/caseStudies/northCarolina",
     },
     {
       label: "Thailand",
