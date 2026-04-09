@@ -35,7 +35,8 @@ import CaseHero from "./Components/Pages/CaseStudiesPage/NorthCarolina/HeroSecti
 import CaseRecovery from "./Components/Pages/CaseStudiesPage/NorthCarolina/RecoveryPortfolio/RecoveryPortfolio.jsx";
 import CaseImpact from "./Components/Pages/CaseStudiesPage/NorthCarolina/ImpactSection/ImpactSection.jsx";
 import ScrollToTop from "./Components/RepeatedComponents/ScrollToTop/ScrollToTop.jsx";
-
+import CHub from "./Components/Pages/Platform/CoordinationHub/CHub.jsx";
+import CHubCapabilities from "./Components/Pages/Platform/CoordinationHub/CHubCapabilities.jsx";
 function App() {
   return (
      
@@ -66,7 +67,7 @@ function App() {
         <Route path="/focusArea/debrisManagement" element={<><UnderConstruction /></>} />
         <Route path="/focusArea/mitigation" element={<><UnderConstruction /></>} />
         <Route path="/focusArea/crisisCommunication" element={<><UnderConstruction /></>} />
-        <Route path="/platform/coordinationHubOverview" element={<><TechSupport/><BuiltExp/></>} />
+        <Route path="/platform/coordinationHubOverview" element={<><CHub/><CHubCapabilities/><TechSupport/><BuiltExp/></>} />
       </Routes>
       </div>
       <Footer />
