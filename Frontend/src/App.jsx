@@ -67,6 +67,7 @@ function App() {
         <Route path="/focusArea/debrisManagement" element={<><UnderConstruction /></>} />
         <Route path="/focusArea/mitigation" element={<><UnderConstruction /></>} />
         <Route path="/focusArea/crisisCommunication" element={<><UnderConstruction /></>} />
+        <Route path="/focusArea/wildfire" element={<><UnderConstruction /></>} />
         <Route path="/platform/coordinationHubOverview" element={<><CHub/><CHubCapabilities/><TechSupport/><BuiltExp/></>} />
       </Routes>
       </div>
