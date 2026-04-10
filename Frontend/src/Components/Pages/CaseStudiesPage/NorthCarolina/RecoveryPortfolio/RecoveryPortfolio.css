@@ -1,0 +1,83 @@
+.portfolio {
+  background-color: #ffffff;
+  padding: 5rem 4rem 4rem;
+  width: 100%;
+}
+ 
+.portfolio__label {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #0d6f77;
+  margin-bottom: 1.25rem;
+}
+ 
+.portfolio__title {
+  font-size: 52px;
+  font-weight: 500;
+  color: #0d1b2e;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  max-width: 80%;
+}
+ 
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+ 
+.portfolio__card {
+  background: #f7f9fc;
+  border: 0.5px solid #dde3ec;
+  border-radius: 12px;
+  padding: 1.75rem;
+}
+ 
+.portfolio__card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  background: rgba(240, 120, 30, 0.12);
+}
+ 
+.portfolio__card-title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #0d1b2e;
+  margin-bottom: 8px;
+}
+ 
+.portfolio__card-description {
+  font-size: 18px;
+  color: #5a6475;
+  line-height: 1.7;
+  margin: 0;
+}
+ 
+@media (max-width: 900px) {
+  .portfolio {
+    padding: 4rem 2.5rem 3rem;
+  }
+  .portfolio__title {
+    font-size: 38px;
+    max-width: 100%;
+  }
+}
+ 
+@media (max-width: 560px) {
+  .portfolio {
+    padding: 3rem 1.5rem 2.5rem;
+  }
+  .portfolio__title {
+    font-size: 28px;
+  }
+  .portfolio__grid {
+    grid-template-columns: 1fr;
+  }
+}

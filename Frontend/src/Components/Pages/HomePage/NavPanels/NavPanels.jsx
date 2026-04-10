@@ -7,26 +7,26 @@ import { panelRoutes } from "./panelRoutes.jsx";
 // Example:
 import Thailand from "./thailand.jpg";
 import Alaska from "./alaska.jpg";
-import Texas from "./texas.jpg";
+import Helene from "./Helene.jpg";
 // import platformImg from "../../../../assets/Platform.jpg";
  
 // Short blurb for each nav section — keyed by route label
 const blurbs = {
-  "Texas":        "Storm conditions are expected to continue in Texas, which has already had impressive rainfall this week...",
+  "Hurricane Helene":        "In late 2024, Hurricane Helene caused catastrophic flooding, infrastructure failure, and widespread displacement across western North Carolina.",
   "Thailand":   "Thailand’s navy will deploy an aircraft carrier to the flood-stricken south, as public outcry mounts over the government’s response to a crisis that has hit about 2 million people and left an entire southern city under water...",
   "Alaska": "See how real communities have used DisasterReady to navigate recovery and rebuild stronger.",
 };
  
 // Swap these out for your imported image variables once you have them
 const images = {
-  "Texas":   Texas,
+  "Hurricane Helene":   Helene,
   "Thailand": Thailand,
   "Alaska": Alaska,
 };
  
 // Accent colors for each panel's collapsed background
 const colors = {
-  "Texas":        "#0B2E4F",
+  "Hurricane Helene":    "#0B2E4F",
   "Thailand":   "#18558f",
   "Alaska": "#1D6A8A",
 };
