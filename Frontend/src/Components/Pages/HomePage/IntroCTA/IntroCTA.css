@@ -93,7 +93,7 @@
 
 .about-subhead {
   font-size: 18px;
-  font-weight: 600;
+  /* font-weight: 200; */
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.6;
   margin: 0 0 14px 0;
@@ -170,7 +170,7 @@
   line-height: 1.7;
   font-size: 28px;
   padding: 0 5vw;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 /*----------------------------------------- Divider & trust note ----------------------------------*/
