@@ -3,7 +3,7 @@
     font-family: Helvetica, Arial, sans-serif;
     background: #fafafa;
     min-height: 100vh;
-    padding: 60px 80px;
+    padding: 60px 100px;
     box-sizing: border-box;
   }
   
@@ -11,8 +11,9 @@
     text-align: center;
     font-size: 36px;
     line-height: 1.4;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    color: #0B2E4F;
   }
   
   .line {
@@ -26,6 +27,6 @@
   
   .body-text {
     max-width: 900px;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.7;
   }
