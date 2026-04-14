@@ -1,7 +1,7 @@
 import React from "react";  // Imports react library as React variable
 import "./Footer.css";      // Imports the ./Footer.css file for styling of the footer
 import { Link } from "react-router-dom"; // Imports the Link component from the react-router-dom library for navigation between pages without refreshing the page
-import Logo from "../../../assets/disasterReadyLogo.png";
+import Logo from "../../../assets/DR_Logo_White.png";
 
 // Assign variable to function declaration
 const Footer = () => {

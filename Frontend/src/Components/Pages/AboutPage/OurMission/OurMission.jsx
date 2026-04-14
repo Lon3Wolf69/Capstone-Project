@@ -7,7 +7,7 @@ import "./OurMission.css";                              // Imports the css file 
 const why = () => {
     return(
     <>
-        <div style={{ padding: "40px 100px", backgroundColor: "#f9f9f9" }}>
+        <div style={{ padding: "40px 100px", backgroundColor: "#D6DEE5" }}>
             <div className="mission-hero">
                 <div style={{ borderLeft: "3px solid #1F8A8E", paddingLeft: "12px" }}>
                     <p> THE CORE INSIGHT </p>
@@ -20,7 +20,7 @@ const why = () => {
         </div>
 
         {/* Subtext cards underneath the image with overlay (cards are not navigation options just a nicer way to display the information) */}
-        <div className="cards-section">
+        <div style={{ paddingBottom: "100px"}} className="cards-section">
 
         
 

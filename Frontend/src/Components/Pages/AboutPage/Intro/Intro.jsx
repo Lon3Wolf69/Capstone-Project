@@ -10,7 +10,7 @@ export default function AnimatedSection() {
           className="line"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 1.5 }}
+          transition={{ duration: 1, delay: 1 }}
         >
           We don’t replace existing systems,
         </motion.div>
@@ -19,7 +19,7 @@ export default function AnimatedSection() {
           className="line"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 3 }}
+          transition={{ duration: 1, delay: 1.5 }}
         >
           we make them <span className="accent">work together.</span>
         </motion.div>
@@ -27,10 +27,9 @@ export default function AnimatedSection() {
 
       <motion.div
         className="body-text"
-        initial={{ opacity: 0, y: 0 }}
-        whileInView={{ opacity: 1, y: 40 }}
-        transition={{ duration: 0.8, delay: 4 }}
-        viewport={{ once: true, amount: 0.2 }}
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 2 }}
       >
         <p>
           Recovery doesn’t fail because of limited funding — it fails because
@@ -39,7 +38,7 @@ export default function AnimatedSection() {
         </p>
         <br></br>
         <p>
-          Disaster ProAction streamlines this process, aligning stakeholders
+          Disaster Ready streamlines this process, aligning stakeholders
           and resources so recovery efforts move <em>faster, smarter, and more effectively</em>.
         </p>
       </motion.div>

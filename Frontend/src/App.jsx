@@ -37,6 +37,8 @@ import CaseImpact from "./Components/Pages/CaseStudiesPage/NorthCarolina/ImpactS
 import ScrollToTop from "./Components/RepeatedComponents/ScrollToTop/ScrollToTop.jsx";
 import CHub from "./Components/Pages/Platform/CoordinationHub/CHub.jsx";
 import CHubCapabilities from "./Components/Pages/Platform/CoordinationHub/CHubCapabilities.jsx";
+import CHWork from "./Components/Pages/Platform/CoordinationHub/CHWorks.jsx"
+
 function App() {
   return (
      
@@ -58,7 +60,7 @@ function App() {
       <Route path="/" element={<><AboutSection /><HRW /> <NavPanels /> <NavShowcase /></>} />  {/* This is a route that displays information on the home page only */}
         {/* Sets up route for the login button */}
         <Route path="/contact" element={<><Contact /></>} />
-        <Route path="/about/AboutUs" element={<><Why /><Intro /></>} />
+        <Route path="/about/AboutUs" element={<><Intro /><Why /></>} />
         <Route path="/about/ourApproach" element={<><Approach /></>} />
         <Route path="/about/Team" element={<><TeamIntro/><Team /></>} />
         <Route path="/caseStudies" element={<><CaseStudies /></>} />
@@ -68,7 +70,7 @@ function App() {
         <Route path="/focusArea/mitigation" element={<><UnderConstruction /></>} />
         <Route path="/focusArea/crisisCommunication" element={<><UnderConstruction /></>} />
         <Route path="/focusArea/wildfire" element={<><UnderConstruction /></>} />
-        <Route path="/platform/coordinationHubOverview" element={<><CHub/><CHubCapabilities/><TechSupport/><BuiltExp/></>} />
+        <Route path="/platform/coordinationHubOverview" element={<><CHub/><CHubCapabilities/><TechSupport/><BuiltExp/> <CHWork /> </>} />
       </Routes>
       </div>
       <Footer />
