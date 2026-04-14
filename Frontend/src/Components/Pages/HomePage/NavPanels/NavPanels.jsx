@@ -5,30 +5,30 @@ import { panelRoutes } from "./panelRoutes.jsx";
 
 // Add your imported images here and map them by route label
 // Example:
-import Thailand from "./thailand.jpg";
-import Alaska from "./alaska.jpg";
-import Helene from "./Helene.jpg";
+import NorthCarolina from "./northCarolina.jpg";
+import EastPalestine from "./eastPalestine.jpg";
+import DeepWaterHorizon from "./deepwater.jpeg";
 // import platformImg from "../../../../assets/Platform.jpg";
  
 // Short blurb for each nav section — keyed by route label
 const blurbs = {
-  "Hurricane Helene":        "In late 2024, Hurricane Helene caused catastrophic flooding, infrastructure failure, and widespread displacement across western North Carolina.",
-  "Thailand":   "Thailand’s navy will deploy an aircraft carrier to the flood-stricken south, as public outcry mounts over the government’s response to a crisis that has hit about 2 million people and left an entire southern city under water...",
-  "Alaska": "See how real communities have used DisasterReady to navigate recovery and rebuild stronger.",
+  "NorthCarolina":  "Following Hurricane Helene, DisasterReady leadership helped align agencies, funding, and partners, enabling billions in recovery resources to move more efficiently into impacted communities.",
+  "EastPalestine":  "After the East Palestine derailment, DisasterReady leadership helped align agencies and quantify unmet needs, ensuring recovery was structured, community-driven, and fully funded by the responsible party.",
+  "DeepWaterHorizon": "During the Deepwater Horizon crisis, DisasterReady leadership supported interagency coordination and communication, helping align large-scale operations and maintain public trust.",
 };
  
 // Swap these out for your imported image variables once you have them
 const images = {
-  "Hurricane Helene":   Helene,
-  "Thailand": Thailand,
-  "Alaska": Alaska,
+  "NorthCarolina":   NorthCarolina,
+  "EastPalestine": EastPalestine,
+  "DeepWaterHorizon": DeepWaterHorizon,
 };
  
 // Accent colors for each panel's collapsed background
 const colors = {
-  "Hurricane Helene":    "#0B2E4F",
-  "Thailand":   "#18558f",
-  "Alaska": "#1D6A8A",
+  "NorthCarolina":    "#0B2E4F",
+  "EastPalestine":   "#18558f",
+  "DeepWaterHorizon": "#1D6A8A",
 };
  
 function NavPanels() {
@@ -43,13 +43,15 @@ function NavPanels() {
  
       <h2 style={{paddingBottom:"10px"}}>Explore Our Work</h2>
 
-      <h6 style={{paddingLeft: "50px", paddingBottom:"20px", color:"#0B2E4F",fontSize: "18px", lineHeight:"1.5"}}> Explore case studies to gain insight into real-world natural disasters and 
+      <h6 style={{paddingLeft: "50px", paddingBottom:"20px", color:"#0B2E4F",fontSize: "18px", lineHeight:"1.5"}}> 
+        Explore case studies to gain insight into real-world natural disasters and 
         their impacts. Each case highlights key events and responses 
-        with links to in-depth articles and external resources for further reading.
+        with links to in-depth articles for further reading.
       </h6>
 
-
       {/* ── Desktop: horizontal strip ── */}
+
+{/*
       <div className="navpanels-strip">
         {panelRoutes.map((route, i) => {
           const isOpen = activeIndex === i;
@@ -57,11 +59,11 @@ function NavPanels() {
             <div
               key={route.label}
               className={`navpanel ${isOpen ? "navpanel--open" : ""}`}
-              style={{ backgroundColor: colors[route.label] }}
               onClick={() => handleToggle(i)}
             >
+            */}
 
-              {/*Image and overlay */}
+              {/*Image and overlay 
               {images[route.label] && (
                 <div className="navpanel-img-wrapper">
                    <img
@@ -72,13 +74,27 @@ function NavPanels() {
                   <div className="navpanel-overlay" />
                 </div>
               )}
+              */}
+{/*
+              <div 
+                className="navpanel-background"
+                style={{ 
+                  backgroundImage: `url(${images[route.label]})`,
+                  backgroundColor: colors[route.label]
+                }}
+              >
+                <div className="navpanel-overlay" />
+              </div> */}
 
               {/* Collapsed state — vertical title */}
+              {/*
               <div className="navpanel-collapsed">
                 <span className="navpanel-vtitle">{route.label}</span>
               </div>
+              */}
  
               {/* Expanded state — image + content */}
+              {/*
               <div className="navpanel-expanded">
                 <div className="navpanel-body">
                     <h3>{route.label}</h3>
@@ -86,7 +102,7 @@ function NavPanels() {
                     <Link
                       to={route.path}
                       className="navpanel-btn"
-                      onClick={(e) => e.stopPropagation()} /* prevents panel toggle when clicking link */
+                      onClick={(e) => e.stopPropagation()}
                     >
                       Explore {route.label}
                       <span className="navpanel-btn-arrow">→</span>
@@ -101,12 +117,12 @@ function NavPanels() {
                     className="navpanel-img"
                   />
                 ) : null
-                  /* Placeholder until real images are added 
+                  Placeholder until real images are added 
                   <div
                     className="navpanel-img-placeholder"
                     style={{ backgroundColor: colors[route.label] }}
                   />
-                  */
+                  
                 }
                 
                 
@@ -115,11 +131,49 @@ function NavPanels() {
           );
         })}
       </div>
+ */}
+
+
+<div className="navpanels-strip">
+  {panelRoutes.map((route, i) => {
+    return (
+      <div key={route.label} className="navpanel-card">
+
+        {/* IMAGE TOP BLOCK */}
+        <div
+          className="navpanel-image"
+          style={{
+            backgroundImage: `url(${images[route.label]})`,
+            backgroundColor: colors[route.label],
+          }}
+        />
+
+        {/* TEXT CONTENT */}
+        <div className="navpanel-content">
+
+          <h3>{route.label.replace(/([A-Z])/g, ' $1').trim()}</h3>
+
+          <p className="navpanel-summary">
+            {blurbs[route.label]}
+          </p>
+
+          <Link to={route.path} className="navpanel-readmore">
+            Read More
+          </Link>
+        </div>
+
+      </div>
+    );
+  })}
+</div>
+
+
  
       {/* ── Mobile: vertical accordion ── */}
       <div className="navpanels-accordion">
         {panelRoutes.map((route, i) => {
           const isOpen = activeIndex === i;
+          const formattedLabel = route.label.replace(/([A-Z])/g, ' $1').trim();
           return (
             <div
               key={route.label}
@@ -155,7 +209,7 @@ function NavPanels() {
                     to={route.path}
                     className="navpanel-btn"
                   >
-                    Explore {route.label}
+                    Explore {formattedLabel}
                     <span className="navpanel-btn-arrow">→</span>
                   </Link>
                 </div>
