@@ -6,16 +6,22 @@
 }
 
 
+
+
 .cap-container {
   max-width: 1200px;
   width: 100%;
 }
 
 
+
+
 .cap-header {
   text-align: center;
   margin-bottom: 70px;
 }
+
+
 
 
 .cap-label {
@@ -28,12 +34,16 @@
 }
 
 
+
+
 .cap-main-title {
   color: #0B1F3A;
   font-size: 38px;
   font-weight: 800;
   margin-bottom: 15px;
 }
+
+
 
 
 .cap-subtitle {
@@ -44,10 +54,15 @@
 }
 
 
+
+
 .cap-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 
@@ -58,7 +73,15 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
   border: 1px solid rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
+ 
+  /* Calculation for 4 columns:
+     (100% / 4) minus a bit for the gaps */
+  flex: 0 1 calc(25% - 25px);
+  min-width: 280px;
+  box-sizing: border-box;
 }
+
+
 
 
 .cap-card:hover {
@@ -66,6 +89,8 @@
   box-shadow: 0 12px 30px rgba(11, 31, 58, 0.1);
   border-color: #e55c1b;
 }
+
+
 
 
 .cap-card-title {
@@ -78,6 +103,8 @@
 }
 
 
+
+
 /* Added a subtle accent line to replace the icon */
 .cap-card-line {
   width: 30px;
@@ -88,6 +115,8 @@
 }
 
 
+
+
 .cap-card-desc {
   font-size: 15px;
   line-height: 1.6;
@@ -96,9 +125,13 @@
 }
 
 
+
+
 @media (max-width: 1024px) {
   .cap-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+
 
 
 @media (max-width: 600px) {

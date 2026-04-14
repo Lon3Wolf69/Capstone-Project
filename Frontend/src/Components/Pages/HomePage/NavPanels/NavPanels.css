@@ -14,7 +14,6 @@
   padding-bottom: 30px;
   margin: 0 0 0 30px;
   letter-spacing: -0.5px;
-  font-style: italic;
 }
  
 .navpanel-img-wrapper {
@@ -116,12 +115,12 @@
  
 /* Vertical text for collapsed panel title */
 .navpanel-vtitle {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
-  writing-mode: vertical-rl;                        /* Rotates text to be vertical */
-  text-orientation: mixed;
-  transform: rotate(180deg);                        /* Flips so text reads bottom to top */
+  /* writing-mode: vertical-rl;                         Rotates text to be vertical */
+  /* text-orientation: mixed; */
+  /* transform: rotate(180deg);                      Flips so text reads bottom to top */
   white-space: nowrap;
   font-family: Helvetica, Arial, sans-serif;
   letter-spacing: 0.05em;

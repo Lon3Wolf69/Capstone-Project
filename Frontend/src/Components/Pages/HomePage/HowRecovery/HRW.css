@@ -91,7 +91,7 @@
   
   .recovery__body {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     color: var(--charcoal);
     line-height: 1.75;
     opacity: 0.8;
@@ -126,7 +126,7 @@
   
   .what-we-do__right {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     color: var(--white);
     line-height: 1.75;
   }
@@ -144,7 +144,7 @@
     border-left: 3px solid var(--teal);
     padding-left: 1rem;
     margin: 1.25rem 0;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     font-style: normal;
     color: var(--orange-light);
@@ -163,4 +163,8 @@
     font-style: normal;
     color: var(--charcoal);
     line-height: 1.6;
+  }
+
+  .federal-sub {
+    font-size: 18px;
   }

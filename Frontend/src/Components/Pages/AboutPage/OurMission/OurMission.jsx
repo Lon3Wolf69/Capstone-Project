@@ -7,49 +7,63 @@ import "./OurMission.css";                              // Imports the css file 
 const why = () => {
     return(
     <>
-        {/* Image with overlay of blue background and text */}
-        <div className= "overlay-container">
-            <img src = {img} alt= "Landslide image" width = "100%" style={{ height: "550px", marginBottom: "-4px"}}/>
-            <div className = "overlay"></div>
-            <div className = "overlay-text">
-                <p style={{ lineHeight: "2.5" }}>RECOVERY SUCCESS DEPENDS ON MORE THAN FUNDING - IT DEPENDS ON <br /><span style={{ color: "#f0a910"}}>COORDINATION!</span></p>
-            </div>
+        <div style={{ padding: "40px 100px", backgroundColor: "#D6DEE5" }}>
+            <div className="mission-hero">
+                <div style={{ borderLeft: "3px solid #1F8A8E", paddingLeft: "12px" }}>
+                    <p> THE CORE INSIGHT </p>
+                    <h1 style={{ lineHeight: "1.5", fontWeight: "bold", color:"#0B2E4F" }}>
+                        Recovery success depends on more than funding, <br /> it depends on
+                        <span style={{ color: "#F47A20"}}><i> coordination.</i></span>
+                    </h1>
+                </div>
+            </div>    
         </div>
+
         {/* Subtext cards underneath the image with overlay (cards are not navigation options just a nicer way to display the information) */}
-        <div className="cards-section">
-            {/* First card  */}
-            <div className="card">
-                <div className="card-icon">  
-                <img 
-                    src="https://www.citypng.com/public/uploads/preview/hd-magnifying-glass-question-mark-orange-icon-png-701751694962499adguvkaswd.png"
-                    alt="Idea icon"
-                />
+        <div style={{ paddingBottom: "100px"}} className="cards-section">
+
+        
+
+                {/* First card  */}
+                <div className=" card card-challenge">
+                    <div className="card-icon">  
+                    <img 
+                        src="https://img.icons8.com/?size=100&id=31337&format=png&color=0b2e4f"
+                        alt="challenge icon"
+                    />
+                    </div>
+                    <h2 className="card-header">The Challenge</h2>
+                    <p>States first define priorities across housing, infrastructure, economic, environmental, and health needs. But as execution begins, gaps appear: misaligned funding, limited capacity, and operational bottlenecks.</p>
                 </div>
-                <h2 className="card-header">The Challenge</h2>
-                <p>States first define priorities across housing, infrastructure, economic, environmental, and health needs. But as execution begins, gaps appear: misaligned funding, limited capacity, and operational bottlenecks.</p>
-            </div>
-            {/* Second card */}
-            <div className="card">
-                <div className="card-icon">
-                <img 
-                    src="https://freesvg.org/img/1490609861.png"
-                    alt="Idea icon"
-                />
+
+                <span style={{ alignSelf: "center", fontSize: "2rem", color: "#0B2E4F" }}>➔</span>
+
+                {/* Second card */}
+                <div className="card card-solution">
+                    <div className="card-icon">
+                    <img 
+                        src="https://freesvg.org/img/1490609861.png"
+                        alt="soloution icon"
+                    />
+                    </div>
+                    <h2 className="card-header">Our Solution</h2>
+                    <p>DisasterReady brings the system together - aligning agencies, partners, and resources to move recovery forward with clarity and momentum.</p>
                 </div>
-                <h2 className="card-header">Our Solution</h2>
-                <p>DisasterReady brings the system together - aligning agencies, partners, and resources to move recovery forward with clarity and momentum.</p>
-            </div>
-            {/* Third card */}
-            <div className="card">
-                <div className="card-icon">
-                <img 
-                    src="https://www.clipartmax.com/png/middle/312-3127906_orange-checkmark-clipart-check-mark-clip-art-orange-tick-mark-png.png"
-                    alt="Idea icon"
-                />
+
+                <span style={{ alignSelf: "center", fontSize: "2rem", color: "#0B2E4F" }}>➔</span>
+
+                {/* Third card */}
+                <div className=" card card-result">
+                    <div className="card-icon">
+                    <img 
+                        src="https://img.icons8.com/?size=100&id=JqO2pI4S2qPh&format=png&color=f47a20"
+                        alt="result icon"
+                    />
+                    </div>
+                    <h2 className="card-header">The Result</h2>
+                    <p>Because coordinated recovery is successful recovery! When the right people, tools, and plans align - communities rebuild faster and stronger.</p>
                 </div>
-                <h2 className="card-header">The Result</h2>
-                <p>Because coordinated recovery is successful recovery! When the right people, tools, and plans align - communities rebuild faster and stronger.</p>
-            </div>
+            
         </div>
     </>
     );
