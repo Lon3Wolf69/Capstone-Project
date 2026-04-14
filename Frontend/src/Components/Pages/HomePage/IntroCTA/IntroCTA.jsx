@@ -6,7 +6,6 @@ const AboutSection = () => {
   return (
     <section className="about-section">
       <div className="about-overlay-content">
- 
         <div className="about-eyebrow">
           <div className="about-eyebrow-line" />
           <span className="about-eyebrow-text">
@@ -18,9 +17,9 @@ const AboutSection = () => {
           Coordinating Disaster Recovery
           <br />
           Across{" "}
-          <span className="about-headline-accent">Agencies, Funding</span>
-          <br />
-          and <span className="about-headline-accent"> Partners.</span>
+          <span className="about-headline-accent">Agencies, Funding </span>
+          
+          and <span className="about-headline-accent"> Partners</span>.
         </h1>
         <div className="about-blurb-row">
           <p className="about-subhead">

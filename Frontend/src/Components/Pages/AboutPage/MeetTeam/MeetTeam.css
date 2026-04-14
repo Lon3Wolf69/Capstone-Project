@@ -7,7 +7,7 @@
 .mtt-section h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: #e9553b;
+    color: #f07a40;
     margin-bottom: 50px;
     letter-spacing: -0.5px;
     font-style: italic;
@@ -67,7 +67,7 @@
 }
 
 .name {
-    font-size: 1rem;
+    font-size: 26px;
     font-weight: 600;
     color: black;
     margin: 0 0 6px 0;
@@ -75,12 +75,11 @@
 }
   
 .position {
-    font-size: 0.875rem;
-    color: #F47A20;
+    font-size: 18px;
+    color: #f07a40;
     margin: 0;
     text-align: center;
     font-weight: 600;
-    font-style: italic;
 }
   
 .blurb {
@@ -88,8 +87,8 @@
 }
 
 .blurb-paragraph {
-    font-size: 0.875rem;
-    color: #000000;
+    font-size: 18px;
+    color: black;
     margin: 0 0 0.75em 0;
     text-align: left;
     line-height: 1.5;
@@ -115,15 +114,13 @@
     margin-top: 15px;
     background: none;
     border: none;
-    color: #FA7A20;
-    font-size: 0.875rem;
+    color: #f07a40;
     cursor: pointer;
     text-decoration: underline;
     padding: 5px 0;
     transition: color 0.2s ease;
-    font-style: italic;
 }
 
 .read-more-btn:hover {
-    color: #d66618;
+    color: #c45e10;
 }

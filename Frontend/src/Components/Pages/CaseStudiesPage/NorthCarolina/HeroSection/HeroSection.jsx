@@ -11,11 +11,11 @@ const stats = [
 const HeroSection = () => {
   return (
     <div className="hero">
-      <span className="hero__tag">Disaster Recovery · Western NC · 2024</span>
+      <span className="hero__tag">Disaster Recovery · Western NC</span>
  
       <h1 className="hero__title">
         Coordinating Recovery at Scale in Western North Carolina{" "}
-        <span>Hurricane Helene</span>
+        <span>Hurricane Helene</span>.
       </h1>
  
       <p className="hero__description">

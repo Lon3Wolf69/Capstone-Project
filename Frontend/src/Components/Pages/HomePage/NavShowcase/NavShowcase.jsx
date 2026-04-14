@@ -1,13 +1,16 @@
 import "./NavShowcase.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import Typing from "../../../../assets/Typing.jpg";
+import Cleanup from "../../../../assets/Cleanup.jpg";
+import Speech from "../../../../assets/Speech.png";
 
 const panels = [
   {
     theme: "dark",
     imgSide: "left",
-    img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
-    label: "Revcovery in practice",
+    img: Cleanup,
+    label: "Recovery in practice",
     title: "Case Study",
     desc: "In North Carolina, coordinated interagency recovery has already demonstrated what is possible when agenices, funding, and priotities are aligned.\n\n Billions in federal resources were mobilized and connected across programs, accelerating recovery and reducing friction at the state and local level.\n\n This is not theoretical, It is how recovery works when coordination is done right!",
     cta: "View Case Study",
@@ -16,7 +19,7 @@ const panels = [
   {
     theme: "light",
     imgSide: "right",
-    img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=80",
+    img: Typing,
     label: "Supporting Coordination at Scale",
     title: "Coordination Hub",
     desc: "DisasterReady is building a Coordination Hub to support this work, helping states organize recovery information, identity gaps, and navigate federal programs more effectively.\n\n The Hub is not a replacement for coordination.\n It is a system designed to strengthen it.\n\n It brings structure to a process that is often fragmented, supporting how recovery actually works across agencies and funding.",
@@ -36,7 +39,7 @@ const panels = [
   {
     theme: "light",
     imgSide: "right",
-    img: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=80",
+    img: Speech,
     label: "Let's Coordinate Recovery",
     title: "Contact",
     desc: "DisasterReady works with leaders responsible for disaster recovery across agencies, funding programs, and partners.\n\n If you are navigating recovery and need to align complex systems, we welcome the conversation!",

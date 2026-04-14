@@ -27,39 +27,109 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
- 
-.portfolio__card {
-  background: #f7f9fc;
+
+/* teal background color for the card */
+.portfolio__card_teal {
+  background: rgba(225, 245, 245, 1);
   border: 0.5px solid #dde3ec;
   border-radius: 12px;
   padding: 1.75rem;
 }
  
-.portfolio__card-icon {
+.portfolio__card-icon_teal {
   width: 40px;
   height: 40px;
   border-radius: 8px;
+  border: 1.5px solid rgba(13, 99, 102, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
-  background: rgba(240, 120, 30, 0.12);
+  background: rgba(13, 99, 102, 0.2);
 }
  
-.portfolio__card-title {
+.portfolio__card-title_teal {
   font-size: 22px;
   font-weight: 500;
-  color: #0d1b2e;
+  color: #0D6366;
   margin-bottom: 8px;
 }
  
-.portfolio__card-description {
+.portfolio__card-description_teal {
   font-size: 18px;
-  color: #5a6475;
+  color: black;
   line-height: 1.7;
   margin: 0;
 }
+
+/* Orange background color for the card */
+.portfolio__card_orange {
+  background: rgba(240, 122, 64, 0.2);
+  border: 0.5px solid #dde3ec;
+  border-radius: 12px;
+  padding: 1.75rem;
+}
  
+.portfolio__card-icon_orange {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(196, 94, 16, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  background: rgba(240, 122, 64, 0.2);
+}
+ 
+.portfolio__card-title_orange {
+  font-size: 22px;
+  font-weight: 500;
+  color: #c45e10;
+  margin-bottom: 8px;
+}
+ 
+.portfolio__card-description_orange {
+  font-size: 18px;
+  color: black;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Blue background color for the card */
+ .portfolio__card_blue {
+  background: rgba(205, 222, 236, 1);
+  border: 0.5px solid #dde3ec;
+  border-radius: 12px;
+  padding: 1.75rem;
+}
+ 
+.portfolio__card-icon_blue {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(11, 46, 79, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  background: rgba(11, 46, 79, 0.2);
+}
+ 
+.portfolio__card-title_blue {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(11, 46, 79, 1);
+  margin-bottom: 8px;
+}
+ 
+.portfolio__card-description_blue {
+  font-size: 18px;
+  color: black;
+  line-height: 1.7;
+  margin: 0;
+}
+
 @media (max-width: 900px) {
   .portfolio {
     padding: 4rem 2.5rem 3rem;

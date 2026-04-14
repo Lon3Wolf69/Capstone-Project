@@ -4,10 +4,10 @@
   /* Background lines */
   background-image: repeating-linear-gradient(
     -45deg,
-    rgba(255, 255, 255, 0.09) 0px,
-    rgba(255, 255, 255, 0.09) 1px,
-    transparent 1px,
-    transparent 12px
+    rgba(255, 255, 255, 0.07) 0px,
+    rgba(255, 255, 255, 0.07) 1px,
+    transparent 2px,
+    transparent 22px
   );
   background-attachment: fixed;
   padding: 5rem 4rem 4rem;
@@ -21,8 +21,8 @@
   font-weight: 500;
   padding: 4px 12px;
   border-radius: 4px;
-  background: rgba(240, 120, 30, 0.18);
-  color: #f0781e;
+  background: #0D6366;
+  color: rgba(225, 245, 245, 1);
   margin-bottom: 1rem;
   letter-spacing: 0.06em;
 }
@@ -37,12 +37,12 @@
 }
  
 .hero__title span {
-  color: #f0781e;
+  color: #f07a40;
 }
  
 .hero__description {
   font-size: 22px;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255);
   line-height: 1.6;
   max-width: 90%;
 }
@@ -53,7 +53,7 @@
   gap: 8px;
   margin-top: 1.75rem;
   padding: 12px 22px;
-  background: #F47A20;
+  background: #f07a40;
   color: #ffffff;
   font-size: 20px;
   font-weight: 600;
@@ -81,7 +81,7 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #f0781e;
+  color: #f07a40;
   margin-bottom: 1.25rem;
 }
  
@@ -101,18 +101,18 @@
 .hero__stat-num {
   font-size: 32px;
   font-weight: 500;
-  color: #ffffff;
+  color: #10b7bd;
   line-height: 1.1;
 }
  
 .hero__stat-num span {
   font-size: 30px;
-  color: #f0781e;
+  color: #f07a40;
 }
  
 .hero__stat-label {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255);
   margin-top: 6px;
   line-height: 1.4;
 }

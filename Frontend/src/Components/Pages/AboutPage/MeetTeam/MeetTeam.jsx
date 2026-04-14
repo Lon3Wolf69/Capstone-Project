@@ -86,7 +86,7 @@ export default function TeamSection() {
                   ))}
                 </div>
               </div>
-              <button className="read-more-btn" onClick={() => toggleExpand(member.id)}>
+              <button style={{fontSize: "18px"}} className="read-more-btn" onClick={() => toggleExpand(member.id)}>
                 {isExpanded ? 'Read Less' : 'Read More'}
               </button>
             </div>
