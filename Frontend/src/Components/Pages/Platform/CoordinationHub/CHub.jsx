@@ -3,8 +3,12 @@ import { Link } from "react-router-dom";
 import "./CHub.css";
 
 
+
+
 // 1. IMPORT YOUR DIAGRAMS HERE
 // Example: import HubArchitecture from "../Diagrams/HubArchitecture";
+
+
 
 
 const hubSections = [
@@ -12,11 +16,14 @@ const hubSections = [
     theme: "light",
     side: "right", // Diagram on the right
     label: "What it is",
-    title: "A Coordination System—Supported by Technology",
+    title: "A Coordination System—Supported by Technology—Built From Experience",
     desc: `DisasterReady is building a proprietary coordination system to help states connect recovery priorities with the agencies, funding, and partners required to deliver outcomes.
 
 
 The Coordination Hub brings structure to a process that is often fragmented—supporting how recovery actually works across federal systems.
+
+
+The Coordination Hub is informed by real recovery operations and is being developed based on direct experience, reflecting where recovery efforts succeed—and where they break down.
 
 
 It is not a replacement for coordination. It is designed to strengthen it.`,
@@ -34,10 +41,12 @@ It is not a replacement for coordination. It is designed to strengthen it.`,
 But without a clear way to organize and connect those pieces, recovery slows, risk increases, and resources are left unused.
 
 
-The Coordination Hub is designed to reduce that friction—helping recovery move forward with greater clarity and alignment.`,
+The Coordination Hub is designed to reduce that friction—helping recovery move forward with greater clarity and alignment. It's designed to help states move from fragmented efforts to coordinated recovery so funding, agencies, and priorities work together to deliver results.`,
     // Pass your imported component here
     diagram: <div className="placeholder-diagram">DIAGRAM COMPONENT GOES HERE</div>
   }
+
+
 
 
 ];
@@ -47,9 +56,17 @@ The Coordination Hub is designed to reduce that friction—helping recovery move
 
 
 
+
+
+
+
+
+
 const CHub = () => {
   useEffect(() => {
     const panels = document.querySelectorAll(".ch-panel");
+
+
 
 
     const observer = new IntersectionObserver(
@@ -64,9 +81,13 @@ const CHub = () => {
     );
 
 
+
+
     panels.forEach((panel) => observer.observe(panel));
     return () => observer.disconnect();
   }, []);
+
+
 
 
   return (
@@ -85,7 +106,11 @@ const CHub = () => {
           )}
 
 
+
+
           <div className="ch-accent"></div>
+
+
 
 
           {/* TEXT CONTENT COLUMN */}
@@ -94,6 +119,8 @@ const CHub = () => {
             <h2 className="ch-title">{section.title}</h2>
             <p className="ch-desc">{section.desc}</p>
           </div>
+
+
 
 
           {/* MEDIA COLUMN (RIGHT SIDE) */}
@@ -111,6 +138,8 @@ const CHub = () => {
     </div>
   );
 };
+
+
 
 
 export default CHub;
