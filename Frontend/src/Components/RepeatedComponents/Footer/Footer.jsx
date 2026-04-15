@@ -20,7 +20,6 @@ const Footer = () => {
                 <Link to="/contact">Contact Us</Link>                          {/* Goes to the Contact page */}
               </div>
               <p>Email: disasterready.contact@gmail.com </p>
-              <p>Phone: (xxx) xxx-xxxx </p>
             </div>
           </div>  
           

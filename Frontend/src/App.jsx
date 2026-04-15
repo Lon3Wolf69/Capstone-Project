@@ -61,14 +61,20 @@ function App() {
         <Route path="/about/AboutUs" element={<><Intro /><Why /></>} />
         <Route path="/about/ourApproach" element={<><Approach /></>} />
         <Route path="/about/Team" element={<><TeamIntro/><Team /></>} />
+        {/* Case Studies */}
         <Route path="/caseStudies" element={<><CaseStudies /></>} />
+        <Route path="/caseStudies/eastPalestine" element={<><UnderConstruction /></>} />
+        <Route path="/caseStudies/deepwaterHorizon" element={<><UnderConstruction /></>} />
+        {/* Focus Areas */}
         <Route path="/focusArea/interagencyRecovery" element={<><RSFHeader/><RSFexample/> </>}/>
         <Route path="/caseStudies/northCarolina" element={<><CaseHero /><CaseRecovery /><CaseImpact /></>} />
         <Route path="/focusArea/debrisManagement" element={<><UnderConstruction /></>} />
         <Route path="/focusArea/mitigation" element={<><UnderConstruction /></>} />
         <Route path="/focusArea/crisisCommunication" element={<><CC /></>} />
         <Route path="/focusArea/wildfire" element={<><UnderConstruction /></>} />
-        <Route path="/platform/coordinationHubOverview" element={<><CHub/><CHubCapabilities/> <CHWork /> </>} />
+        {/* Platform */}
+        <Route path="/platform/coordinationHubOverview" element={<><CHub/><CHubCapabilities/><CHWork /></>} />
+        
       </Routes>
       </div>
       <Footer />
