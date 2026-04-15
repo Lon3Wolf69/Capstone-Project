@@ -29,15 +29,18 @@ import HRW from "./Components/Pages/HomePage/HowRecovery/HRW.jsx";
 import UnderConstruction from "./Components/RepeatedComponents/UnderConstruction/UnderConstruction.jsx";
 import NavShowcase from "./Components/Pages/HomePage/NavShowcase/NavShowcase.jsx";
 import Approach from "./Components/Pages/AboutPage/OurApproach/Approach.jsx";
-import CaseHero from "./Components/Pages/CaseStudiesPage/NorthCarolina/HeroSection/HeroSection.jsx";
-import CaseRecovery from "./Components/Pages/CaseStudiesPage/NorthCarolina/RecoveryPortfolio/RecoveryPortfolio.jsx";
-import CaseImpact from "./Components/Pages/CaseStudiesPage/NorthCarolina/ImpactSection/ImpactSection.jsx";
+import NCCaseHero from "./Components/Pages/CaseStudiesPage/NorthCarolina/HeroSection/HeroSection.jsx";
+import NCCaseRecovery from "./Components/Pages/CaseStudiesPage/NorthCarolina/RecoveryPortfolio/RecoveryPortfolio.jsx";
+import NCCaseImpact from "./Components/Pages/CaseStudiesPage/NorthCarolina/ImpactSection/ImpactSection.jsx";
 import ScrollToTop from "./Components/RepeatedComponents/ScrollToTop/ScrollToTop.jsx";
 import CHub from "./Components/Pages/Platform/CoordinationHub/CHub.jsx";
 import CHubCapabilities from "./Components/Pages/Platform/CoordinationHub/CHubCapabilities.jsx";
-import CHWork from "./Components/Pages/Platform/CoordinationHub/CHWorks.jsx"
-import CC from "./Components/Pages/CrisisCommunicationPage/CC.jsx"
-import FAT from "./Components/Pages/HomePage/FocusAreasTeaser/FAT.jsx"
+import CHWork from "./Components/Pages/Platform/CoordinationHub/CHWorks.jsx";
+import CC from "./Components/Pages/CrisisCommunicationPage/CC.jsx";
+import FAT from "./Components/Pages/HomePage/FocusAreasTeaser/FAT.jsx";
+import EPHero from "./Components/Pages/CaseStudiesPage/EastPalestine/HeroSection/HeroSection.jsx";
+import EPImpact from "./Components/Pages/CaseStudiesPage/EastPalestine/ImpactSection/ImpactSection.jsx";
+import EPRecovery from "./Components/Pages/CaseStudiesPage/EastPalestine/RecoveryPortfolio/RecoveryPortfolio.jsx";
 
 
 function App() {
@@ -66,11 +69,12 @@ function App() {
         <Route path="/about/Team" element={<><TeamIntro/><Team /></>} />
         {/* Case Studies */}
         <Route path="/caseStudies" element={<><CaseStudies /></>} />
-        <Route path="/caseStudies/eastPalestine" element={<><UnderConstruction /></>} />
+        <Route path="/caseStudies/eastPalestine" element={<><EPHero /><EPImpact /></>} />
         <Route path="/caseStudies/deepwaterHorizon" element={<><UnderConstruction /></>} />
+        <Route path="/caseStudies/northCarolina" element={<><NCCaseHero /><NCCaseRecovery /><NCCaseImpact /></>} />
         {/* Focus Areas */}
         <Route path="/focusArea/interagencyRecovery" element={<><RSFHeader/><RSFexample/> </>}/>
-        <Route path="/caseStudies/northCarolina" element={<><CaseHero /><CaseRecovery /><CaseImpact /></>} />
+        
         <Route path="/focusArea/debrisManagement" element={<><UnderConstruction /></>} />
         <Route path="/focusArea/mitigation" element={<><UnderConstruction /></>} />
         <Route path="/focusArea/crisisCommunication" element={<><CC /></>} />
