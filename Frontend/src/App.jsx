@@ -36,6 +36,7 @@ import ScrollToTop from "./Components/RepeatedComponents/ScrollToTop/ScrollToTop
 import CHub from "./Components/Pages/Platform/CoordinationHub/CHub.jsx";
 import CHubCapabilities from "./Components/Pages/Platform/CoordinationHub/CHubCapabilities.jsx";
 import CHWork from "./Components/Pages/Platform/CoordinationHub/CHWorks.jsx"
+import FAT from "./Components/Pages/HomePage/FocusAreasTease/FAT.jsx";
 
 function App() {
   return (
@@ -55,7 +56,7 @@ function App() {
       <div>
       {/* This is another wrapper container for all defined Routes (Put all the Route tags here. Your telling the program what to display when the url equals the path) */}
       <Routes>
-      <Route path="/" element={<><AboutSection /><HRW /> <NavPanels /> <NavShowcase /></>} />  {/* This is a route that displays information on the home page only */}
+      <Route path="/" element={<><AboutSection /><HRW /> <NavPanels /> <FAT /><NavShowcase /></>} />  {/* This is a route that displays information on the home page only */}
         {/* Sets up route for the login button */}
         <Route path="/contact" element={<><Contact /></>} />
         <Route path="/about/AboutUs" element={<><Intro /><Why /></>} />
@@ -69,6 +70,8 @@ function App() {
         <Route path="/focusArea/crisisCommunication" element={<><UnderConstruction /></>} />
         <Route path="/focusArea/wildfire" element={<><UnderConstruction /></>} />
         <Route path="/platform/coordinationHubOverview" element={<><CHub/><CHubCapabilities/> <CHWork /> </>} />
+        <Route path="/caseStudies/eastPalestine" element={<><UnderConstruction /></>} />
+        <Route path="/caseStudies/deepwaterHorizon" element={<><UnderConstruction /></>} />
       </Routes>
       </div>
       <Footer />

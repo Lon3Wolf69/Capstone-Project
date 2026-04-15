@@ -1,0 +1,174 @@
+.focus-areas-section {
+  background: #0B1F3A;
+  padding: 80px 40px 120px 40px;
+}
+ 
+.focus-areas-inner {
+  max-width: 90%;
+  margin: 0 auto;
+}
+ 
+.focus-areas-eyebrow {
+  color: #2ab6bb;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+ 
+.focus-areas-heading {
+  color: #E1F5F5;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 56px;
+}
+ 
+.focus-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+ 
+.focus-areas-col {
+  padding-right: 40px;
+  margin-right: 40px;
+  border-right: 1px solid #2ab6bb;
+  transform: translateY(24px);
+}
+ 
+.focus-areas-col:last-child {
+  border-right: none;
+  padding-right: 0;
+  margin-right: 0;
+}
+ 
+.focus-areas-icon {
+  display: block;
+  margin-bottom: 28px;
+}
+ 
+.focus-areas-title {
+  color: #E1F5F5;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 16px;
+}
+ 
+.focus-areas-body {
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.75;
+  margin: 0 0 28px;
+}
+ 
+.focus-areas-link {
+  color: #2ab6bb;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(42, 182, 187, 0.35);
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+ 
+.focus-areas-link:hover {
+  color: #f07a40;
+  border-color: rgba(240, 122, 64, 0.5);
+}
+
+/* Tablet — 2 columns, 3rd stacks below */
+@media (max-width: 900px) {
+  .focus-areas-section {
+    padding: 64px 32px;
+  }
+ 
+  .focus-areas-heading {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+ 
+  .focus-areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 0;
+  }
+ 
+  .focus-areas-col {
+    padding-right: 32px;
+    margin-right: 32px;
+  }
+ 
+  /* 2nd column has no right border */
+  .focus-areas-col:nth-child(2) {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+  }
+ 
+  /* 3rd column spans full width, no border, top separator instead */
+  .focus-areas-col:nth-child(3) {
+    grid-column: 1 / -1;
+    border-right: none;
+    border-top: 1px solid rgba(0, 164, 166, 0.2);
+    padding-right: 0;
+    margin-right: 0;
+    padding-top: 40px;
+  }
+}
+ 
+/* Mobile — single column */
+@media (max-width: 600px) {
+  .focus-areas-section {
+    padding: 48px 24px;
+  }
+ 
+  .focus-areas-heading {
+    font-size: 26px;
+    margin-bottom: 32px;
+  }
+ 
+  .focus-areas-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+ 
+  .focus-areas-col {
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 164, 166, 0.2);
+    padding-right: 0;
+    margin-right: 0;
+    padding-bottom: 36px;
+    margin-bottom: 36px;
+  }
+ 
+  .focus-areas-col:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+ 
+  /* Reset tablet overrides */
+  .focus-areas-col:nth-child(2) {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+  }
+ 
+  .focus-areas-col:nth-child(3) {
+    grid-column: auto;
+    border-top: none;
+    padding-top: 0;
+  }
+ 
+  .focus-areas-title {
+    font-size: 20px;
+  }
+ 
+  .focus-areas-body {
+    font-size: 14px;
+  }
+}
