@@ -36,7 +36,7 @@ import ScrollToTop from "./Components/RepeatedComponents/ScrollToTop/ScrollToTop
 import CHub from "./Components/Pages/Platform/CoordinationHub/CHub.jsx";
 import CHubCapabilities from "./Components/Pages/Platform/CoordinationHub/CHubCapabilities.jsx";
 import CHWork from "./Components/Pages/Platform/CoordinationHub/CHWorks.jsx"
-
+import CC from "./Components/Pages/CrisisCommunicationPage/CC.jsx"
 function App() {
   return (
      
@@ -66,7 +66,7 @@ function App() {
         <Route path="/caseStudies/northCarolina" element={<><CaseHero /><CaseRecovery /><CaseImpact /></>} />
         <Route path="/focusArea/debrisManagement" element={<><UnderConstruction /></>} />
         <Route path="/focusArea/mitigation" element={<><UnderConstruction /></>} />
-        <Route path="/focusArea/crisisCommunication" element={<><UnderConstruction /></>} />
+        <Route path="/focusArea/crisisCommunication" element={<><CC /></>} />
         <Route path="/focusArea/wildfire" element={<><UnderConstruction /></>} />
         <Route path="/platform/coordinationHubOverview" element={<><CHub/><CHubCapabilities/> <CHWork /> </>} />
       </Routes>
