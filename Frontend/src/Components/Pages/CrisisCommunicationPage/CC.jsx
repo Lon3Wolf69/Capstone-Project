@@ -6,16 +6,20 @@ import SupportDiagram from "../../../assets/AreasOfSupport.png";
 const CC = () => {
   const features = [
     {
-      title: "Real-Time Interagency Visibility",
-      desc: "Connect data across state and federal systems to see exactly where resources are deployed."
+      title: "Aligned",
+      desc: "Messaging reflects coordinated interagency priorities."
     },
     {
-      title: "Automated Gap Analysis",
-      desc: "Instantly surface unmet needs by comparing recovery goals against current funding streams."
+      title: "Clear",
+      desc: "Complex federal programs are translated into understandable guidance."
     },
     {
-      title: "Direct Program Mapping",
-      desc: "Align complex federal requirements with local recovery projects to ensure compliance and speed."
+      title: "Consistent",
+      desc: "Updates reinforce shared recovery goals across partners."
+    },
+    {
+      title: "Structured",
+      desc: "Briefings, strategy decks, summaries, and interagency updates are organized to support decision-making."
     }
   ];
 
@@ -30,11 +34,10 @@ const CC = () => {
       >
         {/* LEFT COLUMN: CONTENT */}
         <div className="cc-left">
-          <h4 className="cc-label">Advanced Coordination</h4>
-          <h2 className="cc-title">The Coordination Hub Engine</h2>
+          <h4 className="cc-label">Crisis Communication</h4>
+          <h2 className="cc-title">Our Approach </h2>
           <p className="cc-intro">
-            A specialized environment designed to handle the high-background noise 
-            of disaster recovery, filtering out complexity so leaders can focus on execution.
+            DisasterReady supports recovery communication that is:
           </p>
 
           <ul className="cc-feature-list">
