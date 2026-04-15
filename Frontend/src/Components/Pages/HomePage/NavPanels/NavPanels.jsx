@@ -5,9 +5,9 @@ import { panelRoutes } from "./panelRoutes.jsx";
 
 // Add your imported images here and map them by route label
 // Example:
-import NorthCarolina from "./northCarolina.jpg";
-import EastPalestine from "./eastPalestine.jpg";
-import DeepWaterHorizon from "./deepwater.jpeg";
+import NorthCarolina from "../../../../assets/northCarolina.jpg";
+import EastPalestine from "../../../../assets/eastPalestine.jpg";
+import DeepWaterHorizon from "../../../../assets/deepwater.jpeg";
 // import platformImg from "../../../../assets/Platform.jpg";
  
 // Short blurb for each nav section — keyed by route label
