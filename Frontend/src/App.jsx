@@ -29,8 +29,6 @@ import HRW from "./Components/Pages/HomePage/HowRecovery/HRW.jsx";
 import UnderConstruction from "./Components/RepeatedComponents/UnderConstruction/UnderConstruction.jsx";
 import NavShowcase from "./Components/Pages/HomePage/NavShowcase/NavShowcase.jsx";
 import Approach from "./Components/Pages/AboutPage/OurApproach/Approach.jsx";
-import TechSupport from "./Components/Pages/Platform/CoordinationHub/TechSupport/TechSupport.jsx";
-import BuiltExp from "./Components/Pages/Platform/CoordinationHub/BuiltExp/BuiltExp.jsx";
 import CaseHero from "./Components/Pages/CaseStudiesPage/NorthCarolina/HeroSection/HeroSection.jsx";
 import CaseRecovery from "./Components/Pages/CaseStudiesPage/NorthCarolina/RecoveryPortfolio/RecoveryPortfolio.jsx";
 import CaseImpact from "./Components/Pages/CaseStudiesPage/NorthCarolina/ImpactSection/ImpactSection.jsx";
@@ -70,7 +68,7 @@ function App() {
         <Route path="/focusArea/mitigation" element={<><UnderConstruction /></>} />
         <Route path="/focusArea/crisisCommunication" element={<><UnderConstruction /></>} />
         <Route path="/focusArea/wildfire" element={<><UnderConstruction /></>} />
-        <Route path="/platform/coordinationHubOverview" element={<><CHub/><CHubCapabilities/><TechSupport/><BuiltExp/> <CHWork /> </>} />
+        <Route path="/platform/coordinationHubOverview" element={<><CHub/><CHubCapabilities/> <CHWork /> </>} />
       </Routes>
       </div>
       <Footer />
