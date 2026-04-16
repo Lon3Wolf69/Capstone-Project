@@ -1,4 +1,4 @@
-import "./HeroSection.css";
+import "./EPHeroSection.css";
  
 const stats = [
   {
@@ -20,15 +20,15 @@ const stats = [
  
 const HeroSection = () => {
   return (
-    <div className="hero">
-      <span className="hero__tag">Disaster Recovery · East Palestine, OH</span>
+    <div className="ep-hero">
+      <span className="ep-hero__tag">Disaster Recovery · East Palestine, OH</span>
  
-      <h1 className="hero__title">
+      <h1 className="ep-hero__title">
         Coordinating Accountability and Recovery in{" "}
         <span>East Palestine, Ohio</span>.
       </h1>
  
-      <p className="hero__description">
+      <p className="ep-hero__description">
         Following the 2023 train derailment in East Palestine, Ohio, the
         community faced widespread environmental contamination, health concerns,
         and long-term economic uncertainty. Unlike traditional disasters,
@@ -47,16 +47,16 @@ const HeroSection = () => {
         community-driven plan.
       </p>
  
-      <div className="hero__outcomes">
-        <div className="hero__outcomes-label">Key outcomes</div>
-        <div className="hero__stats-grid">
+      <div className="ep-hero__outcomes">
+        <div className="ep-hero__outcomes-label">Key outcomes</div>
+        <div className="ep-hero__stats-grid">
           {stats.map((stat, i) => (
-            <div key={i} className="hero__stat-card">
-              <div className="hero__stat-num">
+            <div key={i} className="ep-hero__stat-card">
+              <div className="ep-hero__stat-num">
                 {stat.num}
                 <span>{stat.suffix}</span>
               </div>
-              <div className="hero__stat-label">{stat.label}</div>
+              <div className="ep-hero__stat-label">{stat.label}</div>
             </div>
           ))}
         </div>

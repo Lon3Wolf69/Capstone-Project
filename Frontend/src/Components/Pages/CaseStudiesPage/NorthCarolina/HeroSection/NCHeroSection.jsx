@@ -1,4 +1,4 @@
-import "./HeroSection.css";
+import "./NCHeroSection.css";
 import factSheet from "../../../../../assets/NcIrcFactSheet.pdf";
  
 const stats = [
