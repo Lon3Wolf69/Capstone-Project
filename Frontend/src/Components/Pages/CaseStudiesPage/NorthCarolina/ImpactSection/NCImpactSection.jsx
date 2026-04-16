@@ -1,4 +1,4 @@
-import "./ImpactSection.css";
+import "./NCImpactSection.css";
  
 const impactItems = [
   {

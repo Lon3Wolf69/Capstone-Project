@@ -1,4 +1,4 @@
-import "./RecoveryPortfolio.css";
+import "./NCRecoveryPortfolio.css";
 
 // Cards for each portfolio item with icon, title and description
 const portfolioItems = [

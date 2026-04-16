@@ -1,4 +1,4 @@
-import "./ImpactSection.css";
+import "./EPImpactSection.css";
  
 const impactItems = [
   {

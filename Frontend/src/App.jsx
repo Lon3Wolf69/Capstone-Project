@@ -29,18 +29,18 @@ import HRW from "./Components/Pages/HomePage/HowRecovery/HRW.jsx";
 import UnderConstruction from "./Components/RepeatedComponents/UnderConstruction/UnderConstruction.jsx";
 import NavShowcase from "./Components/Pages/HomePage/NavShowcase/NavShowcase.jsx";
 import Approach from "./Components/Pages/AboutPage/OurApproach/Approach.jsx";
-import NCCaseHero from "./Components/Pages/CaseStudiesPage/NorthCarolina/HeroSection/HeroSection.jsx";
-import NCCaseRecovery from "./Components/Pages/CaseStudiesPage/NorthCarolina/RecoveryPortfolio/RecoveryPortfolio.jsx";
-import NCCaseImpact from "./Components/Pages/CaseStudiesPage/NorthCarolina/ImpactSection/ImpactSection.jsx";
+import NCCaseHero from "./Components/Pages/CaseStudiesPage/NorthCarolina/HeroSection/NCHeroSection.jsx";
+import NCCaseRecovery from "./Components/Pages/CaseStudiesPage/NorthCarolina/RecoveryPortfolio/NCRecoveryPortfolio.jsx";
+import NCCaseImpact from "./Components/Pages/CaseStudiesPage/NorthCarolina/ImpactSection/NCImpactSection.jsx";
 import ScrollToTop from "./Components/RepeatedComponents/ScrollToTop/ScrollToTop.jsx";
 import CHub from "./Components/Pages/Platform/CoordinationHub/CHub.jsx";
 import CHubCapabilities from "./Components/Pages/Platform/CoordinationHub/CHubCapabilities.jsx";
 import CHWork from "./Components/Pages/Platform/CoordinationHub/CHWorks.jsx";
 import CC from "./Components/Pages/CrisisCommunicationPage/CC.jsx";
 import FAT from "./Components/Pages/HomePage/FocusAreasTeaser/FAT.jsx";
-import EPHero from "./Components/Pages/CaseStudiesPage/EastPalestine/HeroSection/HeroSection.jsx";
-import EPImpact from "./Components/Pages/CaseStudiesPage/EastPalestine/ImpactSection/ImpactSection.jsx";
-import EPRecovery from "./Components/Pages/CaseStudiesPage/EastPalestine/RecoveryPortfolio/RecoveryPortfolio.jsx";
+import EPHero from "./Components/Pages/CaseStudiesPage/EastPalestine/HeroSection/EPHeroSection.jsx";
+import EPImpact from "./Components/Pages/CaseStudiesPage/EastPalestine/ImpactSection/EPImpactSection.jsx";
+import EPRecovery from "./Components/Pages/CaseStudiesPage/EastPalestine/RecoveryPortfolio/EPRecoveryPortfolio.jsx";
 
 
 function App() {
