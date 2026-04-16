@@ -97,3 +97,91 @@ hr {                              /* Removes the default border of the horizonta
 .footer-column a:hover {
   color: #c1baba;
 }
+
+@media (max-width: 768px) {
+
+  /* ---------------- FOOTER WRAPPER ---------------- */
+  .footer {
+    padding: 20px;
+  }
+
+  /* STACK MAIN SECTIONS */
+  .footer-middle {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+  }
+
+  /* ---------------- SITE INFO BLOCK (LOGO + CONTACT + EMAIL) ---------------- */
+  .footer-middle > div:first-child {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  /* Logo */
+  .footer-logo {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+    height: auto;
+  }
+
+  /* Contact link centered */
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-links a {
+    text-align: center;
+  }
+
+  /* Email line */
+  .footer-middle > div:first-child p {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* ---------------- HELPFUL LINKS SECTION ---------------- */
+  .footer-quick-links {
+    width: 100%;
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-quick-links h4 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* KEY FIX */
+    width: 100%;
+    gap: 12px;
+  }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .footer-column a {
+    text-align: center;
+  }
+}

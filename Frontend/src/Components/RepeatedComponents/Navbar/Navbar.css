@@ -275,3 +275,113 @@ nav ul {
   align-items: center;
   padding: 0 5vw 0 0;  /* mirrors the logo padding on the left */
 }
+
+/* ------------------------------------------------ SIMPLE MOBILE HAMBURGER (DROP-IN) ------------------------------------------------ */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: auto;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #0B2E4F;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animate into X */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ---------------- MOBILE ---------------- */
+/* ---------------- FORCE VERTICAL NAV ON MOBILE ---------------- */
+/* ---------------- MOBILE: 2-COLUMN HEADER + NAV BELOW ---------------- */
+@media (max-width: 768px) {
+
+  /* Stack overall layout */
+  .header-nav-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* Top row: logo + contact */
+  .top-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* logo left, contact right */
+    align-items: center;
+    padding: 5px 5vw;
+  }
+
+  .header-logo {
+    padding: 0;
+    height: 60px; /* optional: slightly smaller on mobile */
+  }
+
+  /* Move contact INTO the same row visually */
+  .nav-contact-wrapper {
+    position: absolute;
+    top: 10px;
+    right: 5vw;
+    padding: 0;
+  }
+
+  /* Nav goes underneath */
+  .navbar {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* Vertical menu */
+  nav ul {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+
+    /* KEY CHANGE: each dropdown anchors to its own item */
+    position: relative;
+  }
+
+  /* Dropdown now attaches to its own parent item */
+  .menu-shared {
+    position: absolute !important;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) !important;
+
+    width: 90% !important;
+    max-width: none;
+
+    margin-top: 8px;
+    padding: 10px;
+
+    grid-template-columns: 1fr !important;
+
+    box-shadow: none;
+    z-index: 99;
+  }
+
+  .dropdown-link {
+    display: block;
+    padding: 8px 0;
+  }
+}
