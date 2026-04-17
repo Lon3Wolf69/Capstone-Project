@@ -58,7 +58,7 @@
   color: rgba(255,255,255,0.8); 
   font-size: 19px; 
   line-height: 1.6; 
-  max-width: 800px; 
+  max-width: 1000px; 
   margin: 0; 
 }
 
@@ -206,7 +206,7 @@
 /* --- EXPERIENCE SECTION --- */
 .cc-experience-wrap {
   text-align: left;
-  max-width: 850px;
+  max-width: 1400px;
   margin: 100px 0 0 0; 
 }
 

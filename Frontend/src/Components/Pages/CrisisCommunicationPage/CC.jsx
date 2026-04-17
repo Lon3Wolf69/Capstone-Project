@@ -77,11 +77,10 @@ const CC = () => {
             viewport={{ once: true }}
           >
             <div className="cc-card-left">
-              <h4 className="cc-orange-label">Advanced Coordination</h4>
-              <h2 className="cc-card-title">The Coordination Hub Engine</h2>
+              <h4 className="cc-orange-label">Crisis Communication</h4>
+              <h2 className="cc-card-title">Our Approach</h2>
               <p className="cc-card-intro">
-                A specialized environment designed to handle the high-background noise 
-                of disaster recovery.
+                DisasterReady supports recovery communication that is:
               </p>
 
               <ul className="cc-card-features">
