@@ -1,14 +1,36 @@
 //This will be the code for the Why we are here section of the about page
 //It will include a static image with a text overlay and then some text underneath
-import React from 'react';
+import React, { useEffect } from 'react'; // Added useEffect for animation
 import img from '../../../../assets/Landslides.jpg';
-import "./OurMission.css";                              // Imports the css file for use within the file
+import "./OurMission.css";                        // Imports the css file for use within the file
 
 const why = () => {
+
+    // Animation Logic: Adds the 'reveal-visible' class when the element enters the viewport
+    useEffect(() => {
+        const observerOptions = {
+            threshold: 0.15 // Triggers when 15% of the element is visible
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-visible');
+                }
+            });
+        }, observerOptions);
+
+        const revealedElements = document.querySelectorAll('.reveal');
+        revealedElements.forEach((el) => observer.observe(el));
+
+        return () => observer.disconnect(); // Cleanup
+    }, []);
+
     return(
     <>
     <div className="ourmission-container">
-            <div className="mission-hero">
+            {/* Added 'reveal' class */}
+            <div className="mission-hero reveal">
                 <p> THE CORE INSIGHT </p>
                 <h1>
                     Recovery success depends on more than funding, <br /> it depends on
@@ -17,7 +39,8 @@ const why = () => {
             </div>    
 
         {/* Subtext cards underneath the image with overlay (cards are not navigation options just a nicer way to display the information) */}
-        <div style={{ paddingBottom: "100px"}} className="cards-section">
+        {/* Added 'reveal' class */}
+        <div style={{ paddingBottom: "100px"}} className="cards-section reveal">
 
         
 

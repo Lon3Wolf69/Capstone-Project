@@ -8,7 +8,7 @@
   overflow: hidden;
   display: flex;
   align-items: stretch;
-  min-height: 500px; /* Slightly taller for diagrams */
+  min-height: 400px; 
   background-color: #ffffff;
 }
 
@@ -84,7 +84,7 @@
 
 
 .ch-content {
-  padding: 60px;
+  padding: 40px 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
