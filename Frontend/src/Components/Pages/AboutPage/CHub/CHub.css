@@ -16,7 +16,7 @@
 .ch-panel.dark { background-color: #0B1F3A; }
 
 
-/*----------------------------------------- Media/Diagram Column ----------------------------------*/
+/*----------------------------------------- Media/Diagram Column ----------------------------------
 .ch-media-col {
   flex: 0 0 50%;
   position: relative;
@@ -27,7 +27,7 @@
   opacity: 0;
   transform: translateY(20px);
   transition: all 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
-  padding: 40px; /* Padding keeps the diagram from hitting the edges */
+  padding: 40px; Padding keeps the diagram from hitting the edges
   box-sizing: border-box;
 }
 
@@ -45,9 +45,9 @@
   align-items: center;
   justify-content: center;
 }
+*/
 
-
-/* If your diagram is an SVG, this ensures it scales */
+/* If your diagram is an SVG, this ensures it scales 
 .ch-diagram-wrapper svg {
   max-width: 100%;
   height: auto;
@@ -58,14 +58,13 @@
   width: 100%;
   height: 300px;
   background: rgba(11, 31, 58, 0.05);
-  border: 2px dashed #e55c1b;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #0B1F3A;
   font-weight: bold;
 }
-
+*/
 
 /*----------------------------------------- Content & Accents ----------------------------------*/
 .ch-accent {
@@ -85,7 +84,6 @@
 
 
 .ch-content {
-  flex: 0 0 50%;
   padding: 60px;
   display: flex;
   flex-direction: column;
@@ -95,24 +93,26 @@
 
 
 .ch-content-right {
-  text-align: right;
+  text-align: left;
   align-items: flex-end;
 }
 
 
 .ch-label {
-  font-size: 14px;
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
   font-weight: 700;
-  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #e55c1b;
+  color: #F47A20;
   margin-bottom: 12px;
+
+  border-Left: 3px solid #F47A20;
+  padding-Left: 12px;
 }
 
 
 .ch-title {
-  font-size: 32px;
-  font-weight: 800;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 500;
   color: #0B1F3A;
   margin-bottom: 20px;
 }
@@ -120,12 +120,12 @@
 
 .ch-desc {
   font-size: 18px;
-  line-height: 1.8;
+  line-height: 1;
   color: #444;
+  padding-top: 15px;
   margin-bottom: 30px;
   white-space: pre-line;
 }
-
 
 /* ----------------------------------------- Animation Base States (Hidden) ----------------------------------------- */
 .ch-label, .ch-title, .ch-desc {

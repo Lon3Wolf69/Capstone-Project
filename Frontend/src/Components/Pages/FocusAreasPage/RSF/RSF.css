@@ -153,8 +153,9 @@
 
 
 /* Responsive: Stack cards on mobile */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .rsf-grid {
+    padding: 15px 20px;
     grid-template-columns: 1fr;
   }
 }

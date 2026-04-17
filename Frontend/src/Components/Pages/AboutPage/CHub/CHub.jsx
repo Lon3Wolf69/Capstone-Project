@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./CHub.css";
 
 
@@ -14,25 +14,20 @@ import "./CHub.css";
 const hubSections = [
   {
     theme: "light",
-    side: "right", // Diagram on the right
+    // side: "right",  Diagram on the right
     label: "What it is",
     title: "A Coordination System—Supported by Technology—Built From Experience",
-    desc: `DisasterReady is building a proprietary coordination system to help states connect recovery priorities with the agencies, funding, and partners required to deliver outcomes.
-
-
-The Coordination Hub brings structure to a process that is often fragmented—supporting how recovery actually works across federal systems.
-
-
-The Coordination Hub is informed by real recovery operations and is being developed based on direct experience, reflecting where recovery efforts succeed—and where they break down.
-
-
-It is not a replacement for coordination. It is designed to strengthen it.`,
+    desc: [
+      "DisasterReady is building a proprietary coordination system to help states connect recovery priorities with the agencies, funding, and partners required to deliver outcomes.",
+      "The Coordination Hub brings structure to a process that is often fragmented—supporting how recovery actually works across federal systems.",
+      "The Coordination Hub is informed by real recovery operations and is being developed based on direct experience, reflecting where recovery efforts succeed—and where they break down.",
+      "It is not a replacement for coordination. It is designed to strengthen it.",
     // Pass your imported component here
-    diagram: <div className="placeholder-diagram">DIAGRAM COMPONENT GOES HERE</div>
-  },
+     //diagram: <div className="placeholder-diagram">DIAGRAM COMPONENT GOES HERE</div>
+]},
   {
     theme: "light",
-    side: "left", // Diagram on the left
+    // side: "left",  Diagram on the left
     label: "Why it Matters",
     title: "Recovery Breaks Down Between Planning and Execution",
     desc: `States can identify what needs to be done. Funding exists across federal programs.
@@ -43,7 +38,7 @@ But without a clear way to organize and connect those pieces, recovery slows, ri
 
 The Coordination Hub is designed to reduce that friction—helping recovery move forward with greater clarity and alignment. It's designed to help states move from fragmented efforts to coordinated recovery so funding, agencies, and priorities work together to deliver results.`,
     // Pass your imported component here
-    diagram: <div className="placeholder-diagram">DIAGRAM COMPONENT GOES HERE</div>
+    // diagram: <div className="placeholder-diagram">DIAGRAM COMPONENT GOES HERE</div>
   }
 
 
@@ -91,11 +86,12 @@ const CHub = () => {
 
 
   return (
-    <div className="ch-wrap">
+     <div className="ch-wrap">
       {hubSections.map((section, i) => (
         <div key={i} className={`ch-panel ${section.theme}`}>
+
          
-          {/* MEDIA COLUMN (LEFT SIDE) */}
+          {/* MEDIA COLUMN (LEFT SIDE)
           {section.side === "left" && (
             <div className="ch-media-col ch-media-left">
               <div className="ch-diagram-wrapper">
@@ -104,7 +100,7 @@ const CHub = () => {
               <div className="ch-media-overlay"></div>
             </div>
           )}
-
+          
 
 
 
@@ -113,17 +109,21 @@ const CHub = () => {
 
 
 
-          {/* TEXT CONTENT COLUMN */}
+          TEXT CONTENT COLUMN
+
+           */}
           <div className={`ch-content ${section.side === "right" ? "ch-content-right" : ""}`}>
             <div className="ch-label">{section.label}</div>
             <h2 className="ch-title">{section.title}</h2>
             <p className="ch-desc">{section.desc}</p>
           </div>
 
+        </div>
+      ))}
+    </div>
+  );
 
-
-
-          {/* MEDIA COLUMN (RIGHT SIDE) */}
+          {/* MEDIA COLUMN (RIGHT SIDE)
           {section.side === "right" && (
             <div className="ch-media-col ch-media-right">
               <div className="ch-diagram-wrapper">
@@ -133,10 +133,7 @@ const CHub = () => {
             </div>
           )}
           <div className="ch-accent"></div>
-        </div>
-      ))}
-    </div>
-  );
+          */}
 };
 
 

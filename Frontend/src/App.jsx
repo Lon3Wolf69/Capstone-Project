@@ -33,9 +33,9 @@ import NCCaseHero from "./Components/Pages/CaseStudiesPage/NorthCarolina/HeroSec
 import NCCaseRecovery from "./Components/Pages/CaseStudiesPage/NorthCarolina/RecoveryPortfolio/NCRecoveryPortfolio.jsx";
 import NCCaseImpact from "./Components/Pages/CaseStudiesPage/NorthCarolina/ImpactSection/NCImpactSection.jsx";
 import ScrollToTop from "./Components/RepeatedComponents/ScrollToTop/ScrollToTop.jsx";
-import CHub from "./Components/Pages/Platform/CoordinationHub/CHub.jsx";
-import CHubCapabilities from "./Components/Pages/Platform/CoordinationHub/CHubCapabilities.jsx";
-import CHWork from "./Components/Pages/Platform/CoordinationHub/CHWorks.jsx";
+import Chub from "./Components/Pages/AboutPage/CHub/CHub.jsx";
+import CHubCapabilities from "./Components/Pages/AboutPage/CHub/CHubCapabilities.jsx";
+import CHWork from "./Components/Pages/AboutPage/OurApproach/CHWorks.jsx";
 import CC from "./Components/Pages/CrisisCommunicationPage/CC.jsx";
 import FAT from "./Components/Pages/HomePage/FocusAreasTeaser/FAT.jsx";
 import EPHero from "./Components/Pages/CaseStudiesPage/EastPalestine/HeroSection/EPHeroSection.jsx";
@@ -64,8 +64,8 @@ function App() {
       <Route path="/" element={<><AboutSection /><HRW /> <NavPanels /><FAT /><NavShowcase /></>} />  {/* This is a route that displays information on the home page only */}
         {/* Sets up route for the login button */}
         <Route path="/contact" element={<><Contact /></>} />
-        <Route path="/about/AboutUs" element={<><Intro /><Why /></>} />
-        <Route path="/about/ourApproach" element={<><Approach /></>} />
+        <Route path="/about/AboutUs" element={<><Intro /><Why />  <Chub /> <CHubCapabilities /> </>} />
+        <Route path="/about/ourApproach" element={<><Approach /> <CHWork /> </>} />
         <Route path="/about/Team" element={<><TeamIntro/><Team /></>} />
         {/* Case Studies */}
         <Route path="/caseStudies" element={<><CaseStudies /></>} />
@@ -80,7 +80,6 @@ function App() {
         <Route path="/focusArea/crisisCommunication" element={<><CC /></>} />
         <Route path="/focusArea/wildfire" element={<><UnderConstruction /></>} />
         {/* Platform */}
-        <Route path="/platform/coordinationHubOverview" element={<><CHub/><CHubCapabilities/><CHWork /></>} />
         
       </Routes>
       </div>
