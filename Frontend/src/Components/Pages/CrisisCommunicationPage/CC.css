@@ -1,21 +1,43 @@
 /* Container Logic */
 .cc-page-wrapper { 
   width: 100%;
- }
+}
 
 .cc-content-frame { 
   max-width: 1200px; 
   margin: 0 auto; 
   padding: 0 20px; 
   width: 100%; 
+  position: relative; /* Ensures content stays above texture */
+  z-index: 2;
 }
 
-/* --- DARK HERO --- */
+/* --- DARK HERO WITH TEXTURE --- */
 .cc-hero-dark {
+  position: relative; /* Required for pseudo-element positioning */
+  background-color: #0B1F3A;
   background: linear-gradient(180deg, #0B1F3A 0%, #081629 100%);
   padding: 100px 0;
-  text-align: center;
+  text-align: left;
+  overflow: hidden; /* Keeps texture lines inside the section */
 }
+
+/* Diagonal texture overlay */
+.cc-hero-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.07) 0px,
+    rgba(255, 255, 255, 0.07) 1px,
+    transparent 2px,
+    transparent 22px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
 .cc-orange-label { 
   color: #F47A20; 
   text-transform: uppercase; 
@@ -23,7 +45,7 @@
   font-size: 14px; 
   font-weight: 700; 
   margin-bottom: 15px;
- }
+}
 
 .cc-hero-title { 
   color: #fff; 
@@ -37,7 +59,7 @@
   font-size: 19px; 
   line-height: 1.6; 
   max-width: 800px; 
-  margin: 0 auto; 
+  margin: 0; 
 }
 
 /* --- WHITE SECTION --- */
@@ -47,9 +69,9 @@
 }
 
 .cc-wm-container {
-  text-align: center;
+  text-align: left;
   margin-bottom: 80px; 
-  }
+}
 
 .cc-wm-title {
   color: #0B1F3A; 
@@ -62,16 +84,17 @@
   color: #666; 
   font-size: 18px; 
   margin-bottom: 40px;
- }
+}
 
 .cc-wm-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   max-width: 900px;
-  margin: 0 auto 40px;
+  margin: 0 0 40px 0;
   text-align: left;
 }
+
 .cc-wm-item { 
   display: flex; 
   align-items: center; 
@@ -85,11 +108,13 @@
   border-radius: 50%; 
   flex-shrink: 0; 
 }
+
 .cc-wm-text { 
   color: #0B1F3A; 
   font-weight: 600; 
   font-size: 16px; 
 }
+
 .cc-wm-footer { 
   font-size: 20px; 
   color: #444; 
@@ -102,7 +127,7 @@
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 30px 60px rgba(0,0,0,0.2);
-  min-height: 550px; /* Ensures card has enough presence */
+  min-height: 550px; 
 }
 
 .cc-card-left { 
@@ -118,7 +143,7 @@
   align-items: center; 
   justify-content: center; 
   padding: 40px;
- }
+}
 
 .cc-card-title { 
   font-size: 38px; 
@@ -165,20 +190,29 @@
   margin: 0; 
 }
 
-/* Image Fix */
-.cc-img-wrapper { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
-.cc-support-img { max-width: 100%; height: auto; object-fit: contain; }
+.cc-img-wrapper { 
+  width: 100%; 
+  height: 100%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+.cc-support-img { 
+  max-width: 100%; 
+  height: auto; 
+  object-fit: contain; 
+}
 
 /* --- EXPERIENCE SECTION --- */
 .cc-experience-wrap {
-  text-align: center;
+  text-align: left;
   max-width: 850px;
-  margin: 100px auto 0 auto; /* 100px space between the card and this text */
+  margin: 100px 0 0 0; 
 }
 
 .cc-experience-title {
   color: #0B1F3A;
-  font-size: 48px; /* Matches the top header sizing */
+  font-size: 48px; 
   font-weight: 800;
   margin-bottom: 24px;
   letter-spacing: -1px;
@@ -196,7 +230,7 @@
   color: #0B1F3A;
   margin-top: 40px;
   padding-top: 40px;
-  border-top: 3px solid #F47A20; /* Subtle divider */
+  border-top: 3px solid #F47A20; 
 }
 
 .cc-experience-footer strong {
@@ -206,7 +240,7 @@
 /* Mobile */
 @media (max-width: 992px) {
   .cc-main-card { flex-direction: column; }
-  .cc-wm-grid { grid-template-columns: 1fr; padding-left: 15%; }
+  .cc-wm-grid { grid-template-columns: 1fr; } 
   .cc-card-right { padding: 20px; }
   .cc-experience-title { font-size: 38px; }
   .cc-experience-wrap { margin-top: 80px; }

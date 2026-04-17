@@ -8,6 +8,10 @@
 
 
 
+
+
+
+
 .cap-container {
   max-width: 1200px;
   width: 100%;
@@ -16,10 +20,18 @@
 
 
 
+
+
+
+
 .cap-header {
   text-align: center;
   margin-bottom: 70px;
 }
+
+
+
+
 
 
 
@@ -36,12 +48,20 @@
 
 
 
+
+
+
+
 .cap-main-title {
   color: #0B1F3A;
   font-size: 38px;
   font-weight: 800;
   margin-bottom: 15px;
 }
+
+
+
+
 
 
 
@@ -56,14 +76,19 @@
 
 
 
+
+
+
+
 .cap-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
   gap: 25px;
   max-width: 1300px;
   margin: 0 auto;
 }
+
+
 
 
 .cap-card {
@@ -73,13 +98,12 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
   border: 1px solid rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
- 
-  /* Calculation for 4 columns:
-     (100% / 4) minus a bit for the gaps */
-  flex: 0 1 calc(25% - 25px);
-  min-width: 280px;
   box-sizing: border-box;
 }
+
+
+
+
 
 
 
@@ -89,6 +113,10 @@
   box-shadow: 0 12px 30px rgba(11, 31, 58, 0.1);
   border-color: #e55c1b;
 }
+
+
+
+
 
 
 
@@ -105,6 +133,10 @@
 
 
 
+
+
+
+
 /* Added a subtle accent line to replace the icon */
 .cap-card-line {
   width: 30px;
@@ -113,6 +145,10 @@
   margin-bottom: 20px;
   border-radius: 2px;
 }
+
+
+
+
 
 
 
@@ -127,13 +163,19 @@
 
 
 
+
+
+
+
 @media (max-width: 1024px) {
-  .cap-grid { grid-template-columns: repeat(2, 1fr); }
+  .cap-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards on tablets */
+  }
 }
 
 
-
-
 @media (max-width: 600px) {
-  .cap-grid { grid-template-columns: 1fr; }
+  .cap-grid {
+    grid-template-columns: 1fr; /* 1 card on mobile */
+  }
 }
