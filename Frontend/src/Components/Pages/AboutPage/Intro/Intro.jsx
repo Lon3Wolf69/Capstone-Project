@@ -3,9 +3,9 @@ import "./Intro.css";
 
 export default function AnimatedSection() {
   return (
-    <div className="section">
+    <div className="intro-section">
 
-      <div className="headline">
+      <div className="intro-headline">
         <motion.div
           className="line"
           initial={{ opacity: 0, x: -30 }}
@@ -16,17 +16,17 @@ export default function AnimatedSection() {
         </motion.div>
 
         <motion.div
-          className="line"
+          className="intro-line"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 1.5 }}
         >
-          we make them <span className="accent">work together.</span>
+          we make them <span className="intro-accent">work together.</span>
         </motion.div>
       </div>
 
       <motion.div
-        className="body-text"
+        className="intro-body-text"
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 2 }}

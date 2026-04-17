@@ -5,12 +5,11 @@
 }
   
 .mtt-section h2 {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 4vw, 2rem); /* responsive text */
     font-weight: bold;
-    color: #f07a40;
+    color: #F47A20;
     margin-bottom: 50px;
     letter-spacing: -0.5px;
-    font-style: italic;
 }
   
 .team-list {
@@ -27,9 +26,11 @@
     align-items: flex-start;
 }
 
+/*
 .team-member.reverse {
     flex-direction: row-reverse;
 }
+*/
   
 .member-left {
     flex-shrink: 0;
@@ -46,7 +47,7 @@
     align-items: flex-start;
 }
 
-.member-right.reverse {
+.member-right {
     align-items: flex-end;
 }
 
@@ -67,7 +68,7 @@
 }
 
 .name {
-    font-size: 26px;
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
     font-weight: 600;
     color: black;
     margin: 0 0 6px 0;
@@ -75,8 +76,8 @@
 }
   
 .position {
-    font-size: 18px;
-    color: #f07a40;
+    font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+    color: #F47A20;
     margin: 0;
     text-align: center;
     font-weight: 600;
@@ -87,7 +88,7 @@
 }
 
 .blurb-paragraph {
-    font-size: 18px;
+    font-size: clamp(0.8rem, 2.5vw, 1.08rem);
     color: black;
     margin: 0 0 0.75em 0;
     text-align: left;
@@ -114,13 +115,42 @@
     margin-top: 15px;
     background: none;
     border: none;
-    color: #f07a40;
+    color: #F47A20;
     cursor: pointer;
-    text-decoration: underline;
     padding: 5px 0;
     transition: color 0.2s ease;
+    font-size: clamp(0.5rem, 8vw, 2rem);
 }
 
 .read-more-btn:hover {
-    color: #c45e10;
+    color: #F47A20;
+}
+
+
+/* MOBILE STUFF HERE */
+
+@media (max-width: 768px) {
+
+    .mtt-section {
+        padding: 15px 20px 40px;
+    }
+
+    .team-member {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member-left {
+        width: 100%;
+    }
+
+    .photo-wrapper {
+        height: 220px;
+    }
+
+    .member-right {
+        align-items: flex-start;
+        width: 100%;
+    }
+
 }

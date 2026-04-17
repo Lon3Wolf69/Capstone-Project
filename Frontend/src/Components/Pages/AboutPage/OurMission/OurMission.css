@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 
-/* Styling for the icons in the cards */
+/* Styling for the icons in the cards KILLED IT*/
 .card-icon {
   font-size: 2rem;      /* Controls the size of the emoji icon */
   margin-bottom: 12px;  /* Adds space between the icon and the h4 title below it */
@@ -26,6 +26,11 @@
     opacity: 0.90;                           /* Changes the opacity of the overlay */
 }
 
+.ourmission-container {
+    padding: 40px 100px;
+    background-color: #D6DEE5;
+}
+
 /* Overlay text Styling */
 .overlay-text {
     position: absolute; 
@@ -34,7 +39,7 @@
     transform: translate(-50%, -50%);
     z-index: 3;
     color: white;
-    font-size: 2rem;
+
     text-align: center;
     text-shadow: 4px 4px 4px #181a1c;
 }
@@ -42,19 +47,25 @@
 .mission-hero {
     padding: 1rem 1.25rem 1rem 0.5rem;
     margin-bottom: 2rem 2rem 2rem 3rem;
+
+    border-Left: 3px solid #1F8A8E;
+    padding-Left: 12px;
 }
 
 .mission-hero p {
-    font-size: 13px;   
+    font-size: clamp(0.8rem, 2.5vw, 1.08rem);  
     margin: 0 0 6px;
     letter-spacing: .06em;
 }
 
 .mission-hero h1 {
-    font-size: 35px;
+    font-size: clamp(1.5rem, 4vw, 2rem);
     font-weight: 500;
     margin: 0;
     line-height: 1.3;
+    line-height: 1.5;
+    font-weight: bold;
+    color:#0B2E4F;
 }
 /* Begin cards section styling */
 .cards-section{
@@ -76,13 +87,13 @@
 
 /* Styling for the header text */
 .card-header {
-    
     margin-bottom: 10px;
 }
 
 /* styling for any p tags within the card */
 .card p{
     line-height: 1.8;
+    font-size: (0.8rem, 2.5vw, 1.08rem);
 }
 
 .card-icon img {
@@ -93,15 +104,45 @@
 
 .card-challenge {
     border-top: 4px solid #0B2E4F;
-    background-color: #cfe7f9;
+    background-color: white;
 }
 
 .card-solution {
     border-top: 4px solid #1F8A8E;
-    background-color: #E1F5F5;
+    background-color: white;
 }
 
 .card-result {
     border-top: 4px solid #F47A20;
-    background-color: #FEF0E3;
+    background-color: white;
+}
+
+.card-arrow {
+    align-self: center;
+    font-size: 2rem;
+    color: #0B2E4F;
+}
+
+@media (max-width: 768px) {
+    .ourmission-container {
+        padding: 30px 20px;
+    }
+
+    .mission-hero {
+        padding: 0.75rem 0.75rem 0.75rem 12px;
+    }
+
+    .cards-section {
+        flex-direction: column;
+        padding: 15px 20px 10px;
+        gap: 10px;
+    }
+
+    .card {
+        padding: 24px 16px;
+    }
+
+    .card-arrow {
+        transform: rotate(90deg);
+    }
 }

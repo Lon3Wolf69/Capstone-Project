@@ -1,32 +1,46 @@
 
-.section {
-    font-family: Helvetica, Arial, sans-serif;
-    background: #f9f9f9;
-    min-height: 80vh;
-    padding: 30px 100px;
-    box-sizing: border-box;
-  }
+.intro-section {
+  background: #f9f9f9;
+  min-height: 50vh;
+  padding: 10px 100px;
+  box-sizing: border-box;
+}
   
-  .headline {
-    text-align: center;
-    font-size: 36px;
-    line-height: 1.4;
-    margin-bottom: 70px;
-    margin-top: 70px;
-    color: #0B2E4F;
-  }
+.intro-headline {
+  text-align: left;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.4;
+  padding-bottom: 40px;
+  padding-top: 70px;
+  color: #0B2E4F;
+}
   
-  .line {
-    margin-bottom: 10px;
-  }
+.intro-line {
+  margin-bottom: 10px;
+}
   
-  .accent {
-    color: #F47A20;
-    font-style: italic;
-  }
+.intro-accent {
+  color: #F47A20;
+  font-style: italic;
+}
   
-  .body-text {
-    max-width: 900px;
-    font-size: 22px;
-    line-height: 1.7;
+.intro-body-text {
+  max-width: 900px;
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+
+  .intro-section {
+    padding: 2px 20px 40px;
   }
+
+  .intro-headline, line {
+    padding: 15px 20px;
+  }
+
+  .intro-body-text {
+    padding: 5px 20px;
+  }
+}

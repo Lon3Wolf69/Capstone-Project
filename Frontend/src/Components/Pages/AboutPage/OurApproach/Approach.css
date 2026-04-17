@@ -3,9 +3,8 @@
    ========================= */
 .ourapp-container {
   width: 100%;
-  padding: 40px 20px;
+  padding: 50px 100px;
   box-sizing: border-box;
-
   background: #f9f9f9;
 }
 
@@ -15,7 +14,6 @@
 .ourapp-content-row {
   display: flex;
   gap: 40px;
-
   align-items: flex-start;
 }
 
@@ -29,28 +27,28 @@
   flex-direction: column;
   gap: 18px;
 
-  color: #444;
-  line-height: 1.6;
+  color: black;
+  line-height: 1.5;
 }
 
 /* TITLE */
 .ourapp-title {
-  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 600;
-  color: #e9553b;
+  color: #F47A20;
   margin: 0;
 }
 
 /* SUBTITLE */
 .ourapp-leftSubtitle {
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
   font-weight: 500;
-  color: #18558f;
+  color: #0B2E4F;
 }
 
 /* PARAGRAPHS */
 .ourapp-paragraph {
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: clamp(0.8rem, 2.5vw, 1.08rem);
 }
 
 /* =========================
@@ -74,11 +72,18 @@
 }
 
 /* =========================
-   MOBILE (HIDE IMAGE)
+   MOBILE
    ========================= */
 @media (max-width: 768px) {
+
+  .ourapp-container {
+    padding: 15px 20px;
+  }
+  
   .ourapp-right-col {
-    display: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
 
   .ourapp-left-col {
@@ -86,6 +91,7 @@
   }
 
   .ourapp-content-row {
-    gap: 0;
+    gap: 30px;
+    flex-direction: column;
   }
 }

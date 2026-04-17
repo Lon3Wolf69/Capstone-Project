@@ -64,7 +64,7 @@ export default function TeamSection() {
           const isExpanded = expanded[member.id];
           
           return (
-          <div key={member.id} className={`team-member ${index % 2 === 1 ? 'reverse' : ''}`}>
+          <div key={member.id} className="team-member">
             <div className="member-left">
               <div className="photo-wrapper">
                 <img src={member.img} alt={member.name} className="photo" style={{ marginTop: member.marginTop }} />
@@ -72,7 +72,7 @@ export default function TeamSection() {
               <p className="name">{member.name}</p>
               <p className="position">{member.position}</p>
             </div>
-            <div className={`member-right ${index % 2 === 1 ? 'reverse' : ''}`}>
+            <div className="member-right">
 
               <div className="blurb">
                 {visibleParagraphs.map((para, i) => (
@@ -86,7 +86,7 @@ export default function TeamSection() {
                   ))}
                 </div>
               </div>
-              <button style={{fontSize: "18px"}} className="read-more-btn" onClick={() => toggleExpand(member.id)}>
+              <button className="read-more-btn" onClick={() => toggleExpand(member.id)}>
                 {isExpanded ? 'Read Less' : 'Read More'}
               </button>
             </div>
