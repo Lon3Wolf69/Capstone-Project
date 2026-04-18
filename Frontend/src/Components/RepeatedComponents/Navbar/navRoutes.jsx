@@ -18,7 +18,7 @@ export const navRoutes = [
 
         children: [
             { label: "Interagency Recovery", path: "/focusArea/interagencyRecovery"},
-            { label: "Debris Management", path: "/focusArea/debrisManagement"},
+            { label: "Debris Management", path: "/focusArea/DebrisMan"},
             { label: "Crisis Communication", path: "/focusArea/crisisCommunication"}, 
             { label: "Wildfire Threat Intelligence and Prevention", path: "/focusArea/wildfire"},                
         ]

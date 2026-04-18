@@ -41,6 +41,7 @@ import FAT from "./Components/Pages/HomePage/FocusAreasTeaser/FAT.jsx";
 import EPHero from "./Components/Pages/CaseStudiesPage/EastPalestine/HeroSection/EPHeroSection.jsx";
 import EPImpact from "./Components/Pages/CaseStudiesPage/EastPalestine/ImpactSection/EPImpactSection.jsx";
 import EPRecovery from "./Components/Pages/CaseStudiesPage/EastPalestine/RecoveryPortfolio/EPRecoveryPortfolio.jsx";
+import DebrisManagement from "./Components/Pages/FocusAreasPage/DebrisMan/Debris.jsx";
 
 
 function App() {
@@ -75,7 +76,7 @@ function App() {
         {/* Focus Areas */}
         <Route path="/focusArea/interagencyRecovery" element={<><RSFHeader/><RSFexample/> </>}/>
         
-        <Route path="/focusArea/debrisManagement" element={<><UnderConstruction /></>} />
+        <Route path="/focusArea/DebrisMan" element={<><DebrisManagement /></>} />
         <Route path="/focusArea/mitigation" element={<><UnderConstruction /></>} />
         <Route path="/focusArea/crisisCommunication" element={<><CC /></>} />
         <Route path="/focusArea/wildfire" element={<><UnderConstruction /></>} />

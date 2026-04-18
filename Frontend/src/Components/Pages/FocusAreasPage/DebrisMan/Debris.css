@@ -1,0 +1,217 @@
+.dm-page {
+    padding: 60px 100px;
+}
+
+.dm-eyebrow {
+    font-size: clamp(0.8rem, 2.5vw, 0.8rem);
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--teal-text);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+  
+.dm-eyebrow::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: var(--teal);
+}
+  
+.dm-headline {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--navy);
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.01em;
+}
+  
+  .dm-headline em {
+    font-style: italic;
+    color: var(--orange);
+}
+  
+.dm-sum1 {
+    font-size: clamp(0.8rem, 2.5vw, 1.08rem);
+    line-height: 1.75;
+    color: var(--charcoal);
+    max-width: 580px;
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+  
+.dm-sum2 {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    line-height: 1.65;
+    color: var(--charcoal);
+    opacity: 0.55;
+    margin-bottom: 2.5rem;
+}
+  
+.dm-consequence {
+    border: 1px solid var(--gray);
+    border-radius: var(--radius);
+    background: var(--white);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.dm-consequence:hover {
+    border-color: var(--teal);
+}
+  
+.dm-consequence-intro {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    font-weight: 500;
+    color: var(--charcoal);
+    margin-bottom: 0.875rem;
+    letter-spacing: 0.01em;
+}
+  
+.dm-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+  
+.dm-pill {
+    font-size: clamp(0.8rem, 2.5vw, 0.8rem);
+    font-weight: 400;
+    color: var(--charcoal);
+    background: var(--gray);
+    border: 1px solid var(--gray);
+    border-radius: 20px;
+    padding: 5px 14px;
+    letter-spacing: 0.01em;
+}
+  
+.dm-warn-line {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    color: var(--orange-text);
+    border-left: 2px solid var(--orange);
+    line-height: 1.6;
+    background: var(--orange-light);
+    padding: 8px 12px;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+  
+.dm-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 2rem;
+}
+
+.dm-grid:hover {
+    border-color: var(--teal);
+}
+  
+.dm-card {
+    background: var(--white);
+    border: 1px solid var(--gray);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    transition: border-color 0.2s;
+}
+  
+.dm-card:hover {
+    border-color: var(--teal);
+}
+  
+.dm-card-label {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 1rem;
+}
+  
+.dm-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+    align-items: flex-start;
+}
+  
+.dm-item:last-child {
+    margin-bottom: 0;
+}
+  
+.dm-dot {
+    flex-shrink: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: 7px;
+    background: var(--charcoal);
+}
+  
+.dm-card.accent .dm-dot {
+    background: var(--teal);
+}
+  
+.dm-item-text {
+    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+    color: var(--charcoal);
+    line-height: 1.6;
+}
+  
+.dm-footer-primary {
+    font-size: clamp(0.8rem, 2.5vw, 1.08rem);
+    font-weight: 400;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+  
+.dm-footer-secondary {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    color: var(--charcoal);
+    opacity: 0.55;
+    line-height: 1.6;
+    text-align: center;
+}
+  
+  /*  Teléfono móvil stuff here */
+  @media (max-width: 768px) {
+    .dm-page {
+        padding: 24px 20px;
+    }
+
+    .dm-headline {
+        font-size: clamp(1.35rem, 6vw, 1.75rem);
+    }
+
+    .dm-sum1,
+    .dm-sum2 {
+        max-width: 100%;
+    }
+
+    .dm-consequence {
+        padding: 1rem 1.25rem;
+    }
+
+    .dm-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dm-card {
+        padding: 1rem;
+    }
+
+    .dm-pills {
+        gap: 6px;
+    }
+
+    .dm-sum2 {
+        margin-bottom: 1.75rem;
+    }
+
+ }
