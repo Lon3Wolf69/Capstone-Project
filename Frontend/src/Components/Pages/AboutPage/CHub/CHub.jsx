@@ -18,10 +18,13 @@ const hubSections = [
     label: "What it is",
     title: "A Coordination System—Supported by Technology—Built From Experience",
     desc: [
-      "DisasterReady is building a proprietary coordination system to help states connect recovery priorities with the agencies, funding, and partners required to deliver outcomes.",
-      "The Coordination Hub brings structure to a process that is often fragmented—supporting how recovery actually works across federal systems.",
-      "The Coordination Hub is informed by real recovery operations and is being developed based on direct experience, reflecting where recovery efforts succeed—and where they break down.",
-      "It is not a replacement for coordination. It is designed to strengthen it.",
+      `DisasterReady is building a proprietary coordination system to help states connect recovery priorities with the agencies, funding, and partners required to deliver outcomes.
+
+      The Coordination Hub brings structure to a process that is often fragmented—supporting how recovery actually works across federal systems.
+
+      The Coordination Hub is informed by real recovery operations and is being developed based on direct experience, reflecting where recovery efforts succeed—and where they break down.
+      
+      It is not a replacement for coordination. It is designed to strengthen it.`,
     // Pass your imported component here
      //diagram: <div className="placeholder-diagram">DIAGRAM COMPONENT GOES HERE</div>
 ]},

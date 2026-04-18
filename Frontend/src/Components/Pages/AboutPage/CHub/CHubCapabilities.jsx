@@ -5,13 +5,17 @@ import "./CHubCapabilities.css";
 
 
 
+
+
+
+
 const capabilities = [
   {
     title: "Understand the System",
     desc: "See how federal agencies and programs align to recovery priorities."
   },
   {
-    title: "Identify \nGaps",
+    title: "Identify Gaps",
     desc: "Surface where capacity, funding, or coordination is missing and identify potential dependencies."
   },
   {
@@ -27,12 +31,18 @@ const capabilities = [
     desc: "Organize recovery information in one place"
   },
   {
-    title: "Simplify the \nSystem",
+    title: "Simplify the System",
     desc: "Reduce administrative and coordination friction"
   }
 
 
+
+
 ];
+
+
+
+
 
 
 
@@ -58,6 +68,10 @@ const CHubCapabilities = () => {
 
 
 
+
+
+
+
         <div className="cap-grid">
           {capabilities.map((item, index) => (
             <motion.div
@@ -70,6 +84,8 @@ const CHubCapabilities = () => {
             >
 
 
+
+
               <h3 className="cap-card-title">{item.title}</h3>
               <div className="cap-card-line"></div>
               <p className="cap-card-desc">{item.desc}</p>
@@ -80,10 +96,18 @@ const CHubCapabilities = () => {
 
 
 
+
+
+
+
       </div>
     </section>
   );
 };
+
+
+
+
 
 
 

@@ -123,6 +123,28 @@
     color: #0B2E4F;
 }
 
+/* --- Animation Styles --- */
+
+/* Initial state: Hidden and slightly shifted down */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.2s ease-out, transform 1s ease-out;
+    will-change: opacity, transform;
+}
+
+/* Visible state: Triggered by JS */
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 3.2s;
+}
+
+/* Stagger the cards so they don't all pop in at the exact same millisecond */
+.cards-section.reveal-visible {
+    transition-delay: 0.2s;
+}
+
 @media (max-width: 768px) {
     .ourmission-container {
         padding: 30px 20px;
