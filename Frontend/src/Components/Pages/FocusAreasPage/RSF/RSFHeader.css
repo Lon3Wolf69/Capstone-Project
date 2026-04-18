@@ -14,7 +14,7 @@
 
 .rsf-header-title {
   color: #0B2E4F;
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 800;
   margin-bottom: 20px;
   letter-spacing: -1px;
@@ -33,7 +33,7 @@
 
 
 .rsf-header-description {
-  font-size: 1.2rem;
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
   line-height: 1.8;
   color: #555;
   font-weight: 400;
@@ -41,6 +41,25 @@
 
 
 @media (max-width: 768px) {
-  .rsf-header-title { font-size: 2.2rem; }
-  .rsf-header-description { font-size: 1.1rem; }
+
+
+  .rsf-header-section {
+    padding: 15px 20px;
+  }
+
+  .rsf-header-container {
+    max-width: 100%;
+  }
+  .rsf-header-title { 
+    font-size: 2.2rem;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-bottom: 15px; 
+  }
+
+  .rsf-header-description { 
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
 }
