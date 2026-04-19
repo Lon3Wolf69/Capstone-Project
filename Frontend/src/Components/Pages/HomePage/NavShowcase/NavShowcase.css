@@ -25,20 +25,12 @@
 }
 .ns-panel.light { 
     background-color: #ffffff; 
-    border-bottom: 1px solid rgba(11, 31, 58, 0.08); 
 }
  
 .ns-panel.dark::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: repeating-linear-gradient(
-    -45deg, 
-    rgba(255, 255, 255, 0.09) 0px, 
-    rgba(255, 255, 255, 0.09) 1px,
-    transparent 1px, 
-    transparent 12px
-  );
   pointer-events: none;
   z-index: 0;
 }
@@ -94,7 +86,7 @@
 .ns-accent {
   width: 4px;
   flex-shrink: 0;
-  background: linear-gradient(180deg, #e55c1b 0%, #f07a40 100%);
+  background: #f07a40;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -128,7 +120,7 @@
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #e55c1b;
+  color: #f07a40;
   margin-bottom: 8px;
   opacity: 0;
   transition: opacity 1.5s ease;
@@ -162,7 +154,7 @@
 }
  
 .dark .ns-desc { 
-    color: rgba(255, 255, 255, 0.55); 
+    color: rgba(255, 255, 255, 1); 
 }
 
 .light .ns-desc { 
@@ -178,7 +170,7 @@
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #e55c1b;
+  color: #f07a40;
   text-decoration: none;
   width: fit-content;
   opacity: 0;
@@ -186,13 +178,13 @@
 }
  
 .ns-cta:hover { 
-    color: #f07a40; 
+    color: #c45e10; 
 }
  
 .ns-cta-icon {
   width: 14px;
   height: 14px;
-  stroke: #e55c1b;
+  stroke: #f07a40;
   fill: none;
   stroke-width: 2.5;
   stroke-linecap: round;

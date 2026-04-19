@@ -8,14 +8,30 @@ function Navbar(){
 /*---- Defining -----*/
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
     const [openDropdown, setOpenDropdown] = useState(false);
+    const [isClosing, setIsClosing] = useState(false);
+
+    const closeDropdown = () => {
+      setIsClosing(true);
+      setTimeout(() => {
+        setOpenDropdown(false);
+        setIsClosing(false);
+      }, 300);
+    }
 
     const toggleDropdown = (label) => { 
-        setOpenDropdown(openDropdown === label ? false : label);
+      if (openDropdown === label){
+        closeDropdown();
+      } else {
+        setIsClosing(false);
+        setOpenDropdown(label);
+      }
+        
     };
 
     const handleLinkClick = () => { 
         setHamburgerOpen(false);
         setOpenDropdown(false);
+        setIsClosing(false);
     };
 
 /*------ Navbar + Header  --------*/
@@ -65,7 +81,7 @@ function Navbar(){
             </ul>
 
             {openDropdown && (
-            <div className="menu-shared">                                                            {/* Wrapper for the shared menu all styled by the provided class menu-shared located within the Navbar.css file */}
+            <div className={`menu-shared${isClosing ? " closing" : ""}`}>                                                            {/* Wrapper for the shared menu all styled by the provided class menu-shared located within the Navbar.css file */}
               {/* Dynamically generates the list of links within the dropdown menu based off what is located within the navRoutes.jsx file */}
               {navRoutes
                 .find((r) => r.label === openDropdown)                                        // Calls the find function on the navRoutes array looking for the specific label that equals that variable linked to the openDropdown variable 

@@ -11,15 +11,6 @@
 
 .navbar {
   background-color: #ffffff;                       /* Modifies the background color of the navbar */
-  /*
-  background-image: repeating-linear-gradient(
-    -45deg,
-    rgba(255, 255, 255, 0.09) 0px,
-    rgba(255, 255, 255, 0.09) 1px,
-    transparent 1px,
-    transparent 12px
-  );
-  */
   background-attachment: fixed;
    /* padding: 10px 0px;                                Modifies the space between the content and the borders */
   position: relative;    
@@ -174,6 +165,21 @@ nav ul {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
   }
+}
+
+@keyframes fadeOutUp {
+  from{
+    opacity: 1;
+    transform: translate(-50%) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-8px);
+  }
+}
+
+.menu-shared.closing {
+  animation: fadeOutUp 0.3s ease forwards;
 }
 
 /* Positioning for the dropdown menu when you click on the main dropdown menu button */

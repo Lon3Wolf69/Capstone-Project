@@ -13,12 +13,12 @@ export const navRoutes = [
     },
     // Index 1
     {
-        label: "Focus Area",
+        label: "Focus Areas",
         path: "/focusArea",
 
         children: [
             { label: "Interagency Recovery", path: "/focusArea/interagencyRecovery"},
-            { label: "Debris Management", path: "/focusArea/DebrisMan"},
+            { label: "Debris Management", path: "/focusArea/DebrisManagement"},
             { label: "Crisis Communication", path: "/focusArea/crisisCommunication"}, 
             { label: "Wildfire Threat Intelligence and Prevention", path: "/focusArea/wildfire"},                
         ]

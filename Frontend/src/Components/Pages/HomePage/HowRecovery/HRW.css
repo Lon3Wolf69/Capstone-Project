@@ -1,25 +1,4 @@
-/* ─── Tokens ───── */
-:root {
-    --navy:         #0B2E4F;
-    --teal:         #1F8A8E;
-    --orange:       #F47A20;
-    --charcoal:     #2B2E34;
-    --gray:         #D6DEE5;
-    --white:        #FFFFFF;
-  
-    --navy-light:   #cddeec;
-    --teal-light:   #E1F5F5;
-    --orange-light: #FEF0E3;
-  
-    --teal-text:    #0D6366;
-    --orange-text:  #C05A10;
-  
-    --border:       1px solid var(--gray);
-    --radius:       10px;
-    --radius-sm:    6px;
-  }
-  
-  /* ─── Shared section styles ──────────── */
+   /* ─── Shared section styles ──────────── */
 
   .kys-section {
     padding: 100px;

@@ -44,7 +44,7 @@ import EPRecovery from "./Components/Pages/CaseStudiesPage/EastPalestine/Recover
 import DebrisManagement from "./Components/Pages/FocusAreasPage/DebrisMan/Debris.jsx";
 import DWHero from "./Components/Pages/CaseStudiesPage/DeepWaterHorizon/HeroSection/DWHeroSection.jsx";
 import DWImpact from "./Components/Pages/CaseStudiesPage/DeepWaterHorizon/ImpactSection/DWImpactSection.jsx";
-
+import WildFire from "./Components/Pages/FocusAreasPage/WildFire/WildFire.jsx";
 
 function App() {
   return (
@@ -78,9 +78,9 @@ function App() {
         {/* Focus Areas */}
         <Route path="/focusArea/interagencyRecovery" element={<><RSFHeader/><RSFexample/></>}/>
         
-        <Route path="/focusArea/DebrisMan" element={<><DebrisManagement /></>} />
+        <Route path="/focusArea/DebrisManagement" element={<><DebrisManagement /></>} />
         <Route path="/focusArea/crisisCommunication" element={<><CC /></>} />
-        <Route path="/focusArea/wildfire" element={<><UnderConstruction /></>} />
+        <Route path="/focusArea/wildfire" element={<><WildFire /></>} />
         {/* Platform */}
         
       </Routes>
