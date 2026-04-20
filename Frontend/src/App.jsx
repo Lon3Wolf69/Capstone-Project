@@ -14,7 +14,6 @@ import Contact from "./Components/Pages/HomePage/ContactUs/ContactUs.jsx";
 import Intro from "./Components/Pages/AboutPage/Intro/Intro.jsx";
 import Team from "./Components/Pages/AboutPage/MeetTeam/MeetTeam.jsx";
 import Why from "./Components/Pages/AboutPage/OurMission/OurMission.jsx";
-import CaseStudies from "./Components/Pages/CaseStudiesPage/caseStudies.jsx";
 import RSFexample from "./Components/Pages/FocusAreasPage/RSF/RSFexample.jsx";
 import RSFHeader from "./Components/Pages/FocusAreasPage/RSF/RSFHeader.jsx"
 import AboutCTA from "./Components/Pages/HomePage/CTAs/AboutCTA.jsx";
@@ -40,7 +39,6 @@ import CC from "./Components/Pages/CrisisCommunicationPage/CC.jsx";
 import FAT from "./Components/Pages/HomePage/FocusAreasTeaser/FAT.jsx";
 import EPHero from "./Components/Pages/CaseStudiesPage/EastPalestine/HeroSection/EPHeroSection.jsx";
 import EPImpact from "./Components/Pages/CaseStudiesPage/EastPalestine/ImpactSection/EPImpactSection.jsx";
-import EPRecovery from "./Components/Pages/CaseStudiesPage/EastPalestine/RecoveryPortfolio/EPRecoveryPortfolio.jsx";
 import DebrisManagement from "./Components/Pages/FocusAreasPage/DebrisMan/Debris.jsx";
 import DWHero from "./Components/Pages/CaseStudiesPage/DeepWaterHorizon/HeroSection/DWHeroSection.jsx";
 import DWImpact from "./Components/Pages/CaseStudiesPage/DeepWaterHorizon/ImpactSection/DWImpactSection.jsx";
@@ -48,14 +46,6 @@ import WildFire from "./Components/Pages/FocusAreasPage/WildFire/WildFire.jsx";
 
 function App() {
   return (
-     
-    // Fetch data when the component loads from mongo db database
-  /*useEffect(() => {
-    fetch("http://localhost:5000/api/disasters")
-      .then((res) => res.json())
-      .then((data) => setDisasters(data))
-      .catch((err) => console.error("Error fetching disasters:", err));
-  }, []); */
     // Wrapper for all the information on the App.jsx file styled by the app-container class located in the App.css file (Everything within here is displayed on the main page through the main.jsx file)
     <div>
       <ScrollToTop />
@@ -71,7 +61,6 @@ function App() {
         <Route path="/about/ourApproach" element={<><Approach /> <CHWork /> </>} />
         <Route path="/about/Team" element={<><TeamIntro/><Team /></>} />
         {/* Case Studies */}
-        <Route path="/caseStudies" element={<><CaseStudies /></>} />
         <Route path="/caseStudies/eastPalestine" element={<><EPHero /><EPImpact /></>} />
         <Route path="/caseStudies/deepwaterHorizon" element={<><DWHero /><DWImpact /></>} />
         <Route path="/caseStudies/northCarolina" element={<><NCCaseHero /><NCCaseRecovery /><NCCaseImpact /></>} />
