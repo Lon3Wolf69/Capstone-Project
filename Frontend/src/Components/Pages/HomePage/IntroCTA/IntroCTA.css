@@ -35,7 +35,7 @@
 
 .about-section p {
   line-height: 1.7;
-  font-size: 28px;
+  font-size: 26px;
   padding: 0 5vw;
 }
 
@@ -73,7 +73,7 @@
 .about-headline {
   font-size: 52px;
   font-weight: 600;
-  line-height: 1.15;
+  line-height: 1.2;
   color: #ffffff;
   margin: 0 0 28px 0;
   max-width: 1200px;
@@ -122,10 +122,10 @@
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
   letter-spacing: 0.05em; 
   align-self: flex-end;
   border-radius: 8px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .CTA:hover {

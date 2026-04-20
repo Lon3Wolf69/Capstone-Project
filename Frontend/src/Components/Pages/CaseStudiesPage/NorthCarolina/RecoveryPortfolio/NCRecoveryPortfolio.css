@@ -5,7 +5,7 @@
 }
  
 .portfolio__label {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -14,9 +14,9 @@
 }
  
 .portfolio__title {
-  font-size: 52px;
-  font-weight: 500;
-  color: #0d1b2e;
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--navy);
   margin-bottom: 1.5rem;
   line-height: 1.2;
   max-width: 80%;
@@ -56,15 +56,15 @@
 }
  
 .portfolio__card-title_teal {
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 26px;
+  font-weight: 400;
   color: #0D6366;
   margin-bottom: 8px;
 }
  
 .portfolio__card-description_teal {
   font-size: 18px;
-  color: black;
+  color: var(--charcoal);
   line-height: 1.7;
   margin: 0;
 }
@@ -90,15 +90,15 @@
 }
  
 .portfolio__card-title_orange {
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 26px;
+  font-weight: 400;
   color: #c45e10;
   margin-bottom: 8px;
 }
  
 .portfolio__card-description_orange {
   font-size: 18px;
-  color: black;
+  color: var(--charcoal);
   line-height: 1.7;
   margin: 0;
 }
@@ -124,15 +124,15 @@
 }
  
 .portfolio__card-title_blue {
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 26px;
+  font-weight: 400;
   color: rgba(11, 46, 79, 1);
   margin-bottom: 8px;
 }
  
 .portfolio__card-description_blue {
   font-size: 18px;
-  color: black;
+  color: var(--charcoal);
   line-height: 1.7;
   margin: 0;
 }
