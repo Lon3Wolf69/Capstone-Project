@@ -1,9 +1,4 @@
-/* Helpful tip you can use ctrl-f to find specific words located in a document (Useful for finding classes) */
 /* Footer container handling the styling for everything within the footer container */
-hr {                              /* Removes the default border of the horizontal line */
-  width: 100%;                   /* Adds a top border to create the horizontal line with a color of white */                                 /* Adds margin between the horizontal line and the elements above and below it. First value is for top and bottom while second value is for left and right */
-}
-
 .footer {
   width: 100%;                                 /* Sets the width of the footer to be 100% ensuring it takes up 100% of the screen */
   background-color: var(--navy);                 /* Sets the background color of the footer container */
@@ -22,7 +17,7 @@ hr {                              /* Removes the default border of the horizonta
   gap: 10px;                                    /* Gives spacing between those elements */
 }
 
-/* Sizing of the heading text above the links */
+/* Sizing of the text below the links */
 .footer-text {
   font-size: 18px;                               /* Gives the same font-size to the header as the rest of the links have */        
   padding: 20px;                    
@@ -37,9 +32,25 @@ hr {                              /* Removes the default border of the horizonta
 /* Styling for the footer links */
 .footer-links a {
   color: #f9f9f9;                              /* Color of the links set to white */
-  text-decoration: none;                         /* Removes the text decoration */
-  font-size: 18px;                               /* Makes the font-size to 14px */
+  text-decoration: none;                         /* Removes the text decoration */                               
   transition: color 0.3s ease-in-out;                                  /* Modifies the opacity of the links in the footer allowing for hover effect to be created */
+  position: relative;
+  width: fit-content;
+  font-size: 18px;
+}
+
+/* Animated underline via a pseudo-element that scales in from the left on hover */
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;                                  /* Sits just below the text */
+  width: 100%;
+  height: 1px;
+  background-color: #c1baba;
+  transform: scaleX(0);                          /* Hidden by default — scaled to 0 width */
+  transform-origin: left;                        /* Grows from the left side */
+  transition: transform 0.3s ease-in-out;        /* Smooth slide-in animation */
 }
 
 /* Styling for when the links are hovered in the footer */
@@ -47,8 +58,12 @@ hr {                              /* Removes the default border of the horizonta
   color: #c1baba;                                               
 }
 
+.footer-links a:hover::after {
+  transform: scaleX(1);                          /* Expands to full width on hover */
+}
+
 .footer-logo {
-  width: 300px;                                  /* Sets the width of the logo to be 150px */
+  width: 400px;                                  /* Sets the width of the logo to be 150px */
   height: auto;                                  /* Sets the height to auto so it scales with the width and doesn't distort the image */
 }
 
@@ -71,8 +86,7 @@ hr {                              /* Removes the default border of the horizonta
 
 .footer-quick-links h4 {
   margin-bottom: 20px;
-  text-decoration: underline;
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .footer-columns {
@@ -90,12 +104,32 @@ hr {                              /* Removes the default border of the horizonta
 .footer-column a {
   color: #f9f9f9;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   transition: color 0.3s ease-in-out;
+  position: relative;
+  width: fit-content;
+}
+
+/* Animated underline via a pseudo-element that scales in from the left on hover */
+.footer-column a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;                                  /* Sits just below the text */
+  width: 100%;
+  height: 1px;
+  background-color: #c1baba;
+  transform: scaleX(0);                          /* Hidden by default — scaled to 0 width */
+  transform-origin: left;                        /* Grows from the left side */
+  transition: transform 0.3s ease-in-out;        /* Smooth slide-in animation */
 }
 
 .footer-column a:hover {
   color: #c1baba;
+}
+
+.footer-column a:hover::after {
+  transform: scaleX(1);                          /* Expands to full width on hover */
 }
 
 @media (max-width: 768px) {

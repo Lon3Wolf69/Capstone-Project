@@ -10,8 +10,8 @@
  
 .focus-areas-eyebrow {
   color: #2ab6bb;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   margin: 0 0 12px;
@@ -19,7 +19,7 @@
  
 .focus-areas-heading {
   color: #E1F5F5;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
   margin: 0 0 56px;
@@ -68,7 +68,7 @@
  
 .focus-areas-link {
   color: #2ab6bb;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
