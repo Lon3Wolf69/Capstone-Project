@@ -30,8 +30,12 @@
 }
  
 .impact__item {
-  border-left: 2px solid #1F8A8E;
-  padding-left: 1.25rem;
+  background: white;
+  border-left: 4px solid #1F8A8E;
+  border-radius: 8px;
+  padding: 1.5rem 1.5rem 1.5rem 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
  
 .impact__item-title {
