@@ -33,9 +33,9 @@
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 2px;
-    text-transform: uppercase;
     color: var(--teal);
     margin-bottom: 0.5rem;
+    text-transform: capitalize;
   }
   
   .section-title {
@@ -44,6 +44,7 @@
     letter-spacing: -0.5px;
     color: var(--navy);
     margin-bottom: 1rem;
+
   }
   
   .section-sub {
@@ -104,11 +105,14 @@
     align-items: start;
   }
   
-  .what-we-do__statement {
+  .what-we-do__title {
     font-size: 28px;
-    line-height: 1.3;
+    font-weight: 500; 
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    line-height: 1.15;
     color: var(--white);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
   
   .what-we-do__rule {

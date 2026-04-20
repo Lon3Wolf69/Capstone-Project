@@ -44,9 +44,7 @@ function NavPanels() {
       <h2 style={{paddingBottom:"10px"}}>Explore Our Work</h2>
 
       <h6 style={{paddingLeft: "50px", paddingBottom:"20px", color:"#0B2E4F",fontSize: "18px", lineHeight:"1.5"}}> 
-        Explore case studies to gain insight into real-world natural disasters and 
-        their impacts. Each case highlights key events and responses 
-        with links to in-depth articles for further reading.
+        Explore case studies to gain insight into interagency coordination during major disasters.
       </h6>
 
       {/* ── Desktop: horizontal strip ── */}

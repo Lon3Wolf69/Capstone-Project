@@ -60,7 +60,7 @@ nav ul {
   flex-direction: row;                               /* Ensures that the content is displayed in a row (this is default when not defining it) */
   justify-content: space-between;                    /* Distributes the items evenly among the axis since we are displaying it along the row it will display this information with autocalculated space between the items */
   flex-wrap: nowrap;                                 /* Ensures that the content within the header doesn't wrap */
-  
+  align-items: center;
 }
 
 /* This handles the sizing for specifically the logo*/
@@ -145,7 +145,7 @@ nav ul {
 .dropdown-btn {
   background: none;                                 /* Removes the default background color of the main navigation buttons that open the dropdown list */
   border: none;                                     /* Removes the border that the buttons have by default */
-  color: #0B2E4F;                                   /* Colors the text of the button to be white */
+  color: var(--navy);                                   /* Colors the text of the button to be white */
   cursor: pointer;                                  /* Changes the cursor when hovering over the button to be a pointer */
   padding: 10px;                                    /* Modifies the spacing between the content and the border surrounding the content */
   /* margin-right: 9vw;                                 Modifies the spacing between each button each button takes up 9% of the viewport width */                          
@@ -156,13 +156,13 @@ nav ul {
 }
 
 .dropdown-btn:hover {
-  background-color: rgba(16, 150, 183, 0.15);
-  color: #1096b7;
+  background-color: var(--navy-light);
+  color: var(--navy);
 }
 
 .dropdown-btn.active-dropdown {
-  background-color: rgba(16, 150, 183, 0.2);
-  color: #1096b7;
+  background-color: var(--navy-light);
+  color: var(--navy);
 }
 
 @keyframes fadeInDown {
@@ -184,7 +184,7 @@ nav ul {
   transform: translateX(-50%);                       /* Moves the whole dropdown menu */
   width: 70%;                                       /*  Makes the dropdown menu take up 80% of the width of its container which spans the entire website */
   max-width: 1000px;                                 /* prevents it from becoming huge on big screens */
-  background: #1096b7;                             /* Sets the background color of the dropdown menu */
+  background: var(--navy);                             /* Sets the background color of the dropdown menu */
   padding: 20px;
   /* Columns layout for dropdown */
   display: grid;                                     /* Displays the menu like a grid */
@@ -324,6 +324,7 @@ nav ul {
     justify-content: space-between; /* logo left, contact right */
     align-items: center;
     padding: 5px 5vw;
+    box-sizing: border-box;
   }
 
   .header-logo {
@@ -333,21 +334,18 @@ nav ul {
 
   /* Move contact INTO the same row visually */
   .nav-contact-wrapper {
-    position: absolute;
-    top: 10px;
-    right: 5vw;
+    position: static;
     padding: 0;
   }
 
   /* Nav goes underneath */
   .navbar {
     width: 100%;
-    margin-top: 10px;
   }
 
   /* Vertical menu */
   nav ul {
-    display: flex !important;
+    display: none;
     flex-direction: column;
     width: 100%;
   }
@@ -355,20 +353,27 @@ nav ul {
   nav ul li {
     width: 100%;
     text-align: center;
-    padding: 10px 0;
+    padding: 0;
 
     /* KEY CHANGE: each dropdown anchors to its own item */
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul.open {
+    display: flex;
   }
 
   /* Dropdown now attaches to its own parent item */
   .menu-shared {
-    position: absolute !important;
+    position: static !important;
     top: 100%;
     left: 50%;
-    transform: translateX(-50%) !important;
+    transform: /* translateX(-50%) */ none !important;
 
-    width: 90% !important;
+    width: 100% !important;
     max-width: none;
 
     margin-top: 8px;
@@ -383,5 +388,39 @@ nav ul {
   .dropdown-link {
     display: block;
     padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .dropdown-link:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown-btn {
+    width: 100%;
+    padding: 12px 5vw;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    font-size: 1rem;
+
+  }
+
+  .dropdown-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  nav {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-contact-wrapper {
+    display: none;
   }
 }

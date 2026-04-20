@@ -6,7 +6,7 @@ hr {                              /* Removes the default border of the horizonta
 
 .footer {
   width: 100%;                                 /* Sets the width of the footer to be 100% ensuring it takes up 100% of the screen */
-  background-color: #18558f;                 /* Sets the background color of the footer container */
+  background-color: var(--navy);                 /* Sets the background color of the footer container */
   color: #f9f9f9;                              /* Sets the text color to be white */
   padding: 20px 60px;                             /* Adds padding between the content of the footer and the border. Left value it top and bottom while the right value is the left and right */
 }
@@ -109,7 +109,7 @@ hr {                              /* Removes the default border of the horizonta
   .footer-middle {
     display: flex !important;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     gap: 25px;
     width: 100%;
   }
@@ -118,9 +118,9 @@ hr {                              /* Removes the default border of the horizonta
   .footer-middle > div:first-child {
     display: flex;
     flex-direction: column !important;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
     gap: 12px;
     width: 100%;
   }
@@ -136,39 +136,40 @@ hr {                              /* Removes the default border of the horizonta
   /* Contact link centered */
   .footer-links {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     width: 100%;
   }
 
   .footer-links a {
-    text-align: center;
+    text-align: left;
   }
 
   /* Email line */
   .footer-middle > div:first-child p {
     margin: 0;
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
 
   /* ---------------- HELPFUL LINKS SECTION ---------------- */
   .footer-quick-links {
     width: 100%;
-    text-align: center !important;
+    text-align: left !important;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    padding: 10px 0px;
   }
 
   .footer-quick-links h4 {
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
 
   .footer-columns {
     display: flex;
     flex-direction: column;
-    align-items: center;   /* KEY FIX */
+    align-items: left;   /* KEY FIX */
     width: 100%;
     gap: 12px;
   }
@@ -176,12 +177,16 @@ hr {                              /* Removes the default border of the horizonta
   .footer-column {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: left;
+    text-align: left;
     gap: 8px;
   }
 
   .footer-column a {
+    text-align: left;
+  }
+
+  .footer-text {
     text-align: center;
   }
 }

@@ -35,11 +35,14 @@ function HowRecoveryWorks() {
 // ─── Section: What We Do ─────────────────────────────────────────────────────
 function WhatWeDo() {
   return (
+    
     <section className="kys-section kys-section--navy what-we-do">
       <div className="what-we-do__grid">
         <div className="what-we-do__left">
           <p className="eyebrow">What we do</p>
-          <h2 className="what-we-do__statement">We coordinate the system.</h2>
+          <h2 class="section-title what-we-do__title">
+            We coordinate the system.
+          </h2>
           <div className="what-we-do__rule" />
         </div>
 

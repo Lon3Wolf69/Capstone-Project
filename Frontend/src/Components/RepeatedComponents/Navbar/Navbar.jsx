@@ -26,9 +26,18 @@ function Navbar(){
             <Link to="/" onClick={handleLinkClick}>
             <img src={Logo} alt="Logo" className="header-logo" />
             </Link>
+
+            <div
+              className={`hamburger ${hamburgerOpen ? "open" : ""}`}
+              onClick={() => setHamburgerOpen(!hamburgerOpen)}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </header>
 
-          <nav className="navbar">
+            {/*}
             <div className="nav-btn-positioning">
               <div onClick={() => {
                   setHamburgerOpen(!hamburgerOpen); 
@@ -39,51 +48,54 @@ function Navbar(){
                   <span></span>
             </div>
             </div>
-            
+          */}
+
+
+          <nav className="navbar">
             <ul className={hamburgerOpen ? "open" : ""}>
                 {navRoutes.map((route) => (
-                    <li key={route.label} className="dropdown"> 
+                    <li key={route.label} className="dropdown-item"> 
                       {route.children ? (
                         <button 
                             className={`dropdown-btn ${openDropdown === route.label ? "active-dropdown" : ""}`}
                             onClick={() => toggleDropdown(route.label)}
                         >
-                          {route.label} <span className={`dropdown-arrow ${openDropdown === route.label ? "open" : ""}`}>❯</span>
+                          {route.label}{" "} 
+                          <span className={`dropdown-arrow ${openDropdown === route.label ? "open" : ""}`}>❯</span>
                         </button>
                     ) : (
                         <NavLink
                             to={route.path} 
                             className="dropdown-btn"
                             onClick={handleLinkClick} 
-                            style={({ isActive }) => ({ textDecoration: "none", display: "flex", alignItems: "center" })}
+                            style={{ textDecoration: "none", display: "flex", alignItems: "center" }}
                         >
                           {route.label}
                         </NavLink>
                     )}
-                    </li>
-                ))}
-            </ul>
 
-            {openDropdown && (
-            <div className="menu-shared">                                                            {/* Wrapper for the shared menu all styled by the provided class menu-shared located within the Navbar.css file */}
-              {/* Dynamically generates the list of links within the dropdown menu based off what is located within the navRoutes.jsx file */}
-              {navRoutes
-                .find((r) => r.label === openDropdown)                                        // Calls the find function on the navRoutes array looking for the specific label that equals that variable linked to the openDropdown variable 
-                ?.children?.map((child) => (                                                  // ?.children is an optional chaining sequence that will only attempt to render the children of the dropdown button if there are children if not it will not run. It will then run through the array and render all the children elements 
-                  <NavLink                                                                    // Navlink that will provided for the each individual link
-                    key={child.path}                                                          // Unique key defined for each item which the path value that is retrieved if from the child variable defined for the mapping calling the path variable defined within the navRoutes.jsx file
-                    to={child.path}                                                           // This is what the url is set to grabbed from the navRoutes.jsx array
-                    className={({isActive}) => "dropdown-link" + (isActive ? " active": "")}  // Sets the className with a conditional statement. the isActive variable is a true or false varaible provided to the className function. the function returns the dropdown-link class styling by default and if isActive is true it will add on the active styling to it aswell if not it will not add on the active class to it
-                    onClick={handleLinkClick}                                                 // This is an onClick handler that will call the handleLinkClick function to when a link is clicked closing the dropdown menu when a link is clicked on
-                  >
-                    {child.label}                                                             {/* This is the text that is dynamically created for each link grabbed from the label of the child elements */}
-                  </NavLink>
-                ))}
-            </div>
+
+            {route.children && openDropdown == route.label && (
+              <div className="menu-shared">                                                            {/* Wrapper for the shared menu all styled by the provided class menu-shared located within the Navbar.css file */}
+                {/* Dynamically generates the list of links within the dropdown menu based off what is located within the navRoutes.jsx file */}
+                {route.children.map((child) => (
+                  <NavLink
+                      key={child.path}                                                          // Unique key defined for each item which the path value that is retrieved if from the child variable defined for the mapping calling the path variable defined within the navRoutes.jsx file
+                      to={child.path}                                                           // This is what the url is set to grabbed from the navRoutes.jsx array
+                      className={({isActive}) => "dropdown-link" + (isActive ? " active": "")}  // Sets the className with a conditional statement. the isActive variable is a true or false varaible provided to the className function. the function returns the dropdown-link class styling by default and if isActive is true it will add on the active styling to it aswell if not it will not add on the active class to it
+                      onClick={handleLinkClick}                                                 // This is an onClick handler that will call the handleLinkClick function to when a link is clicked closing the dropdown menu when a link is clicked on
+                    >
+                      {child.label}                                                             {/* This is the text that is dynamically created for each link grabbed from the label of the child elements */}
+                    </NavLink>
+                  ))}
+              </div>
             )}
-          </nav>  
+          </li>
+        ))}
+      </ul>
+    </nav>  
 
-                      
+                     
           <div className="nav-contact-wrapper">
             <NavLink 
               to="/contact" onClick={handleLinkClick} 
@@ -94,7 +106,7 @@ function Navbar(){
 
           </div>        
 
-
+        
           
         
       
