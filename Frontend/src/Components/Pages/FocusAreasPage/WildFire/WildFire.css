@@ -1,0 +1,248 @@
+
+ 
+/* ── Hero ──────────────────────────────────────────────────────── */
+.wf-hero {
+  padding: 3rem 60px 2.5rem 60px;
+}
+ 
+.wf-eyebrow {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal-text);
+  margin-bottom: 1rem;
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.wf-eyebrow::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: var(--teal)
+}
+ 
+.wf-hero-title {
+  font-size: clamp(22px, 4vw, 36px);
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  color: var(--navy);
+}
+ 
+.wf-hero-sub {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--charcoal);
+  max-width: 1100px;
+  margin: 0 0 1.25rem;
+}
+ 
+.wf-hero-sub:last-child {
+  margin-bottom: 0;
+}
+ 
+/* ── Why It Matters ────────────────────────────────────────────── */
+.wf-why {
+  padding: 2.5rem 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  background-color: var(--gray)
+}
+ 
+.wf-section-label {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin: 0 0 1rem;
+}
+ 
+.wf-why-heading {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0 0 1rem;
+  color: var(--navy);
+}
+ 
+.wf-why-body {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--charcoal);
+  margin: 0;
+  padding-left: 10px;
+  border-left: 3px solid var(--teal)
+}
+ 
+.wf-risk-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+ 
+.wf-risk-item {
+  font-size: 18px;
+  color: var(--charcoal);
+  line-height: 1.5;
+  padding: 12px 14px;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  border-left: 2px solid var(--teal);
+  border-top: 0.5px solid var(--gray);
+  border-right: 0.5px solid var(--gray);
+  border-bottom: 0.5px solid var(--gray);
+}
+ 
+/* ── Support Feature Grid ──────────────────────────────────────── */
+.wf-support {
+  padding: 2.5rem 60px 3rem 60px;
+  background: var(--navy)
+}
+
+.wf-support-label {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin: 0 0 1rem;
+}
+ 
+.wf-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 1.25rem;
+}
+ 
+.wf-card {
+  background: #fff;
+  border: 2px solid var(--charcoal);
+  border-left: 8px solid var(--orange);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  transition: border-color 0.15s;
+  box-sizing: border-box;
+}
+ 
+.wf-card:hover {
+  border-color: var(--border-hover);
+}
+ 
+.wf-card-num {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--orange);
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+ 
+.wf-card-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0 0 0.5rem;
+  line-height: 1.3;
+}
+ 
+.wf-card-body {
+  font-size: 16px;
+  color: var(--charcoal);
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 10px;
+  border-left: 2px solid var(--orange);
+}
+ 
+/* ── Tablet (max 768px) ────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .wf-page {
+    padding: 0 1.25rem;
+  }
+ 
+  .wf-hero {
+    padding: 2rem 0 2rem;
+  }
+ 
+  .wf-hero-sub {
+    font-size: 15px;
+  }
+ 
+  .wf-why {
+    gap: 2rem;
+  }
+}
+ 
+/* ── Mobile (max 640px) ────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .wf-page {
+    padding: 0 1rem;
+  }
+ 
+  .wf-hero {
+    padding: 1.75rem 0 1.75rem;
+  }
+ 
+  .wf-hero-title {
+    font-size: 22px;
+    margin-bottom: 0.875rem;
+  }
+ 
+  .wf-hero-sub {
+    font-size: 14px;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+ 
+  /* Stack the two-column why layout */
+  .wf-why {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    padding: 2rem 0;
+  }
+ 
+  .wf-why-heading {
+    font-size: 18px;
+  }
+ 
+  /* Stack feature cards to single column */
+  .wf-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+ 
+  .wf-card {
+    padding: 1rem;
+  }
+ 
+  .wf-support {
+    padding: 2rem 0 2.5rem;
+  }
+}
+ 
+/* ── Small mobile (max 400px) ──────────────────────────────────── */
+@media (max-width: 400px) {
+  .wf-hero-title {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+ 
+  .wf-hero-sub {
+    font-size: 13px;
+  }
+ 
+  .wf-card-title {
+    font-size: 14px;
+  }
+}
+ 

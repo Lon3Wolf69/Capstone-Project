@@ -1,4 +1,27 @@
 /* This class is used to position the news cards and the quicklinks (verticalNav) next to eachother. This needs to be done since by default every component that we put into the app.jsx file is stacked on top of eachother since we have a column like display stlye set up */
+/* ─── Tokens ───── */
+:root {
+    --navy:         #0B1F3A;
+    --teal:         #1F8A8E;
+    --orange:       #F47A20;
+    --charcoal:     #2B2E34;
+    --gray:         #D6DEE5;
+    --white:        #FFFFFF;
+
+    --navy-light:   #cddeec;
+    --teal-light:   #E1F5F5;
+    --orange-light: #FEF0E3;
+  
+    --teal-text:    #0D6366;
+    --orange-text:  #C05A10;
+  
+    --border:       1px solid var(--gray);
+    --radius:       10px;
+    --radius-sm:    6px;
+    --radius-md:    8px;
+    --radius-lg:    12px;
+  }
+
 .position-NextTo {
   display: flex;                                     /* Enables the flexible box layout model for the container element. Allowing you to use flex-direction to style how the elements will position themselves (by default flex-direction: row is the automatically applied making it so the items are displayed within the same row) */                                       
   width: 100%;                                       /* Sets the width of the container to take up 100% */

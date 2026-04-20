@@ -1,6 +1,6 @@
 .focus-areas-section {
   background: #0B1F3A;
-  padding: 80px 40px 120px 40px;
+  padding: 80px 40px 80px 40px;
 }
  
 .focus-areas-inner {
@@ -27,10 +27,12 @@
  
 .focus-areas-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
  
 .focus-areas-col {
+  display: flex;
+  flex-direction: column;
   padding-right: 40px;
   margin-right: 40px;
   border-right: 1px solid #2ab6bb;
@@ -74,6 +76,8 @@
   border-bottom: 1px solid rgba(42, 182, 187, 0.35);
   padding-bottom: 2px;
   transition: color 0.2s, border-color 0.2s;
+  margin-top: auto;
+  align-self: flex-start;
 }
  
 .focus-areas-link:hover {
@@ -82,7 +86,7 @@
 }
 
 /* Tablet — 2 columns, 3rd stacks below */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .focus-areas-section {
     padding: 64px 32px;
   }
@@ -110,7 +114,7 @@
   }
  
   /* 3rd column spans full width, no border, top separator instead */
-  .focus-areas-col:nth-child(3) {
+  .focus-areas-col:nth-child(4) {
     grid-column: 1 / -1;
     border-right: none;
     border-top: 1px solid rgba(0, 164, 166, 0.2);

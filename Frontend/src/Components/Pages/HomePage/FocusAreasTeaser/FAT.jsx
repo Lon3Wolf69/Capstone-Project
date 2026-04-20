@@ -57,6 +57,37 @@ const focusAreas = [
     ),
     to: "/focusArea/crisisCommunication",
   },
+  {
+    id: "wildfire",
+    title: "Wildfire Risk Coordination",
+    description:
+      "Managing wildfire risk requires coordination across agencies, land systems, and recovery efforts. DisasterReady helps align mitigation strategies, resources, and partners to reduce risk and protect long-term recovery.",
+    icon: (
+      <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" width={80} height={80}>
+        <circle cx="40" cy="40" r="38" stroke="#2ab6bb" strokeWidth="1.2" opacity="0.25" />
+        <circle cx="40" cy="40" r="28" stroke="#2ab6bb" strokeWidth="1.2" opacity="0.45" />
+        {/* Flame shape */}
+        <path
+          d="M40 58 C30 58 22 50 22 41 C22 34 27 30 30 27 C30 32 33 34 33 34 C33 28 37 22 40 18 C40 18 43 26 43 30 C45 27 46 23 46 23 C50 27 54 33 54 41 C54 50 50 58 40 58 Z"
+          stroke="#2ab6bb"
+          strokeWidth="1.5"
+          strokeLinejoin="round"
+          fill="none"
+          opacity="0.85"
+        />
+        {/* Inner flame */}
+        <path
+          d="M40 52 C35 52 31 48 31 43 C31 39 34 37 36 36 C36 39 38 40 38 40 C38 37 40 34 40 34 C40 34 42 38 42 40 C43 38 44 36 44 36 C46 38 48 41 48 43 C48 48 45 52 40 52 Z"
+          stroke="#2ab6bb"
+          strokeWidth="1"
+          strokeLinejoin="round"
+          fill="none"
+          opacity="0.55"
+        />
+      </svg>
+    ),
+    to: "/focusArea/wildfire",
+  },
 ];
  
 export default function FocusAreas() {
