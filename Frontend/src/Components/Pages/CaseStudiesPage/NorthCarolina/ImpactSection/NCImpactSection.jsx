@@ -38,6 +38,7 @@ const ImpactSection = () => {
           </div>
         ))}
       </div>
+      {/*
       <div className="impact__callout">
         <p>
           Recovery outcomes are not determined by funding alone — but by how
@@ -46,6 +47,7 @@ const ImpactSection = () => {
           infrastructure.
         </p>
       </div>
+      */}
     </div>
   );
 };
