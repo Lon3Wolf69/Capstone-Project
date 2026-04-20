@@ -202,20 +202,58 @@
     padding: 60px 40px 68px;
   }
  
+  .about-eyebrow {
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+
   .about-headline {
     font-size: 36px;
     max-width: 100%;
+    padding-left: 0;
+    margin-bottom: 40px;
   }
  
   .about-subhead {
     font-size: 16px;
     max-width: 100%;
   }
+
+  .about-section p {
+    font-size: 16px;
+    padding: 0;
+  }
  
   .about-body {
     font-size: 15px;
     max-width: 100%;
     margin-bottom: 36px;
+  }
+
+  .about-blurb-row {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .about-cta-row {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+ 
+  .about-body {
+    font-size: 15px;
+    max-width: 100%;
+    margin-bottom: 36px;
+  }
+
+  .CTA {
+    padding: 12px 24px;
+    font-size: 17px;
+    gap: 10px;
+  }
+
+  .CTA-btn-arrow {
+    font-size: 17px;
   }
 }
  
@@ -224,6 +262,17 @@
   .about-overlay-content {
     padding: 44px 24px 52px;
   }
+
+  .about-eyebrow {
+    padding-left: 0;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+
+  .about-eyebrow-text {
+    font-size: 13px;
+    letter-spacing: 0.12em;
+  }
  
   .about-headline {
     font-size: 26px;
@@ -231,7 +280,18 @@
   }
  
   .about-subhead {
+    font-size: 10px;
+  }
+
+  .about-section p {
     font-size: 14px;
+    padding-left: 10px;
+  }
+ 
+  .about-blurb-row {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    gap: 16px;
   }
  
   .about-body {
@@ -247,6 +307,9 @@
  
   .about-cta-row {
     gap: 14px;
+    margin-top: 32px;
+    flex-direction: column;
+    align-items: flex-start;
   }
  
   .about-divider {
@@ -255,5 +318,17 @@
  
   .about-trust-note {
     width: 100%;
+    font-size: 14px;
+  }
+
+  .CTA {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 15px;
+    gap: 8px;
+  }
+
+  .CTA-btn-arrow {
+    font-size: 15px;
   }
 }

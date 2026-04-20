@@ -197,16 +197,22 @@
   stroke: #f07a40;
 }
  
-/*----------------------------------------- Responsive: Tablet ----------------------------------*/
+/* taaabbbbllleetttt */
 @media (max-width: 768px) {
   .ns-panel {
     flex-direction: column;
     min-height: unset;
+    max-height: none;
+  }
+
+  .ns-accent {
+    display: none;
   }
  
   .ns-img-col {
     width: 100%;
     height: 200px;
+    order: -1;
   }
  
   .ns-content {
@@ -235,4 +241,41 @@
     background: linear-gradient(to top, #ffffff 10%, transparent 60%); 
 }
 
+}
+
+/*- 你的手机这里 ---*/
+@media (max-width: 480px) {
+  .ns-panel {
+    max-height: none;
+  }
+
+  .ns-img-col {
+    height: 160px;
+    order: -1;
+  }
+
+  .ns-accent {
+    display: none;
+  }
+
+  .ns-content {
+    padding: 24px 20px;
+  }
+
+  .ns-label {
+    font-size: 12px;
+  }
+
+  .ns-title {
+    font-size: 20px;
+  }
+
+  .ns-desc {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  .ns-cta {
+    font-size: 13px;
+  }
 }
