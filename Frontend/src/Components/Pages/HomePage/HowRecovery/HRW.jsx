@@ -4,7 +4,7 @@ import "./HRW.css";
 // ─── Section: How Recovery Works ─────────────────────────────────────────────
 function HowRecoveryWorks() {
   return (
-    <section className="kys-section kys-section--white recovery">
+    <section className="container-section background-color--white recovery">
       <p className="eyebrow">How recovery works</p>
       <h2 className="section-title">
         From funding to outcomes—
@@ -36,7 +36,7 @@ function HowRecoveryWorks() {
 function WhatWeDo() {
   return (
     
-    <section className="kys-section kys-section--navy what-we-do">
+    <section className="container-section background-color--navy what-we-do">
       <div className="what-we-do__grid">
         <div className="what-we-do__left">
           <p className="eyebrow">What we do</p>
@@ -72,7 +72,7 @@ function WhatWeDo() {
 // ─── Section: Federal Recovery System ────────────────────────────────────────
 function FederalRecoverySystem() {
   return (
-    <section className="kys-section kys-section--gray federal">
+    <section className="container-section background-color--gray federal">
       <p className="eyebrow">The federal recovery system</p>
       <h2 className="section-title">
         Recovery requires coordination

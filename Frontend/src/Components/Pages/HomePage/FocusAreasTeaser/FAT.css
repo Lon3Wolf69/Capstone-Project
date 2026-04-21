@@ -1,5 +1,5 @@
 .focus-areas-section {
-  background: #0B1F3A;
+  background: var(--gray);
   padding: 80px 40px 80px 40px;
 }
  
@@ -9,7 +9,7 @@
 }
  
 .focus-areas-eyebrow {
-  color: #2ab6bb;
+  color: var(--teal);
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.18em;
@@ -18,7 +18,7 @@
 }
  
 .focus-areas-heading {
-  color: #E1F5F5;
+  color:  var(--navy);
   font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
@@ -35,7 +35,7 @@
   flex-direction: column;
   padding-right: 40px;
   margin-right: 40px;
-  border-right: 1px solid #2ab6bb;
+  border-right: 1px solid var(--teal);
   transform: translateY(24px);
 }
  
@@ -51,7 +51,7 @@
 }
  
 .focus-areas-title {
-  color: #E1F5F5;
+  color: var(--navy);
   font-size: 22px;
   font-weight: 700;
   line-height: 1.3;
@@ -59,7 +59,7 @@
 }
  
 .focus-areas-body {
-  color: rgba(255, 255, 255, 1);
+  color: var(--charcoal);
   font-size: 18px;
   font-weight: 400;
   line-height: 1.75;
@@ -67,13 +67,13 @@
 }
  
 .focus-areas-link {
-  color: #2ab6bb;
+  color: var(--teal);
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 1px solid rgba(42, 182, 187, 0.35);
+  border-bottom: 1px solid var(--teal);
   padding-bottom: 2px;
   transition: color 0.2s, border-color 0.2s;
   margin-top: auto;
@@ -82,7 +82,7 @@
  
 .focus-areas-link:hover {
   color: #f07a40;
-  border-color: rgba(240, 122, 64, 0.5);
+  border-color: var(--orange);
 }
 
 /* Tablet — 2 columns, 3rd stacks below */

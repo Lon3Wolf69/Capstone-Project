@@ -1,10 +1,10 @@
-.kys-section {
+.container-section {
   padding: 100px;
 }
 
-.kys-section--white { background: var(--white); }
-.kys-section--gray  { background: var(--gray);  }
-.kys-section--navy  { background: var(--navy);  }
+.background-color--white { background: var(--white); }
+.background-color--gray  { background: var(--gray);  }
+.background-color--navy  { background: var(--navy);  }
 
 .eyebrow {
   font-size: 18px;
@@ -136,7 +136,7 @@
 /* téléphone portable */
 @media (max-width: 480px) {
 
-  .kys-section {
+  .container-section {
     padding: 30px 20px;
   }
 
@@ -203,7 +203,7 @@
 
 /* tablettttt */
 @media (max-width: 768px) {
-  .kys-section {
+  .container-section {
     padding: 20px 20px;
   }
 
