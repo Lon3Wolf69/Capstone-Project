@@ -1,5 +1,5 @@
 import "./Approach.css";
-import imageSrc from "../../../../assets/AboutUsDiagram.png";
+import imageSrc from "../../../../../assets/AboutUsDiagram.png";
 
 export default function OurApproach() {
   return (

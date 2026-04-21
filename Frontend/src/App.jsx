@@ -12,14 +12,14 @@ import FAT from "./Components/Pages/HomePage/FocusAreasTeaser/FAT.jsx";
 
 /* --------------------------------- About Us Components ------------------------------------ */
 import Intro from "./Components/Pages/AboutPages/Intro/Intro.jsx";
-import Chub from "./Components/Pages/AboutPages/CHub/CHub.jsx";
-import CHubCapabilities from "./Components/Pages/AboutPages/CHub/CHubCapabilities.jsx";
-import CHWork from "./Components/Pages/AboutPages/OurApproach/CHWorks.jsx";
+import Chub from "./Components/Pages/AboutPages/CHub/Intro/CHub.jsx";
+import CHubCapabilities from "./Components/Pages/AboutPages/CHub/Capabilities/CHubCapabilities.jsx";
+import CHWork from "./Components/Pages/AboutPages/OurApproach/CoordinationHub/CHWorks.jsx";
 import Team from "./Components/Pages/AboutPages/MeetTeam/MeetTeam.jsx";
 import Why from "./Components/Pages/AboutPages/OurMission/OurMission.jsx";
 import AboutContent from "./Components/Pages/AboutPages/Content/AboutContent.jsx";
 import TeamIntro from "./Components/Pages/AboutPages/MeetTeam/TeamIntro.jsx";
-import Approach from "./Components/Pages/AboutPages/OurApproach/Approach.jsx";
+import Approach from "./Components/Pages/AboutPages/OurApproach/Approach/Approach.jsx";
 
 /* ---------------------------------- Case Studies Components ------------------------- */
 import NCCaseHero from "./Components/Pages/CaseStudiesPages/NorthCarolina/HeroSection/NCHeroSection.jsx";
@@ -57,9 +57,8 @@ function App() {
       {/* This is another wrapper container for all defined Routes (Put all the Route tags here. Your telling the program what to display when the url equals the path) */}
       <Routes>
       <Route path="/" element={<><AboutSection /><HRW /><NavPanels /><FAT /><NavShowcase /></>} />  {/* This is a route that displays information on the home page only */}
-        {/* Sets up route for the login button */}
         <Route path="/contact" element={<><Contact /></>} />
-        <Route path="/about/AboutUs" element={<><Intro /><Why />  <Chub /> <CHubCapabilities /> </>} />
+        <Route path="/about/AboutUs" element={<><Intro /><Why /><Chub /> <CHubCapabilities /> </>} />
         <Route path="/about/ourApproach" element={<><Approach /> <CHWork /> </>} />
         <Route path="/about/Team" element={<><TeamIntro/><Team /></>} />
         {/* Case Studies */}

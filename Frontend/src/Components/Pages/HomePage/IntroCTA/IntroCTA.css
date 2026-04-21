@@ -29,7 +29,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 5px;
   background: var(--orange);
   z-index: 1;
 }
@@ -130,7 +130,7 @@
 }
 
 .CTA:hover {
-  background-color: #c45e10;
+  background-color: var(--orange-hover);
   box-shadow: 0 6px 20px rgba(30, 77, 94, 0.4);
 }
 

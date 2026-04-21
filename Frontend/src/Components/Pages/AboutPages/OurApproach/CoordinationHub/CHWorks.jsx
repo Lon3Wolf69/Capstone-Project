@@ -1,6 +1,6 @@
 import React from "react";
 import "./CHWorks.css";
-import infographic from "../../../../assets/ch-infographic.png"
+import infographic from "../../../../../assets/ch-infographic.png"
 
 export default function CHWork() {
   return (
