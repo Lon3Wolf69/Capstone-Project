@@ -30,6 +30,7 @@
   left: 0;
   right: 0;
   height: 3px;
+  background: var(--orange);
   z-index: 1;
 }
 
