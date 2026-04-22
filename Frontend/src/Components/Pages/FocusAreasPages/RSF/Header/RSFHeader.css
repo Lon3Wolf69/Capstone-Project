@@ -1,6 +1,6 @@
 .rsf-header-section {
   padding: 100px 20px 40px;
-  background-color: #ffffff;
+  background-color: var(--white);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -13,9 +13,9 @@
 }
 
 .rsf-header-title {
-  color: #0B2E4F;
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  font-weight: 800;
+  color: var(--charcoal);
+  font-size: clamp(2.5rem, 6vh, 2.8rem);
+  font-weight: 600;
   margin-bottom: 20px;
   letter-spacing: -1px;
 }
@@ -23,21 +23,19 @@
 .rsf-header-accent {
   width: 60px;
   height: 5px;
-  background-color: #F47A20;
+  background-color: var(--orange);
   margin: 0 auto 35px;
   border-radius: 50px;
 }
 
 .rsf-header-description {
   font-size: clamp(0.95rem, 2.5vw, 1.15rem);
-  line-height: 1.8;
-  color: #555;
-  font-weight: 400;
+  line-height: 1.7;
+  color: var(--charcoal);
 }
 
 
 @media (max-width: 768px) {
-
 
   .rsf-header-section {
     padding: 15px 20px;
@@ -47,14 +45,14 @@
     max-width: 100%;
   }
   .rsf-header-title { 
-    font-size: 2.2rem;
+    font-size: clamp(2.5rem, 6vh, 2.8rem);
     line-height: 1.2;
     letter-spacing: -0.5px;
     margin-bottom: 15px; 
   }
 
   .rsf-header-description { 
-    font-size: 1.1rem;
+    font-size: clamp(0.95rem, 2.5vw, 1.15rem);
     line-height: 1.6;
     padding: 0 10px;
   }
