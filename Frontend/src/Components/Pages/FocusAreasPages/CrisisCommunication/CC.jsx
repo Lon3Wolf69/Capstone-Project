@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./CC.css";
-import SupportDiagram from "../../../assets/AreasOfSupport.png";
+import SupportDiagram from "../../../../assets/AreasOfSupport.png";
 
 const CC = () => {
   const stakeholders = [

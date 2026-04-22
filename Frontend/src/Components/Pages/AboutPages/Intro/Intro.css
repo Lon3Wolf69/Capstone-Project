@@ -1,6 +1,6 @@
 
 .intro-section {
-  background: #f9f9f9;
+  background: var(--white);
   min-height: 50vh;
   padding: 10px 100px;
   box-sizing: border-box;
@@ -13,7 +13,7 @@
   line-height: 1.4;
   padding-bottom: 20px;
   padding-top: 70px;
-  color: #0B2E4F;
+  color: var(--charcoal);
 }
   
 .intro-line {
@@ -24,7 +24,7 @@
 }
   
 .intro-accent {
-  color: #F47A20;
+  color: #f07a40;
   font-style: italic;
 }
   
