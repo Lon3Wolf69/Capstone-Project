@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./WildFire.css";
  
 const features = [
@@ -36,6 +37,14 @@ const risks = [
  
 export default function WildfireRiskPage() {
   return (
+
+        /* Wrapped content in motion.div for the simple stationary fade */
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
     <main className="wf-page">
  
       {/* ── Hero ─────────────────────────────────────── */}
@@ -100,5 +109,6 @@ export default function WildfireRiskPage() {
       </section>
  
     </main>
+    </motion.div>
   );
 }
