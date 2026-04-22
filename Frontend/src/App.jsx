@@ -58,7 +58,7 @@ function App() {
         {/* Sets up route for the login button */}
         <Route path="/contact" element={<><Contact /></>} />
         <Route path="/about/AboutUs" element={<><Intro /><Why />  <Chub /> <CHubCapabilities /> </>} />
-        <Route path="/about/ourApproach" element={<><Approach /> <CHWork /> </>} />
+        <Route path="/about/ourApproach" element={<> <CHWork /> </>} />
         <Route path="/about/Team" element={<><TeamIntro/><Team /></>} />
         {/* Case Studies */}
         <Route path="/caseStudies/eastPalestine" element={<><EPHero /><EPImpact /></>} />

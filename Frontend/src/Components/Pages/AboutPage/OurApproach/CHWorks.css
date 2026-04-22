@@ -1,37 +1,39 @@
 /* ---- Page ---- */
 .how-it-works {
-    background: #D6DEE5;
-    padding: 48px 100px 56px;
-    margin: 0 auto;
-    font-family: var(--font-sans);
-    box-sizing: border-box;
+  background: #D6DEE5;
+  padding: 48px 100px 56px;
+  margin: 0 auto;
+  font-family: var(--font-sans);
+  box-sizing: border-box;
 }
   
-/* --- Eyebrow ---- */
+/* --- Eyebrow (not unibrow) ---- */
 .chwork-eyebrow {
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--teal);
-    margin: 0 0 10px;
-
-    border-left: 4px solid #F47A20;
-    padding-left: 12px;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  font-weight: 700;
+  color: var(--teal);
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  border-left: 4px solid #F47A20;
+  padding-left: 12px;
 }
   
 /* ---- Main title --- */
 .chwork-title {
-    font-size: 25px;
-    font-weight: 700;
-    color: var(--navy);
-    margin: 0 0 16px;
-    line-height: 1.15;
+  font-size: clamp(1.333rem, 2.8vw, 1.666rem);
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0 0 16px;
+  line-height: 1.15;
 }
   
 /* ---- Subtitle - */
 .chwork-subtitle {
-    font-size: 17px;
-    color: var(--charcoal);
-    margin: 0 0 48px;
+  font-size: clamp(1rem, 1.5vw, 1rem);
+  color: var(--charcoal);
+  margin: 0 0 48px;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 /* --- Infographic -- */
@@ -50,15 +52,16 @@
   
 /* --- Footer ---- */
 .section-footer {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: clamp(1rem, 1.5vw, 1rem);
+    font-weight: 600;
     color: var(--charcoal);
     margin: 0;
     text-align: center;
+    line-height: 1.5;
 }
   
   /* -- Responsive i tried, im just a girl---- */
-  @media (max-width: 680px) {
+  @media (max-width: 786px) {
     .how-it-works {
       padding: 32px 24px 40px;
     }

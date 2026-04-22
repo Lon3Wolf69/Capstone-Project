@@ -4,10 +4,11 @@ import React, { useEffect } from 'react'; // Added useEffect for animation
 import img from '../../../../assets/Landslides.jpg';
 import "./OurMission.css";                        // Imports the css file for use within the file
 
-const why = () => {
+
+  const why = () => {
 
     // Animation Logic: Adds the 'reveal-visible' class when the element enters the viewport
-    useEffect(() => {
+     useEffect(() => {
         const observerOptions = {
             threshold: 0.15 // Triggers when 15% of the element is visible
         };
@@ -24,8 +25,7 @@ const why = () => {
         revealedElements.forEach((el) => observer.observe(el));
 
         return () => observer.disconnect(); // Cleanup
-    }, []);
-
+    }, []); 
     return(
     <>
     <div className="ourmission-container">

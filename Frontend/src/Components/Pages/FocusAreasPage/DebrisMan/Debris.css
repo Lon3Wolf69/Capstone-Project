@@ -11,7 +11,7 @@
 
 .dm-last {
     padding: 30px 100px;
-    background-color: var(--navy);
+    background-color: var(--white);
 
 }
 
@@ -185,20 +185,20 @@
 .dm-footer-primary {
     font-size: clamp(0.8rem, 2.5vw, 1.1rem);
     font-weight: 500;
-    color: var(--white);
+    color: var(--charcoal);
     margin-bottom: 0.5rem;
     text-align: center;
 }
   
 .dm-footer-secondary {
     font-size: clamp(0.8rem, 2.5vw, 1.1rem);
-    color: var(--gray);
+    color: var(--charcoal);
     line-height: 1.6;
     text-align: center;
 }
 
   
-/*  Teléfono móvil stuff here */
+/*  Teléfono stuff here */
 @media (max-width: 768px) {
     .dm-top {
         margin-top: 20px;

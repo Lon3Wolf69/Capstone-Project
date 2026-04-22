@@ -7,7 +7,7 @@ import "./CHubCapabilities.css";
 
 
 
-
+/* why so much distance? worried about getting a virus? (get it, hahaha) */
 
 const capabilities = [
   {
