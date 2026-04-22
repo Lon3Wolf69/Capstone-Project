@@ -141,12 +141,12 @@
 .reveal-visible {
     opacity: 1;
     transform: translateY(0);
-    transition-delay: 3.2s;
+    transition-delay: 2s;
 }
 
 /* Stagger the cards so they don't all pop in at the exact same millisecond */
 .cards-section.reveal-visible {
-    transition-delay: 3.2s;
+    transition-delay: 2s;
 }
 
 @media (max-width: 768px) {

@@ -10,7 +10,7 @@ export default function AnimatedSection() {
           className="line"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.2 }}
+          transition={{ duration: 1 }}
         >
           We don’t replace existing systems,
         </motion.div>
@@ -20,7 +20,7 @@ export default function AnimatedSection() {
           className="intro-line"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 1.2 }} 
+          transition={{ duration: 1, delay: .6 }} 
         >
           we make them <span className="intro-accent">work together.</span>
         </motion.div>
@@ -31,7 +31,7 @@ export default function AnimatedSection() {
         className="intro-body-text"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 2.2 }}
+        transition={{ duration: 1, delay: 1.2 }}
       >
         <p>
           Recovery doesn’t fail because of limited funding — it fails because
