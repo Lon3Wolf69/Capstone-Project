@@ -15,7 +15,7 @@
   overflow: hidden;
   border-radius: 14px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-  background: #fdfdfd;
+  background: var(--white);
   height: auto;
   width: 100%;
   min-height: 420px;
@@ -73,9 +73,9 @@
 
 
 .rsf-desc {
-  font-size: 0.9rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   margin-top: 10px;
-  line-height: 1.4;
+  line-height: 1.6;
   max-width: 90%;
 }
 
