@@ -32,13 +32,15 @@ const Footer = () => {
                 <a href="https://www.nhc.noaa.gov" target="_blank" rel="noopener noreferrer">National Hurricane Center</a>
                 <a href="https://www.weather.gov" target="_blank" rel="noopener noreferrer">National Weather Service</a>
                 <a href="https://www.tsunami.gov/" target="_blank" rel="noopener noreferrer">Tsunami Warning System</a>
-                <a href="https://www.redcross.org" target="_blank" rel="noopener noreferrer">American Red Cross</a>
-                <a href="https://www.salvationarmyusa.org" target="_blank" rel="noopener noreferrer">Salvation Army</a>
-                <a href="https://wck.org" target="_blank" rel="noopener noreferrer">World Central Kitchen</a>
               </div>
               <div className="footer-column">
+                <a href="https://www.redcross.org" target="_blank" rel="noopener noreferrer">American Red Cross</a>
+                <a href="https://www.salvationarmyusa.org" target="_blank" rel="noopener noreferrer">Salvation Army</a>                             
+                <a href="https://wck.org" target="_blank" rel="noopener noreferrer">World Central Kitchen</a>
                 <a href="https://mds.org" target="_blank" rel="noopener noreferrer">Mennonite Disaster Service</a>
                 <a href="https://teamrubiconusa.org" target="_blank" rel="noopener noreferrer">Team Rubicon</a>
+              </div>
+              <div className="footer-column">
                 <a href="https://water.noaa.gov/" target="_blank" rel="noopener noreferrer">National Water Center</a>
                 <a href="https://www.spc.noaa.gov/" target="_blank" rel="noopener noreferrer">Storm Prediction Center</a>                             
                 <a href="https://www.usgs.gov/programs/earthquake-hazards" target="_blank" rel="noopener noreferrer">Earthquake Hazard Progam</a>
