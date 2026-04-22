@@ -136,11 +136,11 @@
 
   /* ---------------- FOOTER WRAPPER ---------------- */
   .footer {
-    padding: 10px 12px;
+    padding: 8px 10px;
   }
 
   .footer-content {
-    gap: 6px;
+    gap: 4px;
   }
 
   /* STACK MAIN SECTIONS */
@@ -159,7 +159,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 8px;
+    gap: 6px;
     width: 100%;
   }
 
@@ -167,7 +167,7 @@
   .footer-logo {
     display: block;
     margin: 0 auto;
-    width: 220px;
+    width: 240px;
     max-width: 100%;
     height: auto;
   }
@@ -197,7 +197,7 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding: 6px 0px;
+    padding: 4px 0px;
   }
 
   .footer-quick-links h4 {
@@ -215,21 +215,23 @@
   }
 
   .footer-column {
-    display: flex;
-    flex-direction: column;
+    display: contents;
+    /*flex-direction: column;
     align-items: left;
     text-align: left;
-    gap: 10px;
+    gap: 10px;*/
   }
 
   .footer-column a {
     text-align: left;
+    display: block;
     font-size: clamp(0.75rem, 1.2vw, 0.75rem);
+    margin-bottom: 8px;
   }
 
   .footer-text {
     text-align: center;
-    margin: 14px 0 0;
+    margin: 16px 0 0;
     padding: 0;
     font-size: clamp(1rem, 1.5vw, 1rem);
   }
