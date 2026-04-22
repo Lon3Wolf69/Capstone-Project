@@ -226,12 +226,11 @@
 }
 
 .cc-experience-footer {
-  font-size: 22px;
+  font-size: 19px;
   color: #0B1F3A;
-  margin-top: 40px;
-  padding-top: 40px;
-  border-top: 3px solid #F47A20; 
-}
+
+  
+} 
 
 .cc-experience-footer strong {
   font-weight: 800;

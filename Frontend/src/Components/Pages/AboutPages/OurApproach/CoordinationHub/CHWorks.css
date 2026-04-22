@@ -5,6 +5,7 @@
   margin: 0 auto;
   font-family: var(--font-sans);
   box-sizing: border-box;
+  will-change: opacity;
 }
   
 /* --- Eyebrow (not unibrow) ---- */
@@ -59,6 +60,8 @@
     text-align: center;
     line-height: 1.5;
 }
+
+
   
   /* -- Responsive i tried, im just a girl---- */
   @media (max-width: 786px) {
