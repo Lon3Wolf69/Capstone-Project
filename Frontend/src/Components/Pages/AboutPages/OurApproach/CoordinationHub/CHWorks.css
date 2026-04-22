@@ -1,6 +1,6 @@
 /* ---- Page ---- */
 .how-it-works {
-  background: #D6DEE5;
+  background: var(--gray);
   padding: 48px 100px 56px;
   margin: 0 auto;
   font-family: var(--font-sans);
@@ -10,31 +10,38 @@
   
 /* --- Eyebrow (not unibrow) ---- */
 .chwork-eyebrow {
-  font-size: clamp(0.875rem, 1.5vw, 1rem);
-  font-weight: 700;
+  font-size: clamp(0.85rem, 1.5 vw, 1rem);
+  letter-spacing: 2px;
   color: var(--teal);
   margin: 0 0 10px;
   text-transform: uppercase;
-  border-left: 4px solid #F47A20;
+  border-left: 3px solid var(--orange);
   padding-left: 12px;
 }
   
 /* ---- Main title --- */
 .chwork-title {
-  font-size: clamp(1.333rem, 2.8vw, 1.666rem);
+  font-size: clamp(1.3rem, 2.8vw, 1.66rem);
   font-weight: 600;
   color: var(--navy);
   margin: 0 0 16px;
   line-height: 1.15;
+  letter-spacing: -0.5px;
 }
   
 /* ---- Subtitle - */
 .chwork-subtitle {
-  font-size: clamp(1rem, 1.5vw, 1rem);
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   color: var(--charcoal);
   margin: 0 0 48px;
   line-height: 1.5;
-  font-weight: 400;
+}
+
+.chwork-subtitle span {
+  font-weight: bold;
+  font-size: clamp(1.3rem, 2.8vw, 1.66rem);
+  display: block;
+  margin-top: 24px;
 }
 
 /* --- Infographic -- */
@@ -53,7 +60,7 @@
   
 /* --- Footer ---- */
 .section-footer {
-    font-size: clamp(1rem, 1.5vw, 1rem);
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
     font-weight: 600;
     color: var(--charcoal);
     margin: 0;
@@ -61,8 +68,6 @@
     line-height: 1.5;
 }
 
-
-  
   /* -- Responsive i tried, im just a girl---- */
   @media (max-width: 786px) {
     .how-it-works {

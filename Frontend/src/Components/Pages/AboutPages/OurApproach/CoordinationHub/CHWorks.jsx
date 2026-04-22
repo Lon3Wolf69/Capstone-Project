@@ -15,7 +15,7 @@ export default function CHWork() {
     >
       <p className="chwork-eyebrow">Our Approach</p>
       <h2 className="chwork-title">
-        Connecting Priorities, Funding, and Execution
+        Connecting Priorities, Funding & Execution
       </h2>
       <p className="chwork-subtitle">
         Disaster recovery is not a planning problem - it is a coordination problem. 
@@ -29,7 +29,7 @@ export default function CHWork() {
         down between agencies, funding sources,
         and execution. We help close those gaps directly.
         <br />
-        This is a simple but critical process:
+        <span>This Is A Simple But Critical Process:</span>
       </p>
       
       <div className="chwork-image-wrapper">
@@ -41,7 +41,7 @@ export default function CHWork() {
       </div>
 
       <p className="section-footer">
-        This creates a more structured path from planning to execution.
+        This Creates A More Structured Path From Planning To Execution
       </p>
     </motion.section>
   );

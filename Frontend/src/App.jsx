@@ -15,10 +15,10 @@ import Intro from "./Components/Pages/AboutPages/Intro/Intro.jsx";
 import Chub from "./Components/Pages/AboutPages/CHub/Intro/CHub.jsx";
 import CHubCapabilities from "./Components/Pages/AboutPages/CHub/Capabilities/CHubCapabilities.jsx";
 import CHWork from "./Components/Pages/AboutPages/OurApproach/CoordinationHub/CHWorks.jsx";
-import Team from "./Components/Pages/AboutPages/MeetTeam/MeetTeam.jsx";
+import Team from "./Components/Pages/AboutPages/MeetTeam/Members/MeetTeam.jsx";
 import Why from "./Components/Pages/AboutPages/OurMission/OurMission.jsx";
 import AboutContent from "./Components/Pages/AboutPages/Content/AboutContent.jsx";
-import TeamIntro from "./Components/Pages/AboutPages/MeetTeam/TeamIntro.jsx";
+import TeamIntro from "./Components/Pages/AboutPages/MeetTeam/Intro/TeamIntro.jsx";
 
 /* ---------------------------------- Case Studies Components ------------------------- */
 import NCCaseHero from "./Components/Pages/CaseStudiesPages/NorthCarolina/HeroSection/NCHeroSection.jsx";

@@ -1,8 +1,8 @@
 import "./MeetTeam.css";
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import Dawn from"../../../../assets/Dawn.jpg";
-import Jim from "../../../../assets/Jim.jpeg";
+import Dawn from"../../../../../assets/Dawn.jpg";
+import Jim from "../../../../../assets/Jim.jpeg";
 
 const teamMembers = [
   { name: "James Mcpherson", position: "President and CEO", blurb: `James McPherson is widely recognized as one of the most experienced and impactful emergency managers in the federal government. A proven leader in crisis, he held two of FEMA's most critical and senior roles: Federal Coordinating Officer (FCO) and the agency's most senior Federal Disaster Recovery Coordinator (FDRC).\n
@@ -59,7 +59,7 @@ return (
       viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <h2>Meet The Team</h2>
+      
 
       <div className="team-list">
         {teamMembers.map((member) => {

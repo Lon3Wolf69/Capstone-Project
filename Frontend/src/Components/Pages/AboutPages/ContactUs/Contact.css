@@ -3,9 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background-color: #D6DEE5;
+  background-color: var(--gray);
   padding: clamp(40px, 8vw, 100px) 20px;
-  font-family: Helvetica, Arial, sans-serif;
 }
 
 .contact-wrapper {
@@ -26,10 +25,9 @@
 }
 
 .contact-title h2 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-size: clamp(2.5rem, 6vh, 2.8rem);
   font-weight: 400;
-  color: #2B2E34;
+  color: var(--charcoal);
   margin: 0;
   line-height: 1.1;
 }
@@ -39,15 +37,14 @@
 }
 
 .contact-subheader p {
-  color: #2B2E34;
+  color: var(--charcoal);
   line-height: 1.6;
   margin: 0;
   font-size: clamp(0.95rem, 2.5vw, 1.15rem);
-  font-family: Helvetica, Arial, sans-serif;
 }
 
 .contact-form {
-  background: #fff;
+  background: var(--white);
   padding: 30px;
   border-radius: 10px;
   display: flex;
@@ -60,7 +57,7 @@
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #0B2E4F;
+  color: var(--navy);
   margin: 0 0 2px 0;
 }
 
@@ -76,21 +73,6 @@
   flex: 1;
 }
 
-/*
-.contact-form h2 {
-  text-align: center;
-  background: #fff;
-}
-
-.contact-intro {
-  margin-bottom: 20px;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #000000;
-  text-align: center;
-}
-*/
-
 .contact-input,
 .contact-select,
 .contact-textarea {
@@ -99,14 +81,14 @@
   background: #f1f1f1;
   border: 1.5px solid transparent;
   outline: none;
-  color: #0B2E4F;
+  color: var(--navy);
 }
 
 .contact-input:focus,
 .contact-select:focus,
 .contact-textarea:focus {
-  border-color: #2B2E34;
-  background: #fff;
+  border-color: var(--charcoal);
+  background: var(--white);
 }
 
 .contact-select {
@@ -118,7 +100,7 @@
   min-height: 100px;
   resize: vertical;
   line-height: 1.5;
-  color: #333;
+  color: var(--charcoal);
 }
 
 .contact-button {
@@ -127,19 +109,19 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 6px;
-  background-color: #6b7f8e;
-  color: white;
+  background-color: var(--orange);
+  color: var(--white);
   border: none;
   letter-spacing: 0.02em;
 }
 
 .contact-button:hover {
-  background-color: #155d9e;
+  background-color: var(--orange-hover);
   transform: translateY(-1px);
 }
 
 .contact-confirmation {
-  color: #0B2E4F;
+  color: var(--navy);
   text-align: center;
 }
 
@@ -157,17 +139,16 @@
 }
 
 .popup {
-  background: #0B2E4F;
+  background: var(--navy);
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
   max-width: 400px;
-  color: #fff;
+  color: var(--white);
   width: 90%;
 }
 
 .popup h3 {
-  font-family: Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   margin: 0 0 0.5rem;
@@ -175,8 +156,7 @@
 }
 
 .popup p {
-  font-family: Helvetica, Arial, sans-serif;
-  color: #fff;
+  color: var(--white);
 }
 
 .popup button {
@@ -186,12 +166,11 @@
   border-radius: 5px;
   border: 1.5px solid rgba(225, 225, 225, 0.5);
   background: transparent;
-  color: white;
-  font-family: Helvetica, Arial, sans-serif;
+  color: var(--white);
   font-size: 15px;
 }
 
-/* I'm tired of this grandpa */
+/* I'm tired of this grandpa - me to */
 
 @media (max-width: 768px) {
 

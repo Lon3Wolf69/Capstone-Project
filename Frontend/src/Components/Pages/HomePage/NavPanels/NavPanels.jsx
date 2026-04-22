@@ -9,6 +9,12 @@ import NorthCarolina from "../../../../assets/northCarolina.jpg";
 import EastPalestine from "../../../../assets/eastPalestine.jpg";
 import DeepWaterHorizon from "../../../../assets/deepwater.jpeg";
 // import platformImg from "../../../../assets/Platform.jpg";
+
+const displayNames = {
+  "NorthCarolina": "North Carolina",
+  "EastPalestine": "East Palestine",
+  "DeepWaterHorizon": "DeepWater Horizon",
+};
  
 // Short blurb for each nav section — keyed by route label
 const blurbs = {
@@ -65,7 +71,7 @@ function NavPanels() {
         {/* TEXT CONTENT */}
         <div className="navpanel-content">
 
-          <h3>{route.label.replace(/([A-Z])/g, ' $1').trim()}</h3>
+          <h3>{displayNames[route.label]}</h3>
 
           <p className="navpanel-summary">
             {blurbs[route.label]}
@@ -99,7 +105,7 @@ function NavPanels() {
                 style={{ backgroundColor: colors[route.label] }}
                 onClick={() => handleToggle(i)}
               >
-                <span className="accordion-title">{route.label}</span>
+                <span className="accordion-title">{displayNames[route.label]}</span>
                 <span className="accordion-icon">{isOpen ? "−" : "+"}</span>
               </button>
  
@@ -123,7 +129,7 @@ function NavPanels() {
                     to={route.path}
                     className="navpanel-btn"
                   >
-                    Explore {formattedLabel}
+                    Explore {displayNames[route.label]}
                     <span className="navpanel-btn-arrow">→</span>
                   </Link>
                 </div>
