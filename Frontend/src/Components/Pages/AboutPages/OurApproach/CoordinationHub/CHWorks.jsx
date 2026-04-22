@@ -1,10 +1,18 @@
 import React from "react";
+import { motion } from "framer-motion"; 
 import "./CHWorks.css";
 import infographic from "../../../../../assets/ch-infographic.png"
 
 export default function CHWork() {
   return (
-    <section className="how-it-works">
+    <motion.section 
+      className="how-it-works"
+      /* Fade Logic */
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.2 }} // Triggers when 20% is visible
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       <p className="chwork-eyebrow">Our Approach</p>
       <h2 className="chwork-title">
         Connecting Priorities, Funding, and Execution
@@ -32,12 +40,9 @@ export default function CHWork() {
         />
       </div>
 
-      {/* ── Footer note (left-aligned, bold) ── */}
       <p className="section-footer">
         This creates a more structured path from planning to execution.
       </p>
-    </section>
+    </motion.section>
   );
-
-
 }

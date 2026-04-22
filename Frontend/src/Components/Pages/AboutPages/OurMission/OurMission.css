@@ -146,7 +146,7 @@
 
 /* Stagger the cards so they don't all pop in at the exact same millisecond */
 .cards-section.reveal-visible {
-    transition-delay: 0.2s;
+    transition-delay: 3.2s;
 }
 
 @media (max-width: 768px) {
