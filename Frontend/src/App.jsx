@@ -4,7 +4,7 @@ import "./App.css";                                                             
 /* All the different components imported from their respective directories */
 /* --------------------------------- Home Page Components ----------------- */
 import AboutSection from "./Components/Pages/HomePage/IntroCTA/IntroCTA.jsx";
-import Contact from "./Components/Pages/HomePage/ContactUs/ContactUs.jsx";   
+import Contact from "./Components/Pages/AboutPages/ContactUs/ContactUs.jsx";   
 import NavPanels from "./Components/Pages/HomePage/NavPanels/NavPanels.jsx";
 import HRW from "./Components/Pages/HomePage/HowRecovery/HRW.jsx";
 import NavShowcase from "./Components/Pages/HomePage/NavShowcase/NavShowcase.jsx";

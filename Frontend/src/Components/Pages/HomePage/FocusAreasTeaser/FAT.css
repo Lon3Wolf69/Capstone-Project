@@ -10,8 +10,6 @@
  
 .focus-areas-eyebrow {
   color: var(--teal);
-  font-size: 18px;
-  font-weight: 400;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   margin: 0 0 12px;
@@ -19,8 +17,8 @@
  
 .focus-areas-heading {
   color:  var(--navy);
-  font-size: 30px;
-  font-weight: 700;
+  font-size: clamp(1.3rem, 2.8vw, 1.66rem);
+  font-weight: 600;
   line-height: 1.2;
   margin: 0 0 56px;
 }
@@ -52,24 +50,23 @@
  
 .focus-areas-title {
   color: var(--navy);
-  font-size: 22px;
-  font-weight: 700;
+  font-size: clamp(0.9rem, 1.7vw, 1.34rem);
+  font-weight: 600;
   line-height: 1.3;
   margin: 0 0 16px;
 }
  
 .focus-areas-body {
   color: var(--charcoal);
-  font-size: 18px;
-  font-weight: 400;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   line-height: 1.75;
   margin: 0 0 28px;
 }
  
 .focus-areas-link {
   color: var(--teal);
-  font-size: 14px;
-  font-weight: 700;
+  font-size: clamp(0.75rem, 1.2vw, 0.75rem);
+  font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   text-decoration: none;
@@ -81,7 +78,7 @@
 }
  
 .focus-areas-link:hover {
-  color: #f07a40;
+  color: var(--orange-hover);
   border-color: var(--orange);
 }
 
@@ -92,7 +89,7 @@
   }
  
   .focus-areas-heading {
-    font-size: 30px;
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
     margin-bottom: 40px;
   }
  
@@ -131,7 +128,7 @@
   }
  
   .focus-areas-heading {
-    font-size: 26px;
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
     margin-bottom: 32px;
   }
  
@@ -156,23 +153,17 @@
   }
  
   /* Reset tablet overrides */
-  .focus-areas-col:nth-child(2) {
-    border-right: none;
-    padding-right: 0;
-    margin-right: 0;
-  }
- 
-  .focus-areas-col:nth-child(3) {
+  .focus-areas-col:nth-child(4) {
     grid-column: auto;
     border-top: none;
     padding-top: 0;
   }
  
   .focus-areas-title {
-    font-size: 20px;
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
   }
  
   .focus-areas-body {
-    font-size: 14px;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
   }
 }

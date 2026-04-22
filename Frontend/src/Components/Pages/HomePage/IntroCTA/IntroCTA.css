@@ -2,7 +2,7 @@
 .about-section {
   position: relative;
   box-sizing: border-box;
-  background-color: #0B1F3A;
+  background-color: var(--navy);
   overflow: hidden;
   width: 100%;
 }
@@ -36,7 +36,7 @@
 
 .about-section p {
   line-height: 1.7;
-  font-size: 26px;
+  font-size:  clamp(1.25rem, 3.5vw, 1.44rem);
   padding: 0 5vw;
 }
 
@@ -58,24 +58,23 @@
  
 .about-eyebrow-line {
   width: 50px;
-  height: 2px;
-  background: #f07a40;
+  height: 1px;
+  background: var(--orange);
   flex-shrink: 0;
 }
  
 .about-eyebrow-text {
-  font-size: 18px;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: white;
-
+  color: var(--white);
 }
 
 .about-headline {
-  font-size: 52px;
+  font-size: clamp(2.5rem, 6vw, 2.8rem);
   font-weight: 600;
   line-height: 1.2;
-  color: #ffffff;
+  color: var(--white);
   margin: 0 0 28px 0;
   max-width: 1200px;
   padding-left: 60px;
@@ -83,7 +82,8 @@
 }
  
 .about-headline-accent {
-  color: #f07a40;
+  color: var(--orange);
+  font-size: clamp(2.5rem, 6vw, 2.8rem)
 }
 
 /*-------------------------------- Hero card Message ----------------------------------------------------*/
@@ -93,11 +93,11 @@
   align-items: start;
   margin-bottom: 48px;
   margin-top: 48px;
-  border-left: 3px solid #f07a40;
+  border-left: 2px solid var(--orange);
 }
 
 .about-subhead {
-  color: rgba(255, 255, 255);
+  color: var(--white);
   margin: 0 0 14px 0;
 }
 
@@ -117,10 +117,10 @@
   align-items: center;
   gap: 16px;
   justify-content: flex-end;
-  color: #ffffff;
-  background-color: #f07a40;
+  color: var(--white);
+  background-color: var(--orange);
   padding: 14px 28px;
-  font-size: 18px;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   font-weight: 600;
   cursor: pointer;
   letter-spacing: 0.05em; 
@@ -136,7 +136,7 @@
 
 .CTA-btn-arrow {
   display: inline-block;
-  font-size: 20px;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   transition: transform 0.25s ease;
 }
 
@@ -146,7 +146,7 @@
 
 /*----------------------------------------- Case Studies Link ----------------------------------*/
 .case-studies-link {
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
   position: relative;
   display: inline-block;
@@ -160,7 +160,7 @@
   bottom: 10px;
   width: 0;
   height: 2px;
-  background-color: #ffffff;
+  background-color: var(--white);
   transition: width 0.3s ease;
 }
 
@@ -173,12 +173,12 @@
 .about-divider {
   width: 1px;
   height: 36px;
-  background:#f07a40;
+  background: var(--orange);
 }
  
 .about-trust-note {
-  font-size: 18px;
-  color: white;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  color: var(--white);
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
@@ -206,26 +206,20 @@
   }
 
   .about-headline {
-    font-size: 36px;
+    font-size: clamp(2.5rem, 6vw, 2.8rem);
     max-width: 100%;
     padding-left: 0;
     margin-bottom: 40px;
   }
  
   .about-subhead {
-    font-size: 16px;
+    font-size: clamp(1.25rem, 3.5vw, 1.44rem);
     max-width: 100%;
   }
 
   .about-section p {
-    font-size: 16px;
+    font-size: clamp(1.25rem, 3.5vw, 1.44rem);
     padding: 0;
-  }
- 
-  .about-body {
-    font-size: 15px;
-    max-width: 100%;
-    margin-bottom: 36px;
   }
 
   .about-blurb-row {
@@ -237,21 +231,15 @@
     padding-left: 0;
     margin-top: 40px;
   }
- 
-  .about-body {
-    font-size: 15px;
-    max-width: 100%;
-    margin-bottom: 36px;
-  }
 
   .CTA {
     padding: 12px 24px;
-    font-size: 17px;
+    font-size:  clamp(0.9rem, 1.5vw, 1rem);
     gap: 10px;
   }
 
   .CTA-btn-arrow {
-    font-size: 17px;
+    font-size:  clamp(0.9rem, 1.5vw, 1rem);
   }
 }
  
@@ -268,21 +256,21 @@
   }
 
   .about-eyebrow-text {
-    font-size: 13px;
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
     letter-spacing: 0.12em;
   }
  
   .about-headline {
-    font-size: 26px;
+    font-size: clamp(2.5rem, 6vw, 2.8rem);
     margin-bottom: 20px;
   }
  
   .about-subhead {
-    font-size: 10px;
+    font-size: clamp(1.25rem, 3.5vw, 1.44rem);
   }
 
   .about-section p {
-    font-size: 14px;
+    font-size: clamp(1.25rem, 3.5vw, 1.44rem);
     padding-left: 10px;
   }
  
@@ -290,12 +278,6 @@
     margin-top: 16px;
     margin-bottom: 16px;
     gap: 16px;
-  }
- 
-  .about-body {
-    font-size: 13px;
-    line-height: 1.75;
-    margin-bottom: 32px;
   }
  
   .CTA {
@@ -316,7 +298,7 @@
  
   .about-trust-note {
     width: 100%;
-    font-size: 14px;
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
   }
 
   .CTA {
@@ -327,6 +309,6 @@
   }
 
   .CTA-btn-arrow {
-    font-size: 15px;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
   }
 }

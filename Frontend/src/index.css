@@ -2,6 +2,7 @@
 * {
   margin: 0;                                     /* Spacing between the borders of an element and the other elements around it */
   padding: 0;                                    /* Spacing between the content and its border */
+  font-size: 18px;
   box-sizing: border-box;                        /* Messing with this before eating */
   font-family: Helvetica, Arial, sans-serif;     /* Defines the font used  */
 }
