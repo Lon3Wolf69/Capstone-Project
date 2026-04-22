@@ -136,15 +136,19 @@
 
   /* ---------------- FOOTER WRAPPER ---------------- */
   .footer {
-    padding: 20px;
+    padding: 8px 10px;
+  }
+
+  .footer-content {
+    gap: 4px;
   }
 
   /* STACK MAIN SECTIONS */
   .footer-middle {
     display: flex !important;
     flex-direction: column;
-    align-items: left;
-    gap: 25px;
+    align-items: stretch;
+    gap: 16px;
     width: 100%;
   }
 
@@ -152,10 +156,10 @@
   .footer-middle > div:first-child {
     display: flex;
     flex-direction: column !important;
-    align-items: left;
-    justify-content: left;
-    text-align: left;
-    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
     width: 100%;
   }
 
@@ -163,25 +167,26 @@
   .footer-logo {
     display: block;
     margin: 0 auto;
-    width: 180px;
+    width: 240px;
+    max-width: 100%;
     height: auto;
   }
 
   /* Contact link centered */
   .footer-links {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     width: 100%;
   }
 
   .footer-links a {
-    text-align: left;
+    text-align: center;
   }
 
   /* Email line */
   .footer-middle > div:first-child p {
     margin: 0;
-    text-align: left;
+    text-align: center;
     width: 100%;
   }
 
@@ -192,35 +197,42 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding: 10px 0px;
+    padding: 4px 0px;
   }
 
   .footer-quick-links h4 {
-    text-align: left;
+    text-align: center;
     width: 100%;
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
   }
 
   .footer-columns {
-    display: flex;
-    flex-direction: column;
-    align-items: left;   /* KEY FIX */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
     width: 100%;
-    gap: 12px;
+    gap: 14px;
   }
 
   .footer-column {
-    display: flex;
-    flex-direction: column;
+    display: contents;
+    /*flex-direction: column;
     align-items: left;
     text-align: left;
-    gap: 8px;
+    gap: 10px;*/
   }
 
   .footer-column a {
     text-align: left;
+    display: block;
+    font-size: clamp(0.75rem, 1.2vw, 0.75rem);
+    margin-bottom: 8px;
   }
 
   .footer-text {
     text-align: center;
+    margin: 16px 0 0;
+    padding: 0;
+    font-size: clamp(1rem, 1.5vw, 1rem);
   }
 }

@@ -1,5 +1,5 @@
 .dm-top {
-    background-color: white;
+    background-color: var(--white);
     margin-top: 40px;
     padding: 0px 100px 5px;
 }
@@ -10,55 +10,49 @@
 }
 
 .dm-last {
-    padding: 30px 100px;
-    background-color: var(--white);
+    padding: 0px 0 30px 0;
+    background-color: var(--gray);
 
 }
 
 .dm-eyebrow {
-    font-size: clamp(0.8rem, 2.5vw, 0.8rem);
-    font-weight: 500;
-    letter-spacing: 0.14em;
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+    letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--teal-text);
-    padding-bottom: 0.5rem;
+    color: var(--teal);
+    margin-bottom: 5px;
+    padding-left: 12px;
+    border-left: 3px solid var(--orange);
     display: flex;
     align-items: center;
     gap: 8px;
 }
   
-.dm-eyebrow::before {
-    content: '';
-    display: block;
-    width: 24px;
-    height: 1px;
-    background: var(--teal);
-}
-  
 .dm-headline {
     font-size: clamp(1.5rem, 4vw, 2rem);
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.15;
     color: var(--navy);
     padding-bottom: 1.25rem;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.5px;
 }
   
   .dm-headline em {
-    font-style: italic;
+    font-weight: 600;
     color: var(--orange);
+    font-size: clamp(1.5rem, 4vw, 2rem);
 }
   
 .dm-sum1 {
-    font-size: clamp(0.8rem, 2.5vw, 1.08rem);
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
     line-height: 1.75;
     color: var(--charcoal);
-    max-width: 580px;
+    max-width: 1200px;
     padding-bottom: 0.5rem;
 }
   
 .dm-sum2 {
-    font-size: clamp(0.8rem, 2.5vw, 1.08rem);
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
     line-height: 1.65;
     color: var(--charcoal);
     padding-bottom: 2.5rem;
@@ -80,10 +74,9 @@
   
 .dm-consequence-intro {
     font-size: clamp(0.8rem, 2.5vw, 1.08rem);
-    font-weight: 500;
     color: var(--charcoal);
     padding-bottom: 0.87rem;
-    letter-spacing: 0.12em;
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--navy);
     margin-bottom: 1rem;
@@ -104,15 +97,15 @@
     border: 1px solid var(--teal);
     border-radius: 20px;
     padding: 5px 14px;
-    letter-spacing: 0.01em;
+    letter-spacing: 1px;
 }
   
 .dm-warn-line {
     font-size: clamp(0.8rem, 2.5vw, 1rem);
-    color: var(--orange-text);
-    border-left: 2px solid var(--orange);
+    color: var(--teal-text);
+    border-left: 3px solid var(--teal);
     line-height: 1.6;
-    background: var(--orange-light);
+    background: var(--teal-light);
     padding: 8px 12px;
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
@@ -143,8 +136,8 @@
   
 .dm-card-label {
     font-size: clamp(0.8rem, 2.5vw, 1.08rem);
-    font-weight: 500;
-    letter-spacing: 0.12em;
+    font-weight: 400;
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--navy);
     margin-bottom: 1rem;
@@ -183,21 +176,19 @@
 /* last section */
   
 .dm-footer-primary {
-    font-size: clamp(0.8rem, 2.5vw, 1.1rem);
-    font-weight: 500;
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
     color: var(--charcoal);
     margin-bottom: 0.5rem;
     text-align: center;
 }
   
 .dm-footer-secondary {
-    font-size: clamp(0.8rem, 2.5vw, 1.1rem);
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
     color: var(--charcoal);
     line-height: 1.6;
     text-align: center;
 }
 
-  
 /*  Teléfono stuff here */
 @media (max-width: 768px) {
     .dm-top {
@@ -210,7 +201,7 @@
     }
 
     .dm-headline {
-        font-size: clamp(1.35rem, 6vw, 1.75rem);
+        font-size: clamp(1.3rem, 2.8vw, 1.66rem);
     }
 
     .dm-sum1,

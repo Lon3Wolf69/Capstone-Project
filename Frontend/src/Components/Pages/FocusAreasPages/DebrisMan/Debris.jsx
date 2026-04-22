@@ -33,9 +33,9 @@ export default function DebrisManagement() {
       <div className="dm-top" >
         <p className="dm-eyebrow">Debris Management</p>
         <h1 className="dm-headline">
-          Protecting Reimbursement.
+          Protecting Reimbursement
           <br />
-          <em>Accelerating Recovery.</em>
+          <em>Accelerating Recovery</em>
         </h1>
         <p className="dm-sum1">
           Debris removal is often the largest and most complex line item in disaster recovery — and one of the highest-risk areas for compliance exposure and reimbursement loss.
