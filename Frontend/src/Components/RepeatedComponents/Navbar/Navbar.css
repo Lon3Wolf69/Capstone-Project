@@ -4,6 +4,7 @@
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  position: relative;
 }
 
 .navbar {
@@ -191,9 +192,9 @@ nav ul {
   padding: 20px;
   /* Columns layout for dropdown */
   display: grid;                                     /* Displays the menu like a grid */
-  grid-template-columns: repeat(4,1fr);              /* Makes it so each row has 4 columns before going onto the next line */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));              /* Makes it so each row has 4 columns before going onto the next line */
   flex-wrap: wrap;                                   /* In case of text being to big to fit within the container wrap the text onto the next line */
-  gap: 15px 0px;                                     /* Modifies the gaps between rows and columns. (row gap, column gap) */
+  gap: 15px 10px;                                     /* Modifies the gaps between rows and columns. (row gap, column gap) */
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);          /* Adds a shadow to the menu when it is opened. (Y offset, X offset, blur) */ 
   z-index: 99;                                        /* Anything with a lower z-index then this is below the menu. (default without defining is 0) */
   animation: fadeInDown 0.4s ease forwards;
@@ -443,7 +444,6 @@ nav ul {
     position: relative;
     background-color: var(--gray);
     border-radius: 12px;
-    overflow: hidden;
 
   }
 
