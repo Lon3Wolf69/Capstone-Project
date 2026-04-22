@@ -1,8 +1,16 @@
+import React from "react";
+import { motion } from "framer-motion"; 
 import "./TeamIntro.css";
 
 export default function TeamIntro() {
   return (
-    <div className="intro-container">
+    <motion.div 
+      className="intro-container"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
         <h2 className="intro-title">
           Introduction
         </h2>
@@ -21,6 +29,6 @@ export default function TeamIntro() {
           coordination, ensuring recovery systems 
           work together to deliver real outcomes.
         </p>
-    </div>
+    </motion.div>
   );
 }

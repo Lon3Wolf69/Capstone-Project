@@ -1,5 +1,6 @@
 import "./MeetTeam.css";
 import { useState, useRef } from "react";
+import { motion } from "framer-motion";
 import Dawn from"../../../../assets/Dawn.jpg";
 import Jim from "../../../../assets/Jim.jpeg";
 
@@ -49,17 +50,21 @@ export default function TeamSection() {
     setExpanded(prev => ({ ...prev, [id]: !prev[id] }));
   };
   
-  return (
-    <section className="mtt-section">
-      <h2>
-        Meet The Team
-      </h2>
+return (
+    /* Added Framer Motion to the section wrapper */
+    <motion.section 
+      className="mtt-section"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
+      <h2>Meet The Team</h2>
 
       <div className="team-list">
-        {teamMembers.map((member, index) => {
+        {teamMembers.map((member) => {
           const paragraphs = splitParagraphs(member.blurb);
           const visibleParagraphs = paragraphs.slice(0, member.cutAfterParagraph);
-
           const hiddenParagraphs = paragraphs.slice(member.cutAfterParagraph);
           const isExpanded = expanded[member.id];
           
@@ -73,13 +78,13 @@ export default function TeamSection() {
               <p className="position">{member.position}</p>
             </div>
             <div className="member-right">
-
               <div className="blurb">
                 {visibleParagraphs.map((para, i) => (
                   <p key={i} className="blurb-paragraph">{para}</p>
                 ))}
-                <div className={`blurb-hidden ${isExpanded ? 'expanded' : 'collapsed'}`}
-                     ref={el => blurbHiddenRefs.current[member.id] = el}
+                <div 
+                  className={`blurb-hidden ${isExpanded ? 'expanded' : 'collapsed'}`}
+                  ref={el => blurbHiddenRefs.current[member.id] = el}
                 >
                   {hiddenParagraphs.map((para, i) => (
                     <p key={i} className="blurb-paragraph">{para}</p>
@@ -94,6 +99,6 @@ export default function TeamSection() {
           );
         })}
       </div>
-    </section>
+    </motion.section>
   );
 }

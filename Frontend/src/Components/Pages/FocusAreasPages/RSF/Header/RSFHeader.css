@@ -9,8 +9,8 @@
 
 .rsf-header-container {
   max-width: 850px;
+  will-change: opacity; 
 }
-
 
 .rsf-header-title {
   color: #0B2E4F;
@@ -20,17 +20,13 @@
   letter-spacing: -1px;
 }
 
-
 .rsf-header-accent {
   width: 60px;
   height: 5px;
   background-color: #F47A20;
   margin: 0 auto 35px;
   border-radius: 50px;
-  /* Ensure transform-origin is center so scaleX looks like it grows from the middle */
-  transform-origin: center;
 }
-
 
 .rsf-header-description {
   font-size: clamp(0.95rem, 2.5vw, 1.15rem);
