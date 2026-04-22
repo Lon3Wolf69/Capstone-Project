@@ -1,36 +1,49 @@
 
 .intro-section {
   background: var(--white);
-  min-height: 50vh;
+  min-height: 40vh;
   padding: 10px 100px;
   box-sizing: border-box;
 }
+
+.line {
+  text-align: left;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  color: var(--teal);
+  text-transform: uppercase;
+  padding-left: 12px;
+  border-left: 3px solid var(--orange);
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
   
 .intro-headline {
   text-align: left;
-  font-size: clamp(1.333rem, 2.8vw, 1.666rem);
-  font-weight: 600;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
   line-height: 1.4;
   padding-bottom: 20px;
   padding-top: 70px;
-  color: var(--charcoal);
+  color: var(--teal);
 }
   
 .intro-line {
   margin-bottom: 10px;
-  font-size: clamp(1.333rem, 2.8vw, 1.666rem);
+  font-size: clamp(1.3rem, 2.8vw, 1.66rem);
+  color: var(--navy);
   font-weight: 600;
   line-height: 1.15;
+  letter-spacing: 0.5px;
 }
   
 .intro-accent {
-  color: #f07a40;
-  font-style: italic;
+  color: var(--orange);
+  font-size: clamp(1.3rem, 2.8vw, 1.66rem);
 }
   
 .intro-body-text {
-  max-width: 900px;
-  font-size: clamp(1rem, 1.5vw, 1rem);
+  max-width: 1200px;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   font-weight: 400;
   line-height: 1.5;
 }
@@ -38,14 +51,22 @@
 @media (max-width: 768px) {
 
   .intro-section {
-    padding: 2px 20px 40px;
+    padding: 40px 24px;
+    min-height: unset;
   }
 
-  .intro-headline, line {
-    padding: 15px 20px;
+  .intro-headline {
+    padding-top: 40px;
+    padding-bottom: 12px;
+  }
+
+  .intro-line {
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
   }
 
   .intro-body-text {
-    padding: 5px 20px;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    line-height: 1.6;
+    padding: 0;
   }
 }

@@ -12,11 +12,18 @@
 /* Section header — matches the style used across the site */
 .navpanels-section h2 {
   font-size: clamp(1.3rem, 2.8vw, 1.66rem);
-  font-weight: bold;
+  font-weight: 600px;
   color: var(--navy);
-  padding-bottom: 30px;
-  margin: 0 0 0 30px;
+  padding-bottom: 10px;
   letter-spacing: -0.5px;
+}
+
+.navpanels-section h6 {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-weight: normal;
+  color: var(--charcoal);
+  padding-bottom: 20px;
+  padding-left: 30px;
 }
 
 @media (max-width: 768px) {
@@ -216,7 +223,6 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: var(--navy);
   }
  
   .accordion-item--open .accordion-body {

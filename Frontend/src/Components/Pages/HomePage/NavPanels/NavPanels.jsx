@@ -26,7 +26,7 @@ const images = {
  
 // Accent colors for each panel's collapsed background
 const colors = {
-  "NorthCarolina":    "#0B2E4F",
+  "NorthCarolina":    "var(--navy)",
   "EastPalestine":   "#18558f",
   "DeepWaterHorizon": "#1D6A8A",
 };
@@ -41,10 +41,10 @@ function NavPanels() {
   return (
     <section className="navpanels-section">
  
-      <h2 style={{paddingBottom:"10px"}}>Explore Our Work</h2>
+      <h2>Explore Our Work</h2>
 
-      <h6 style={{paddingLeft: "50px", paddingBottom:"20px", color:"#0B2E4F",fontSize: "18px", lineHeight:"1.5"}}> 
-        Explore case studies to gain insight into interagency coordination during major disasters.
+      <h6> 
+        Explore case studies to gain insight into interagency coordination during major disasters:
       </h6>
 
 
@@ -104,7 +104,7 @@ function NavPanels() {
               </button>
  
               {/* Accordion body — revealed on open */}
-              <div className="accordion-body">
+              <div className="accordion-body" style={{backgroundColor: colors[route.label] }}>
                 {images[route.label] ? (
                   <img
                     src={images[route.label]}

@@ -1,87 +1,50 @@
 /* This is the css styling for the Why section */
-/* Container for the whole overlay container */
-.overlay-container {
-    position: relative;                     /* Position it relative to its parent container */
-    /* display: inline-block;                   Ensures that it sits on the same line as other elements  */
-    width: 100%;                            /* Adjusts the width to fit the whole site */     
-    overflow: hidden;
-}
-
-/* Styling for the icons in the cards KILLED IT*/
-.card-icon {
-  font-size: 2rem;      /* Controls the size of the emoji icon */
-  margin-bottom: 12px;  /* Adds space between the icon and the h4 title below it */
-}
-
-
-/* Overlay styling */
-.overlay {
-    position: absolute;                     /* Sit on top of the page content */
-    top: 0;                                 /* Positioning of the overlay */
-    left: 0;                                /* Positioning of the actual overlay */
-    width: 100%;                            /* Fit the whole width of the container */
-    height: 100%;                           /* Sets the height to 100% of the container */
-    z-index: 2;                             /* Sets the z-index for the element */
-    background-color: #0B2E4F;            /* Background color for the overlay */
-    opacity: 0.90;                           /* Changes the opacity of the overlay */
-}
-
 .ourmission-container {
     padding: 40px 100px;
-    background-color: #D6DEE5;
-}
-
-/* Overlay text Styling */
-.overlay-text {
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    color: white;
-
-    text-align: center;
-    text-shadow: 4px 4px 4px #181a1c;
-}
-
-.mission-hero {
-    padding: 1rem 1.25rem 1rem 0.5rem;
-    margin-bottom: 2rem 2rem 2rem 3rem;
-    border-Left: 3px solid #1F8A8E;
-    padding-Left: 12px;
+    background-color: var(--gray);
 }
 
 .mission-hero p {
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    font-weight: 600;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    font-weight: 400;
     margin: 0 0 6px;
-    letter-spacing: .05px;
+    letter-spacing: 2px;
+    border-left: 3px solid var(--orange);
+    padding-left: 12px;
+    color: var(--teal)
+}
+
+.mission-hero span {
+    color: var(--orange);
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
+    font-weight: 600;
 }
 
 .mission-hero h1 {
-    font-size: clamp(1.333rem, 2.8vw, 1.666rem);
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
     font-weight: 600;
     margin: 0;
     line-height: 1.15;
     font-weight: bold;
-    color:#0B2E4F;
+    letter-spacing: -0.5px;
+    color:var(--navy);
 }
 /* Begin cards section styling */
 .cards-section{
     display: flex;
     gap: 40px;
-    padding: 40px 100px;
+    padding: 40px 100px 100px 100px;
     justify-content: center;
-    background-color: #D6DEE5;
+    background-color: var(--gray);
 }
 
 /* Subcards styling */
 .card {
     border-radius: 12px;                                /* Handles the styling for the border of the card */
-    background: #f5f5f5;                              /* Changes the background color of the whole card */                               
+    background: var(--white);                              /* Changes the background color of the whole card */                               
     padding: 40px 20px;                                      /* Spacing between the cards edge and its content (all sides) */
     flex: 1;                                            
-    /* box-shadow: 0px 4px 10px rgba(0,0,0,0.2);          Adds a shadow to the card */
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);          
 }
 
 /* Styling for the header text */
@@ -95,36 +58,30 @@
 /* styling for any p tags within the card */
 .card p{
     line-height: 1.8;
-    font-size: clamp(1rem, 1.5vw, 1rem);
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
     font-weight: 400;
 
 }
 
-.card-icon img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-}
-
 .card-challenge {
-    border-top: 4px solid #0B2E4F;
-    background-color: white;
+    border-top: 4px solid var(--navy);
+    background-color: var(--white);
 }
 
 .card-solution {
-    border-top: 4px solid #1F8A8E;
-    background-color: white;
+    border-top: 4px solid var(--teal);
+    background-color: var(--white);
 }
 
 .card-result {
-    border-top: 4px solid #F47A20;
-    background-color: white;
+    border-top: 4px solid var(--orange);
+    background-color: var(--white);
 }
 
 .card-arrow {
     align-self: center;
     font-size: 2rem;
-    color: #0B2E4F;
+    color: var(--navy);
 }
 
 /* --- Animation Styles --- */
@@ -160,7 +117,7 @@
 
     .cards-section {
         flex-direction: column;
-        padding: 15px 20px 10px;
+        padding: 15px 20px 60px;
         gap: 10px;
     }
 

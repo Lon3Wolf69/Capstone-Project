@@ -58,7 +58,7 @@ function App() {
       <Route path="/" element={<><AboutSection /><HRW /><NavPanels /><FAT /><NavShowcase /></>} />  {/* This is a route that displays information on the home page only */}
         <Route path="/contact" element={<><Contact /></>} />
         <Route path="/about/AboutUs" element={<><Intro /><Why /><Chub /> <CHubCapabilities /> </>} />
-        <Route path="/about/ourApproach" element={<><CHWork /> </>} />
+        <Route path="/about/ourApproach" element={<><CHWork /></>} />
         <Route path="/about/Team" element={<><TeamIntro/><Team /></>} />
         {/* Case Studies */}
         <Route path="/caseStudies/eastPalestine" element={<><EPHero /><EPImpact /></>} />

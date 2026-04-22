@@ -2,86 +2,21 @@
   width: 100%;
 }
 
-
 .ch-panel {
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: stretch;
   min-height: 400px; 
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 
-.ch-panel.dark { background-color: #0B1F3A; }
-
-
-/*----------------------------------------- Media/Diagram Column ----------------------------------
-.ch-media-col {
-  flex: 0 0 50%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
-  padding: 40px; Padding keeps the diagram from hitting the edges
-  box-sizing: border-box;
-}
-
-
-.ch-panel.visible .ch-media-col {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-.ch-diagram-wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-*/
-
-/* If your diagram is an SVG, this ensures it scales 
-.ch-diagram-wrapper svg {
-  max-width: 100%;
-  height: auto;
-}
-
-
-.placeholder-diagram {
-  width: 100%;
-  height: 300px;
-  background: rgba(11, 31, 58, 0.05);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #0B1F3A;
-  font-weight: bold;
-}
-*/
+.ch-panel.dark { background-color: var(--navy); }
 
 /*----------------------------------------- Content & Accents ----------------------------------*/
-.ch-accent {
-  width: 4px;
-  background: linear-gradient(180deg, #e55c1b 0%, #f07a40 100%);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: calc(50% - 2px);
-  z-index: 10;
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-
 
 .ch-panel.visible .ch-accent { opacity: 1; }
-
 
 .ch-content {
   padding: 40px 100px;
@@ -91,37 +26,34 @@
   box-sizing: border-box;
 }
 
-
 .ch-content-right {
   text-align: left;
   align-items: flex-end;
 }
 
-
 .ch-label {
-  font-size: clamp(0.875rem, 1.5vw, 1rem);
-  font-weight: 700;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  font-weight: 400;
   text-transform: uppercase;
-  color: #F47A20;
+  color: var(--teal);
   margin-bottom: 12px;
-
-  border-Left: 3px solid #F47A20;
+  border-Left: 3px solid var(--orange);
   padding-Left: 12px;
+  letter-spacing: 2px;
 }
-
 
 .ch-title {
-  font-size: clamp(1.333rem, 2.8vw, 1.666rem);
-  font-weight: 500;
-  color: #0B1F3A;
+  font-size: clamp(1.3rem, 2.8vw, 1.66rem);
+  font-weight: 600;
+  color: var(--navy);
   margin-bottom: 20px;
+  letter-spacing: -0.5px
 }
 
-
 .ch-desc {
-  font-size: clamp(1rem, 1.5vw, 1rem);
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   line-height: 1.5;
-  color: #444;
+  color: var(--charcoal);
   padding-top: 15px;
   margin-bottom: 30px;
   white-space: pre-line;
@@ -134,7 +66,6 @@
   transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-
 /* ----------------------------------------- Animation Trigger States (Visible) ----------------------------------------- */
 .ch-panel.visible .ch-label {
   opacity: 1;
@@ -142,13 +73,11 @@
   transition-delay: 0.2s;
 }
 
-
 .ch-panel.visible .ch-title {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0.4s;
 }
-
 
 .ch-panel.visible .ch-desc {
   opacity: 1;
@@ -156,15 +85,39 @@
   transition-delay: 0.6s;
 }
 
-
-
-
-
-
 /* Responsive */
-@media (max-width: 992px) {
-  .ch-panel { flex-direction: column; }
-  .ch-media-col, .ch-content { flex: 0 0 100%; width: 100%; }
-  .ch-content-right { text-align: left; align-items: flex-start; }
-  .ch-accent { display: none; }
+@media (max-width: 768px) {
+  .ch-panel {
+    flex-direction: column;
+    min-height: unset;
+  }
+
+  .ch-content {
+    padding: 48px 24px;
+  }
+
+  .ch-content-right {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .ch-label {
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+  }
+
+  .ch-title {
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
+    margin-bottom: 16px;
+  }
+
+  .ch-desc {
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    line-height: 1.7;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .ch-accent {
+    display: none;
+  }
 }

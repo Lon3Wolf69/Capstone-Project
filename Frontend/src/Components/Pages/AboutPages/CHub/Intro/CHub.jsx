@@ -16,7 +16,7 @@ const hubSections = [
     theme: "light",
     // side: "right",  Diagram on the right
     label: "What it is",
-    title: "A Coordination System—Supported by Technology—Built From Experience",
+    title: "A Coordination System — Supported by Technology — Built From Experience",
     desc: [
       `DisasterReady is building a proprietary coordination system to help states connect recovery priorities with the agencies, funding, and partners required to deliver outcomes.
 
@@ -32,7 +32,7 @@ const hubSections = [
     theme: "light",
     // side: "left",  Diagram on the left
     label: "Why it Matters",
-    title: "Recovery Breaks Down Between Planning and Execution",
+    title: "Recovery Breaks Down Between Planning & Execution",
     desc: `States can identify what needs to be done. Funding exists across federal programs.
 
 

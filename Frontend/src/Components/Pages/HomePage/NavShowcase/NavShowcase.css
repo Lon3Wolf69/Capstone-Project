@@ -117,9 +117,11 @@
  
 .ns-label {
   font-size: clamp(0.85rem, 1.5vw, 1rem);
-  letter-spacing: 0.18em;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--orange);
+  color: var(--teal);
+  border-left: 3px solid var(--orange);
+  padding-left: 12px;
   margin-bottom: 8px;
   opacity: 0;
   transition: opacity 1.5s ease;
@@ -132,6 +134,7 @@
   line-height: 1.1;
   opacity: 0;
   transition: opacity 1.5s ease;
+  letter-spacing: -0.5px;
 }
  
 .dark .ns-title { 

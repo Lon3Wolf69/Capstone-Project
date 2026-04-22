@@ -7,9 +7,9 @@ function HowRecoveryWorks() {
     <section className="container-section background-color--white recovery">
       <p className="eyebrow">How recovery works</p>
       <h2 className="section-title">
-        From funding to outcomes—
-        <br />
-        coordination is the difference
+        From Funding To Outcomes — 
+        
+        Coordination Is The Difference
       </h2>
 
       <div className="recovery__intro">
@@ -41,9 +41,9 @@ function WhatWeDo() {
         <div className="what-we-do__left">
           <p className="eyebrow">What we do</p>
           <h2 class="section-title what-we-do__title">
-            We coordinate the system.
+            We Coordinate The System
           </h2>
-          <div className="what-we-do__rule" />
+          
         </div>
 
         <div className="what-we-do__right">
@@ -75,9 +75,9 @@ function FederalRecoverySystem() {
     <section className="container-section background-color--gray federal">
       <p className="eyebrow">The federal recovery system</p>
       <h2 className="section-title">
-        Recovery requires coordination
+        Recovery Requires Coordination
         <br />
-        across multiple agencies
+        Across Multiple Agencies
       </h2>
 
       <blockquote className="federal_accent">

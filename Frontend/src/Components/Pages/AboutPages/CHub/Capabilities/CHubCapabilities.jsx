@@ -1,12 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./CHubCapabilities.css";
-
-
-
-
-
-
 /* why so much distance? worried about getting a virus? (get it, hahaha) */
 
 const capabilities = [
@@ -34,18 +28,7 @@ const capabilities = [
     title: "Simplify the System",
     desc: "Reduce administrative and coordination friction"
   }
-
-
-
-
 ];
-
-
-
-
-
-
-
 
 const CHubCapabilities = () => {
   return (
@@ -60,7 +43,7 @@ const CHubCapabilities = () => {
             viewport={{ once: true }}
           >
             <h4 className="cap-label">What it Supports</h4>
-            <h2 className="cap-main-title">Designed for Real Recovery Work With Technology That Supports—Not Replaces—Coordination</h2>
+            <h2 className="cap-main-title">Designed For Real Recovery Work With Technology That Supports — Not Replaces — Coordination</h2>
             <p className="cap-subtitle">The Coordination Hub is being built and designed to help states:</p>
           </motion.div>
         </div>

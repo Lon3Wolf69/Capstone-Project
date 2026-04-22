@@ -13,6 +13,8 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
   margin: 0 0 12px;
+  border-left: 3px solid var(--orange);
+  padding-left: 12px;
 }
  
 .focus-areas-heading {

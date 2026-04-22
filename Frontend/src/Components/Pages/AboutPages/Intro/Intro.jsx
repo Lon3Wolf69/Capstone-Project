@@ -12,7 +12,7 @@ export default function AnimatedSection() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          We don’t replace existing systems,
+          We Don’t Replace Existing Systems
         </motion.div>
 
         {/* Sequence 2: Intro Line (Starts after Headline) */}
@@ -22,7 +22,7 @@ export default function AnimatedSection() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: .6 }} 
         >
-          we make them <span className="intro-accent">work together.</span>
+          We Make Them <span className="intro-accent">Work Together</span>
         </motion.div>
       </div>
 
@@ -40,7 +40,7 @@ export default function AnimatedSection() {
         </p>
         <br />
         <p>
-          Disaster Ready streamlines this process, aligning stakeholders
+          DisasterReady streamlines this process, aligning stakeholders
           and resources so recovery efforts move <em>faster, smarter, and more effectively</em>.
         </p>
       </motion.div>
