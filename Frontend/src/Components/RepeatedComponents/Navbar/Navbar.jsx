@@ -1,4 +1,4 @@
-import React, { useState } from "react";                          
+import React, { useEffect, useState } from "react";                          
 import {Link, NavLink} from "react-router-dom";                       
 import "./Navbar.css";                                              
 import Logo from "../../../assets/disasterReadyLogo.png";
@@ -8,6 +8,21 @@ function Navbar(){
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
     const [openDropdown, setOpenDropdown] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
+
+    useEffect(() => {
+      if (hamburgerOpen) {
+        document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = '';
+      }
+      
+      return () => {
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = '';
+      };
+    }, [hamburgerOpen]);
 
     const closeDropdown = () => {
       setIsClosing(true);
@@ -30,6 +45,7 @@ function Navbar(){
         setHamburgerOpen(false);
         setOpenDropdown(false);
         setIsClosing(false);
+        document.body.style.overflow = '';
     };
 
     return( 
@@ -88,6 +104,19 @@ function Navbar(){
                   )}
                 </li>
               ))}
+
+              <li className="dropdown-item">
+                <div className="nav-contact-wrapper">
+                  <NavLink
+                    to="/contact"
+                    onClick={handleLinkClick}
+                    className="nav-login-btn"
+                  >
+                    Contact
+                  </NavLink>
+                </div>
+              </li>
+              
             </ul>
           </nav>
 
