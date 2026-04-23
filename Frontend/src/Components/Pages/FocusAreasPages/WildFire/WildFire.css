@@ -1,5 +1,5 @@
 .wf-page {
-  border-bottom: 2px solid var(--orange);
+  border-bottom: 3px solid var(--orange);
 }
  
 /* ── Hero ──────────────────────────────────────────────────────── */
@@ -8,23 +8,17 @@
 }
  
 .wf-eyebrow {
-  font-size: clamp(0.85rem, 1.5 vw, 1rem);
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
   font-weight: 500;
-  letter-spacing: 0.14em;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--teal-text);
   margin-bottom: 1rem;
   align-items: center;
   display: flex;
   gap: 8px;
-}
-
-.wf-eyebrow::before {
-    content: '';
-    display: block;
-    width: 24px;
-    height: 1px;
-    background: var(--teal)
+  border-left: 3px solid var(--orange);
+  padding-left: 12px;
 }
  
 .wf-hero-title {

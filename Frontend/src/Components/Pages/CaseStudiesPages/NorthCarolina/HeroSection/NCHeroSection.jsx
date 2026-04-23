@@ -15,7 +15,7 @@ const HeroSection = () => {
  
       <h1 className="hero__title">
         Coordinating Recovery at Scale in Western North Carolina{" "}
-        <span>Hurricane Helene</span>.
+        <span>Hurricane Helene</span>
       </h1>
  
       <p className="hero__description">

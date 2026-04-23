@@ -25,16 +25,16 @@ const impactItems = [
  
 const ImpactSection = () => {
   return (
-    <div className="impact">
-      <div className="impact__label">The impact of coordination</div>
-      <h2 className="impact__title">
+    <div className="dw-impact">
+      <div className="dw-impact__label">The impact of coordination</div>
+      <h2 className="dw-impact__title">
         Coordination Turns Resources Into Results
       </h2>
-      <div className="impact__grid">
+      <div className="dw-impact__grid">
         {impactItems.map((item, i) => (
-          <div key={i} className="impact__item">
-            <h3 className="impact__item-title">{item.title}</h3>
-            <p className="impact__item-description">{item.description}</p>
+          <div key={i} className="dw-impact__item">
+            <h3 className="dw-impact__item-title">{item.title}</h3>
+            <p className="dw-impact__item-description">{item.description}</p>
           </div>
         ))}
       </div>

@@ -1,65 +1,68 @@
-.impact {
-  background-color: var(--white);
+.ncimpact {
+  background-color: var(--gray);
   padding: 5rem 4rem 4rem;
   width: 100%;
 }
  
-.impact__label {
-  font-size: clamp(0.85rem, 1.5 vw, 1rem);
-  font-weight: 500;
+.ncimpact__label {
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 2px;
   color: var(--teal);
   margin-bottom: 1.25rem;
+  border-left: 3px solid var(--orange);
+  padding-left: 12px;
 }
  
-.impact__title {
+.ncimpact__title {
   font-size: clamp(1.3rem, 2.8vw, 1.66rem);
-  font-weight: 500;
+  font-weight: 400;
   color: var(--navy);
   margin-bottom: 1.5rem;
   line-height: 1.2;
   max-width: 80%;
+  letter-spacing: -0.5px;
 }
  
-.impact__grid {
+.ncimpact__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin-bottom: 2rem;
 }
  
-.impact__item {
+.ncimpact__item {
   background: var(--white);
-  border-left: 4px solid var(--teal);
+  border-left: 4px solid var(--orange);
   border-radius: 8px;
   padding: 1.5rem 1.5rem 1.5rem 1.25rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
  
-.impact__item-title {
-  font-size: clamp(1rem, 1.5vw, 1rem);
+.ncimpact__item-title {
+  font-size: clamp(1.3rem, 2.8vw, 1.66rem);
   font-weight: 500;
-  color: var(--orange);
+  color: var(--charcoal);
   margin-bottom: 8px;
 }
  
-.impact__item-description {
-  font-size: clamp(0.75rem, 1.2vw, 0.75rem);
+.ncimpact__item-description {
+  font-size: clamp(0.9rem, 1.5vh, 1rem);
   color: var(--charcoal);
   line-height: 1.7;
   margin: 0;
 }
  
-.impact__callout {
+.ncimpact__callout {
   background: rgba(240, 122, 64, 0.2);
   border: 0.5px solid rgba(240, 120, 30, 0.35);
   border-radius: 12px;
   padding: 2rem 2.25rem;
 }
  
-.impact__callout p {
+.ncimpact__callout p {
   font-size: clamp(0.75rem, 1.2vw, 0.75rem);
   color: var(--charcoal);
   line-height: 1.7;
@@ -67,23 +70,23 @@
 }
  
 @media (max-width: 900px) {
-  .impact {
+  .ncimpact {
     padding: 4rem 2.5rem 3rem;
   }
-  .impact__title {
+  .ncimpact__title {
     font-size: 38px;
     max-width: 100%;
   }
 }
  
 @media (max-width: 560px) {
-  .impact {
+  .ncimpact {
     padding: 3rem 1.5rem 2.5rem;
   }
-  .impact__title {
+  .ncimpact__title {
     font-size: 28px;
   }
-  .impact__grid {
+  .ncimpact__grid {
     grid-template-columns: 1fr;
   }
 }

@@ -1,25 +1,28 @@
 .dw-impact {
-  background-color: var(--white);
+  background-color: var(--gray);
   padding: 5rem 4rem 4rem;
   width: 100%;
 }
  
 .dw-impact__label {
-  font-size: clamp(0.85rem, 1.5 vw, 1rem);
-  font-weight: 500;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 2px;
   color: var(--teal);
   margin-bottom: 1.25rem;
+  border-left: 3px solid var(--orange);
+  padding-left: 12px;
 }
  
 .dw-impact__title {
   font-size: clamp(1.3rem, 2.8vw, 1.66rem);
-  font-weight: 600;
+  font-weight: 400;
   color: var(--navy);
   margin-bottom: 1.5rem;
   line-height: 1.2;
   max-width: 80%;
+  letter-spacing: -0.5px;
 }
  
 .dw-impact__grid {
@@ -30,19 +33,23 @@
 }
  
 .dw-impact__item {
-  border-left: 2px solid var(--teal);
-  padding-left: 1.25rem;
+  background: var(--white);
+  border-left: 4px solid var(--orange);
+  border-radius: 8px;
+  padding: 1.5rem 1.5rem 1.5rem 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
  
 .dw-impact__item-title {
-  font-size: clamp(1rem, 1.5vw, 1rem);
+  font-size: clamp(1.3rem, 2.8vw, 1.66rem);
   font-weight: 500;
-  color: var(--orange);
+  color: var(--charcoal);
   margin-bottom: 8px;
 }
  
 .dw-impact__item-description {
-  font-size: clamp(0.75rem, 1.2vw, 0.75rem);
+  font-size: clamp(0.9rem, 1.5vh, 1rem);
   color: var(--charcoal);
   line-height: 1.7;
   margin: 0;
@@ -56,7 +63,7 @@
 }
  
 .dw-impact__callout p {
-  font-size: 22px;
+  font-size: clamp(0.75rem, 1.2vw, 0.75rem);
   color: var(--charcoal);
   line-height: 1.7;
   margin: 0;
@@ -73,13 +80,14 @@
 }
  
 @media (max-width: 560px) {
-  .dw-impact {
+  .ncimpact {
     padding: 3rem 1.5rem 2.5rem;
   }
-  .dw-impact__title {
+  .ncimpact__title {
     font-size: 28px;
   }
-  .dw-impact__grid {
+  .ncimpact__grid {
     grid-template-columns: 1fr;
   }
 }
+ 

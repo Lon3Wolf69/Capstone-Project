@@ -28,7 +28,7 @@
 }
  
 .hero__title {
-  font-size: 52px;
+  font-size: clamp(2.5rem, 6vw, 2.8rem);
   font-weight: 400;
   color: var(--white);
   line-height: 1.2;
@@ -37,11 +37,13 @@
 }
  
 .hero__title span {
+  font-size: clamp(2.5rem, 6vw, 2.8rem);
   color: var(--orange);
+  line-height: 1.2;
 }
  
 .hero__description {
-  font-size: 26px;
+  font-size: clamp(1.25rem, 3.5vw, 1.44rem);
   padding: 0 5vw;
   color: var(--white);
   line-height: 1.7;
@@ -66,7 +68,6 @@
 
 .hero__cta:hover {
   background: var(--orange);
-  
 }
  
 .hero__cta:active {
@@ -78,7 +79,7 @@
 }
  
 .hero__outcomes-label {
-  font-size: 18px;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: var(--orange);
@@ -92,7 +93,7 @@
 }
  
 .hero__stat-card {
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--white);
   border: 0.5px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 1rem 1.25rem;

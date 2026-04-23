@@ -27,7 +27,7 @@ const HeroSection = () => {
       {/* Hero title with white and orange text */}
       <h1 className="dw-hero__title">
         Coordinating a National-Scale Response During the{" "}
-        <span>Deepwater Horizon Crisis</span>. {/* Anything within span will be colored in orange */}
+        <span>Deepwater Horizon Crisis</span> {/* Anything within span will be colored in orange */}
       </h1>
         {/* Hero description text located below hero title */}
       <p className="dw-hero__description">        {/* First paragraph beginining */}

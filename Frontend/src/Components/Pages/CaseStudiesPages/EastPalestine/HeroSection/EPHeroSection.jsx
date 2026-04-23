@@ -27,7 +27,7 @@ const HeroSection = () => {
       {/* Hero title with white and orange text */}
       <h1 className="ep-hero__title">
         Coordinating Accountability and Recovery in{" "}
-        <span>East Palestine, Ohio</span>. {/* Anything within span will be colored in orange */}
+        <span>East Palestine, Ohio</span> {/* Anything within span will be colored in orange */}
       </h1>
         {/* Hero description text located below hero title */}
       <p className="ep-hero__description">        {/* First paragraph beginining */}

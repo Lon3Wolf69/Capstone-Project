@@ -25,16 +25,16 @@ const impactItems = [
  
 const ImpactSection = () => {
   return (
-    <div className="impact">
-      <div className="impact__label">The impact of coordination</div>
-      <h2 className="impact__title">
+    <div className="ncimpact">
+      <div className="ncimpact__label">The impact of coordination</div>
+      <h2 className="ncimpact__title">
         From funding to outcomes — coordination is the difference
       </h2>
-      <div className="impact__grid">
+      <div className="ncimpact__grid">
         {impactItems.map((item, i) => (
-          <div key={i} className="impact__item">
-            <h3 className="impact__item-title">{item.title}</h3>
-            <p className="impact__item-description">{item.description}</p>
+          <div key={i} className="ncimpact__item">
+            <h3 className="ncimpact__item-title">{item.title}</h3>
+            <p className="ncimpact__item-description">{item.description}</p>
           </div>
         ))}
       </div>
