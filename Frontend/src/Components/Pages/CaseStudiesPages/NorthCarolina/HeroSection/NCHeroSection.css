@@ -1,6 +1,6 @@
 /* general container styling for the whole section */
 .hero {
-  background-color: #0B1F3A;
+  background-color: var(--navy);
   /* Background lines */
   background-image: repeating-linear-gradient(
     -45deg,
@@ -21,8 +21,8 @@
   letter-spacing: 0.2rem;
   padding: 4px 12px;
   border-radius: 4px;
-  background: #0D6366;
-  color: rgba(225, 245, 245, 1);
+  background: var(--teal);
+  color: var(--white);
   margin-bottom: 1rem;
   letter-spacing: 0.06em;
 }
@@ -30,20 +30,20 @@
 .hero__title {
   font-size: 52px;
   font-weight: 400;
-  color: #ffffff;
+  color: var(--white);
   line-height: 1.2;
   max-width: 80%;
   margin-bottom: 1.5rem;
 }
  
 .hero__title span {
-  color: #f07a40;
+  color: var(--orange);
 }
  
 .hero__description {
   font-size: 26px;
   padding: 0 5vw;
-  color: rgba(255, 255, 255);
+  color: var(--white);
   line-height: 1.7;
   max-width: 90%;
 }
@@ -54,8 +54,8 @@
   gap: 8px;
   margin-top: 1.75rem;
   padding: 12px 22px;
-  background: #f07a40;
-  color: #ffffff;
+  background: var(--orange);
+  color: var(--white);
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -65,7 +65,7 @@
 }
 
 .hero__cta:hover {
-  background: #c45e10;
+  background: var(--orange);
   
 }
  
@@ -92,7 +92,7 @@
 }
  
 .hero__stat-card {
-  background: white;
+  background: rgba(255, 255, 255, 0.06);
   border: 0.5px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 1rem 1.25rem;
@@ -101,13 +101,13 @@
 .hero__stat-num {
   font-size: 32px;
   font-weight: 500;
-  color: #1F8A8E;
-  
+  color: var(--teal);
+  line-height: 1.1;
 }
  
 .hero__stat-num span {
   font-size: 32px;
-  color: #f07a40;
+  color: var(--orange);
 }
  
 .hero__stat-label {

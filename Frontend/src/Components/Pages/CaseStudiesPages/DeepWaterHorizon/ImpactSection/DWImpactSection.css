@@ -1,5 +1,5 @@
 .dw-impact {
-  background-color: #D6DEE5;
+  background-color: var(--white);
   padding: 5rem 4rem 4rem;
   width: 100%;
 }
@@ -9,14 +9,14 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #1F8A8E;
+  color: var(--teal);
   margin-bottom: 1.25rem;
 }
  
 .dw-impact__title {
   font-size: 52px;
   font-weight: 500;
-  color: #0B2E4F;
+  color: var(--navy);
   margin-bottom: 1.5rem;
   line-height: 1.2;
   max-width: 80%;
@@ -30,20 +30,20 @@
 }
  
 .dw-impact__item {
-  border-left: 2px solid #1F8A8E;
+  border-left: 2px solid var(--teal);
   padding-left: 1.25rem;
 }
  
 .dw-impact__item-title {
   font-size: 22px;
   font-weight: 500;
-  color: #0B2E4F;
+  color: var(--navy);
   margin-bottom: 8px;
 }
  
 .dw-impact__item-description {
   font-size: 18px;
-  color: #2B2e34;
+  color: var(--charcoal);
   line-height: 1.7;
   margin: 0;
 }
@@ -57,7 +57,7 @@
  
 .dw-impact__callout p {
   font-size: 22px;
-  color: #2B2e34;
+  color: var(--charcoal);
   line-height: 1.7;
   margin: 0;
 }

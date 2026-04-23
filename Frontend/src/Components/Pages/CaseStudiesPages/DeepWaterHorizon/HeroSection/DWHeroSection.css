@@ -1,6 +1,6 @@
 /* general container styling for the whole section */
 .dw-hero {
-  background-color: #0B1F3A;
+  background-color: var(--navy);
   background-image: repeating-linear-gradient(
     -45deg,
     rgba(255, 255, 255, 0.07) 0px,
@@ -19,8 +19,8 @@
   font-weight: 500;
   padding: 4px 12px;
   border-radius: 4px;
-  background: #0D6366;
-  color: rgba(225, 245, 245, 1);
+  background: var(--teal);
+  color: var(--white);
   margin-bottom: 1rem;
   letter-spacing: 0.06em;
 }
@@ -28,19 +28,19 @@
 .dw-hero__title {
   font-size: 52px;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--white);
   line-height: 1.2;
   max-width: 70%;
   margin-bottom: 1.5rem;
 }
  
 .dw-hero__title span {
-  color: #f07a40;
+  color: var(--orange-text);
 }
  
 .dw-hero__description {
   font-size: 22px;
-  color: rgba(255, 255, 255);
+  color: var(--white);
   line-height: 1.6;
   max-width: 90%;
 }
@@ -54,7 +54,7 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #f07a40;
+  color: var(--orange);
   margin-bottom: 1.25rem;
 }
  
@@ -74,18 +74,18 @@
 .dw-hero__stat-num {
   font-size: 32px;
   font-weight: 500;
-  color: #10b7bd;
+  color: var(--teal);
   line-height: 1.1;
 }
  
 .dw-hero__stat-num span {
   font-size: 30px;
-  color: #f07a40;
+  color: var(--orange-text);
 }
  
 .dw-hero__stat-label {
   font-size: 18px;
-  color: rgba(255, 255, 255);
+  color: var(--white);
   margin-top: 6px;
   line-height: 1.4;
 }
