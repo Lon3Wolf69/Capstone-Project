@@ -2,46 +2,38 @@
 //It will include a static image with a text overlay and then some text underneath
 import React, { useEffect } from 'react'; // Added useEffect for animation
 import img from '../../../../assets/Landslides.jpg';
+import { motion } from "framer-motion";
 import "./OurMission.css";                        // Imports the css file for use within the file
 
 
   const why = () => {
 
-    // Animation Logic: Adds the 'reveal-visible' class when the element enters the viewport
-     useEffect(() => {
-        const observerOptions = {
-            threshold: 0.15 // Triggers when 15% of the element is visible
-        };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('reveal-visible');
-                }
-            });
-        }, observerOptions);
-
-        const revealedElements = document.querySelectorAll('.reveal');
-        revealedElements.forEach((el) => observer.observe(el));
-
-        return () => observer.disconnect(); // Cleanup
-    }, []); 
     return(
     <>
     <div className="ourmission-container">
-            {/* Added 'reveal' class */}
-            <div className="mission-hero reveal">
+           
+            <motion.div 
+                className="mission-hero"
+                initial={{ opacity: 0, y:10 }}
+                animate={{ opacity: 1, y:0 }} 
+                transition={{ duration: 1, ease: "easeOut", delay: 2 }}
+            >
                 <p> THE CORE INSIGHT </p>
                 <h1>
                     Recovery Success Depends On More Than Funding <br /> It Depends On
                     <span> Coordination</span>
                 </h1>
-            </div>    
+            </motion.div>   
 
         {/* Subtext cards underneath the image with overlay (cards are not navigation options just a nicer way to display the information) */}
-        {/* Added 'reveal' class */}
-        <div className="cards-section reveal">
-
+    
+            <motion.div 
+            className="cards-section"
+            initial={{ opacity: 0, y:10 }}
+            animate={{ opacity: 1, y:0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 2.4 }}
+            >
         
 
                 {/* First card  */}
@@ -65,7 +57,7 @@ import "./OurMission.css";                        // Imports the css file for us
                     <h2 style={{fontSize: "clamp(1.2rem, 2.5vw, 1.5rem)"}} className="card-header">The Result</h2>
                     <p style={{fontSize: "clamp(0.8rem, 2.5vw, 1.08rem)"}}>Because coordinated recovery is successful recovery! When the right people, tools, and plans align - communities rebuild faster and stronger.</p>
                 </div>
-        </div>
+                </motion.div>
     </div>
     </>
     );
