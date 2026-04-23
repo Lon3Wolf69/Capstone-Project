@@ -15,7 +15,7 @@ const stats = [
   {
     num: "Communication Restructure", // "Same as above"
     suffix: "", // "Same as above"
-    label: "Public communication strategy reframed, imporving transparency and trust", // "Same as above"
+    label: "Public communication strategy reframed, improving transparency and trust", // "Same as above"
   },
 ];
 

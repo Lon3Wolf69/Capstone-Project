@@ -26,7 +26,7 @@
 }
  
 .ep-hero__title {
-  font-size: 52px;
+  font-size: clamp(2.5rem, 6vh, 2.8rem);
   font-weight: 500;
   color: #ffffff;
   line-height: 1.2;
@@ -36,10 +36,11 @@
  
 .ep-hero__title span {
   color: #f07a40;
+  font-size: inherit;
 }
  
 .ep-hero__description {
-  font-size: 22px;
+  font-size: clamp(1.25rem, 3.5vw, 1.44rem);
   color: rgba(255, 255, 255);
   line-height: 1.6;
   max-width: 90%;
@@ -50,11 +51,11 @@
 }
  
 .ep-hero__outcomes-label {
-  font-size: 16px;
+  font-size: clamp(1.25rem, 3.5vw, 1.44rem);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #f07a40;
+  color: var(--orange);
   margin-bottom: 1.25rem;
 }
  
@@ -72,19 +73,19 @@
 }
  
 .ep-hero__stat-num {
-  font-size: 32px;
+  font-size: clamp(1.3rem, 2.8vw, 1.66rem);
   font-weight: 500;
-  color: #10b7bd;
+  color: var(--teal);
   line-height: 1.1;
 }
  
 .ep-hero__stat-num span {
   font-size: 30px;
-  color: #f07a40;
+  color: var(--orange);
 }
  
 .ep-hero__stat-label {
-  font-size: 18px;
+  font-size: clamp(1rem, 1.5vw, 1rem);
   color: rgba(255, 255, 255);
   margin-top: 6px;
   line-height: 1.4;

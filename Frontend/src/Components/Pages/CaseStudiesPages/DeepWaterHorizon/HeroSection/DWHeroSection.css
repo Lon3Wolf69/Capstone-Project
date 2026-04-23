@@ -15,7 +15,7 @@
  
 .dw-hero__tag {
   display: inline-block;
-  font-size: 20px;
+  font-size: clamp(1rem, 1.5vh, 1rem);
   font-weight: 500;
   padding: 4px 12px;
   border-radius: 4px;
@@ -26,7 +26,7 @@
 }
  
 .dw-hero__title {
-  font-size: 52px;
+  font-size: clamp(2.5rem, 6vh, 2.8rem);
   font-weight: 500;
   color: var(--white);
   line-height: 1.2;
@@ -35,12 +35,13 @@
 }
  
 .dw-hero__title span {
-  color: var(--orange-text);
+  color: #f07a40;
+  font-size: inherit;
 }
  
 .dw-hero__description {
-  font-size: 22px;
-  color: var(--white);
+  font-size: clamp(1rem, 1.5vh, 1rem);
+  color: rgba(255, 255, 255);
   line-height: 1.6;
   max-width: 90%;
 }
@@ -72,7 +73,7 @@
 }
  
 .dw-hero__stat-num {
-  font-size: 32px;
+  font-size: clamp(1.25rem, 3.5vw, 1.44rem);
   font-weight: 500;
   color: var(--teal);
   line-height: 1.1;
@@ -80,12 +81,12 @@
  
 .dw-hero__stat-num span {
   font-size: 30px;
-  color: var(--orange-text);
+  color: var(--orange);
 }
  
 .dw-hero__stat-label {
-  font-size: 18px;
-  color: var(--white);
+  font-size: clamp(1rem, 1.5vh, 1rem);
+  color: rgba(255, 255, 255);
   margin-top: 6px;
   line-height: 1.4;
 }
@@ -97,14 +98,20 @@
   .dw-hero__title {
     font-size: 38px;
   }
+
+  .dw-hero__description {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
 }
  
 @media (max-width: 560px) {
   .dw-hero {
-    padding: 3rem 1.5rem 2.5rem;
+    padding: 30px 20px;
   }
   .dw-hero__title {
-    font-size: 28px;
+    max-width: 100%;
   }
   .dw-hero__stats-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
