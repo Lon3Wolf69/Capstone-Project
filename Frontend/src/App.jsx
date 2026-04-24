@@ -9,7 +9,7 @@ import NavPanels from "./Components/Pages/HomePage/NavPanels/NavPanels.jsx";
 import HRW from "./Components/Pages/HomePage/HowRecovery/HRW.jsx";
 import NavShowcase from "./Components/Pages/HomePage/NavShowcase/NavShowcase.jsx";
 import FAT from "./Components/Pages/HomePage/FocusAreasTeaser/FAT.jsx";
-import ContactAHHH from "./Components/Pages/HomePage/NavShowcase/ContactAHHH.jsx"
+import ContactAHHH from "./Components/Pages/HomePage/NavShowcase/ContactAHHH.jsx";
 
 /* --------------------------------- About Us Components ------------------------------------ */
 import Intro from "./Components/Pages/AboutPages/Intro/Intro.jsx";

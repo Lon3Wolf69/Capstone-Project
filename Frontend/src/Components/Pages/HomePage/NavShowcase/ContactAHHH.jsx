@@ -1,10 +1,12 @@
-import { useRef } from "react";
 import "./ContactAHHH.css";
 import { Link } from "react-router-dom";
 import Typing from "../../../../assets/Typing.jpg";
 import Cleanup from "../../../../assets/Cleanup.jpg";
 import Speech from "../../../../assets/Speech.png";
 import Contact from "../../AboutPages/ContactUs/ContactUs.jsx"
+import { useRef, useState, useEffect } from "react";
+import TopicDropdown from "./TopicDropdown.jsx";
+import { createPortal } from "react-dom";
 
 const SurveyForm = () => (
   <div className="cp-survey-area">
@@ -14,6 +16,19 @@ const SurveyForm = () => (
 );
 
 export default function ContactAHHH() {
+
+  const formRef = useRef(null);
+  const [selectEl, setSelectEl] = useState(null);
+  const [topic, setTopic] = useState("");
+  useEffect(() => {
+    const sel = formRef.current?.querySelector("select");
+    if (sel) { sel.style.display = "none"; setSelectEl(sel); }
+    }, []);
+    const handleTopicChange = (val) => {
+      setTopic(val);
+      if (selectEl) selectEl.value = val;
+  };
+
   return (
     <section className="cp-wrapper">
       <div className="cp-left">
@@ -50,6 +65,12 @@ export default function ContactAHHH() {
       <div className="cp-right">
         <h2 className="cp-form-heading">Send us a message</h2>
         <Contact />
+        <div ref={formRef}>
+            {selectEl && createPortal(
+              <TopicDropdown value={topic} onChange={handleTopicChange} />,
+              selectEl.parentElement
+            )}
+        </div>
       </div>
     </section>
   );
