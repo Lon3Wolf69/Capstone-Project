@@ -51,7 +51,7 @@ export default function WildfireRiskPage() {
       <section className="wf-hero">
         <p className="wf-eyebrow">Wildfire Risk &amp; Threat Coordination</p>
         <h1 className="wf-hero-title">
-          Anticipating Risk - Coordinating Response - Protecting Recovery
+          Anticipating Risk. Coordinating Response. Protecting Recovery.
         </h1>
         <p className="wf-hero-sub">
           Wildfire risk is often accelerated by disaster impacts — debris

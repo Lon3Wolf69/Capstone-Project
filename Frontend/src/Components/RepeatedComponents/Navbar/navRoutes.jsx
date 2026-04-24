@@ -30,8 +30,8 @@ export const navRoutes = [
         path: "/caseStudies",                                                 // This is the path that shows up in the url when the dropdown is clicked
          children: [
               { label: "North Carolina", path: "/caseStudies/northCarolina"},                    // label: text that shows up as the clickable link path: What shows up in the url
-              { label: "East Palestine", path: "/caseStudies/eastPalestine"},
-              { label: "Deepwater Horizon", path: "/caseStudies/deepwaterHorizon"},
+              { label: "Ohio", path: "/caseStudies/eastPalestine"},
+              { label: "Gulf of Mexico", path: "/caseStudies/deepwaterHorizon"},
          ]
     },
     // Index 3

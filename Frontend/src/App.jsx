@@ -9,6 +9,7 @@ import NavPanels from "./Components/Pages/HomePage/NavPanels/NavPanels.jsx";
 import HRW from "./Components/Pages/HomePage/HowRecovery/HRW.jsx";
 import NavShowcase from "./Components/Pages/HomePage/NavShowcase/NavShowcase.jsx";
 import FAT from "./Components/Pages/HomePage/FocusAreasTeaser/FAT.jsx";
+import ContactAHHH from "./Components/Pages/HomePage/NavShowcase/ContactAHHH.jsx"
 
 /* --------------------------------- About Us Components ------------------------------------ */
 import Intro from "./Components/Pages/AboutPages/Intro/Intro.jsx";
@@ -55,7 +56,7 @@ function App() {
       <div>
       {/* This is another wrapper container for all defined Routes (Put all the Route tags here. Your telling the program what to display when the url equals the path) */}
       <Routes>
-      <Route path="/" element={<><AboutSection /><HRW /><NavPanels /><FAT /><NavShowcase /></>} />  {/* This is a route that displays information on the home page only */}
+      <Route path="/" element={<><AboutSection /><HRW /><NavPanels /><FAT /><NavShowcase /> <ContactAHHH /> </>} />  {/* This is a route that displays information on the home page only */}
         <Route path="/contact" element={<><Contact /></>} />
         <Route path="/about/AboutUs" element={<><Intro /><Why /><Chub /> <CHubCapabilities /> </>} />
         <Route path="/about/ourApproach" element={<><CHWork /></>} />

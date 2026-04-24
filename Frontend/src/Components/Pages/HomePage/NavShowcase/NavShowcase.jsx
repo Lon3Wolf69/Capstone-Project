@@ -16,6 +16,7 @@ const panels = [
     cta: "View Case Study",
     to: "/caseStudies/northCarolina",
   },
+  /*
   {
     theme: "light",
     imgSide: "right",
@@ -26,9 +27,10 @@ const panels = [
     cta: "Learn About the Coordination Hub",
     to: "/platform/coordinationHubOverview",
   },
+  */
   {
-    theme: "dark",
-    imgSide: "left",
+    theme: "light",
+    imgSide: "right",
     img: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80",
     label: "Learn About Us",
     title: "About Us",
@@ -36,6 +38,7 @@ const panels = [
     cta: "Meet the Team",
     to: "/about/team",
   },
+  /*
   {
     theme: "light",
     imgSide: "right",
@@ -46,6 +49,7 @@ const panels = [
     cta: "Contact Us",
     to: "/contact",
   },
+  */
 ];
  
 const ArrowIcon = () => (
