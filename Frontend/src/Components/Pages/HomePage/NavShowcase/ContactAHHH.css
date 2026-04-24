@@ -151,17 +151,14 @@
 
 .cp-right .contact-wrapper {
   display: block;
+  background: transparent;
+  padding: 0;
+  width: 100%;
 }
 
 .cp-right .contact-container {
   background: transparent;
   padding: 0;
-}
-
-.cp-right .contact-wrapper {
-  background: transparent;
-  padding: 0;
-  width: 100%;
 }
 
 .cp-right .contact-form {
