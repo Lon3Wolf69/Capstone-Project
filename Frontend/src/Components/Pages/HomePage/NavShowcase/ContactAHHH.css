@@ -188,6 +188,13 @@
   opacity: 0.5;
 }
 
+.cp-right .contact-select option:hover,
+.cp-right .contact-select option:focus,
+.cp-right .contact-select option:checked {
+  color: #ffffff;
+  background: var(--teal);
+}
+
 /* RESPOND KEEP UP WITh ME */
 @media (max-width: 900px) {
   .cp-wrapper {
