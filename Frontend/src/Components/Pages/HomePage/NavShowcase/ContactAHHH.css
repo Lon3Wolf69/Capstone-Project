@@ -182,6 +182,12 @@
   color: var(--white);
 }
 
+.cp-right .contact-select option {
+  color: var(--charchoal);
+  background: #ffffff;
+  opacity: 0.5;
+}
+
 /* RESPOND KEEP UP WITh ME */
 @media (max-width: 900px) {
   .cp-wrapper {
