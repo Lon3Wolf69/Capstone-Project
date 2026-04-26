@@ -50,6 +50,7 @@
   max-width: 90%;
 }
 
+/* cards */
 .hero__cta {
   display: inline-flex;
   align-items: center;
@@ -118,6 +119,7 @@
   line-height: 1.7;
 }
  
+/* mobile implementation */
 @media (max-width: 900px) {
   .hero {
     padding: 4rem 2.5rem 3rem;

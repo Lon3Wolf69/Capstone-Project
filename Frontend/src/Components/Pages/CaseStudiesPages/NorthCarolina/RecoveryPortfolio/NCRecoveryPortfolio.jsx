@@ -1,3 +1,4 @@
+/* second section */
 import "./NCRecoveryPortfolio.css";
 
 // Cards for each portfolio item with icon, title and description
@@ -103,8 +104,11 @@ const portfolioItems = [
 const RecoveryPortfolio = () => {
   return (
     <div className="portfolio">
+      {/* eyebrow*/}
       <div className="portfolio__label">Recovery portfolio</div>
+      {/* title */}
       <h2 className="portfolio__title">What Coordination Made Possible</h2>
+      {/* cards */}
       <div className="portfolio__grid">
         {portfolioItems.map((item, i) => (
           <div key={i} className={`${item.className}`}>

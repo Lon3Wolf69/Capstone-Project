@@ -101,6 +101,7 @@ export default function Contact() {
             required
             className="contact-select"
           >
+            {/* First input */}
             <option value="" disabled>Select a topic</option>
             <option value="Interagency Recovery Coordination">Interagency Recovery Coordination</option>
             <option value="Debris Management">Debris Management</option>
@@ -109,6 +110,7 @@ export default function Contact() {
             <option value="General Inquiry">General Inquiry</option>
           </select>
 
+          {/* second input */}
           <div className="contact-name-row">
             <div className="contact-name-field">
               <p>First Name*</p>
@@ -135,6 +137,7 @@ export default function Contact() {
             </div>
           </div>
           
+          {/* third input */}
           <p>Agency*</p>
           <select
             value={agency}
@@ -165,6 +168,7 @@ export default function Contact() {
             />
           )}
 
+          {/* fourth input */}
           <p>Role/Title</p>
           <input
             type="text"
@@ -174,6 +178,8 @@ export default function Contact() {
             className="contact-input"
           />
 
+          
+          {/* fifth input */}
           <p>Email*</p>
           <input
             type="email"
@@ -184,6 +190,7 @@ export default function Contact() {
             className="contact-input"
           />
 
+          {/* sixth input */}
           <p>Message*</p>
           <textarea
             /*placeholder="Your Message"*/
@@ -193,6 +200,7 @@ export default function Contact() {
             className="contact-textarea"
           />
 
+          {/* seventh input */}
           <p>Additional</p>
           <textarea
             placeholder="How can we help? (Optional)"
@@ -201,10 +209,12 @@ export default function Contact() {
             className="contact-textarea"
           />
 
+          {/* submit button */}
           <button type="submit" className="contact-button">
             Submit
           </button>
 
+          {/* confimation message */}
           {showPopup && (
             <div className="popup-overlay">
               <div className="popup">

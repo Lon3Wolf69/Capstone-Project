@@ -1,4 +1,4 @@
-
+/* -- whole section --*/
 .intro-section {
   background: var(--white);
   min-height: 40vh;
@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/* eyebrow */
 .line {
   text-align: left;
   font-size: clamp(0.85rem, 1.5vw, 1rem);
@@ -17,7 +18,7 @@
   letter-spacing: 2px;
 }
 
-  
+/* main title */  
 .intro-headline {
   text-align: left;
   font-size: clamp(0.85rem, 1.5vw, 1rem);
@@ -35,12 +36,14 @@
   line-height: 1.15;
   letter-spacing: 0.5px;
 }
-  
+
+/* eyebrow line */
 .intro-accent {
   color: var(--orange);
   font-size: clamp(1.3rem, 2.8vw, 1.66rem);
 }
-  
+
+/* subtext */
 .intro-body-text {
   max-width: 1200px;
   font-size: clamp(0.9rem, 1.5vw, 1rem);
@@ -48,6 +51,7 @@
   line-height: 1.5;
 }
 
+/* moble implementation */
 @media (max-width: 768px) {
 
   .intro-section {

@@ -54,6 +54,7 @@ const HeroSection = () => {
         {/* Third paragraph end */}
       </p>
  
+      {/* cards */}
       <div className="ep-hero__outcomes">
         <div className="ep-hero__outcomes-label">Key outcomes</div> {/* Orange text located above the cards) */}
         {/* Logic for mapping through stats array to create cards with num, suffix, and label () */}

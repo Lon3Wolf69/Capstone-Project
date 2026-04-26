@@ -13,6 +13,7 @@ export default function CHWork() {
       viewport={{ once: true, amount: 0.2 }} // Triggers when 20% is visible
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
+      {/* text content */}
       <p className="chwork-eyebrow">Our Approach</p>
       <h2 className="chwork-title">
         Connecting Priorities, Funding & Execution
@@ -32,6 +33,7 @@ export default function CHWork() {
         <span>This Is A Simple But Critical Process:</span>
       </p>
       
+      {/* infographic */}
       <div className="chwork-image-wrapper">
         <img
           src={infographic}
@@ -40,6 +42,7 @@ export default function CHWork() {
         />
       </div>
 
+      {/* footer */}
       <p className="section-footer">
         This Creates A More Structured Path From Planning To Execution
       </p>

@@ -1,9 +1,9 @@
-/* This is the css styling for the Why section */
 .ourmission-container {
     padding: 40px 100px;
     background-color: var(--gray);
 }
 
+/* eyebrow and title text*/
 .mission-hero p {
     font-size: clamp(0.9rem, 1.5vw, 1rem);
     font-weight: 400;
@@ -13,13 +13,6 @@
     padding-left: 12px;
     color: var(--teal)
 }
-
-.mission-hero span {
-    color: var(--orange);
-    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
-    font-weight: 600;
-}
-
 .mission-hero h1 {
     font-size: clamp(1.3rem, 2.8vw, 1.66rem);
     font-weight: 600;
@@ -29,7 +22,15 @@
     letter-spacing: -0.5px;
     color:var(--navy);
 }
-/* Begin cards section styling */
+
+/* orange text */
+.mission-hero span {
+    color: var(--orange);
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
+    font-weight: 600;
+}
+
+/* cards section styling */
 .cards-section{
     display: flex;
     gap: 40px;
@@ -63,28 +64,32 @@
 
 }
 
+/* challenge card */
 .card-challenge {
     border-top: 4px solid var(--navy);
     background-color: var(--white);
 }
 
+/* solution card */
 .card-solution {
     border-top: 4px solid var(--teal);
     background-color: var(--white);
 }
 
+/*r result card */
 .card-result {
     border-top: 4px solid var(--orange);
     background-color: var(--white);
 }
 
+/* arrow between each card */
 .card-arrow {
     align-self: center;
     font-size: 2rem;
     color: var(--navy);
 }
 
-
+/* mobile implementation */
 @media (max-width: 768px) {
     .ourmission-container {
         padding: 30px 20px;

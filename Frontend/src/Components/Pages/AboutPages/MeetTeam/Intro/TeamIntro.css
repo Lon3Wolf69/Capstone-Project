@@ -1,10 +1,11 @@
+/* whole section */
 .Tintro-container {
   width: 100%;
   padding: 72px 100px;
   background-color: var(--navy);
   box-sizing: border-box;
 }
- 
+
 .Tintro-inner {
   display: flex;
   flex-direction: column;
@@ -12,12 +13,14 @@
   max-width: 1200px;
 }
  
+/* title and eyebrow section */
 .Tintro-left {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
  
+/* eyebrow */
 .Tintro-eyebrow {
   font-size: clamp(0.85rem, 1.5vw, 1rem);
   letter-spacing: 2px;
@@ -26,7 +29,9 @@
   border-left: 3px solid var(--orange);
   padding-left: 12px;
 }
- 
+
+
+/* title */ 
 .Tintro-title {
   color: var(--white);
   font-size: clamp(1.3rem, 2.8vw, 1.66rem);
@@ -36,6 +41,7 @@
   margin: 0;
 }
  
+/* subtext */
 .Tintro-right {
   display: flex;
   flex-direction: column;
@@ -49,6 +55,7 @@
   margin: 0;
 }
  
+/* mobile implementation */
 @media (max-width: 768px) {
   .Tintro-container {
     padding: 48px 24px;

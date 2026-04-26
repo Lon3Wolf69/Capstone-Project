@@ -1,9 +1,11 @@
+/* whole section */
 .portfolio {
   background-color: #ffffff;
   padding: 5rem 4rem 4rem;
   width: 100%;
 }
  
+/* eyebrow */
 .portfolio__label {
   font-size: clamp(0.85rem, 1.5vw, 1rem);
   font-weight: 400;
@@ -15,6 +17,7 @@
   margin-bottom: 1.25rem;
 }
  
+/* title */
 .portfolio__title {
   font-size: 30px;
   font-weight: 400;
@@ -23,7 +26,8 @@
   line-height: 1.2;
   max-width: 80%;
 }
- 
+
+/* cards */ 
 .portfolio__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -143,6 +147,7 @@
   margin: 0;
 }
 
+/* mobile implementation */
 @media (max-width: 900px) {
   .portfolio {
     padding: 4rem 2.5rem 3rem;

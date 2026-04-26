@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./CHubCapabilities.css";
-/* why so much distance? worried about getting a virus? (get it, hahaha) */
 
 const capabilities = [
   {
@@ -48,13 +47,6 @@ const CHubCapabilities = () => {
           </motion.div>
         </div>
 
-
-
-
-
-
-
-
         <div className="cap-grid">
           {capabilities.map((item, index) => (
             <motion.div
@@ -65,10 +57,6 @@ const CHubCapabilities = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-
-
-
-
               <h3 className="cap-card-title">{item.title}</h3>
               <div className="cap-card-line"></div>
               <p className="cap-card-desc">{item.desc}</p>
@@ -76,23 +64,9 @@ const CHubCapabilities = () => {
           ))}
         </div>
 
-
-
-
-
-
-
-
       </div>
     </section>
   );
 };
-
-
-
-
-
-
-
 
 export default CHubCapabilities;

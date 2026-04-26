@@ -4,6 +4,7 @@ import "./TeamIntro.css";
  
 export default function TeamIntro() {
   return (
+    /* animation */
     <motion.div
       className="Tintro-container"
       initial={{ opacity: 0 }}

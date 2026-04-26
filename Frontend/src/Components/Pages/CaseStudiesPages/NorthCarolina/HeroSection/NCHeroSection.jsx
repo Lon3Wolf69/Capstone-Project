@@ -1,7 +1,9 @@
+/* first section */
 import "./NCHeroSection.css";
 import factSheet from "../../../../../assets/NcIrcFactSheet.pdf";
  
 const stats = [
+  /* card information */
   { num: "$2B", suffix: "+", label: "Housing & community recovery funding aligned, including major allocations for statewide and local rebuilding efforts " },
   { num: "$767M", suffix: "+", label: "Water & wastewater investments enabled through coordinated funding and technical alignment " },
   { num: "$300M", suffix: "+", label: "Small business recovery loans activated, alongside regional economic recovery programs " },
@@ -10,6 +12,7 @@ const stats = [
  
 const HeroSection = () => {
   return (
+    /* main text */
     <div className="hero">
       <span className="hero__tag">Disaster Recovery · Western NC</span>
  

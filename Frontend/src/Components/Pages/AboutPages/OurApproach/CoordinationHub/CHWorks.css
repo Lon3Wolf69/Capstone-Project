@@ -1,4 +1,4 @@
-/* ---- Page ---- */
+/* whole section */
 .how-it-works {
   background: var(--gray);
   padding: 48px 100px 56px;
@@ -8,7 +8,7 @@
   will-change: opacity;
 }
   
-/* --- Eyebrow (not unibrow) ---- */
+/* eyebrow */
 .chwork-eyebrow {
   font-size: clamp(0.85rem, 1.5 vw, 1rem);
   letter-spacing: 2px;
@@ -19,7 +19,7 @@
   padding-left: 12px;
 }
   
-/* ---- Main title --- */
+/* Main title  */
 .chwork-title {
   font-size: clamp(1.3rem, 2.8vw, 1.66rem);
   font-weight: 600;
@@ -29,7 +29,7 @@
   letter-spacing: -0.5px;
 }
   
-/* ---- Subtitle - */
+/* Subtitle */
 .chwork-subtitle {
   font-size: clamp(0.9rem, 1.5vw, 1rem);
   color: var(--charcoal);
@@ -44,7 +44,7 @@
   margin-top: 24px;
 }
 
-/* --- Infographic -- */
+/* Infographic */
 .chwork-image-wrapper {
     display: flex;
     justify-content: center;
@@ -58,7 +58,7 @@
 }
   
   
-/* --- Footer ---- */
+/* Footer */
 .section-footer {
     font-size: clamp(1.3rem, 2.8vw, 1.66rem);
     font-weight: 600;
@@ -68,7 +68,7 @@
     line-height: 1.5;
 }
 
-  /* -- Responsive i tried, im just a girl---- */
+  /* mobile implementation */
   @media (max-width: 786px) {
     .how-it-works {
       padding: 32px 24px 40px;

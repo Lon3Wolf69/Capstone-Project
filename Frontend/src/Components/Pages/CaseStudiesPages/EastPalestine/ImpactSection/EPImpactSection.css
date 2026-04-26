@@ -1,9 +1,11 @@
+/* whole section */
 .epimpact {
   background-color: var(--gray);
   padding: 5rem 4rem 4rem;
   width: 100%;
 }
  
+/* eyebrow */
 .epimpact__label {
   font-size: clamp(0.85rem, 1.5vw, 1rem);
   font-weight: 400;
@@ -16,6 +18,7 @@
   
 }
  
+/* main title */
 .epimpact__title {
   font-size: clamp(1.3rem, 2.8vw, 1.66rem);
   font-weight: 600;
@@ -25,6 +28,7 @@
   max-width: 80%;
 }
  
+/* cards */
 .epimpact__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -41,6 +45,7 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
  
+/* card title */
 .epimpact__item-title {
   font-size: clamp(1.25rem, 3.5vw, 1.44rem);
   font-weight: 500;
@@ -48,6 +53,7 @@
   margin-bottom: 8px;
 }
  
+/* card blurbs */
 .epimpact__item-description {
   font-size: clamp(1rem, 1.5vw, 1rem);
   color: #2B2e34;
@@ -69,6 +75,7 @@
   margin: 0;
 }
  
+/* mobile implementation */
 @media (max-width: 900px) {
   .epimpact {
     padding: 4rem 2.5rem 3rem;

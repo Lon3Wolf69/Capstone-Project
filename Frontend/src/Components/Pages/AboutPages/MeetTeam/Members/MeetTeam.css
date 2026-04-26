@@ -18,6 +18,7 @@
     align-items: flex-start;
 }
   
+/* first person */
 .member-left {
     flex-shrink: 0;
     width: 300px;
@@ -26,6 +27,7 @@
     align-items: center;
 }
 
+/* second person */
 .member-right {
     flex: 1;
     display: flex;
@@ -96,6 +98,7 @@
     opacity: 0;
 }
 
+/* read more button */
 .read-more-btn {
     margin-top: 15px;
     background: var(--orange);
@@ -115,8 +118,7 @@
 }
 
 
-/* MOBILE STUFF HERE */
-
+/* Mobile implementation */
 @media (max-width: 768px) {
 
     .photo-wrapper {

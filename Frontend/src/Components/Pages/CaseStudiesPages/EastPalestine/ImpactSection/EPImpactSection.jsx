@@ -1,6 +1,8 @@
+/* second section of page */
 import "./EPImpactSection.css";
  
 const impactItems = [
+  /* card information */
   {
     title: "Accountability Ensured",
     description:
@@ -26,10 +28,12 @@ const impactItems = [
 const ImpactSection = () => {
   return (
     <div className="epimpact">
+      {/* title and eyebrow */}
       <div className="epimpact__label">The impact of coordination</div>
       <h2 className="epimpact__title">
         From uncertainty to accountability — coordination defined the outcome
       </h2>
+      {/* cards */}
       <div className="epimpact__grid">
         {impactItems.map((item, i) => (
           <div key={i} className="epimpact__item">

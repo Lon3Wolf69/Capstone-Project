@@ -13,6 +13,7 @@
   width: 100%;
 }
  
+/* tag discription */
 .ep-hero__tag {
   display: inline-block;
   font-size: 20px;
@@ -25,6 +26,7 @@
   letter-spacing: 0.06em;
 }
  
+/* main title */
 .ep-hero__title {
   font-size: clamp(2.5rem, 6vh, 2.8rem);
   font-weight: 500;
@@ -34,18 +36,21 @@
   margin-bottom: 1.5rem;
 }
  
+/* orange title text */
 .ep-hero__title span {
   color: #f07a40;
   font-size: inherit;
 }
  
+/* blurb */
 .ep-hero__description {
   font-size: clamp(1.25rem, 3.5vw, 1.44rem);
   color: rgba(255, 255, 255);
   line-height: 1.6;
   max-width: 90%;
 }
- 
+
+/* cards */
 .ep-hero__outcomes {
   margin-top: 2.5rem;
 }
@@ -72,6 +77,7 @@
   padding: 1rem 1.25rem;
 }
  
+/* card title */
 .ep-hero__stat-num {
   font-size: clamp(1.3rem, 2.8vw, 1.66rem);
   font-weight: 500;
@@ -79,6 +85,7 @@
   line-height: 1.1;
 }
  
+/* cards blurbs */
 .ep-hero__stat-num span {
   font-size: 30px;
   color: var(--orange);
@@ -91,6 +98,7 @@
   line-height: 1.4;
 }
  
+/* mobile implementation */
 @media (max-width: 900px) {
   .ep-hero {
     padding: 4rem 2.5rem 3rem;

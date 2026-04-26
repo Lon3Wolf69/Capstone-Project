@@ -1,6 +1,8 @@
+/* third section */
 import "./NCImpactSection.css";
  
 const impactItems = [
+  /* card information */
   {
     title: "Faster timelines",
     description:
@@ -26,10 +28,13 @@ const impactItems = [
 const ImpactSection = () => {
   return (
     <div className="ncimpact">
+      {/* eyebrow*/}
       <div className="ncimpact__label">The impact of coordination</div>
+      {/* title */}
       <h2 className="ncimpact__title">
         From funding to outcomes — coordination is the difference
       </h2>
+      {/* cards */}
       <div className="ncimpact__grid">
         {impactItems.map((item, i) => (
           <div key={i} className="ncimpact__item">
@@ -38,16 +43,6 @@ const ImpactSection = () => {
           </div>
         ))}
       </div>
-      {/*
-      <div className="impact__callout">
-        <p>
-          Recovery outcomes are not determined by funding alone — but by how
-          effectively agencies, programs, and partners are coordinated. This
-          work demonstrated that coordination is itself a critical
-          infrastructure.
-        </p>
-      </div>
-      */}
     </div>
   );
 };

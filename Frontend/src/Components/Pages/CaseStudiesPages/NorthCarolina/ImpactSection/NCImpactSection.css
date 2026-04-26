@@ -4,6 +4,7 @@
   width: 100%;
 }
  
+/* eyebrow */
 .ncimpact__label {
   font-size: clamp(0.85rem, 1.5vw, 1rem);
   font-weight: 400;
@@ -15,6 +16,7 @@
   padding-left: 12px;
 }
  
+/* title */
 .ncimpact__title {
   font-size: clamp(1.3rem, 2.8vw, 1.66rem);
   font-weight: 400;
@@ -25,6 +27,7 @@
   letter-spacing: -0.5px;
 }
  
+/* cards */
 .ncimpact__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -41,6 +44,7 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
  
+/* card titles */
 .ncimpact__item-title {
   font-size: clamp(1.3rem, 2.8vw, 1.66rem);
   font-weight: 500;
@@ -48,6 +52,7 @@
   margin-bottom: 8px;
 }
  
+/* card discription */
 .ncimpact__item-description {
   font-size: clamp(0.9rem, 1.5vh, 1rem);
   color: var(--charcoal);
@@ -69,6 +74,7 @@
   margin: 0;
 }
  
+/* mobile implementatin */
 @media (max-width: 900px) {
   .ncimpact {
     padding: 4rem 2.5rem 3rem;

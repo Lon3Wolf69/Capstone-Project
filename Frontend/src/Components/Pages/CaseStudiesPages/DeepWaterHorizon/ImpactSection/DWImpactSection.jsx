@@ -1,6 +1,8 @@
+/* third section */
 import "./DWImpactSection.css";
  
 const impactItems = [
+  /* card information */
   {
     title: "Clarity in Crisis",
     description:
@@ -26,10 +28,12 @@ const impactItems = [
 const ImpactSection = () => {
   return (
     <div className="dw-impact">
+      {/* eyebrow and title text*/}
       <div className="dw-impact__label">The impact of coordination</div>
       <h2 className="dw-impact__title">
         Coordination Turns Resources Into Results
       </h2>
+      {/* cards */}
       <div className="dw-impact__grid">
         {impactItems.map((item, i) => (
           <div key={i} className="dw-impact__item">
