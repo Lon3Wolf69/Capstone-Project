@@ -11,30 +11,10 @@
     align-items: center;
     padding: 12px 14px;
     cursor: pointer;
-  
     background: rgba(255, 255, 255, 0.15);
-    border: 0.5px solid rgba(255, 255, 255, 0.5);
-    color: var(--white);
+    color: var(--charchoal);
   
     transition: all 0.2s ease;
-  }
-  
-  .td-control:hover {
-    border-color: var(--teal);
-  }
-  
-  /* TEXT */
-  .td-value.placeholder {
-    color: rgba(255, 255, 255, 0.6);
-  }
-  
-  /* ARROW */
-  .td-arrow {
-    transition: transform 0.2s ease;
-  }
-  
-  .td-arrow.open {
-    transform: rotate(180deg);
   }
   
   /* DROPDOWN MENU */
@@ -45,7 +25,6 @@
     width: 100%;
   
     background: rgba(20, 30, 40, 0.95); /* darker than form */
-    border: 0.5px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(6px);
   
     z-index: 1000;
@@ -56,14 +35,11 @@
   .td-option {
     padding: 12px 14px;
     cursor: pointer;
-    color: var(--white);
-  
     transition: background 0.2s ease, color 0.2s ease;
   }
   
   .td-option:hover {
-    background: var(--teal);
-    color: var(--charchoal);
+    color: var(--orange);
   }
   
   .td-option.selected {

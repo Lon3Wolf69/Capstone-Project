@@ -170,26 +170,32 @@
 .cp-right .contact-input,
 .cp-right .contact-select,
 .cp-right .contact-textarea {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(179, 103, 103, 0.15);
   color: var(--white);
   border: 0.5px solid rgba(255, 255, 255, 0.5);
 }
 
 .cp-right .contact-form p {
-  color: var(--white);
+  color: var(--charchoal);
 }
 
 .cp-right .contact-select option {
   color: var(--charchoal);
-  background: #ffffff;
-  opacity: 0.5;
+  background: var(--charchoal);
 }
 
 .cp-right .contact-select option:hover,
 .cp-right .contact-select option:focus,
 .cp-right .contact-select option:checked {
-  color: #ffffff;
-  background: var(--teal);
+  color: hsl(0, 0%, 98%);
+  background: var(--charchoal);
+}
+
+.cp-right .contact-input,
+.cp-right .contact-textarea {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
 }
 
 /* RESPOND KEEP UP WITh ME */
