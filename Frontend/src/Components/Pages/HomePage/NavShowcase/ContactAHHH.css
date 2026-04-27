@@ -177,8 +177,7 @@
 }
 
 .cp-right .contact-select {
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--white);
+  background: hsla(0, 0%, 100%, 1.00);
 }
 
 .cp-right .contact-select option:hover,
@@ -190,7 +189,7 @@
 
 .cp-right .contact-input,
 .cp-right .contact-textarea {
-  color: var(--orange);
+ 
   border: 0.5px solid rgba(255, 255, 255, 0.5);
 }
 
