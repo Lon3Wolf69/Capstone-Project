@@ -65,6 +65,22 @@ export default function WildfireRiskPage() {
           resources needed to reduce risk and protect communities.
         </p>
       </section>
+
+      {/* ── How DisasterReady Supports ───────────────── */}
+      <section className="wf-support">
+        <p className="wf-support-label">How DisasterReady supports</p>
+        <div className="wf-grid">
+          {features.map((f) => (
+            <div key={f.num} className="wf-card">
+              <p className="wf-card-num">
+                {f.num} — {f.category}
+              </p>
+              <h3 className="wf-card-title">{f.title}</h3>
+              <p className="wf-card-body">{f.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
  
       {/* ── Why It Matters ───────────────────────────── */}
       <section className="wf-why">
@@ -89,22 +105,6 @@ export default function WildfireRiskPage() {
               </li>
             ))}
           </ul>
-        </div>
-      </section>
- 
-      {/* ── How DisasterReady Supports ───────────────── */}
-      <section className="wf-support">
-        <p className="wf-support-label">How DisasterReady supports</p>
-        <div className="wf-grid">
-          {features.map((f) => (
-            <div key={f.num} className="wf-card">
-              <p className="wf-card-num">
-                {f.num} — {f.category}
-              </p>
-              <h3 className="wf-card-title">{f.title}</h3>
-              <p className="wf-card-body">{f.body}</p>
-            </div>
-          ))}
         </div>
       </section>
  

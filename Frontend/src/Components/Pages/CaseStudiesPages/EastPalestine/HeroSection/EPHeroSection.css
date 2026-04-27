@@ -1,6 +1,7 @@
 /* general container styling for the whole section */
 .ep-hero {
   background-color: var(--navy);
+  /* Background lines */
   background-image: repeating-linear-gradient(
     -45deg,
     rgba(255, 255, 255, 0.07) 0px,
@@ -16,37 +17,38 @@
 /* tag discription */
 .ep-hero__tag {
   display: inline-block;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  letter-spacing: 2px;
   padding: 4px 12px;
   border-radius: 4px;
-  background: #0D6366;
-  color: rgba(225, 245, 245, 1);
+  background: var(--teal);
+  color: var(--white);
   margin-bottom: 1rem;
-  letter-spacing: 0.06em;
 }
  
 /* main title */
 .ep-hero__title {
-  font-size: clamp(2.5rem, 6vh, 2.8rem);
-  font-weight: 500;
-  color: #ffffff;
+  font-size:  clamp(2.5rem, 6vh, 2.8rem);
+  font-weight: 400;
+  color: var(--white);
   line-height: 1.2;
-  max-width: 70%;
+  max-width: 80%;
   margin-bottom: 1.5rem;
 }
  
 /* orange title text */
 .ep-hero__title span {
-  color: #f07a40;
-  font-size: inherit;
+  font-size: clamp(2.5rem, 6vw, 2.8rem);
+  color: var(--orange);
+  line-height: 1.2;
 }
  
 /* blurb */
 .ep-hero__description {
   font-size: clamp(1.25rem, 3.5vw, 1.44rem);
-  color: rgba(255, 255, 255);
-  line-height: 1.6;
+  padding: 0 5vw;
+  color: var(--white);
+  line-height: 1.7;
   max-width: 90%;
 }
 
@@ -57,9 +59,10 @@
  
 .ep-hero__outcomes-label {
   font-size: clamp(0.85rem, 1.5vw, 1rem);
-  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 2px;
+  border-left: 3px solid var(--teal);
+  padding-left: 12px;
   color: var(--orange);
   margin-bottom: 1.25rem;
 }
@@ -80,14 +83,13 @@
 /* card title */
 .ep-hero__stat-num {
   font-size: clamp(1.3rem, 2.8vw, 1.66rem);
-  font-weight: 500;
   color: var(--teal);
   line-height: 1.1;
 }
  
 /* cards blurbs */
 .ep-hero__stat-num span {
-  font-size: 30px;
+  font-size: clamp(1.3rem, 2.8vw, 1.66rem);
   color: var(--orange);
 }
  
@@ -104,7 +106,7 @@
     padding: 4rem 2.5rem 3rem;
   }
   .ep-hero__title {
-    font-size: 38px;
+    font-size: clamp(2.5rem, 6vh, 2.8rem);
   }
 }
  
@@ -113,9 +115,112 @@
     padding: 3rem 1.5rem 2.5rem;
   }
   .ep-hero__title {
-    font-size: 28px;
+    font-size: clamp(2.5rem, 6vh, 2.8rem);
   }
   .ep-hero__stats-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+@media (max-width: 768px) {
+  .ep-hero {
+    padding: 2rem 1.25rem;
+  }
+  
+  .ep-hero__tag {
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+    padding: 5px 12px;
+  }
+  
+  .ep-hero__title {
+    margin-bottom: 1rem;
+  }
+  
+  .ep-hero__description {
+    font-size: clamp(1.25rem, 3.5vw, 1.44rem);
+    margin-bottom: 0.5rem;
+  }
+  
+  .ep-hero__cta {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px 20px;
+    font-size: clamp(1rem, 1.5vh, 1rem);
+  }
+  
+  .ep-hero__outcomes-label {
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+    margin-bottom: 0.875rem;
+  }
+  
+  .ep-hero__stats-grid {
+    gap: 12px;
+  }
+  
+  .ep-hero__stat-card {
+    padding: 0.875rem;
+  }
+  
+  .ep-hero__stat-label {
+    font-size: clamp(1rem, 1.5vw, 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .ep-hero {
+    padding: 1.75rem 1rem;
+  }
+  
+  .ep-hero__tag {
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+    padding: 4px 10px;
+  }
+  
+  .ep-hero__title {
+    margin-bottom: 0.875rem;
+  }
+  
+  .ep-hero__description {
+    font-size: clamp(1.25rem, 3.5vw, 1.44rem);
+    line-height: 1.45;
+  }
+  
+  .ep-hero__cta {
+    padding: 12px 18px;
+    font-size: clamp(1rem, 1.5vh, 1rem);
+    margin-top: 1.5rem;
+  }
+  
+  .ep-hero__outcomes {
+    margin-top: 2rem;
+  }
+  
+  .ep-hero__stats-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .ep-hero__stat-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 0.875rem 1rem;
+  }
+  
+  .ep-hero__stat-num {
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
+    margin-right: 12px;
+  }
+  
+  .ep-hero__stat-label {
+    font-size: 1clamp(1rem, 1.5vw, 1rem);
+    margin-top: 0;
+    flex: 1;
+  }
+  
+  .ep-hero__stat-num span {
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
+  }
+}
+

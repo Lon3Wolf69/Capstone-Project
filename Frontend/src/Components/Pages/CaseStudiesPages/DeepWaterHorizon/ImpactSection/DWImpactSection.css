@@ -19,7 +19,7 @@
 /* title */
 .dw-impact__title {
   font-size: clamp(1.3rem, 2.8vw, 1.66rem);
-  font-weight: 400;
+  font-weight: 600;
   color: var(--navy);
   margin-bottom: 1.5rem;
   line-height: 1.2;
@@ -68,7 +68,7 @@
 }
  
 .dw-impact__callout p {
-  font-size: clamp(0.75rem, 1.2vw, 0.75rem);
+  font-size: clamp(1rem, 1.5vw, 1rem);
   color: var(--charcoal);
   line-height: 1.7;
   margin: 0;
@@ -80,7 +80,7 @@
     padding: 4rem 2.5rem 3rem;
   }
   .dw-impact__title {
-    font-size: 38px;
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
     max-width: 100%;
   }
 }
@@ -90,7 +90,7 @@
     padding: 3rem 1.5rem 2.5rem;
   }
   .dw-impact__title {
-    font-size: 28px;
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
   }
   .dw-impact__grid {
     grid-template-columns: 1fr;

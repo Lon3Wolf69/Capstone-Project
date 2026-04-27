@@ -13,15 +13,15 @@ const stats = [
 const HeroSection = () => {
   return (
     /* main text */
-    <div className="hero">
-      <span className="hero__tag">Disaster Recovery · Western NC</span>
+    <div className="nc-hero">
+      <span className="nc-hero__tag">Disaster Recovery · Western NC</span>
  
-      <h1 className="hero__title">
+      <h1 className="nc-hero__title">
         Coordinating Recovery at Scale in Western North Carolina{" "}
         <span>Hurricane Helene</span>
       </h1>
  
-      <p className="hero__description">
+      <p className="nc-hero__description">
         In late 2024, Hurricane Helene caused 
         catastrophic flooding, infrastructure 
         failure, and widespread displacement 
@@ -45,7 +45,7 @@ const HeroSection = () => {
       </p>
       {/* cta button */}
       <a
-        className="hero__cta"
+        className="nc-hero__cta"
         href={factSheet}
         target="_blank"
         rel="noopener noreferrer"
@@ -59,16 +59,16 @@ const HeroSection = () => {
         View Fact Sheet
       </a>
  
-      <div className="hero__outcomes">
-        <div className="hero__outcomes-label">Key outcomes</div>
-        <div className="hero__stats-grid">
+      <div className="nc-hero__outcomes">
+        <div className="nc-hero__outcomes-label">Key outcomes</div>
+        <div className="nc-hero__stats-grid">
           {stats.map((stat, i) => (
-            <div key={i} className="hero__stat-card">
-              <div className="hero__stat-num">
+            <div key={i} className="nc-hero__stat-card">
+              <div className="nc-hero__stat-num">
                 {stat.num}
                 <span>{stat.suffix}</span>
               </div>
-              <div className="hero__stat-label">{stat.label}</div>
+              <div className="nc-hero__stat-label">{stat.label}</div>
             </div>
           ))}
         </div>

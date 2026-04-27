@@ -4,7 +4,7 @@ import "./CHub.css";
 const hubSections = [
   {
     theme: "light",
-    label: "What it is",
+    label: "Coordination Hub",
     title: "A Coordination System — Supported by Technology — Built From Experience",
     desc: [
       `DisasterReady is building a proprietary coordination system to help states connect recovery priorities with the agencies, funding, and partners required to deliver outcomes.

@@ -26,6 +26,7 @@
   margin-bottom: 1.5rem;
   line-height: 1.2;
   max-width: 80%;
+  letter-spacing: -0.5px;
 }
  
 /* cards */
@@ -47,16 +48,16 @@
  
 /* card title */
 .epimpact__item-title {
-  font-size: clamp(1.25rem, 3.5vw, 1.44rem);
+  font-size: clamp(1.3rem, 2.8vw, 1.66rem);
   font-weight: 500;
-  color: #0B2E4F;
+  color: var(--charcoal);
   margin-bottom: 8px;
 }
  
 /* card blurbs */
 .epimpact__item-description {
-  font-size: clamp(1rem, 1.5vw, 1rem);
-  color: #2B2e34;
+  font-size: clamp(0.9rem, 1.5vh, 1rem);
+  color: var(--charcoal);
   line-height: 1.7;
   margin: 0;
 }
@@ -69,8 +70,8 @@
 }
  
 .epimpact__callout p {
-  font-size: 22px;
-  color: #2B2e34;
+  font-size: clamp(1rem, 1.5vw, 1rem);
+  color: var(--charcoal);
   line-height: 1.7;
   margin: 0;
 }
@@ -81,7 +82,7 @@
     padding: 4rem 2.5rem 3rem;
   }
   .epimpact__title {
-    font-size: 38px;
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
     max-width: 100%;
   }
 }
@@ -91,7 +92,7 @@
     padding: 3rem 1.5rem 2.5rem;
   }
   .epimpact__title {
-    font-size: 28px;
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
   }
   .epimpact__grid {
     grid-template-columns: 1fr;
