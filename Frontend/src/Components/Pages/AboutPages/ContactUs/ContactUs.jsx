@@ -83,9 +83,9 @@ export default function Contact() {
           </div>
 
           <div className="contact-subheader">
-          <p>If you are navigating recovery and need to align complex systems, we welcome the conversation.</p>
-          <br></br>
-          <p> Email: disasterready.contact@gmail.com </p>
+            <p>If you are navigating recovery and need to align complex systems, we welcome the conversation.</p>
+            <br></br>
+            <p> Email: <a className="default2" /*default class is from the Footer.css */ href="mailto:disasterready.contact@gmail.com">disasterready.contact@gmail.com</a> </p>
           </div>
 
         </div>

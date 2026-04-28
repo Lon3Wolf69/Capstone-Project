@@ -164,11 +164,11 @@
 }
 
 .cp-right .contact-form p {
-  color: var(--charchoal);
+  color: var(--white);
 }
 
 .cp-right .contact-select option {
-  color: var(--charchoal)
+  color: var(--charcoal);
 
 }
 
@@ -179,7 +179,7 @@
 .cp-right .contact-select option:hover,
 .cp-right .contact-select option:focus,
 .cp-right .contact-select option:checked {
-  color: hsl(0, 0%, 98%);
+  color: var(--white);
   background: var(--charcoal);
 }
 
