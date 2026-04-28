@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
           
           <p className="footer-text">                                          {/* text above the links to the other pages down below styled by the footer-text class defined in Footer.css file */}
-          © {new Date().getFullYear()} DisasterReady — All Rights Reserved   {/* new Date().getFullYear() returns the full year from the users device and displays that  */}
+          Last updated - {new Date().getFullYear()} DisasterReady  {/* new Date().getFullYear() returns the full year from the users device and displays that  */}
         </p>
       </div>
     </footer>

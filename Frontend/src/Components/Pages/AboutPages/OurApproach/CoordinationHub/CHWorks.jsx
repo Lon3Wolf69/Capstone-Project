@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion"; 
 import "./CHWorks.css";
 import infographic from "../../../../../assets/ch-infographic.png"
+import mobileinfographic from "../../../../../assets/CHwork_mobile.png"
 
 export default function CHWork() {
   return (
@@ -38,9 +39,17 @@ export default function CHWork() {
         <img
           src={infographic}
           alt="4-step process: Define, Map, Identify, Support"
-          className="chwork-image"
+          className="chwork-image-desktop"
+        />
+        
+        <img
+          src={mobileinfographic}
+          alt="4-step process: Define, Map, Identify, Support"
+          className="chwork-image-mobile"
         />
       </div>
+
+
 
       {/* footer */}
       <p className="section-footer">
