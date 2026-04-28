@@ -19,7 +19,7 @@ const Footer = () => {
               <div className="footer-links">
                 <Link to="/contact">Contact Us</Link>                          {/* Goes to the Contact page */}
               </div>
-              <p>Email: disasterready.contact@gmail.com </p>
+              <p>Email:<a className="default" href="mailto:disasterready.contact@gmail.com"> disasterready.contact@gmail.com</a></p>
             </div>
           </div>  
           
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
           
           <p className="footer-text">                                          {/* text above the links to the other pages down below styled by the footer-text class defined in Footer.css file */}
-          © {new Date().getFullYear()} DisasterReady — All Rights Reserved   {/* new Date().getFullYear() returns the full year from the users device and displays that  */}
+           DisasterReady - Coordinating Recovery & Delivering Results   {/* new Date().getFullYear() returns the full year from the users device and displays that  */}
         </p>
       </div>
     </footer>

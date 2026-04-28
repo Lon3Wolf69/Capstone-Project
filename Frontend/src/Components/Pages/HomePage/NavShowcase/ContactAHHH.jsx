@@ -33,7 +33,6 @@ export default function ContactAHHH() {
     <section className="cp-wrapper">
       <div className="cp-left">
         <div className="cp-eyebrow">
-          <span className="cp-eyebrow-line" />
           Let's Coordinate Recovery.
         </div>
 
@@ -53,7 +52,7 @@ export default function ContactAHHH() {
 
         <div className="cp-contact-block">
             <span className="cp-contact-label">General inquiries</span>
-            <span className="cp-contact-value">disasterready.contact@gmail.com</span>
+            <span className="cp-contact-value"><a className="default" /*default class is from the Footer.css */ href="mailto:disasterready.contact@gmail.com">disasterready.contact@gmail.com</a></span>
         </div>
 
         <Link to="/contact" className="cp-btn">
