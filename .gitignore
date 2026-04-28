@@ -16,3 +16,11 @@ server/Capstone-Project/
 Frontend/src/Components/Pages/Platform/CoordinationHub/TechSupport/TechSupport.css
 Frontend/src/Components/Pages/CaseStudiesPages/DeepWaterHorizon/HeroSection/DWHeroSection.css
 Frontend/src/Components/Pages/HomePage/NavShowcase/ContactAHHH.css
+Frontend/src/Components/Pages/AboutPages/ContactUs/Contact.css
+Frontend/src/Components/Pages/AboutPages/ContactUs/ContactUs.jsx
+Frontend/src/Components/Pages/HomePage/NavShowcase/ContactAHHH.css
+Frontend/src/Components/Pages/HomePage/NavShowcase/ContactAHHH.jsx
+Frontend/src/Components/Pages/HomePage/NavShowcase/TopicDropdown.css
+Frontend/src/Components/RepeatedComponents/Footer/Footer.css
+Frontend/src/Components/RepeatedComponents/Footer/Footer.jsx
+path/to/file

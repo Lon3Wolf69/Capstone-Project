@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr;
   min-height: auto;
   background: var(--navy);
-  color: #f9f9f9;
+  color: var(--white);
 }
 
 .cp-left {
@@ -24,31 +24,25 @@
   gap: 12px;
   font-size: clamp(0.85rem, 1.5vw, 1rem);
   font-weight: 500;
-  letter-spacing: 0.18em;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--teal);
   margin-bottom: 2.25rem;
-}
-
-.cp-eyebrow-line {
-  display: block;
-  width: 28px;
-  height: 1px;
-  background: var(--teal);
-  flex-shrink: 0;
+  border-left: 3px solid var(--orange);
+  padding-left: 12px;
 }
 
 .cp-title {
-  font-size: clamp(2.5rem, 6vh, 2.8rem);
+  font-size: clamp(2.5rem, 6vw, 2.8rem);
   font-weight: 400;
   line-height: 1.05;
   color: var(--white);
   margin: 0 0 2rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.5px;
 }
 
 .cp-title em {
-  font-style: italic;
+  font-style: normal;
   color: var(--orange);
   font-size: inherit
 }
@@ -74,7 +68,7 @@
   flex-direction: column;
   gap: 2px;
   padding-left: 1rem;
-  border-left: 1.5px solid var(--teal);
+  border-left: 3px solid var(--orange);
   margin-bottom: 2rem;
 }
 
@@ -83,7 +77,7 @@
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--teal-light);
+  color: var(--white);
 }
 
 .cp-contact-value {
@@ -100,23 +94,25 @@
   color: var(--orange);
   font-size: clamp(0.75rem, 1.2vw, 0.75rem);
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 2px;
   text-transform: uppercase;
   padding: 14px 28px;
   border: 0.5px solid var(--orange);
   cursor: pointer;
+  text-decoration: none;
   transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
   width: fit-content;
+  border-radius: 6px;
 }
 
 .cp-btn:hover {
-  background: var(--teal-light);
+  background: var(--orange);
   color: var(--charchoal);
   transform: translateY(-1px);
 }
 
 .cp-btn-arrow {
-  font-size: 16px;
+  font-size: clamp(1rem, 1.5vw, 1rem);
   transition: transform 0.2s ease;
 }
 
@@ -168,11 +164,11 @@
 }
 
 .cp-right .contact-form p {
-  color: var(--charchoal);
+  color: var(--white);
 }
 
 .cp-right .contact-select option {
-  color: var(--charchoal)
+  color: var(--charcoal);
 
 }
 
@@ -183,8 +179,8 @@
 .cp-right .contact-select option:hover,
 .cp-right .contact-select option:focus,
 .cp-right .contact-select option:checked {
-  color: hsl(0, 0%, 98%);
-  background: var(--charchoal);
+  color: var(--white);
+  background: var(--charcoal);
 }
 
 .cp-right .contact-input,
@@ -222,8 +218,8 @@
   }
  
   .cp-eyebrow {
-    font-size: 0.72rem;
-    letter-spacing: 0.14em;
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+    letter-spacing: 2px;
     margin-bottom: 1.5rem;
   }
  
@@ -237,7 +233,7 @@
   }
  
   .cp-blurb {
-    font-size: 0.95rem;
+    font-size: clamp(1rem, 1.5vw, 1rem);
     line-height: 1.7;
     margin: 0 0 1.75rem;
   }
@@ -247,11 +243,11 @@
   }
  
   .cp-contact-label {
-    font-size: 0.72rem;
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
   }
  
   .cp-contact-value {
-    font-size: 0.9rem;
+    font-size: clamp(1rem, 1.5vw, 1rem);
     word-break: break-word;
   }
  
@@ -267,14 +263,14 @@
   }
  
   .cp-form-heading {
-    font-size: 1.3rem;
+    font-size: clamp(1.3rem, 2.8vw, 1.66rem);
     margin: 0 0 1.75rem;
   }
  
   .cp-right .contact-input,
   .cp-right .contact-select,
   .cp-right .contact-textarea {
-    font-size: 1rem;
+    font-size: clamp(1rem, 1.5vw, 1rem);
   }
 }
  
