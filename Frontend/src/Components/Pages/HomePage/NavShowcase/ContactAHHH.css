@@ -107,7 +107,7 @@
 
 .cp-btn:hover {
   background: var(--orange);
-  color: var(--charchoal);
+  color: var(--white);
   transform: translateY(-1px);
 }
 
@@ -133,7 +133,7 @@
   font-weight: 400;
   color: var(--white);
   margin: 0 0 2.5rem;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.5px;
   line-height: 1.2;
 }
 
@@ -185,7 +185,6 @@
 
 .cp-right .contact-input,
 .cp-right .contact-textarea {
- 
   border: 0.5px solid rgba(255, 255, 255, 0.5);
 }
 

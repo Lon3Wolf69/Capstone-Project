@@ -102,7 +102,7 @@ export default function Contact() {
             className="contact-select"
           >
             {/* First input */}
-            <option value="" disabled>Select a topic</option>
+            <option value="" hidden>Select a topic</option>
             <option value="Interagency Recovery Coordination">Interagency Recovery Coordination</option>
             <option value="Debris Management">Debris Management</option>
             <option value="Crisis Communications">Crisis Communications</option>
@@ -148,7 +148,7 @@ export default function Contact() {
             required
             className="contact-select"
           >
-            <option value="" disabled>Select an organization or agency</option>
+            <option value="" hidden>Select an organization or agency</option>
             <option value="State Agency">State Agency</option>
             <option value="Local Government">Local Government</option>
             <option value="Non-profit">Non-profit</option>
