@@ -1,3 +1,4 @@
+//---------------------------- Logic for the dropdowns on the form -------------------
 import { useState, useRef, useEffect } from "react";
 import "./TopicDropdown.css";
 

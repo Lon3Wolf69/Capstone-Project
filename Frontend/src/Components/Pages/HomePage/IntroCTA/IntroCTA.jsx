@@ -1,8 +1,10 @@
+// ---------------------------------------- HERO CARD ----------------------------------------
 import "./IntroCTA.css";
 import { Link } from "react-router-dom"; // Imports the Link component from the react-router-dom library for navigation between pages without refreshing the page
 
 const AboutSection = () => {
  
+  // Modify the white text to change what is said on the website
   return (
     <section className="about-section">
       <div className="about-overlay-content">
@@ -31,12 +33,13 @@ const AboutSection = () => {
           </p>
       </div>
 
-      {/* CTA */}
+      {/* Call To Action button*/}
         <div className="about-cta-row">
           <Link to="/about/AboutUs" style={{ textDecoration: "none" }}>
             <button className="CTA">
               How It Works
               <span className="CTA-btn-arrow">
+                {/* Arrow next to the how it works call to action button */}
                 →
               </span>
             </button>

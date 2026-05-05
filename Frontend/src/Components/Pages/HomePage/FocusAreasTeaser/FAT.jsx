@@ -3,9 +3,14 @@ import "./FAT.css";
 import { Link } from "react-router-dom";
  
 const focusAreas = [
+  // All content located here is for the interagency coordination teaser section 
   {
     id: "interagency",
+    // This is the title that appears right underneath the icon.
+    // Modify the text within the quotation marks to change 
     title: "Interagency Coordination",
+    // This is the text that appears underneath title
+    // Modify the text within the quotation marks to change 
     description:
       "Aligning federal agencies, programs, and partners around shared recovery priorities for faster, unified response.",
     icon: (
@@ -26,9 +31,14 @@ const focusAreas = [
     ),
     to: "/focusArea/interagencyRecovery",
   },
+  // All content within here is for the debris management teaser section
   {
     id: "debris",
+    // This is the title that appears right underneath the icon.
+    // Modify the text within the quotation marks to change
     title: "Debris Management",
+    // This is the title that appears right underneath the icon.
+    // Modify the text within the quotation marks to change
     description:
       "Managing one of the largest, most complex, and highest-risk components of recovery — where speed and compliance are critical.",
     icon: (
@@ -40,9 +50,14 @@ const focusAreas = [
     ),
     to: "/focusArea/debrisManagement",
   },
+  // All content within here is the crisis communication teaser section.
   {
     id: "crisis",
+    // This is the title that appears right underneath the icon.
+    // Modify the text within the quotation marks to change
     title: "Crisis Communication",
+    // This is the title that appears right underneath the icon.
+    // Modify the text within the quotation marks to change
     description:
       "Providing clear, structured communication across agencies, stakeholders, and the public during complex recovery efforts.",
     icon: (
@@ -57,9 +72,14 @@ const focusAreas = [
     ),
     to: "/focusArea/crisisCommunication",
   },
+  // All content within this section is from Wildfire teaser section
   {
     id: "wildfire",
+    // This is the title that appears right underneath the icon.
+    // Modify the text within the quotation marks to change
     title: "Wildfire Risk Coordination",
+    // This is the title that appears right underneath the icon.
+    // Modify the text within the quotation marks to change
     description:
       "Managing wildfire risk requires coordination across agencies, land systems, and recovery efforts. DisasterReady helps align mitigation strategies, resources, and partners to reduce risk and protect long-term recovery.",
     icon: (
@@ -115,7 +135,9 @@ export default function FocusAreas() {
   return (
     <section className="focus-areas-section">
       <div className="focus-areas-inner">
+        {/* Eyebrow text: modifying the white text below in white will change what it says on the website. */}
         <p className="focus-areas-eyebrow">Focus Areas</p>
+        {/* Title text: modifying the white text below will modify the title that appears on the website. */}
         <h2 className="focus-areas-heading">Where We Focus</h2>
  
         <div className="focus-areas-grid">
@@ -133,6 +155,7 @@ export default function FocusAreas() {
               <div className="focus-areas-icon">{area.icon}</div>
               <h3 className="focus-areas-title">{area.title}</h3>
               <p className="focus-areas-body">{area.description}</p>
+              {/* This is the call to action button for each teaser modify white text to change what it says */}
               <Link to={area.to} className="focus-areas-link">Learn More</Link>
             </div>
           ))}

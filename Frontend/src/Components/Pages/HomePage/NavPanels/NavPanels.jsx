@@ -10,6 +10,8 @@ import EastPalestine from "../../../../assets/eastPalestine.jpg";
 import DeepWaterHorizon from "../../../../assets/deepwater.jpeg";
 // import platformImg from "../../../../assets/Platform.jpg";
 
+// This is the case study name displayed on the case studies card. 
+// Modify the text to the right of the colon to update on live site
 const displayNames = {
   "NorthCarolina": "North Carolina",
   "EastPalestine": "East Palestine",
@@ -17,6 +19,7 @@ const displayNames = {
 };
  
 // Short blurb for each nav section — keyed by route label
+// Modify the text to the right of the colon to update on live site
 const blurbs = {
   "NorthCarolina":  "Following Hurricane Helene, DisasterReady leadership helped align agencies, funding, and partners, enabling billions in recovery resources to move more efficiently into impacted communities.",
   "EastPalestine":  "After the East Palestine derailment, DisasterReady leadership helped align agencies and quantify unmet needs, ensuring recovery was structured, community-driven, and fully funded by the responsible party.",
@@ -46,9 +49,10 @@ function NavPanels() {
  
   return (
     <section className="navpanels-section">
- 
+      {/* Section title */}
       <h2>Explore Our Work</h2>
-
+      
+      {/* Section title subtext */}
       <h6> 
         Explore case studies to gain insight into interagency coordination during major disasters:
       </h6>

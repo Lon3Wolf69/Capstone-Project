@@ -32,6 +32,7 @@ export default function ContactAHHH() {
   return (
     <section className="cp-wrapper">
       <div className="cp-left">
+        {/* left side of the contact teaser */}
         <div className="cp-eyebrow">
           Let's Coordinate Recovery.
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./HRW.css";
 
-// ─── Section: How Recovery Works ─────────────────────────────────────────────
+// ─── Section: How Recovery Works (Update the white text to change what is said on the section)─────────────────────────────────────────────
 function HowRecoveryWorks() {
   return (
     <section className="container-section background-color--white recovery">
@@ -32,7 +32,8 @@ function HowRecoveryWorks() {
   );
 }
 
-// ─── Section: What We Do ─────────────────────────────────────────────────────
+
+// ─── Section: What We Do (Modify the white text to update what is said on the website)─────────────────────────────────────────────────────
 function WhatWeDo() {
   return (
     
@@ -69,7 +70,7 @@ function WhatWeDo() {
   );
 }
 
-// ─── Section: Federal Recovery System ────────────────────────────────────────
+// ─── Section: Federal Recovery System (Modify the white text to update what is said on the website) ────────────────────────────────────────
 function FederalRecoverySystem() {
   return (
     <section className="container-section background-color--gray federal">
